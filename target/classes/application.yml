@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  #    引入开发环境
+  profiles:
+    active: dev

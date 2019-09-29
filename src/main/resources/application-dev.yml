@@ -1,0 +1,23 @@
+#开发环境
+spring:
+  #    数据库连接配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/my-blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  #    jpa 配置
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+      #      输出sql语句
+    #  配置日志级别
+    show-sql: true
+logging:
+  level:
+    rooot: info
+    com.zhao.guang.xiao.top: debug
+  file: log/blog-dev.log
+server:
+  port: 8082

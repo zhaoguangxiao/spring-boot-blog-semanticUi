@@ -1,0 +1,22 @@
+#生产环境
+spring:
+  #    数据库连接配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/my-blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  #    jpa 配置
+  jpa:
+    hibernate:
+      ddl-auto: none
+      #      输出sql语句
+    show-sql: true
+    #  配置日志级别
+logging:
+  level:
+    rooot: warn
+    com.zhao.guang.xiao.top: info
+  file: log/blog-pro.log
+server:
+  port: 8081
