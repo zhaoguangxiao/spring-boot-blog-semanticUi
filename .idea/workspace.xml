@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7425a2e-e488-4c85-833a-3cbb2519a351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/exception/NotFountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/handler/ControllerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/aspect/LogAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="log/blog-dev.log.2019-09-29.0.gz" />
+    <ignored path="log/blog-dev.log.2019-10-03.0.gz" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,25 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="487">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/handler/ControllerExceptionHandler.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/aspect/LogAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="406">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="method#RequestLog#0;class#RequestLog#0;class#LogAspect#0" />
               </folding>
             </state>
           </provider>
@@ -78,6 +81,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/exception/NotFountException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/handler/ControllerExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/aspect/LogAspect.java" />
       </list>
     </option>
   </component>
@@ -200,7 +204,7 @@
               <item name="guang" type="462c0819:PsiDirectoryNode" />
               <item name="xiao" type="462c0819:PsiDirectoryNode" />
               <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569740661331</updated>
       <workItem from="1569740666110" duration="6659000" />
-      <workItem from="1570254488108" duration="3194000" />
+      <workItem from="1570254488108" duration="6885000" />
     </task>
     <task id="LOCAL-00001" summary="使用semanticUi创建自己的博客网站 项目结构搭建">
       <created>1569745900227</created>
@@ -299,17 +303,24 @@
       <option name="project" value="LOCAL" />
       <updated>1569745900227</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="全局异常处理">
+      <created>1570257744869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570257744869</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9853000" />
+    <option name="totallyTimeSpent" value="13544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3025751" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28916308" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -320,7 +331,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37513873" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.12985572" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25416204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -331,7 +342,7 @@
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32297447" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -349,7 +360,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用semanticUi创建自己的博客网站 项目结构搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用semanticUi创建自己的博客网站 项目结构搭建" />
+    <MESSAGE value="全局异常处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="全局异常处理" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot/2.1.8.RELEASE/spring-boot-2.1.8.RELEASE.jar!/org/springframework/boot/context/logging/LoggingApplicationListener.class">
@@ -463,10 +475,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="487">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/aspect/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="method#RequestLog#0;class#RequestLog#0;class#LogAspect#0" />
           </folding>
         </state>
       </provider>

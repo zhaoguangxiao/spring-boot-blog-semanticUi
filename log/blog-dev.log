@@ -295,3 +295,78 @@ com.zhao.guang.xiao.top.exception.NotFountException: 博客没有找到
 2019-10-05 14:42:09.280  INFO 29420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2019-10-05 14:42:09.344  INFO 29420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
 2019-10-05 14:42:09.380  INFO 29420 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 3.478 seconds (JVM running for 4.868)
+2019-10-05 15:02:18.779  INFO 29420 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-05 15:02:26.444  INFO 29672 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on 丁绍扬 with PID 29672 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-05 15:02:26.447 DEBUG 29672 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-05 15:02:26.447  INFO 29672 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-05 15:02:26.514  INFO 29672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-05 15:02:26.515  INFO 29672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-05 15:02:28.454  INFO 29672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-10-05 15:02:28.481  INFO 29672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-05 15:02:28.481  INFO 29672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-05 15:02:28.648  INFO 29672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-05 15:02:28.649  INFO 29672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2134 ms
+2019-10-05 15:02:29.210  INFO 29672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-05 15:02:29.330  INFO 29672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-05 15:02:29.678  INFO 29672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-05 15:02:29.741  INFO 29672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-10-05 15:02:29.745  INFO 29672 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 4.599 seconds (JVM running for 5.753)
+2019-10-05 15:02:41.859  INFO 29672 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1563962405,1563962460,1564540902,1564989437; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; NPYT62454332visitecounts=30; CNZZDATA1277952072=489736848-1568015514-%7C1569557098; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568776371,1568856915,1568944774,1569557103; NPYT62454332lastvisitetime=1569570999967; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1568613626,1568795577,1569546971,1569571000] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-05 15:02:41.866  INFO 29672 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-05 15:02:41.867  INFO 29672 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-05 15:02:41.881  INFO 29672 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-05 15:02:41.931  INFO 29672 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : -----before-----
+2019-10-05 15:02:41.934  INFO 29672 --- [http-nio-8082-exec-1] c.z.g.x.top.controller.IndexController   : -------aop -------
+2019-10-05 15:02:41.935  INFO 29672 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-05 15:02:41.935  INFO 29672 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果
+2019-10-05 15:08:57.528  INFO 29672 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-05 15:09:05.677  INFO 28616 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on 丁绍扬 with PID 28616 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-05 15:09:05.680 DEBUG 28616 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-05 15:09:05.680  INFO 28616 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-05 15:09:05.757  INFO 28616 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-05 15:09:05.757  INFO 28616 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-05 15:09:07.596  INFO 28616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-10-05 15:09:07.619  INFO 28616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-05 15:09:07.620  INFO 28616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-05 15:09:07.792  INFO 28616 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-05 15:09:07.792  INFO 28616 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2035 ms
+2019-10-05 15:09:08.318  INFO 28616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-05 15:09:08.442  INFO 28616 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-05 15:09:08.733  INFO 28616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-05 15:09:08.794  INFO 28616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-10-05 15:09:08.798  INFO 28616 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 3.859 seconds (JVM running for 5.012)
+2019-10-05 15:09:36.003  INFO 28616 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1563962405,1563962460,1564540902,1564989437; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; NPYT62454332visitecounts=30; CNZZDATA1277952072=489736848-1568015514-%7C1569557098; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568776371,1568856915,1568944774,1569557103; NPYT62454332lastvisitetime=1569570999967; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1568613626,1568795577,1569546971,1569571000] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-05 15:09:36.090  INFO 28616 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-05 15:09:36.090  INFO 28616 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-05 15:09:36.111  INFO 28616 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-10-05 15:09:36.154  INFO 28616 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : -----before-----
+2019-10-05 15:09:36.157  INFO 28616 --- [http-nio-8082-exec-1] c.z.g.x.top.controller.IndexController   : -------aop -------
+2019-10-05 15:09:36.158  INFO 28616 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-05 15:09:36.158  INFO 28616 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果index
+2019-10-05 15:44:02.738  INFO 28616 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-05 15:44:09.982  INFO 16044 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on 丁绍扬 with PID 16044 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-05 15:44:09.995 DEBUG 16044 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-05 15:44:09.995  INFO 16044 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-05 15:44:10.074  INFO 16044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-05 15:44:10.075  INFO 16044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-05 15:44:12.055  INFO 16044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-10-05 15:44:12.085  INFO 16044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-05 15:44:12.085  INFO 16044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-05 15:44:12.252  INFO 16044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-05 15:44:12.252  INFO 16044 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2177 ms
+2019-10-05 15:44:12.803  INFO 16044 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-05 15:44:12.926  INFO 16044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-05 15:44:13.269  INFO 16044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-05 15:44:13.325  INFO 16044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-10-05 15:44:13.330  INFO 16044 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 4.379 seconds (JVM running for 5.688)
+2019-10-05 15:44:18.724  INFO 16044 --- [http-nio-8082-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1563962405,1563962460,1564540902,1564989437; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; NPYT62454332visitecounts=30; CNZZDATA1277952072=489736848-1568015514-%7C1569557098; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568776371,1568856915,1568944774,1569557103; NPYT62454332lastvisitetime=1569570999967; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1568613626,1568795577,1569546971,1569571000] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-05 15:44:18.734  INFO 16044 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-05 15:44:18.734  INFO 16044 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-05 15:44:18.744  INFO 16044 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-05 15:44:18.792  INFO 16044 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/2/zs, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.aop, args=[2, zs])
+2019-10-05 15:44:18.796  INFO 16044 --- [http-nio-8082-exec-1] c.z.g.x.top.controller.IndexController   : -------aop -------
+2019-10-05 15:44:18.796  INFO 16044 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-05 15:44:18.796  INFO 16044 --- [http-nio-8082-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果index
