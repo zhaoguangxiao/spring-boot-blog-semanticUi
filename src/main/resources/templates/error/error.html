@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>错误页面</title>
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <!--  关键字  -->
+    <meta type="keywords" content="博客服务器出现了错误"/>
+    <!--  描述　-->
+    <meta type="description" content="博客服务器出现了错误..."/>
+    <title>服务器出现了错误</title>
 </head>
 <body>
-<h1>错误页面</h1>
+
+<!--头部导航-->
+<nav th:replace="main/_fragments :: menu(1)"></nav>
+<br>
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-message">
+    <div class="ui error message m-padded-tb-huge">
+        <div class="ui container">
+            <h2>错误URL:[[${url}]]</h2>
+            <p>[[${exception}]]</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
 <div th:utext="'&lt;!--'" th:remove="tag"></div>
 <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"></div>
 <div th:utext="'Exception message :' + ${exception.message}" th:remove="tag"></div>

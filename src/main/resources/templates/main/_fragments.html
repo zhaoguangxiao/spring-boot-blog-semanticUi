@@ -20,7 +20,7 @@
     <div class="ui container">
         <!--stackable 表明可以堆列 移动端适配-->
         <div class="ui inverted stackable secondary menu m-min">
-            <h2 class="ui teal item header">Blog</h2>
+            <a th:href="@{/}"><h2 class="ui teal item header">Blog</h2></a>
             <a th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1}?'active'"><i class=" home icon"></i>首页</a>
             <a th:href="@{/categary}" class="m-item item m-mobile-hide" th:classappend="${n==2}?'active'"><i class=" idea icon"></i>分类</a>
             <a th:href="@{/tag}" class="m-item item m-mobile-hide" th:classappend="${n==3}?'active'"><i class=" tags icon"></i>标签</a>

@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>500</title>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <!--  关键字  -->
+    <meta type="keywords" content="博客500"/>
+    <!--  描述　-->
+    <meta type="description" content="博客500..."/>
+    <title>500错误页面</title>
 </head>
 <body>
-<h1>500</h1>
+<!--头部导航-->
+<nav th:replace="main/_fragments :: menu(1)"></nav>
+<br>
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-message">
+    <div class="ui error message m-padded-tb-huge">
+        <div class="ui container">
+            <h2>500</h2>
+            <p>服务器冒烟了,请与管理员联系..或者稍后重试...</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
 </body>
 </html>
