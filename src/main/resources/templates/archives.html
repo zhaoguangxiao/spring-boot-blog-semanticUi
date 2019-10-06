@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <!--  关键字  -->
+    <meta type="keywords" content="博客归档"/>
+    <!--  描述　-->
+    <meta type="description" content="博客归档详情页面"/>
+    <title>博客归档页面</title>
+</head>
+<body>
+
+<!--头部导航-->
+<div th:replace="main/_fragments :: menu(4)"></div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui top attached padded segment">
+            <!--middle aligned 代表垂直居中-->
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui teal header">归档</h3>
+                </div>
+                <div class="right aligned column">
+                    共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny">14</h2>个
+                </div>
+            </div>
+        </div>
+        <h2 class="ui center aligned header">2017</h2>
+        <div class="ui fluid vertical menu">
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+        </div>
+
+
+
+        <h2 class="ui center aligned header">2016</h2>
+        <div class="ui fluid vertical menu">
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+        </div>
+
+
+        <h2 class="ui center aligned header">2011</h2>
+        <div class="ui fluid vertical menu">
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+            <a href="#" target="_blank" class="item">
+            <span>
+                <i class="mini teal circle icon"></i>关于可以练习清单
+                <div class="ui teal basic left pointing label mini">9月3号</div>
+            </span>
+                <div class="ui orange basic left pointing label mini">原创</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--尾部-->
+<div th:replace="main/_fragments :: footer"></div>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+</script>
+</body>
+</html>

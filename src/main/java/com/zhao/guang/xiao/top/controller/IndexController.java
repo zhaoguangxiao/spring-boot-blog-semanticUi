@@ -20,6 +20,37 @@ public class IndexController {
         return "index";
     }
 
+
+    @GetMapping("categary")
+    public String toCategary() {
+        return "category";
+    }
+
+
+    @GetMapping("tag")
+    public String toTags() {
+        return "tags";
+    }
+
+
+    @GetMapping("archives")
+    public String toArchives() {
+        return "archives";
+    }
+
+
+    @GetMapping("about")
+    public String toAbout() {
+        return "about";
+    }
+
+
+    @GetMapping("details")
+    public String details() {
+        return "details";
+    }
+
+
     @GetMapping("{id}/{name}")
     public String aop(@PathVariable Integer id,
                       @PathVariable String name) {

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <!--  关键字  -->
+    <meta type="keywords" content="博客关于我页面"/>
+    <!--  描述　-->
+    <meta type="description" content="博客关于我页面详情页面"/>
+    <title>博客关于我页面</title>
+</head>
+<body>
+
+<!--头部导航-->
+<div th:replace="main/_fragments :: menu(5)"></div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <div class="ui segment">
+                    <img src="../static/images/6.png" alt="" class="ui round image">
+                </div>
+            </div>
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">
+                        关于我
+                    </div>
+                </div>
+                <div class="ui attached segment">
+                    <p class="m-text">
+                        赵广晓,一个独立开发者,折腾在0和1世界的人;一个终身学习者,誓将学习无线循环,希望结石可以共同成长的小伙伴
+                    </p>
+                    <p>
+                        热爱编程,喜欢折腾,正在搜索高效学习,编程技术的方法...
+                    </p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="orange ui left pointing basic label">
+                        编程
+                    </div>
+                    <div class="orange ui left pointing basic label">
+                        写作
+                    </div>
+                    <div class="orange ui left pointing basic label">
+                        分享
+                    </div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        吃饭
+                    </div>
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        睡觉
+                    </div>
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        打豆豆
+                    </div>
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        Java
+                    </div>
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        C#
+                    </div>
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        C++
+                    </div>
+                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
+                        PHP
+                    </div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-position="bottom center" data-content="Elliot has been a member since July 2012"><i class="qq icon"></i></a>
+                    <a href="#" class="ui weixin circular icon button"><i class="wechat icon"></i></a>
+                    <div class="ui wechat-weiixn flowing popup transition hidden">
+                        <img src="../static/images/2017-07-10_59631d2325129.jpg" alt="" style="width: 100px" class="ui rounded image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--尾部-->
+<div th:replace="main/_fragments :: footer"></div>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+
+<script>
+
+    $('.qq').popup();
+
+
+    $('.weixin').popup({
+        popup: $('.wechat-weiixn'),
+        on: 'hover',
+        position: 'bottom center'
+    });
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

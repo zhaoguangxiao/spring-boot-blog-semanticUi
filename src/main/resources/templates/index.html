@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>首页</title>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <!--  关键字  -->
+    <meta type="keywords" content="博客系统,系统,论坛"/>
+    <!--  描述　-->
+    <meta type="description" content="博客系统功能有点赞留言评论等功能已经..."/>
+    <title>博客首页</title>
 </head>
 <body>
-首页
+
+<!--头部导航-->
+<nav th:replace="main/_fragments :: menu(1)"></nav>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div class="m-container m-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!--左边内容-->
+            <!--top attached 是附加的意思-->
+            <div class="eleven wide column">
+                <div class="ui top attached segment">
+                    <!--middle aligned 代表垂直居中-->
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">博客</h3>
+                        </div>
+                        <div class="right aligned column">
+                            共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny">14</h2>篇
+                        </div>
+                    </div>
+                </div>
+
+                <!--文章列表-->
+                <div class="ui attached segment">
+                    <div class="ui padded vertical segment m-padded-tb-big">
+                        <!--mobile reversed 移动端图片显示上面-->
+                        <div class="ui mobile reversed stackable grid">
+                            <div class="eleven wide column">
+                                    <h3 class="ui header"> SpringBoot启动tomcat出现空白页面</h3>
+                                <a th:href="@{/details}">
+                                    <p class="m-text">
+                                        如果出现这个问题原因 1),点击用户退出方法,方法里面执行的是清除session和清空cookie,然后,就出现了空白页面 执行退出方法是
+                                        @GetMapping("logout") @ApiOperation(value = "注销登录方法...
+                                    </p>
+                                </a>
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img th:src="@{/static/images/box.png}" src="../static/images/box.png"
+                                                     alt="" class="ui avatar image">
+                                                <div class="content">
+                                                    <a href="#" class="header">赵广晓</a>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2017-10-11
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i>2238
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank"
+                                           class="ui teal basic m-padded-mini label m-padded-tb-tiny">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/seed/picsum/800/450" alt=""
+                                         class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--上一页 下一页 底部-->
+                <div class="ui button attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <a href="#" class="ui mini teal basic button">上一页</a>
+                        </div>
+                        <div class="right column">
+                            <a href="#" class="ui mini teal basic button">下一页</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--右边内容-->
+            <div class="five wide column m-margin-top-large">
+                <!--分类-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="idea icon"></i>分类
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#">more
+                                    <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="ui two column teal grid">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal ba label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    清单
+                                    <div class="ui teal ba label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    javaScript
+                                    <div class="ui teal ba label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    创业
+                                    <div class="ui teal ba label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    认知升级
+                                    <div class="ui teal ba label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--标签-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="tags icon"></i>标签
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#">more
+                                    <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                        <div class="ui teal basic segment">
+                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                JavaScript
+                                <div class="detail">23</div>
+                            </a>
+                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                Java
+                                <div class="detail">23</div>
+                            </a>
+                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                PHP
+                                <div class="detail">23</div>
+                            </a>
+                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                C++
+                                <div class="detail">23</div>
+                            </a>
+                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
+                                C#
+                                <div class="detail">23</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--最新推荐-->
+                <div class="ui segments">
+                    <div class="ui secondary segment m-block">
+                        <i class="bookmark icon"></i>最新推荐
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
+                    </div>
+                </div>
+
+                <!--二维码-->
+                <h4 class="ui horizontal divider header">
+                    扫码关注我
+                </h4>
+                <div class="ui centered card" style="width: 11em">
+                    <img th:src="@{/static/images/2017-07-10_59631d2325129.jpg}"
+                         src="../static/images/2017-07-10_59631d2325129.jpg" alt="" class="ui rounded image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
+<!--引入公共js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+</script>
 </body>
 </html>
