@@ -1,5 +1,6 @@
 package com.zhao.guang.xiao.top.controller;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -49,6 +50,24 @@ public class IndexController {
     public String details() {
         return "details";
     }
+
+
+
+
+
+
+//    后台
+    @GetMapping("manager")
+    public String indexManager(){
+        return "admin/index";
+    }
+
+    @GetMapping("manager-category")
+    public String managerCategory(){
+        return "admin/publish";
+    }
+
+
 
 
     @GetMapping("{id}/{name}")

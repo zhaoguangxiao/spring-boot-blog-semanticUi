@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-message" style="max-width: 30em !important;">
+    <div class="container ui">
+        <div class="ui middle aligned center aligned grid">
+            <div class="column">
+                <h2 class="ui teal image header">
+                    <img src="assets/images/logo.png" class="image">
+                    <div class="content">
+                        博客后台登录
+                    </div>
+                </h2>
+                <form class="ui large form">
+                    <div class="ui segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="email" placeholder="邮箱地址">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="ui fluid large teal submit button">登录</div>
+                    </div>
+
+                    <div class="ui error message"></div>
+
+                </form>
+
+                <div class="ui message">
+                    新用户？ <a href="login.php#">注册</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+</body>
+</html>

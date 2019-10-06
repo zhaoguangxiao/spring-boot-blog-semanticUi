@@ -1,43 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>博客后端管理页面</title>
-    <link rel="stylesheet" type="text/css" href="../../static/css/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="../../static/css/index.css">
     <!--引入markdown css-->
     <link rel="stylesheet" href="../../static/markdown/css/editormd.css" />
 </head>
 <body>
 
 <!--头部导航-->
-<nav class="ui inverted attached segment m-shadow-small">
-    <div class="ui container">
-        <!--stackable 表明可以堆列 移动端适配-->
-        <div class="ui inverted stackable secondary menu m-min">
-            <h2 class="ui teal item header">后台管理系统</h2>
-            <a href="" class="active m-item item m-mobile-hide"><i class=" home icon"></i>博客</a>
-            <a href="" class=" m-item item m-mobile-hide"><i class=" idea icon"></i>分类</a>
-            <a href="" class=" m-item item m-mobile-hide"><i class=" tags icon"></i>标签</a>
-            <div class="right m-item item m-mobile-hide">
-                <div class="ui item dropdown">
-                    <div class="text">
-                        <img class="ui avatar image" src="../../static/images/box.png">
-                        赵广晓
-                    </div>
-                    <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <a href="#" class="item" target="_blank">注销</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="ui menu toggle black icon button m-mobile-top-right m-mobile-show">
-        <i class="sidebar icon"></i>
-    </a>
-</nav>
+<div th:replace="main/_backEnd :: header_backEnd(3)"></div>
 
 <!--二级导航-->
 <div class="ui attached pointing menu">
@@ -157,52 +130,11 @@
 
 
 <!--尾部-->
-<footer class="ui inverted segment vertical m-max">
-    <div class="ui center aligned container">
-        <div class="ui inverted stackable divided grid">
-            <div class="three wide column">
-                <div class="ui inverted link list">
-                    <div class="item">
-                        <img src="../../static/images/2017-07-10_59631d2325129.jpg" alt="" class="ui rounded image"
-                             style="width: 10em;height: 10em">
-                    </div>
-                </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事</a>
-                    <a href="#" class="item">用户故事</a>
-                    <a href="#" class="item">用户故事</a>
-                </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我们</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">Email:1764773283@qq.com</a>
-                    <a href="#" class="item">qq:1764773283</a>
-                </div>
-            </div>
-            <div class="seven wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">
-                    这是我的个人博客,会分享关于编程,写作,思考相关的任何内容,希望可以
-                    给来到这里的人有所帮助...
-                </p>
-            </div>
-        </div>
-        <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-mini">
-            浙ICP备19020311号-1 网站名称 青春似水流年
-        </p>
-    </div>
-</footer>
+<footer th:replace="main/_fragments :: footer"></footer>
 
 
 <!--引入js-->
-<script src="../../static/js/jquery.min.js"></script>
-<!--引入semantic js-->
-<script src="../../static/js/semantic.min.js"></script>
+<th:block th:replace="main/_fragments :: script"></th:block>
 <!--引入markdownjs-->
 <script src="../../static/markdown/editormd.js"></script>
 <script src="../../static/markdown/lib/marked.min.js"></script>
@@ -220,11 +152,6 @@
         // saveHTMLToTextarea : true, // 保存HTML到Textarea
     });
 
-
-    // 移动端动态显示头部标签
-    $('.menu.toggle').click(function () {
-        $('.m-item').toggleClass('m-mobile-hide');
-    });
 
 
     $('.ui.dropdown').dropdown();
