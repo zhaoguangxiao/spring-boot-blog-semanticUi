@@ -11,8 +11,8 @@
         <!--stackable 表明可以堆列 移动端适配-->
         <div class="ui inverted stackable secondary menu m-min">
             <h2 class="ui teal item header">后台管理系统</h2>
-            <a href="" class="m-item item m-mobile-hide" th:classappend="${n == 1}?'active'"><i class=" home icon"></i>博客</a>
-            <a href="" class="m-item item m-mobile-hide" th:classappend="${n == 2}?'active'"><i class=" idea icon"></i>分类</a>
+            <a th:href="@{/admin/blog/list}" class="m-item item m-mobile-hide" th:classappend="${n == 1}?'active'"><i class=" home icon"></i>博客</a>
+            <a th:href="@{/admin/categorys}" class="m-item item m-mobile-hide" th:classappend="${n == 2}?'active'"><i class=" idea icon"></i>分类</a>
             <a href="" class="m-item item m-mobile-hide" th:classappend="${n == 3}?'active'"><i class=" tags icon"></i>标签</a>
             <div class="right m-item item m-mobile-hide">
                 <div class="ui item dropdown">

@@ -13,10 +13,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BlogController {
 
 
-    @RequestMapping("/list")
+    @RequestMapping("/blog/list")
     public String list(){
-        return "admin/blog";
+        return "admin/article/list";
     }
+
+
+    @RequestMapping("/blog/form")
+    public String form(){
+        return "admin/article/form";
+    }
+
+
+
+
+
 
 
 

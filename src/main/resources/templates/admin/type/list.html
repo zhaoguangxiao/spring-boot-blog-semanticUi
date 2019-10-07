@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客分类页面</title>
+</head>
+<body>
+
+<!--头部导航-->
+<div th:replace="main/_backEnd :: header_backEnd(2)"></div>
+
+<!--二级导航-->
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <a href="#" target="_blank" class="item">发布</a>
+        <a href="#" target="_blank" class="active teal item">列表</a>
+    </div>
+</div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="container">
+        <!--表格列表-->
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>分类名称</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody th:each="list,iterStat : ${typeBeans}">
+            <tr class="center aligned">
+                <td th:text="${iterStat.count}"></td>
+                <td th:text="${list.name}"></td>
+                <td>
+                    <a href="#" th:href="@{/admin/category/}+${list.id}" class="ui mini teal basic button">编辑</a>
+                    <a href="#" id="btnDel" th:attr="del_url=@{/admin/category/}+${list.id}" onclick="deleteBtn()" class="ui mini red basic button">删除</a>
+                    <form id="deleteFormId" method="post">
+                        <input type="hidden" name="_method" value="delete">
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="1">
+                    <a th:href="@{/admin/category}" class="ui mini teal basic button">
+                        <i class="plus icon"></i>
+                        新增
+                    </a>
+                </th>
+                <th colspan="2">
+                    <div class="ui right floated pagination menu">
+                        <a class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}-1)}">
+                            <i class="left chevron icon"></i>
+                        </a>
+                        <a class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}+1)}">
+                            <i class="right chevron icon"></i>
+                        </a>
+                    </div>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+    $('.ui.dropdown').dropdown();
+
+
+    function deleteBtn() {
+        $("#deleteFormId").attr("action", $("#btnDel").attr("del_url")).submit();
+    }
+
+</script>
+</body>
+</html>

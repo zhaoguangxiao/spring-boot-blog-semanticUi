@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="main/_fragments :: header(~{::title},~{::link},~{::meta})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客分类新增页面</title>
+    <!--引入markdown css-->
+    <link rel="stylesheet" href="../../static/markdown/css/editormd.css" th:href="@{/static/markdown/css/editormd.css}"/>
+</head>
+<body>
+
+<!--头部导航-->
+<div th:replace="main/_backEnd :: header_backEnd(2)"></div>
+
+<!--二级导航-->
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <a href="#" target="_blank" class="active teal item">发布</a>
+        <a href="#" target="_blank" class="item">列表</a>
+    </div>
+</div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="container">
+        <form action="#" method="post" class="ui form" th:action="@{/admin/category}">
+
+            <!-- 修改为put方式  -->
+            <input type="hidden" value="put" name="_method" th:if="${typeBean != null}">
+
+            <!--  隐藏主键id  -->
+            <input type="hidden" th:value="${typeBean != null} ?${typeBean.id}" name="id" th:if="${typeBean != null}">
+
+
+
+            <!--显示错误内容-->
+            <div class="field">
+                <div class="ui error message"></div>
+            </div>
+
+            <div class="field">
+                <div class="ui left labeled action input">
+                    <label class="ui compact teal basic label">分类名称</label>
+                    <input type="text" placeholder="分类名称" name="name" th:value="${typeBean != null} ?${typeBean.name}">
+                </div>
+            </div>
+
+
+
+            <div class="ui right aligned container">
+                <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
+                <button class="ui teal button" type="submit">提交</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+    $('.ui.dropdown').dropdown();
+
+    // 表单验证
+    $('.ui.form')
+        .form({
+            fields: {
+                terms: {
+                    identifier: 'firstPicture',
+                    rules: [
+                        {
+                            type   : 'empty',
+                            prompt : '分类名称不能为空'
+                        }
+                    ]
+                }
+            }
+        });
+
+
+</script>
+</body>
+</html>
