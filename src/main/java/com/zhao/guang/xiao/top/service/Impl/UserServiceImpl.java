@@ -5,6 +5,7 @@ import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
 /**
  * @author Administrator
@@ -21,6 +22,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserBean checkUser(String uname, String pwd) {
-        return userBeanRepository.findByUserNameAndPassword(uname, pwd);
+//        获取加密后的密码与数据库密码进行对比
+        String md5Password = DigestUtils.md5DigestAsHex(pwd.getBytes());
+        return userBeanRepository.findByUserNameAndPassword(uname, md5Password);
     }
 }
