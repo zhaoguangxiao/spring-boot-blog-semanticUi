@@ -24,29 +24,31 @@
 <!--div +tab 快速补全代码-->
 <div class="m-container-small m-padded-tb-big">
     <div class="container">
-        <form action="#" method="post" class="ui form" th:action="@{/admin/category}">
+        <form action="#" method="post" class="ui form" th:action="@{/admin/category}" th:object="${typeBean}">
 
             <!-- 修改为put方式  -->
-            <input type="hidden" value="put" name="_method" th:if="${typeBean != null}">
+            <input type="hidden" value="put" name="_method" th:if="${typeBean.id != null}">
 
             <!--  隐藏主键id  -->
-            <input type="hidden" th:value="${typeBean != null} ?${typeBean.id}" name="id" th:if="${typeBean != null}">
-
-
-
-            <!--显示错误内容-->
-            <div class="field">
-                <div class="ui error message"></div>
-            </div>
+            <input type="hidden" th:value="*{id}" name="id">
 
             <div class="field">
                 <div class="ui left labeled action input">
                     <label class="ui compact teal basic label">分类名称</label>
-                    <input type="text" placeholder="分类名称" name="name" th:value="${typeBean != null} ?${typeBean.name}">
+                    <input type="text" placeholder="分类名称" name="name" th:value="*{name}">
                 </div>
             </div>
+            <!--显示错误内容-->
+            <div class="field"><div class="ui error message"></div></div>
 
-
+            <!-- 显示后台验证失败错误信息-->
+            <!--/*/
+                <div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+                    <i class="close icon"></i>
+                    <div class="header"th:text="${typeBean.id != null ?'更新失败':'新增失败'}"></div>
+                    <p th:errors="*{name}"></p>
+                </div>
+            /*/-->
 
             <div class="ui right aligned container">
                 <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
@@ -73,8 +75,8 @@
     $('.ui.form')
         .form({
             fields: {
-                terms: {
-                    identifier: 'firstPicture',
+                name: {
+                    identifier: 'name',
                     rules: [
                         {
                             type   : 'empty',
@@ -85,7 +87,10 @@
             }
         });
 
-
+    //消息提示框关闭
+    $('.message .close').on("click",function () {
+        $(this).closest('.message').transition('fade');
+    });
 </script>
 </body>
 </html>

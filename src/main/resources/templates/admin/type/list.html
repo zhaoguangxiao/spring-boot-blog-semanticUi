@@ -26,14 +26,14 @@
         <table class="ui celled table">
             <thead>
             <tr>
-                <th>ID</th>
+                <th>Id</th>
                 <th>分类名称</th>
                 <th>操作</th>
             </tr>
             </thead>
-            <tbody th:each="list,iterStat : ${typeBeans}">
+            <tbody th:each="list : ${typeBeans}">
             <tr class="center aligned">
-                <td th:text="${iterStat.count}"></td>
+                <td th:text="${list.id}"></td>
                 <td th:text="${list.name}"></td>
                 <td>
                     <a href="#" th:href="@{/admin/category/}+${list.id}" class="ui mini teal basic button">编辑</a>
@@ -53,11 +53,11 @@
                     </a>
                 </th>
                 <th colspan="2">
-                    <div class="ui right floated pagination menu">
-                        <a class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}-1)}">
+                    <div class="ui right floated pagination menu" th:if="${typeBeans.totalPages>1}">
+                        <a th:unless="${typeBeans.first}" class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}-1)}">
                             <i class="left chevron icon"></i>
                         </a>
-                        <a class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}+1)}">
+                        <a th:unless="${typeBeans.last}" class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}+1)}">
                             <i class="right chevron icon"></i>
                         </a>
                     </div>
@@ -84,6 +84,11 @@
     function deleteBtn() {
         $("#deleteFormId").attr("action", $("#btnDel").attr("del_url")).submit();
     }
+
+    //消息提示框关闭
+    $('.message .close').on("click",function () {
+       $(this).closest('.message').transition('fade');
+    });
 
 </script>
 </body>

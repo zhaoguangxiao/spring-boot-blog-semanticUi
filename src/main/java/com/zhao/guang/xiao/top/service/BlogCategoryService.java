@@ -11,7 +11,7 @@ import org.springframework.data.domain.Pageable;
  */
 public interface BlogCategoryService {
 
-    TypeBean saveTypeBean(TypeBean type);
+    void saveTypeBean(TypeBean type);
 
     TypeBean getTypeBean(Long id);
 
@@ -21,5 +21,8 @@ public interface BlogCategoryService {
     TypeBean updateTypeBean(TypeBean typeBean);
 
     void removeTypeBean(Long id);
+
+
+    TypeBean getTypeBeanByName(String name);
 
 }

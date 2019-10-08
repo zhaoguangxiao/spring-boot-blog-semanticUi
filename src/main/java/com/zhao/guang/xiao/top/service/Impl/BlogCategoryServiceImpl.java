@@ -1,10 +1,8 @@
 package com.zhao.guang.xiao.top.service.Impl;
 
 import com.zhao.guang.xiao.top.dao.BlogCategoryRepository;
-import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,8 +25,8 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
 
     @Override
     @Transactional
-    public TypeBean saveTypeBean(TypeBean type) {
-        return blogCategoryRepository.save(type);
+    public void saveTypeBean(TypeBean type) {
+         blogCategoryRepository.save(type);
     }
 
     @Override
@@ -53,5 +51,11 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
     @Transactional
     public void removeTypeBean(Long id) {
         blogCategoryRepository.deleteById(id);
+    }
+
+
+    @Override
+    public TypeBean getTypeBeanByName(String name) {
+        return blogCategoryRepository.findByName(name);
     }
 }

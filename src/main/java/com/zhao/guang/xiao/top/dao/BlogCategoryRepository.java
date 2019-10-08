@@ -11,4 +11,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface BlogCategoryRepository extends JpaRepository<TypeBean,Long> {
 
 
+    TypeBean findByName(String name);
+
 }
