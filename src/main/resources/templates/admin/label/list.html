@@ -8,13 +8,13 @@
 <body>
 
 <!--头部导航-->
-<div th:replace="main/_backEnd :: header_backEnd(2)"></div>
+<div th:replace="main/_backEnd :: header_backEnd(3)"></div>
 
 <!--二级导航-->
 <div class="ui attached pointing menu">
     <div class="ui container">
-        <a th:href="@{/admin/category}" target="_blank" class="teal item">发布</a>
-        <a th:href="@{/admin/categorys}" target="_blank" class="active item">列表</a>
+        <a th:href="@{/admin/label}" target="_blank" class="teal item">发布</a>
+        <a th:href="@{/admin/labels}" target="_blank" class="active item">列表</a>
     </div>
 </div>
 
@@ -31,13 +31,13 @@
                 <th>操作</th>
             </tr>
             </thead>
-            <tbody th:each="list : ${typeBeans}">
+            <tbody th:each="list : ${tagBeans}">
             <tr class="center aligned">
                 <td th:text="${list.id}"></td>
                 <td th:text="${list.name}"></td>
                 <td>
-                    <a href="#" th:href="@{/admin/category/}+${list.id}" class="ui mini teal basic button">编辑</a>
-                    <a href="#" id="btnDel" th:attr="del_url=@{/admin/category/}+${list.id}" onclick="deleteBtn()" class="ui mini red basic button">删除</a>
+                    <a href="#" th:href="@{/admin/label/}+${list.id}" class="ui mini teal basic button">编辑</a>
+                    <a href="#" id="btnDel" th:attr="del_url=@{/admin/label/}+${list.id}" onclick="deleteBtn()" class="ui mini red basic button">删除</a>
                     <form id="deleteFormId" method="post">
                         <input type="hidden" name="_method" value="delete">
                     </form>
@@ -47,17 +47,17 @@
             <tfoot>
             <tr>
                 <th colspan="1">
-                    <a th:href="@{/admin/category}" class="ui mini teal basic button">
+                    <a th:href="@{/admin/label}" class="ui mini teal basic button">
                         <i class="plus icon"></i>
                         新增
                     </a>
                 </th>
                 <th colspan="2">
-                    <div class="ui right floated pagination menu" th:if="${typeBeans.totalPages>1}">
-                        <a th:unless="${typeBeans.first}" class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}-1)}">
+                    <div class="ui right floated pagination menu" th:if="${tagBeans.totalPages>1}">
+                        <a th:unless="${tagBeans.first}" class="icon item" th:href="@{/admin/categorys(page=${tagBeans.number}-1)}">
                             <i class="left chevron icon"></i>
                         </a>
-                        <a th:unless="${typeBeans.last}" class="icon item" th:href="@{/admin/categorys(page=${typeBeans.number}+1)}">
+                        <a th:unless="${tagBeans.last}" class="icon item" th:href="@{/admin/categorys(page=${tagBeans.number}+1)}">
                             <i class="right chevron icon"></i>
                         </a>
                     </div>

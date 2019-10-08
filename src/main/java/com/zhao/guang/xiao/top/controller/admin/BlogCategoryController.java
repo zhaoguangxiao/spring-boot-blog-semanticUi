@@ -4,7 +4,6 @@ import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

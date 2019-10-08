@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,12 @@ public class TagBean {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+
+    @NotBlank(message = "标签名称不能为空")
     private String name;
+
+
     @ManyToMany(mappedBy = "tagBeans")
     private List<BlogBean> blogBeans = new ArrayList<>();
 

@@ -30,13 +30,11 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
     }
 
     @Override
-    @Transactional
     public TypeBean getTypeBean(Long id) {
         return blogCategoryRepository.getOne(id);
     }
 
     @Override
-    @Transactional
     public Page<TypeBean> listTypeBean(Pageable pageable) {
         return blogCategoryRepository.findAll(pageable);
     }
