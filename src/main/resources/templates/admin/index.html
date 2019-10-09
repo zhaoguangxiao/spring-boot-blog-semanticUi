@@ -16,9 +16,9 @@
     <div class="container">
         <div class="ui success large message">
             <h3>Hi,</h3>
-            <p>赵广晓,欢迎你登录!</p>
+            <p>[[${session.user.nickName}]],欢迎你登录!</p>
         </div>
-            <img src="../../static/images/6.png" alt="" class="image ui fluid rounded">
+            <img th:src="${session.user.avatar}" alt="" class="image ui fluid rounded">
     </div>
 </div>
 

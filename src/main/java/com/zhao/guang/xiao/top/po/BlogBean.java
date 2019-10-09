@@ -20,30 +20,44 @@ import java.util.List;
 @ToString
 @Table(name = "t_blog")
 public class BlogBean {
+    /**
+     * 草稿
+     */
+    public static final String BLOG_ENABLE = "1";
 
-    public BlogBean() {
-    }
+    /**
+     * 发布
+     */
+    public static final String BLOG_DISABLE = "0";
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
+
+    @Lob
+    @Basic(fetch = FetchType.LAZY)
     private String content;
+
     //首图
     private String firstPicture;
-    private String flag;
-    private Integer views;
+
+
+    private int views;
     //赞赏开启
     private boolean appreciation;
     //版权是否开启
     private boolean shareStatement;
     //是否开启评论
     private boolean commentOpen;
-    //是否发布
-    private boolean published;
+    //发布 草稿
+    private int published;
     //是否推荐
     private boolean recommend;
+
+
     private Long createTime;
     private Long updateTime;
 
@@ -57,9 +71,10 @@ public class BlogBean {
     @ManyToOne
     private UserBean userBean;
 
+
     @OneToMany(mappedBy = "blogBean")
     private List<CommentBean> commentBeans = new ArrayList<>();
 
-
-
+    public BlogBean() {
+    }
 }

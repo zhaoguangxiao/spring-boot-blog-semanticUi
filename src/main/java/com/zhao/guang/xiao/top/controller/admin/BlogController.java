@@ -4,6 +4,7 @@ import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TagBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
+import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
@@ -12,11 +13,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -36,6 +40,10 @@ public class BlogController {
     @Autowired
     private BlogCategoryService blogCategoryService;
 
+
+    @Autowired
+    private BlogLabelService blogLabelService;
+
     @GetMapping("/blogs")
     public String list(@PageableDefault(size = 10, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                        BlogBean blogBean,
@@ -49,7 +57,14 @@ public class BlogController {
     }
 
     @GetMapping("/blog")
-    public String form() {
+    public String form(Model model) {
+        //查询全部分类
+        List<TypeBean> categorys = blogCategoryService.listBlogCategorys();
+        //查询全部标签
+        List<TagBean> tagBeans = blogLabelService.listTagBeans();
+        model.addAttribute("categorys", categorys);
+        model.addAttribute("tagBeans", tagBeans);
+        model.addAttribute("blogBean", new BlogBean());
         return "admin/article/form";
     }
 
@@ -69,7 +84,14 @@ public class BlogController {
     @PostMapping("blog")
     public String saveBlogBean(@Valid BlogBean blogBean,
                                BindingResult bindingResult,
+                               HttpServletRequest request,
                                Model model) {
+        UserBean user = (UserBean) request.getSession().getAttribute("user");
+        if (null != user) {
+            throw new NotFountException("当前尚未登录,无法添加博客");
+        }
+        blogBean.setUserBean(user);
+        blogService.saveBlogBean(blogBean);
         return "redirect:/admin/blogs";
     }
 

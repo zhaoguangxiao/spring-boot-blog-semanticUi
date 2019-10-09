@@ -66,6 +66,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     @Transactional
     public BlogBean saveBlogBean(BlogBean blogBean) {
+        //设置创建时间
+        blogBean.setCreateTime(System.currentTimeMillis());
+        //设置更新时间
+        blogBean.setUpdateTime(System.currentTimeMillis());
         return blogBeanRepository.save(blogBean);
     }
 
