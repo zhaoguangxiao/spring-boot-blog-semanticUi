@@ -37,7 +37,7 @@
                 <td th:text="${list.name}"></td>
                 <td>
                     <a href="#" th:href="@{/admin/label/}+${list.id}" class="ui mini teal basic button">编辑</a>
-                    <a href="#" id="btnDel" th:attr="del_url=@{/admin/label/}+${list.id}" onclick="deleteBtn()" class="ui mini red basic button">删除</a>
+                    <a href="#" th:id="'btnDel'+${list.id}" th:attr="data-url=@{/admin/label/}+${list.id}" onclick="deleteBtn(this)" class="ui mini red basic button">删除</a>
                     <form id="deleteFormId" method="post">
                         <input type="hidden" name="_method" value="delete">
                     </form>
@@ -81,8 +81,8 @@
     $('.ui.dropdown').dropdown();
 
 
-    function deleteBtn() {
-        $("#deleteFormId").attr("action", $("#btnDel").attr("del_url")).submit();
+    function deleteBtn(obj) {
+        $("#deleteFormId").attr("action",$(obj).data("url")).submit();
     }
 
 

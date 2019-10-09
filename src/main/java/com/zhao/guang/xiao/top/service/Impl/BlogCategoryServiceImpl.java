@@ -9,6 +9,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author Administrator
  * @version 1.0
@@ -55,5 +57,10 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
     @Override
     public TypeBean getTypeBeanByName(String name) {
         return blogCategoryRepository.findByName(name);
+    }
+
+    @Override
+    public List<TypeBean> listBlogCategorys() {
+        return blogCategoryRepository.findAll();
     }
 }

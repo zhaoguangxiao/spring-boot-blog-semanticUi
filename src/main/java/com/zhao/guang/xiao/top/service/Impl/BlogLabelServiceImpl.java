@@ -9,6 +9,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author Administrator
  * @version 1.0
@@ -53,5 +55,10 @@ public class BlogLabelServiceImpl implements BlogLabelService {
     @Override
     public TagBean getTagBeanByName(String name) {
         return blogLabelRepository.findByName(name);
+    }
+
+    @Override
+    public List<TagBean> listTagBeans() {
+        return blogLabelRepository.findAll();
     }
 }
