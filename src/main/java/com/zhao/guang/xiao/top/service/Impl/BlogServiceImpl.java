@@ -3,6 +3,7 @@ package com.zhao.guang.xiao.top.service.Impl;
 import com.zhao.guang.xiao.top.dao.BlogBeanRepository;
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
+import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 
 import static org.apache.commons.lang.StringUtils.isNotBlank;

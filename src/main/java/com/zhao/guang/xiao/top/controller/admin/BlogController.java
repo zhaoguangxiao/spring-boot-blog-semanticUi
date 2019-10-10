@@ -8,17 +8,20 @@ import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
+import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -87,10 +90,9 @@ public class BlogController {
                                HttpServletRequest request,
                                Model model) {
         UserBean user = (UserBean) request.getSession().getAttribute("user");
-        if (null != user) {
+        if (null == user) {
             throw new NotFountException("当前尚未登录,无法添加博客");
         }
-        blogBean.setUserBean(user);
         blogService.saveBlogBean(blogBean);
         return "redirect:/admin/blogs";
     }
@@ -100,7 +102,7 @@ public class BlogController {
     public String updateBlogBean(@Valid BlogBean blogBean,
                                  BindingResult bindingResult,
                                  Model model) {
-
+        blogService.updateBlogBean(blogBean);
         return "redirect:/admin/blogs";
     }
 
