@@ -95,6 +95,9 @@ public class BlogController {
                                BindingResult bindingResult,
                                HttpServletRequest request,
                                Model model) {
+        if (bindingResult.hasErrors()){
+            return "admin/article/form";
+        }
         UserBean user = (UserBean) request.getSession().getAttribute("user");
         if (null == user) {
             throw new NotFountException("当前尚未登录,无法添加博客");

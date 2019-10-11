@@ -7,6 +7,10 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,13 +40,18 @@ public class BlogBean {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "文章标题不能为空")
     private String title;
 
     @Lob
     @Basic(fetch = FetchType.LAZY)
+    @NotBlank(message = "文章内容不能为空")
     private String content;
 
-    //首图
+    /**
+     * 首图
+     */
+    @NotBlank(message = "文章首图不能为空")
     private String firstPicture;
 
 
@@ -63,9 +72,13 @@ public class BlogBean {
     private Long updateTime;
 
 
+    @Valid
     @ManyToOne
+    @NotNull(message = "文章分类不能为空")
     private TypeBean typeBean;
 
+    @Valid
+    @NotEmpty(message = "文章标签不能为空")
     @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<TagBean> tagBeans = new ArrayList<>();
 
