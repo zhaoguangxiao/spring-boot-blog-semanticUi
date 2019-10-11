@@ -60,23 +60,21 @@
                 <th>标题</th>
                 <th>分类</th>
                 <th>推荐</th>
+                <th>昵称</th>
                 <th>创建时间</th>
-                <th>更新时间</th>
                 <th>操作</th>
             </tr>
             </thead>
             <tbody>
             <tr class="center aligned" th:each="each : ${blogBeans}">
-                <td>
-                    <div class="ui ribbon label" th:text="${each.title}"></div>
-                </td>
+                <td th:text="${each.title}"></td>
                 <td th:text="${each.typeBean.name}"></td>
                 <td th:text="${each.recommend} ? '是' : '否'"></td>
-                <td th:text="${each.createTime}"></td>
-                <td th:text="${each.updateTime}"></td>
+                <td th:text="${each.userBean.nickName}"></td>
+                <td th:text="${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}"></td>
                 <td>
                     <a href="#" th:href="@{/admin/blog/}+${each.id}" class="ui mini teal basic button">编辑</a>
-                    <a href="#" id="btnDel" th:attr="del_url=@{/admin/blog/}+${each.id}" onclick="deleteBtn()"
+                    <a href="#" id="btnDel" th:attr="data-url=@{/admin/blog/}+${each.id}" onclick="deleteBtn(this)"
                        class="ui mini red basic button">删除</a>
                     <form id="deleteFormId" method="post">
                         <input type="hidden" name="_method" value="delete">
@@ -92,7 +90,7 @@
                         新增
                     </a>
                 </th>
-                <th colspan="4">
+                <th colspan="5">
                     <div class="ui right floated pagination menu" th:if="${blogBeans.totalPages>1}">
                         <a th:unless="${blogBeans.first}"
                            class="icon item"
@@ -126,8 +124,8 @@
 
     $('.ui.dropdown').dropdown();
 
-    function deleteBtn() {
-        $("#deleteFormId").attr("action", $("#btnDel").attr("del_url")).submit();
+    function deleteBtn(obj) {
+        $("#deleteFormId").attr("action",$(obj).data("url")).submit();
     }
 
     function page(obj) {

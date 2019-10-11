@@ -30,18 +30,23 @@
                 <div class="ui error message"></div>
             </div>
 
-            <div class="field">
+            <input type="hidden" name="id" th:value="*{id}">
+
+            <input type="hidden" name="createTime" th:value="*{createTime}">
+
+
+          <div class="field">
                 <div class="ui left labeled input">
                     <div class="ui selection dropdown">
                         <div class="default header basic">原创</div>
                     </div>
-                    <input type="text" placeholder="标题" name="title">
+                    <input type="text" placeholder="标题" name="title" th:value="*{title}">
                 </div>
             </div>
 
             <div class="field">
                 <div id="test-markdown-view" style="z-index:1 !important;">
-                    <textarea style="display:none;" name="content" placeholder="内容"></textarea>
+                    <textarea style="display:none;" name="content" placeholder="内容" th:text="*{content}"></textarea>
                 </div>
             </div>
 
@@ -50,7 +55,7 @@
                     <div class="ui left labeled action input">
                         <label class="ui compact teal basic label">分类</label>
                         <div class="ui fluid selection dropdown">
-                            <input type="hidden" name="typeBean">
+                            <input type="hidden" name="typeBean" th:value="*{typeBean.getId()}">
                             <i class="dropdown icon"></i>
                             <div class="default text">分类</div>
                             <div class="menu">
@@ -63,7 +68,7 @@
                     <div class="ui  left labeled action input">
                         <label class="ui compact teal basic label">标签</label>
                         <div class="ui fluid multiple search selection dropdown">
-                            <input type="hidden" name="tagBeans">
+                            <input type="hidden" name="tagBeans" value="6" th:value="${blogBean.formatTags()}">
                             <i class="dropdown icon"></i>
                             <div class="default text">标签</div>
                             <div class="menu">
@@ -77,7 +82,7 @@
             <div class="field">
                 <div class="ui left labeled action input">
                     <label class="ui compact teal basic label">首图</label>
-                    <input type="text" placeholder="首图地址" name="firstPicture">
+                    <input type="text" placeholder="首图地址" name="firstPicture" th:value="*{firstPicture}">
                 </div>
             </div>
 
@@ -86,25 +91,26 @@
             <div class="inline fields">
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" tabindex="0" name="recommend" id="recommend" class="hidden">
+                        <input type="checkbox" th:checked="*{recommend}" tabindex="0" name="recommend" id="recommend" class="hidden">
                         <label for="recommend">推荐</label>
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" name="shareStatement" tabindex="0" id="reprint" class="hidden">
+                        <input type="checkbox" th:checked="*{shareStatement}" name="shareStatement" tabindex="0" id="reprint" class="hidden">
                         <label for="reprint">转载声明</label>
+
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" tabindex="0" name="appreciation" id="appreciate" class="hidden">
+                        <input type="checkbox"  th:checked="*{appreciation}" tabindex="0" name="appreciation" id="appreciate" class="hidden">
                         <label for="appreciate">赞赏</label>
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" tabindex="0" name="commentOpen" id="command" class="hidden">
+                        <input type="checkbox"  th:checked="*{commentOpen}" tabindex="0" name="commentOpen" id="command" class="hidden">
                         <label for="command">评论</label>
                     </div>
                 </div>
@@ -144,7 +150,7 @@
     });
 
 
-
+    //下拉框
     $('.ui.dropdown').dropdown();
 
     // 表单验证

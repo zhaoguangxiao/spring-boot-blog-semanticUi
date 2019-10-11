@@ -3,6 +3,7 @@ package com.zhao.guang.xiao.top.po;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.apache.commons.collections4.CollectionUtils;
 import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
@@ -77,4 +78,19 @@ public class BlogBean {
 
     public BlogBean() {
     }
+
+
+    public String formatTags() {
+        if (CollectionUtils.isNotEmpty(tagBeans)) {
+            StringBuilder sb = new StringBuilder(tagBeans.size());
+            tagBeans.forEach(each -> {
+                sb.append(each.getId());
+                sb.append(",");
+            });
+            //截取最后一个逗号
+            return sb.toString().substring(0, sb.length() - 1);
+        }
+        return null;
+    }
+
 }

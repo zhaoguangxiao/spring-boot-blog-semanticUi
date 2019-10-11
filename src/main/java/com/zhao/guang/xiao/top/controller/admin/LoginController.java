@@ -41,7 +41,7 @@ public class LoginController {
         UserBean userBean = userService.checkUser(userName, password);
         if (null != userBean){
             session.setAttribute("user",userBean);
-            return "admin/index";
+            return "redirect:/admin/index";
         }else {
             attributes.addFlashAttribute("message","用户名或密码不正确");
             return "redirect:/admin";

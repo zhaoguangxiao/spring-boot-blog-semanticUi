@@ -68,16 +68,15 @@ public class BlogServiceImpl implements BlogService {
     @Override
     @Transactional
     public BlogBean saveBlogBean(BlogBean blogBean) {
-        //设置创建时间
-        blogBean.setCreateTime(System.currentTimeMillis());
-        //设置更新时间
-        blogBean.setUpdateTime(System.currentTimeMillis());
-        return blogBeanRepository.save(blogBean);
-    }
-
-    @Override
-    @Transactional
-    public BlogBean updateBlogBean(BlogBean blogBean) {
+        if (null == blogBean.getId()){
+            //设置创建时间
+            blogBean.setCreateTime(System.currentTimeMillis());
+            //设置更新时间
+            blogBean.setUpdateTime(System.currentTimeMillis());
+        }else {
+            //设置更新时间
+            blogBean.setUpdateTime(System.currentTimeMillis());
+        }
         return blogBeanRepository.save(blogBean);
     }
 

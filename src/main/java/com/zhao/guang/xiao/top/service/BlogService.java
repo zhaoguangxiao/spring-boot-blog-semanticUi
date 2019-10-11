@@ -4,8 +4,6 @@ import com.zhao.guang.xiao.top.po.BlogBean;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import javax.servlet.http.HttpServletRequest;
-
 /**
  * @author Administrator
  * @version 1.0
@@ -20,7 +18,6 @@ public interface BlogService {
 
     BlogBean saveBlogBean(BlogBean blogBean);
 
-    BlogBean updateBlogBean(BlogBean blogBean);
 
     void removeBlogBean(Long id);
 

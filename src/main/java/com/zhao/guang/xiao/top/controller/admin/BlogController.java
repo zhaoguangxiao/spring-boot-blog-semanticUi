@@ -79,6 +79,12 @@ public class BlogController {
         if (null == blogBean) {
             throw new NotFountException("当前博客文章不存在无法进行编辑");
         }
+        //查询全部分类
+        List<TypeBean> categorys = blogCategoryService.listBlogCategorys();
+        //查询全部标签
+        List<TagBean> tagBeans = blogLabelService.listTagBeans();
+        model.addAttribute("categorys", categorys);
+        model.addAttribute("tagBeans", tagBeans);
         model.addAttribute("blogBean", blogBean);
         return "admin/article/form";
     }
@@ -93,18 +99,11 @@ public class BlogController {
         if (null == user) {
             throw new NotFountException("当前尚未登录,无法添加博客");
         }
+        blogBean.setUserBean(user);
         blogService.saveBlogBean(blogBean);
         return "redirect:/admin/blogs";
     }
 
-
-    @PutMapping("blog")
-    public String updateBlogBean(@Valid BlogBean blogBean,
-                                 BindingResult bindingResult,
-                                 Model model) {
-        blogService.updateBlogBean(blogBean);
-        return "redirect:/admin/blogs";
-    }
 
 
     @DeleteMapping("blog/{id}")
