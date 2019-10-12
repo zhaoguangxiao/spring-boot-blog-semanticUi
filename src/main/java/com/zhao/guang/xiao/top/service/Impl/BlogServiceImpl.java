@@ -19,6 +19,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.commons.lang.StringUtils.isNotBlank;
 
@@ -84,5 +85,11 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     public void removeBlogBean(Long id) {
         blogBeanRepository.deleteById(id);
+    }
+
+
+    @Override
+    public List<BlogBean> listBlogBean() {
+        return blogBeanRepository.findAll();
     }
 }

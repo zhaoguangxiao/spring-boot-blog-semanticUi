@@ -1,12 +1,10 @@
 package com.zhao.guang.xiao.top.po;
 
-import com.zhao.guang.xiao.top.validate.BlogCategoryNameExist;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,12 +13,10 @@ import java.util.List;
  * @version 1.0
  * @date 2019/10/6 10:58
  */
-@Setter
-@Getter
+@Data
 @Entity
-@ToString
 @Table(name = "t_type")
-public class TypeBean {
+public class TypeBean implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,6 +29,12 @@ public class TypeBean {
     private List<BlogBean> blogBeanList = new ArrayList<>();
 
 
-    public TypeBean() {
+    @Override
+    public String toString() {
+        return "TypeBean{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", blogBeanList=" + blogBeanList +
+                '}';
     }
 }

@@ -7,6 +7,7 @@ import lombok.ToString;
 import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,12 +16,10 @@ import java.util.List;
  * @version 1.0
  * @date 2019/10/6 11:04
  */
-@Setter
-@Getter
+@Data
 @Entity
-@ToString
 @Table(name = "t_user")
-public class UserBean {
+public class UserBean implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

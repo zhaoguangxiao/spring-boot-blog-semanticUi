@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7425a2e-e488-4c85-833a-3cbb2519a351" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/BlogCategoryServiceTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/BlogServiceTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TagBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TagBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,35 +54,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="97" column="25" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="25" />
+            <state relative-caret-position="-458">
+              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-              <folding>
-                <element signature="method#BlogBean#0;class#BlogBean#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1457">
-              <caret line="231" column="13" lean-forward="true" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -118,6 +106,8 @@
       <find>blogBean.tagBeans</find>
       <find>TypeBean</find>
       <find>tagBeans</find>
+      <find>typeBean</find>
+      <find>BlogBean</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,11 +116,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/error/404.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/error/500.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error/error.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/publish.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" />
@@ -143,15 +129,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogCategoryRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/validate/BlogCategoryNameExist.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/aspect/LogAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/SpringUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/validate/Impl/BlogCategoryNameExistValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogCategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/type/form.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TagBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogLabelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/label/form.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogLabelController.java" />
@@ -166,16 +149,23 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/SpringBootBlogApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/BlogServiceTestCase.java" />
         <option value="$PROJECT_DIR$/log/blog-dev.log" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/BlogServiceTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TagBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/BlogCategoryServiceTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" />
       </list>
     </option>
@@ -204,10 +194,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="41" />
-    <option name="y" value="227" />
-    <option name="width" value="1585" />
-    <option name="height" value="759" />
+    <option name="x" value="11" />
+    <option name="y" value="270" />
+    <option name="width" value="1936" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -215,19 +205,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -375,25 +358,98 @@
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="type" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+              <item name="guang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+              <item name="guang" type="462c0819:PsiDirectoryNode" />
+              <item name="xiao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+              <item name="guang" type="462c0819:PsiDirectoryNode" />
+              <item name="xiao" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+              <item name="guang" type="462c0819:PsiDirectoryNode" />
+              <item name="xiao" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+              <item name="guang" type="462c0819:PsiDirectoryNode" />
+              <item name="xiao" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,7 +461,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-forum-001" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -444,28 +500,82 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringBootBlogApplication">
-    <configuration name="BlogBean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.po.BlogBean" />
+    <configuration name="BlogCategoryServiceTestCase.getOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-blog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhao.guang.xiao.top.po.*" />
+          <option name="PATTERN" value="com.zhao.guang.xiao.top.springbootblog.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.zhao.guang.xiao.top.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.springbootblog.service.BlogCategoryServiceTestCase" />
+      <option name="METHOD_NAME" value="getOne" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.controller.admin.LoginController" />
+    <configuration name="BlogCategoryServiceTestCase.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-blog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhao.guang.xiao.top.controller.admin.*" />
+          <option name="PATTERN" value="com.zhao.guang.xiao.top.springbootblog.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.zhao.guang.xiao.top.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.springbootblog.service.BlogCategoryServiceTestCase" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogServiceTestCase.assertNotNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhao.guang.xiao.top.springbootblog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhao.guang.xiao.top.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase" />
+      <option name="METHOD_NAME" value="assertNotNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogServiceTestCase.findBlogBeanByKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhao.guang.xiao.top.springbootblog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhao.guang.xiao.top.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase" />
+      <option name="METHOD_NAME" value="findBlogBeanByKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogServiceTestCase.listBlogBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhao.guang.xiao.top.springbootblog.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhao.guang.xiao.top.springbootblog.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase" />
+      <option name="METHOD_NAME" value="listBlogBean" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -479,8 +589,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BlogBean" />
-        <item itemvalue="Application.LoginController" />
+        <item itemvalue="JUnit.BlogServiceTestCase.listBlogBean" />
+        <item itemvalue="JUnit.BlogCategoryServiceTestCase.getOne" />
+        <item itemvalue="JUnit.BlogCategoryServiceTestCase.test" />
+        <item itemvalue="JUnit.BlogServiceTestCase.findBlogBeanByKey" />
+        <item itemvalue="JUnit.BlogServiceTestCase.assertNotNull" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +627,9 @@
       <workItem from="1570677848842" duration="817000" />
       <workItem from="1570679564445" duration="14562000" />
       <workItem from="1570705483396" duration="599000" />
-      <workItem from="1570756557842" duration="7890000" />
+      <workItem from="1570756557842" duration="14584000" />
+      <workItem from="1570842880470" duration="6072000" />
+      <workItem from="1570848999751" duration="3300000" />
     </task>
     <task id="LOCAL-00001" summary="使用semanticUi创建自己的博客网站 项目结构搭建">
       <created>1569745900227</created>
@@ -621,11 +736,50 @@
       <option name="project" value="LOCAL" />
       <updated>1570760495412</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="blog 添加前端+后台验证">
+      <created>1570764998648</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1570764998648</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BlogServiceTestCase_findBlogBeanByKey - 2019.10.12 at 10h 29m 32s.xml">
+      <configuration name="BlogServiceTestCase.findBlogBeanByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogServiceTestCase_listBlogBean - 2019.10.12 at 10h 31m 16s.xml">
+      <configuration name="BlogServiceTestCase.listBlogBean" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogServiceTestCase_listBlogBean - 2019.10.12 at 10h 32m 42s.xml">
+      <configuration name="BlogServiceTestCase.listBlogBean" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogServiceTestCase_listBlogBean - 2019.10.12 at 10h 37m 32s.xml">
+      <configuration name="BlogServiceTestCase.listBlogBean" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogCategoryServiceTestCase_getOne - 2019.10.12 at 10h 44m 32s.xml">
+      <configuration name="BlogCategoryServiceTestCase.getOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogCategoryServiceTestCase_getOne - 2019.10.12 at 10h 47m 41s.xml">
+      <configuration name="BlogCategoryServiceTestCase.getOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogCategoryServiceTestCase_getOne - 2019.10.12 at 10h 52m 34s.xml">
+      <configuration name="BlogCategoryServiceTestCase.getOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogCategoryServiceTestCase_test - 2019.10.12 at 11h 00m 50s.xml">
+      <configuration name="BlogCategoryServiceTestCase.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogCategoryServiceTestCase_getOne - 2019.10.12 at 11h 14m 02s.xml">
+      <configuration name="BlogCategoryServiceTestCase.getOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlogServiceTestCase_listBlogBean - 2019.10.12 at 11h 26m 35s.xml">
+      <configuration name="BlogServiceTestCase.listBlogBean" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147144000" />
+    <option name="totallyTimeSpent" value="163210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -639,7 +793,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.28969958" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498366" visible="true" weight="0.31545064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -649,8 +803,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2963374" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49892703" weight="0.37513873" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3629301" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49892703" weight="0.25416204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
@@ -661,7 +815,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.42508325" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.50499445" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -768,17 +922,43 @@
     <MESSAGE value="登录bug优化" />
     <MESSAGE value="添加博客  获取session中的用户 bug解决" />
     <MESSAGE value="blog修改 添加主页二级标签" />
-    <option name="LAST_COMMIT_MESSAGE" value="blog修改 添加主页二级标签" />
+    <MESSAGE value="blog 添加前端+后台验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog 添加前端+后台验证" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>bindingResult.getAllErrors()</expression-string>
+        <expression-string>blogService.ListBlogBean(pageable, blogBean)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>bindingResult</expression-string>
+        <expression-string>blogBeans</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>blogService.listBlogBean()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>blogService.</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>blogService</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>blogService.getBlogBean(2L)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>blogService.getBlogBean(id)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -788,104 +968,13 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>user</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>blogBeanRepository.save(blogBean)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getSession().getAttribute(&quot;user&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(UserBean)session.getAttribute(&quot;user&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(UserBean)session.getAttribute(&quot;user&quot;).getClass()</expression-string>
+        <expression-string>bindingResult.getAllErrors()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/SpringUtils.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotBlank.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar!/org/hibernate/validator/internal/engine/constraintvalidation/ConstraintTree.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-jpa/2.1.10.RELEASE/spring-data-jpa-2.1.10.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="317" column="27" selection-start-line="317" selection-start-column="27" selection-end-line="317" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/validate/BlogCategoryNameExist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/validate/Impl/BlogCategoryNameExistValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/validation/AbstractErrors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/UserBeanRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/2.1.10.RELEASE/spring-data-commons-2.1.10.RELEASE.jar!/org/springframework/data/domain/Pageable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -992,16 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="9928" selection-start-line="16" selection-start-column="9928" selection-end-line="16" selection-end-column="9928" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1020,13 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1086,26 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/exception/NotFountException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -1125,16 +1177,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3280#3281#0" expanded="true" />
             <element signature="e#3353#3354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="method#UserBean#0;class#UserBean#0" />
           </folding>
         </state>
       </provider>
@@ -1185,27 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TypeBean#0;class#TypeBean#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TagBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -1218,9 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/blog-dev.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotEmpty.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -1228,10 +1246,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="97" column="25" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="9928" selection-start-line="16" selection-start-column="9928" selection-end-line="16" selection-end-column="9928" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/blog-dev.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+            <element signature="e#3021#3022#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3130#3131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TagBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/BlogCategoryServiceTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="130" column="29" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
+          <folding>
+            <element signature="e#4161#4162#0" expanded="true" />
+            <element signature="e#4211#4212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/BlogServiceTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1240,18 +1393,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-          <folding>
-            <element signature="method#BlogBean#0;class#BlogBean#0" />
-          </folding>
+        <state relative-caret-position="244">
+          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1457">
-          <caret line="231" column="13" lean-forward="true" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
+        <state relative-caret-position="-2397">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

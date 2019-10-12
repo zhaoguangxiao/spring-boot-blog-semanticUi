@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,12 +15,10 @@ import java.util.List;
  * @version 1.0
  * @date 2019/10/6 11:01
  */
-@Setter
-@Getter
+@Data
 @Entity
-@ToString
 @Table(name = "t_comment")
-public class CommentBean {
+public class CommentBean implements Serializable {
 
 
     @Id

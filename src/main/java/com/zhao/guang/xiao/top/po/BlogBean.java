@@ -1,16 +1,14 @@
 package com.zhao.guang.xiao.top.po;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 import org.apache.commons.collections4.CollectionUtils;
-import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +17,10 @@ import java.util.List;
  * @version 1.0
  * @date 2019/10/6 10:45
  */
-@Setter
-@Getter
+@Data
 @Entity
-@ToString
 @Table(name = "t_blog")
-public class BlogBean {
+public class BlogBean implements Serializable {
     /**
      * 草稿
      */
@@ -72,13 +68,11 @@ public class BlogBean {
     private Long updateTime;
 
 
-    @Valid
+
     @ManyToOne
-    @NotNull(message = "文章分类不能为空")
     private TypeBean typeBean;
 
-    @Valid
-    @NotEmpty(message = "文章标签不能为空")
+
     @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<TagBean> tagBeans = new ArrayList<>();
 

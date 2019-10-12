@@ -8,22 +8,17 @@ import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
-import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -79,14 +74,18 @@ public class BlogController {
         if (null == blogBean) {
             throw new NotFountException("当前博客文章不存在无法进行编辑");
         }
+        setBlogBeanCategoryAndLabel(model);
+        model.addAttribute("blogBean", blogBean);
+        return "admin/article/form";
+    }
+
+    private void setBlogBeanCategoryAndLabel(Model model) {
         //查询全部分类
         List<TypeBean> categorys = blogCategoryService.listBlogCategorys();
         //查询全部标签
         List<TagBean> tagBeans = blogLabelService.listTagBeans();
         model.addAttribute("categorys", categorys);
         model.addAttribute("tagBeans", tagBeans);
-        model.addAttribute("blogBean", blogBean);
-        return "admin/article/form";
     }
 
 
@@ -95,7 +94,8 @@ public class BlogController {
                                BindingResult bindingResult,
                                HttpServletRequest request,
                                Model model) {
-        if (bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
+            setBlogBeanCategoryAndLabel(model);
             return "admin/article/form";
         }
         UserBean user = (UserBean) request.getSession().getAttribute("user");
@@ -106,7 +106,6 @@ public class BlogController {
         blogService.saveBlogBean(blogBean);
         return "redirect:/admin/blogs";
     }
-
 
 
     @DeleteMapping("blog/{id}")

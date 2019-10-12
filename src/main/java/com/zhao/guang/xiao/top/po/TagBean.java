@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,12 +17,10 @@ import java.util.List;
  * @date 2019/10/6 11:00
  */
 
-@Setter
-@Getter
+@Data
 @Entity
-@ToString
 @Table(name = "t_tag")
-public class TagBean {
+public class TagBean implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
