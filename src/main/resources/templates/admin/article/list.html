@@ -13,8 +13,8 @@
 <!--二级导航-->
 <div class="ui attached pointing menu">
     <div class="ui container">
-        <a href="#" target="_blank" class="item">发布</a>
-        <a href="#" target="_blank" class="active teal item">列表</a>
+        <a th:href="@{/admin/blog}" target="_blank" class="item">发布</a>
+        <a th:href="@{/admin/blogs}" target="_blank" class="active teal item">列表</a>
     </div>
 </div>
 
@@ -23,92 +23,96 @@
 <div class="m-container-small m-padded-tb-big">
     <div class="container">
         <!--搜索条件-->
-        <form action="#" class="ui secondary segment form">
+        <div class="ui secondary segment form">
 
             <input type="hidden" name="page">
 
             <div class=" inline fields">
-                <div class="field"><input type="text" name="" placeholder="标题"></div>
+                <div class="field"><input type="text" name="title" placeholder="标题"></div>
                 <div class="field">
                     <div class="ui selection dropdown">
-                        <input type="hidden" name="gender">
+                        <input type="hidden" name="typeBean">
                         <i class="dropdown icon"></i>
-                        <div class="default text">标签</div>
+                        <div class="default text">分类</div>
                         <div class="menu">
-                            <div class="item" th:each="each : ${categorys}" th:data-value="${each.id}">[[${each.name}]]</div>
+                            <div class="item" th:each="each : ${categorys}" th:data-value="${each.id}">
+                                [[${each.name}]]
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" name="" id="recommend">
+                        <input type="checkbox" name="recommend" id="recommend">
                         <label for="recommend">推荐</label>
                     </div>
                 </div>
                 <div class="right floated field">
-                    <button class="ui teal basic button" type="submit">
-                        <i class="search icon"></i>
-                        提交
+                    <button class="ui teal basic button" type="button" id="search-btn">
+                        <i class="search icon"></i>提交
                     </button>
                 </div>
             </div>
-        </form>
-        <!--表格列表-->
-        <table class="ui compact teal table">
-            <thead>
-            <tr>
-                <th>标题</th>
-                <th>分类</th>
-                <th>推荐</th>
-                <th>昵称</th>
-                <th>创建时间</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="center aligned" th:each="each : ${blogBeans}">
-                <td th:text="${each.title}"></td>
-                <td th:text="${each.typeBean.name}"></td>
-                <td th:text="${each.recommend} ? '是' : '否'"></td>
-                <td th:text="${each.userBean.nickName}"></td>
-                <td th:text="${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}"></td>
-                <td>
-                    <a href="#" th:href="@{/admin/blog/}+${each.id}" class="ui mini teal basic button">编辑</a>
-                    <a href="#" id="btnDel" th:attr="data-url=@{/admin/blog/}+${each.id}" onclick="deleteBtn(this)"
-                       class="ui mini red basic button">删除</a>
-                    <form id="deleteFormId" method="post">
-                        <input type="hidden" name="_method" value="delete">
-                    </form>
-                </td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th colspan="2">
-                    <a th:href="@{/admin/blog}" class="ui mini teal basic button">
-                        <i class="plus icon"></i>
-                        新增
-                    </a>
-                </th>
-                <th colspan="5">
-                    <div class="ui right floated pagination menu" th:if="${blogBeans.totalPages>1}">
-                        <a th:unless="${blogBeans.first}"
-                           class="icon item"
-                           onclick="page(this)"
-                           th:attr="data-page=${blogBeans.number}-1">
-                            <i class="left chevron icon"></i>
+        </div>
+
+
+            <!--表格列表-->
+            <table class="ui compact teal table" id="load_list" th:fragment="list_article">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th>分类</th>
+                    <th>推荐</th>
+                    <th>昵称</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr  class="center aligned" th:each="each : ${blogBeans}" >
+                    <td th:text="${each.title}"></td>
+                    <td th:text="${each.typeBean.name}"></td>
+                    <td th:text="${each.recommend} ? '是' : '否'"></td>
+                    <td th:text="${each.userBean.nickName}"></td>
+                    <td th:text="${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}"></td>
+                    <td>
+                        <a href="#" th:href="@{/admin/blog/}+${each.id}" class="ui mini teal basic button">编辑</a>
+                        <a href="#" id="btnDel" th:attr="data-url=@{/admin/blog/}+${each.id}" onclick="deleteBtn(this)"
+                           class="ui mini red basic button">删除</a>
+                        <form id="deleteFormId" method="post">
+                            <input type="hidden" name="_method" value="delete">
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="2">
+                        <a th:href="@{/admin/blog}" class="ui mini teal basic button">
+                            <i class="plus icon"></i>
+                            新增
                         </a>
-                        <a th:unless="${blogBeans.last}"
-                           class="icon item"
-                           onclick="page(this)"
-                           th:attr="data-page=${blogBeans.number}+1">
-                            <i class="right chevron icon"></i>
-                        </a>
-                    </div>
-                </th>
-            </tr>
-            </tfoot>
-        </table>
+                    </th>
+                    <th colspan="5">
+                        <div class="ui right floated pagination menu" th:if="${blogBeans.totalPages>1}">
+                            <a th:unless="${blogBeans.first}"
+                               class="icon item"
+                               onclick="click_page(this)"
+                               th:attr="data-page=${blogBeans.number}-1">
+                                <i class="left chevron icon"></i>
+                            </a>
+                            <a th:unless="${blogBeans.last}"
+                               class="icon item"
+                               onclick="click_page(this)"
+                               th:attr="data-page=${blogBeans.number}+1">
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+
     </div>
 </div>
 
@@ -125,13 +129,36 @@
     $('.ui.dropdown').dropdown();
 
     function deleteBtn(obj) {
-        $("#deleteFormId").attr("action",$(obj).data("url")).submit();
+        $("#deleteFormId").attr("action", $(obj).data("url")).submit();
     }
 
-    function page(obj) {
+
+    //点击上一页下一页事件
+    function click_page(obj) {
+        console.log("点击了上一页下一页");
         $("[name= 'page']").val($(obj).data("page"));
+        load_blog_list();
     }
 
+
+    // 搜索点击事件
+    $("#search-btn").click(function () {
+        console.log("search-btn");
+        load_blog_list();
+    });
+
+
+    //刷新list集合
+    function load_blog_list() {
+        $("#load_list").load("/admin/search", {
+            page : $("[name='page']").val(),
+            title : $("[name='title']").val(),
+            typeBean : $("[name='typeBean']").val(),
+            recommend :$('#recommend').prop('checked'),
+
+        });
+    }
+//
 </script>
 </body>
 </html>

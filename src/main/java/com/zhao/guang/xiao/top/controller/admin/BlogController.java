@@ -1,5 +1,6 @@
 package com.zhao.guang.xiao.top.controller.admin;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TagBean;
@@ -8,6 +9,7 @@ import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,6 +29,7 @@ import java.util.List;
  * @version 1.0
  * @date 2019/10/7 10:02
  */
+@Slf4j
 @Controller
 @RequestMapping("/admin")
 public class BlogController {
@@ -43,16 +46,35 @@ public class BlogController {
     private BlogLabelService blogLabelService;
 
     @GetMapping("/blogs")
-    public String list(@PageableDefault(size = 10, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String list(@PageableDefault(size = 2, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                        BlogBean blogBean,
                        Model model) {
         Page<BlogBean> blogBeans = blogService.ListBlogBean(pageable, blogBean);
         //文章标签列表
         List<TypeBean> categorys = blogCategoryService.listBlogCategorys();
+        categorys.add(null);
         model.addAttribute("categorys", categorys);
         model.addAttribute("blogBeans", blogBeans);
         return "admin/article/list";
     }
+
+
+    @PostMapping("search")
+    public String search(@PageableDefault(size = 2, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                         String title,
+                         Boolean recommend,
+                         TypeBean typeBean,
+                         Model model) {
+        BlogBean blogBean = new BlogBean();
+        blogBean.setTypeBean(typeBean);
+        blogBean.setTitle(title);
+        blogBean.setRecommend(recommend);
+        log.info("{}", blogBean);
+        Page<BlogBean> blogBeans = blogService.ListBlogBean(pageable, blogBean);
+        model.addAttribute("blogBeans", blogBeans);
+        return "admin/article/list::list_article";
+    }
+
 
     @GetMapping("/blog")
     public String form(Model model) {

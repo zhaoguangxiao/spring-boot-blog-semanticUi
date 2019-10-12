@@ -16,8 +16,8 @@
 <!--二级导航-->
 <div class="ui attached pointing menu">
     <div class="ui container">
-        <a href="#" target="_blank" class="active teal item">发布</a>
-        <a href="#" target="_blank" class="item">列表</a>
+        <a th:href="@{/admin/blog}" target="_blank" class="item">发布</a>
+        <a  th:href="@{/admin/blogs}" target="_blank" class="active teal item">列表</a>
     </div>
 </div>
 
@@ -174,56 +174,56 @@
     $('.ui.dropdown').dropdown();
 
     // 表单验证
-    // $('.ui.form')
-    //     .form({
-    //         fields: {
-    //             title: {
-    //                 identifier: 'title',
-    //                 rules: [
-    //                     {
-    //                         type: 'empty',
-    //                         prompt: '文章标题不能为空'
-    //                     }
-    //                 ]
-    //             },
-    //             content: {
-    //                 identifier: 'content',
-    //                 rules: [
-    //                     {
-    //                         type: 'empty',
-    //                         prompt: '文章内容不能为空'
-    //                     }
-    //                 ]
-    //             },
-    //             typeBean: {
-    //                 identifier: 'typeBean',
-    //                 rules: [
-    //                     {
-    //                         type: 'empty',
-    //                         prompt: '文章分类不能为空'
-    //                     }
-    //                 ]
-    //             },
-    //             tagBeans: {
-    //                 identifier: 'tagBeans',
-    //                 rules: [
-    //                     {
-    //                         type: 'empty',
-    //                         prompt: '文章标签不能为空'
-    //                     }
-    //                 ]
-    //             },
-    //             firstPicture: {
-    //                 identifier: 'firstPicture',
-    //                 rules: [
-    //                     {
-    //                         type: 'empty',
-    //                         prompt: '文章首图不能为空'
-    //                     }
-    //                 ]
-    //             }
-    //         }
-    //     });
+    $('.ui.form')
+        .form({
+            fields: {
+                title: {
+                    identifier: 'title',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '文章标题不能为空'
+                        }
+                    ]
+                },
+                content: {
+                    identifier: 'content',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '文章内容不能为空'
+                        }
+                    ]
+                },
+                typeBean: {
+                    identifier: 'typeBean',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '文章分类不能为空'
+                        }
+                    ]
+                },
+                tagBeans: {
+                    identifier: 'tagBeans',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '文章标签不能为空'
+                        }
+                    ]
+                },
+                firstPicture: {
+                    identifier: 'firstPicture',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '文章首图不能为空'
+                        }
+                    ]
+                }
+            }
+        });
 
 
 </script>
