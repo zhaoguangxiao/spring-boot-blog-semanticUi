@@ -1,9 +1,23 @@
 package com.zhao.guang.xiao.top.controller;
 
+import com.zhao.guang.xiao.top.po.BlogBean;
+import com.zhao.guang.xiao.top.po.TagBean;
+import com.zhao.guang.xiao.top.po.TypeBean;
+import com.zhao.guang.xiao.top.service.BlogCategoryService;
+import com.zhao.guang.xiao.top.service.BlogLabelService;
+import com.zhao.guang.xiao.top.service.BlogService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.List;
 
 /**
  * @author Administrator
@@ -14,9 +28,33 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class IndexController {
 
+    @Autowired
+    private BlogService blogService;
+
+
+    @Autowired
+    private BlogCategoryService blogCategoryService;
+
+
+    @Autowired
+    private BlogLabelService blogLabelService;
+
 
     @GetMapping("/")
-    public String index() {
+    public String index(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                        Model model) {
+        //保存文章列表
+        Page<BlogBean> page = blogService.findPage(pageable);
+        model.addAttribute("pages", page);
+        //文章分类
+        List<TypeBean> typeBeans = blogCategoryService.listBlogCategory(6);
+        model.addAttribute("typeBeans", typeBeans);
+        //文章标签
+        List<TagBean> tagBeanList = blogLabelService.listTagBean(10);
+        model.addAttribute("tagBeanList", tagBeanList);
+        //最新推荐      recommend
+        List<BlogBean> blogBeans = blogService.recommendBlogs(5);
+        model.addAttribute("blogBeans", blogBeans);
         return "index";
     }
 
@@ -51,22 +89,16 @@ public class IndexController {
     }
 
 
-
-
-
-
-//    后台
+    //    后台
     @GetMapping("manager")
-    public String indexManager(){
+    public String indexManager() {
         return "admin/index";
     }
 
     @GetMapping("manager-category")
-    public String managerCategory(){
+    public String managerCategory() {
         return "admin/publish";
     }
-
-
 
 
     @GetMapping("{id}/{name}")

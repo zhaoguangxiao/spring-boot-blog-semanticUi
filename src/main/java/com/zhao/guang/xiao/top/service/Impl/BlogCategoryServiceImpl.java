@@ -1,11 +1,14 @@
 package com.zhao.guang.xiao.top.service.Impl;
 
 import com.zhao.guang.xiao.top.dao.BlogCategoryRepository;
+import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -62,5 +65,13 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
     @Override
     public List<TypeBean> listBlogCategorys() {
         return blogCategoryRepository.findAll();
+    }
+
+
+    @Override
+    public List<TypeBean> listBlogCategory(Integer size) {
+        Sort sort = new Sort(Sort.Direction.DESC,"blogBeanList.size");
+        Pageable pageable =PageRequest.of(0,size,sort);
+        return blogCategoryRepository.findTop(pageable);
     }
 }

@@ -16,14 +16,18 @@ public interface BlogService {
 
     BlogBean getBlogBean(Long id);
 
-    Page<BlogBean> ListBlogBean(Pageable pageable,BlogBean blogBean);
+    Page<BlogBean> ListBlogBean(Pageable pageable, BlogBean blogBean);
 
     BlogBean saveBlogBean(BlogBean blogBean);
 
     void removeBlogBean(Long id);
 
-
     List<BlogBean> listBlogBean();
+
+    Page<BlogBean> findPage(Pageable pageable);
+
+
+    List<BlogBean> recommendBlogs(Integer size);
 
 
 }

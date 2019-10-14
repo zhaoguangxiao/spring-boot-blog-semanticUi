@@ -27,5 +27,7 @@ public interface BlogLabelService {
 
     List<TagBean> listTagBeans();
 
+    List<TagBean> listTagBean(Integer size);
+
 
 }

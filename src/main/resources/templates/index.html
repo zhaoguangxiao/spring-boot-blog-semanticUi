@@ -27,39 +27,36 @@
                             <h3 class="ui teal header">博客</h3>
                         </div>
                         <div class="right aligned column">
-                            共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny">14</h2>篇
+                            共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny" th:text="${pages.size}"></h2>篇
                         </div>
                     </div>
                 </div>
 
                 <!--文章列表-->
                 <div class="ui attached segment">
-                    <div class="ui padded vertical segment m-padded-tb-big">
+                    <div class="ui padded vertical segment m-padded-tb-big" th:each="each : ${pages.content}">
                         <!--mobile reversed 移动端图片显示上面-->
-                        <div class="ui mobile reversed stackable grid">
+                        <div class="ui middle aligned mobile reversed stackable grid">
                             <div class="eleven wide column">
-                                    <h3 class="ui header"> SpringBoot启动tomcat出现空白页面</h3>
+                                <h3 class="ui header m-block" th:text="${each.title}"></h3>
                                 <a th:href="@{/details}">
-                                    <p class="m-text">
-                                        如果出现这个问题原因 1),点击用户退出方法,方法里面执行的是清除session和清空cookie,然后,就出现了空白页面 执行退出方法是
-                                        @GetMapping("logout") @ApiOperation(value = "注销登录方法...
-                                    </p>
+                                    <p class="m-text" th:text="${each.description}"></p>
                                 </a>
                                 <div class="ui grid">
                                     <div class="eleven wide column">
                                         <div class="ui mini horizontal link list">
                                             <div class="item">
-                                                <img th:src="@{/static/images/box.png}" src="../static/images/box.png"
+                                                <img th:src="${each.firstPicture}" src="../static/images/box.png"
                                                      alt="" class="ui avatar image">
                                                 <div class="content">
-                                                    <a href="#" class="header">赵广晓</a>
+                                                    <a href="#" class="header" th:text="${each.userBean.nickName}"></a>
                                                 </div>
                                             </div>
                                             <div class="item">
-                                                <i class="calendar icon"></i>2017-10-11
+                                                <i class="calendar icon"></i>[[${each.createTime}]]
                                             </div>
                                             <div class="item">
-                                                <i class="eye icon"></i>2238
+                                                <i class="eye icon"></i>[[${each.views}]]
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +68,7 @@
                             </div>
                             <div class="five wide column">
                                 <a href="#" target="_blank">
-                                    <img src="https://picsum.photos/seed/picsum/800/450" alt=""
+                                    <img th:src="${each.userBean.avatar}" alt=""
                                          class="ui rounded image">
                                 </a>
                             </div>
@@ -81,13 +78,18 @@
                 </div>
 
                 <!--上一页 下一页 底部-->
-                <div class="ui button attached segment">
+                <div class="ui button attached segment" th:if="${pages.totalPages>1}">
                     <div class="ui middle aligned two column grid">
-                        <div class="column">
-                            <a href="#" class="ui mini teal basic button">上一页</a>
+                        <div class="column" th:unless="${pages.first}">
+                            <a th:href="@{/(page=${pages.number}-1)}" class="ui mini teal basic button">
+                                <i class="left chevron icon"></i>
+                            </a>
                         </div>
                         <div class="right column">
-                            <a href="#" class="ui mini teal basic button">下一页</a>
+                            <a th:unless="${pages.last}" th:href="@{/(page=${pages.number}+1)}"
+                               class="ui mini teal basic button">
+                                <i class="right chevron icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -110,25 +112,8 @@
                         </div>
                         <div class="ui two column teal grid">
                             <div class="ui fluid vertical menu">
-                                <a href="#" class="item">
-                                    学习日志
-                                    <div class="ui teal ba label">13</div>
-                                </a>
-                                <a href="#" class="item">
-                                    清单
-                                    <div class="ui teal ba label">13</div>
-                                </a>
-                                <a href="#" class="item">
-                                    javaScript
-                                    <div class="ui teal ba label">13</div>
-                                </a>
-                                <a href="#" class="item">
-                                    创业
-                                    <div class="ui teal ba label">13</div>
-                                </a>
-                                <a href="#" class="item">
-                                    认知升级
-                                    <div class="ui teal ba label">13</div>
+                                <a href="#" class="item" th:each="each : ${typeBeans}">[[${each.name}]]
+                                    <div class="ui teal ba label" th:text="${each.blogBeanList.size()}"></div>
                                 </a>
                             </div>
                         </div>
@@ -148,25 +133,10 @@
                             </div>
                         </div>
                         <div class="ui teal basic segment">
-                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
-                                JavaScript
-                                <div class="detail">23</div>
-                            </a>
-                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
-                                Java
-                                <div class="detail">23</div>
-                            </a>
-                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
-                                PHP
-                                <div class="detail">23</div>
-                            </a>
-                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
-                                C++
-                                <div class="detail">23</div>
-                            </a>
-                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny">
-                                C#
-                                <div class="detail">23</div>
+                            <a href="#" class="ui teal basic left pointing label m-margin-tb-tiny"
+                               th:each="each : ${tagBeanList}">
+                                [[${each.name}]]
+                                <div class="detail" th:text="${each.blogBeans.size()}"></div>
                             </a>
                         </div>
                     </div>
@@ -178,20 +148,8 @@
                     <div class="ui secondary segment m-block">
                         <i class="bookmark icon"></i>最新推荐
                     </div>
-                    <div class="ui segment">
-                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
-                    </div>
-                    <div class="ui segment">
-                        <a href="#" target="_blank" class="m-block m-text-thin">用户故事-测试</a>
+                    <div class="ui segment" th:each="each : ${blogBeans}">
+                        <a href="#" target="_blank" class="m-block m-text-thin" th:text="${each.title}"></a>
                     </div>
                 </div>
 

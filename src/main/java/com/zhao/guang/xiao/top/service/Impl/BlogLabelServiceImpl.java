@@ -5,7 +5,9 @@ import com.zhao.guang.xiao.top.po.TagBean;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -60,5 +62,12 @@ public class BlogLabelServiceImpl implements BlogLabelService {
     @Override
     public List<TagBean> listTagBeans() {
         return blogLabelRepository.findAll();
+    }
+
+    @Override
+    public List<TagBean> listTagBean(Integer size) {
+        Sort sort = new Sort(Sort.Direction.DESC, "blogBeans.size");
+        Pageable pageable = PageRequest.of(0, size, sort);
+        return blogLabelRepository.findTop(pageable);
     }
 }

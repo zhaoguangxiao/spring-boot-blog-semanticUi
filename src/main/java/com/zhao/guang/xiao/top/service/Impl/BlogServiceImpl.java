@@ -8,7 +8,9 @@ import com.zhao.guang.xiao.top.service.BlogService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -69,12 +71,12 @@ public class BlogServiceImpl implements BlogService {
     @Override
     @Transactional
     public BlogBean saveBlogBean(BlogBean blogBean) {
-        if (null == blogBean.getId()){
+        if (null == blogBean.getId()) {
             //设置创建时间
             blogBean.setCreateTime(System.currentTimeMillis());
             //设置更新时间
             blogBean.setUpdateTime(System.currentTimeMillis());
-        }else {
+        } else {
             //设置更新时间
             blogBean.setUpdateTime(System.currentTimeMillis());
         }
@@ -91,5 +93,18 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public List<BlogBean> listBlogBean() {
         return blogBeanRepository.findAll();
+    }
+
+
+    @Override
+    public Page<BlogBean> findPage(Pageable pageable) {
+        return blogBeanRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<BlogBean> recommendBlogs(Integer size) {
+        Sort sort = new Sort(Sort.Direction.DESC,"createTime");
+        Pageable pageable = PageRequest.of(0,size,sort);
+        return blogBeanRepository.recommendBlogs(pageable);
     }
 }

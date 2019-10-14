@@ -46,7 +46,7 @@ public class BlogController {
     private BlogLabelService blogLabelService;
 
     @GetMapping("/blogs")
-    public String list(@PageableDefault(size = 2, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String list(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                        BlogBean blogBean,
                        Model model) {
         Page<BlogBean> blogBeans = blogService.ListBlogBean(pageable, blogBean);
