@@ -87,7 +87,7 @@ public class BlogLabelController {
                                 BindingResult bindingResult,
                                 Model model) {
         if (hasTagBeanNameExist(tagBean.getName())) {
-            bindingResult.rejectValue("name", "nameError", "标签名称不能为空,请输入标签");
+            bindingResult.rejectValue("name", "nameError", "标签名称不能重复,请重新输入标签");
         }
         if (bindingResult.hasErrors()) {
             return "admin/label/form";

@@ -11,4 +11,7 @@ public interface UserService {
 
     UserBean checkUser(String uname,String pwd);
 
+
+    UserBean save(UserBean userBean);
+
 }

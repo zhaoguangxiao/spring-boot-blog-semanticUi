@@ -41,6 +41,10 @@
                  <div class="ui negative message" th:if="${#fields.hasErrors('firstPicture')}">
                  <p th:errors="*{firstPicture}"></p>
                  </div>
+
+                  <div class="ui negative message" th:if="${#fields.hasErrors('description')}">
+                 <p th:errors="*{description}"></p>
+                 </div>
             /*/-->
             <!--      end      -->
 
@@ -48,6 +52,7 @@
             <input type="hidden" name="id" th:value="*{id}">
 
             <input type="hidden" name="createTime" th:value="*{createTime}">
+            <input type="hidden" name="views" th:value="*{views}">
 
 
             <div class="field">
@@ -135,6 +140,13 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="required field">
+                <textarea name="description" th:value="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
+            </div>
+
+
             <div class="ui right aligned container">
                 <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
                 <button class="ui button secondary button">保存</button>
@@ -219,6 +231,15 @@
                         {
                             type: 'empty',
                             prompt: '文章首图不能为空'
+                        }
+                    ]
+                },
+                description: {
+                    identifier: 'description',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '文章描述不能为空'
                         }
                     ]
                 }

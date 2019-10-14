@@ -62,6 +62,10 @@ public class BlogBean implements Serializable {
     private boolean recommend;
 
 
+    @NotBlank(message = "文章描述不能为空")
+    private String description;
+
+
     private Long createTime;
     private Long updateTime;
 

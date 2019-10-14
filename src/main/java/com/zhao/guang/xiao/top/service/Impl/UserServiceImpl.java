@@ -27,4 +27,19 @@ public class UserServiceImpl implements UserService {
         String md5Password = DigestUtils.md5DigestAsHex(pwd.getBytes());
         return userBeanRepository.findByUserNameAndPassword(uname, md5Password);
     }
+
+
+    @Override
+    public UserBean save(UserBean userBean) {
+        if (null == userBean.getId()){
+            //创建时间
+            userBean.setCreateTime(System.currentTimeMillis());
+            //更新时间
+            userBean.setUpdateTime(System.currentTimeMillis());
+        }else {
+            //更新时间
+            userBean.setUpdateTime(System.currentTimeMillis());
+        }
+        return userBeanRepository.save(userBean);
+    }
 }
