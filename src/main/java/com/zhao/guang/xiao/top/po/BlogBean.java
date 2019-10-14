@@ -1,13 +1,11 @@
 package com.zhao.guang.xiao.top.po;
 
 import lombok.Data;
+import lombok.ToString;
 import org.apache.commons.collections4.CollectionUtils;
 
 import javax.persistence.*;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -70,16 +68,18 @@ public class BlogBean implements Serializable {
 
 
     @ManyToOne
+    @ToString.Exclude
     private TypeBean typeBean;
 
-
+    @ToString.Exclude
     @ManyToMany(cascade = {CascadeType.PERSIST})
     private List<TagBean> tagBeans = new ArrayList<>();
 
     @ManyToOne
+    @ToString.Exclude
     private UserBean userBean;
 
-
+    @ToString.Exclude
     @OneToMany(mappedBy = "blogBean")
     private List<CommentBean> commentBeans = new ArrayList<>();
 

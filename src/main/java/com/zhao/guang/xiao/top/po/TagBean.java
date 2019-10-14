@@ -1,8 +1,6 @@
 package com.zhao.guang.xiao.top.po;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -31,6 +29,7 @@ public class TagBean implements Serializable {
     private String name;
 
 
+    @ToString.Exclude
     @ManyToMany(mappedBy = "tagBeans")
     private List<BlogBean> blogBeans = new ArrayList<>();
 

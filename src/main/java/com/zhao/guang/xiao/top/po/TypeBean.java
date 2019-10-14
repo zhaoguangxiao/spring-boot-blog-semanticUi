@@ -1,6 +1,7 @@
 package com.zhao.guang.xiao.top.po;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -25,16 +26,11 @@ public class TypeBean implements Serializable {
     @NotBlank(message = "分类名称不能为空")
     private String name;
 
+
+    @ToString.Exclude
     @OneToMany(mappedBy = "typeBean")
     private List<BlogBean> blogBeanList = new ArrayList<>();
 
 
-    @Override
-    public String toString() {
-        return "TypeBean{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", blogBeanList=" + blogBeanList +
-                '}';
-    }
+
 }

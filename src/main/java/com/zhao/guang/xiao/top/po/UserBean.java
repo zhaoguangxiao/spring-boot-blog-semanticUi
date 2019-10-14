@@ -1,10 +1,7 @@
 package com.zhao.guang.xiao.top.po;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
-import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -33,6 +30,8 @@ public class UserBean implements Serializable {
     private Long createTime;
     private Long updateTime;
 
+
+    @ToString.Exclude
     @OneToMany(mappedBy = "userBean")
     private List<BlogBean> blogBeanList = new ArrayList<>();
 

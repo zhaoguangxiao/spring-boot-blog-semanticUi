@@ -1,8 +1,6 @@
 package com.zhao.guang.xiao.top.po;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -31,12 +29,15 @@ public class CommentBean implements Serializable {
     private Long createTime;
 
     @ManyToOne
+    @ToString.Exclude
     private BlogBean blogBean;
 
+    @ToString.Exclude
     @OneToMany(mappedBy = "parentComment")
     private List<CommentBean> replyComments = new ArrayList<>();
 
     @ManyToOne
+    @ToString.Exclude
     private CommentBean parentComment;
 
     public CommentBean() {

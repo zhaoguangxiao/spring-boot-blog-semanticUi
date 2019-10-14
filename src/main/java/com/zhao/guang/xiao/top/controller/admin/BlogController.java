@@ -52,7 +52,6 @@ public class BlogController {
         Page<BlogBean> blogBeans = blogService.ListBlogBean(pageable, blogBean);
         //文章标签列表
         List<TypeBean> categorys = blogCategoryService.listBlogCategorys();
-        categorys.add(null);
         model.addAttribute("categorys", categorys);
         model.addAttribute("blogBeans", blogBeans);
         return "admin/article/list";
