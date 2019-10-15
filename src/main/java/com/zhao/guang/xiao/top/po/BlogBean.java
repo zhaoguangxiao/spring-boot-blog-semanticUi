@@ -3,6 +3,8 @@ package com.zhao.guang.xiao.top.po;
 import lombok.Data;
 import lombok.ToString;
 import org.apache.commons.collections4.CollectionUtils;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -73,6 +75,7 @@ public class BlogBean implements Serializable {
 
     @ManyToOne
     @ToString.Exclude
+    @NotFound(action=NotFoundAction.IGNORE)
     private TypeBean typeBean;
 
     @ToString.Exclude

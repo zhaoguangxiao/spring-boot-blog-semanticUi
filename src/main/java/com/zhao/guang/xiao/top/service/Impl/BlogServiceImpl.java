@@ -1,6 +1,7 @@
 package com.zhao.guang.xiao.top.service.Impl;
 
 import com.zhao.guang.xiao.top.dao.BlogBeanRepository;
+import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.po.UserBean;
@@ -22,6 +23,7 @@ import javax.persistence.criteria.Root;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.apache.commons.lang.StringUtils.isNotBlank;
 
@@ -40,7 +42,11 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public BlogBean getBlogBean(Long id) {
-        return blogBeanRepository.getOne(id);
+        Optional<BlogBean> blogBean = blogBeanRepository.findById(id);
+        if (!blogBean.isPresent()) {
+            throw new NotFountException("文章没有被找到,请与管理员联系");
+        }
+        return blogBean.get();
     }
 
     @Override

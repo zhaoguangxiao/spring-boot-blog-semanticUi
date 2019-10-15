@@ -31,7 +31,7 @@ public class BlogServiceTestCase extends SpringBootBlogApplicationTests {
 
     @Test
     public void findBlogBeanByKey(){
-        BlogBean blogBean = blogService.getBlogBean(2L);
+        BlogBean blogBean = blogService.getBlogBean(1111L);
         log.info("{}",blogBean);
     }
 

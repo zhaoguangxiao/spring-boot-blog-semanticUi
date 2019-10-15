@@ -1,5 +1,6 @@
 package com.zhao.guang.xiao.top.controller;
 
+import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TagBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
@@ -96,17 +97,15 @@ public class IndexController {
     }
 
 
-    @GetMapping("details")
-    public String details() {
+    @GetMapping("blog/{id}")
+    public String details(@PathVariable Long id,
+                          Model model) {
+        BlogBean blogBean = blogService.getBlogBean(id);
+        model.addAttribute("blogBean", blogBean);
         return "details";
     }
 
 
-    //    后台
-    @GetMapping("manager")
-    public String indexManager() {
-        return "admin/index";
-    }
 
     @GetMapping("manager-category")
     public String managerCategory() {
