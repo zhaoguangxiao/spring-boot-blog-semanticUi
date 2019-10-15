@@ -61,7 +61,7 @@ public class IndexController {
     }
 
 
-    @PostMapping("search")
+    @GetMapping("search")
     public String search(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          @RequestParam String search,
                          Model model) {

@@ -80,12 +80,12 @@
         <div class="ui button attached segment" th:if="${searchs.totalPages>1}">
             <div class="ui middle aligned two column grid">
                 <div class="column" th:unless="${searchs.first}">
-                    <a th:href="@{/search(page=${searchs.number}-1)}" class="ui mini teal basic button">
+                    <a th:href="@{/search(page=${searchs.number}-1,search=${search})}" class="ui mini teal basic button">
                         <i class="left chevron icon"></i>
                     </a>
                 </div>
                 <div class="right column">
-                    <a th:unless="${searchs.last}" th:href="@{/search(page=${searchs.number}+1)}"
+                    <a th:unless="${searchs.last}" th:href="@{/search(page=${searchs.number}+1,search=${search})}"
                        class="ui mini teal basic button">
                         <i class="right chevron icon"></i>
                     </a>

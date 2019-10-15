@@ -59,7 +59,7 @@ public class BlogController {
 
 
     @PostMapping("search")
-    public String search(@PageableDefault(size = 2, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          String title,
                          Boolean recommend,
                          TypeBean typeBean,
