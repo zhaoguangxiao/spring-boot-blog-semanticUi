@@ -16,6 +16,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -56,6 +58,17 @@ public class IndexController {
         List<BlogBean> blogBeans = blogService.recommendBlogs(5);
         model.addAttribute("blogBeans", blogBeans);
         return "index";
+    }
+
+
+    @PostMapping("search")
+    public String search(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                         @RequestParam String search,
+                         Model model) {
+        Page<BlogBean> searchs = blogService.listBlogBeanBySearch(search, pageable);
+        model.addAttribute("searchs", searchs);
+        model.addAttribute("search", search);
+        return "search";
     }
 
 

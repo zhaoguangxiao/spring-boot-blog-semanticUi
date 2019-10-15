@@ -30,4 +30,5 @@ public interface BlogService {
     List<BlogBean> recommendBlogs(Integer size);
 
 
+    Page<BlogBean> listBlogBeanBySearch(String search, Pageable pageable);
 }

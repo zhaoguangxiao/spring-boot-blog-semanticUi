@@ -21,16 +21,23 @@
         <!--stackable 表明可以堆列 移动端适配-->
         <div class="ui inverted stackable secondary menu m-min">
             <a th:href="@{/}"><h2 class="ui teal item header">Blog</h2></a>
-            <a th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1}?'active'"><i class=" home icon"></i>首页</a>
-            <a th:href="@{/categary}" class="m-item item m-mobile-hide" th:classappend="${n==2}?'active'"><i class=" idea icon"></i>分类</a>
-            <a th:href="@{/tag}" class="m-item item m-mobile-hide" th:classappend="${n==3}?'active'"><i class=" tags icon"></i>标签</a>
-            <a th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4}?'active'"><i class=" clone icon"></i>归档</a>
-            <a th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5}?'active'"><i class=" info icon"></i>关于我</a>
+            <a th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1}?'active'"><i
+                    class=" home icon"></i>首页</a>
+            <a th:href="@{/categary}" class="m-item item m-mobile-hide" th:classappend="${n==2}?'active'"><i
+                    class=" idea icon"></i>分类</a>
+            <a th:href="@{/tag}" class="m-item item m-mobile-hide" th:classappend="${n==3}?'active'"><i
+                    class=" tags icon"></i>标签</a>
+            <a th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4}?'active'"><i
+                    class=" clone icon"></i>归档</a>
+            <a th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5}?'active'"><i
+                    class=" info icon"></i>关于我</a>
             <div class="m-item right item m-mobile-hide">
-                <div class="ui icon transition input">
-                    <input type="text" placeholder="search">
-                    <i class="search link icon"></i>
-                </div>
+                <form th:action="@{/search}" name="form" target="_blank" method="post">
+                    <div class="ui icon transition input">
+                        <input type="text" name="search" th:value="${search}" placeholder="search...">
+                        <i onclick="document.forms['form'].submit()" class="search link icon"></i>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
