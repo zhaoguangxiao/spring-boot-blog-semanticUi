@@ -2,11 +2,13 @@ package com.zhao.guang.xiao.top.controller;
 
 import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
+import com.zhao.guang.xiao.top.po.CommentBean;
 import com.zhao.guang.xiao.top.po.TagBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
+import com.zhao.guang.xiao.top.service.CommentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -41,6 +43,10 @@ public class IndexController {
 
     @Autowired
     private BlogLabelService blogLabelService;
+
+
+    @Autowired
+    private CommentService commentService;
 
 
     @GetMapping("/")
@@ -102,6 +108,9 @@ public class IndexController {
                           Model model) {
         BlogBean blogBean = blogService.getFrontEndBlogDetail(id);
         model.addAttribute("blogBean", blogBean);
+        //查出当前文章的评论
+        List<CommentBean> commentBeans = commentService.listCommentBeanByBlogId(id);
+        model.addAttribute("commentBeans",commentBeans);
         return "details";
     }
 
@@ -113,11 +122,5 @@ public class IndexController {
     }
 
 
-    @GetMapping("{id}/{name}")
-    public String aop(@PathVariable Integer id,
-                      @PathVariable String name) {
-        log.info("-------aop -------");
-        return "index";
-    }
 
 }

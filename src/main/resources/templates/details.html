@@ -114,109 +114,60 @@
 
 
             <!--留言区域-->
-            <div id="command-container" class="ui attached segment">
+            <div class="ui attached segment">
                 <!--留言列表-->
-                <div class="ui comments">
+                <div id="command-container" th:fragment="comment-list" class="ui teal comments">
                     <h3 class="ui dividing header">Comments</h3>
-                    <div class="comment">
+                    <div class="comment" th:each="each : ${commentBeans}">
                         <a class="avatar">
-                            <img src="../static/images/box.png">
+                            <img src="../static/images/box.png" th:src="@{${each.avatar}}">
                         </a>
                         <div class="content">
-                            <a class="author">Matt</a>
+                            <a class="author" th:text="${each.nickName}"></a>
                             <div class="metadata">
-                                <span class="date">Today at 5:42PM</span>
+                                <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
                             </div>
-                            <div class="text">
-                                How artistic!
-                            </div>
+                            <div class="text" th:text="${each.content}"></div>
                             <div class="actions">
-                                <a class="reply">回复</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <a class="avatar">
-                            <img src="../static/images/box.png">
-                        </a>
-                        <div class="content">
-                            <a class="author">Elliot Fu</a>
-                            <div class="metadata">
-                                <span class="date">Yesterday at 12:30AM</span>
-                            </div>
-                            <div class="text">
-                                <p>This has been very useful for my research. Thanks as well!</p>
-                            </div>
-                            <div class="actions">
-                                <a class="reply">回复</a>
-                            </div>
-                        </div>
-                        <div class="comments">
-                            <div class="comment">
-                                <a class="avatar">
-                                    <img src="../static/images/box.png">
-                                </a>
-                                <div class="content">
-                                    <a class="author">Jenny Hess</a>
-                                    <div class="metadata">
-                                        <span class="date">Just now</span>
-                                    </div>
-                                    <div class="text">
-                                        Elliot you are always so right :)
-                                    </div>
-                                    <div class="actions">
-                                        <a class="reply">回复</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <a class="avatar">
-                            <img src="../static/images/box.png">
-                        </a>
-                        <div class="content">
-                            <a class="author">Joe Henderson</a>
-                            <div class="metadata">
-                                <span class="date">5 days ago</span>
-                            </div>
-                            <div class="text">
-                                Dude, this is awesome. Thanks so much
-                            </div>
-                            <div class="actions">
-                                <a class="reply">回复</a>
+                                <a class="reply" onclick="reply(this)" th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!--留言表单-->
-                <div class="ui form">
-                    <form class="ui reply form">
-                        <div class="field">
-                            <textarea name="content" placeholder="请输入回复内容..."></textarea>
-                        </div>
-                        <div class="fields">
-                            <div class="field m-mobile-width m-margin-top-small">
-                                <div class="ui left icon input">
-                                    <i class="user icon"></i>
-                                    <input type="text" placeholder="姓名" name="nickname">
-                                </div>
-                            </div>
-                            <div class="field m-mobile-width m-margin-top-small">
-                                <div class="ui left icon input">
-                                    <i class="mail icon"></i>
-                                    <input type="text" placeholder="邮箱" name="email">
-                                </div>
-                            </div>
-                            <div class="field m-mobile-width m-margin-top-small">
-                                <button class="ui teal m-mobile-width button">
-                                    <i class="edit icon"></i>
-                                    立即提交
-                                </button>
+                <div id="comment-form" class="ui reply form">
+                    <input type="hidden" name="blogBean.id" th:value="${blogBean.id}">
+
+                    <input type="hidden" name="parentComment.id" value="-1">
+
+                    <div class="field">
+                        <textarea name="content" placeholder="请输入回复内容..."></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field m-mobile-width m-margin-top-small">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" placeholder="姓名" name="nickName">
                             </div>
                         </div>
-                    </form>
+                        <div class="field m-mobile-width m-margin-top-small">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" placeholder="邮箱" name="email">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-width m-margin-top-small">
+                            <button type="button" id="comment-btn-sub" class="ui teal m-mobile-width button">
+                                <i class="edit icon"></i>
+                                立即提交
+                            </button>
+                        </div>
+                    </div>
+                    <!--显示错误内容-->
+                    <div class="field">
+                        <div class="ui error message"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -332,6 +283,83 @@
         }
     });
 
+    // 表单验证
+    $('.ui.form')
+        .form({
+            fields: {
+                nickName: {
+                    identifier: 'nickName',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '评论昵称不能为空'
+                        }
+                    ]
+                },
+                email: {
+                    identifier: 'email',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '邮箱不能为空'
+                        }
+                    ]
+                },
+                content: {
+                    identifier: 'content',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '回复内容不能为空'
+                        }
+                    ]
+                }
+            },
+        });
+
+    //留言提交事件
+    $("#comment-btn-sub").click(function () {
+        //效验表单
+        var hasBoo = $('.ui.form').form('validate form');
+        if (hasBoo) {
+            postData();
+        }
+    });
+
+
+    //发送请求的方法
+    function postData() {
+        $("#command-container").load("/comments", {
+            "parentComment.id": $("[name='parentComment.id']").val(),
+            "blogBean.id": $("[name='blogBean.id']").val(),
+            "content": $("[name='content']").val(),
+            "nickName": $("[name='nickName']").val(),
+            "email": $("[name='email']").val()
+        }, function (responseTxt, statusTxt, xhr) {
+            $(window).scrollTo($('command-container'), 500);
+            clearMessage();
+        });
+    }
+
+
+    //清空context内容
+    function clearMessage() {
+        $("[name='content']").val('');
+        $("[name='parentComment.id']").val(-1);
+        $("[name='content']").attr("placeholder", "请输入评论信息...");
+    }
+
+    //回复点击事件处理
+    function reply(obj) {
+        var commentId = $(obj).data('comment-id');
+        var nickName = $(obj).data('comment-nickname');
+        console.log(nickName);
+
+        //设置回复内容
+        $("[name='content']").attr("placeholder", "@" + nickName).focus();
+        $("[name='parentComment.id']").val(commentId);
+        $(window).scrollTo($("#comment-form"), 500);
+    }
 
 </script>
 </body>
