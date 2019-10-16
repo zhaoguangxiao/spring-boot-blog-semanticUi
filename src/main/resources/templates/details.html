@@ -5,7 +5,7 @@
     <meta type="keywords" content="博客详情页面"/>
     <!--  描述　-->
     <meta type="description" content="博客详情页面描述"/>
-    <title>博客详情页面</title>
+    <title th:text="${blogBean.title}"></title>
     <!--排版css-->
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/static/css/typo.css}"/>
     <!--引入动画样式-->
@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="../static/css/prism.css" th:href="@{/static/css/prism.css}">
     <!--引入自动生成目录css-->
     <link rel="stylesheet" href="../static/css/tocbot.css" th:href="@{/static/css/tocbot.css}">
-    <!--  解析富文本内容的css  -->
-    <link rel="stylesheet" th:href="@{/static/css/editormd.preview.min.css}">
 </head>
 <body>
 
@@ -65,8 +63,7 @@
                 <h2 class="ui center aligned header animated heartBeat" th:text="${blogBean.title}"></h2>
                 <br>
                 <div id="content" class="js-toc-content typo typo-selection m-padded-left m-padded-tb-large">
-                    <textarea style="display:none;" th:text="${blogBean.content}"
-                              name="test-editormd-markdown-doc"></textarea>
+                    <div th:utext="${blogBean.content}"></div>
                 </div>
                 <!--标签-->
                 <div class="m-padded-left" th:each="each : ${blogBean.tagBeans}">
@@ -267,17 +264,9 @@
 <script src="../static/js/jquery.scrollTo.min.js" th:src="@{/static/js/jquery.scrollTo.min.js}"></script>
 <!--滚动监听 js-->
 <script src="../static/js/jquery.waypoints.min.js" th:src="@{/static/js/jquery.waypoints.min.js}"></script>
-<!--引入解析富文本的内容-->
-<script type="text/javascript" th:src="@{/static/js/editormd.min.js}"></script>
-<script type="text/javascript" th:src="@{/static/js/lib/marked.min.js}"></script>
-<script type="text/javascript" th:src="@{/static/js/lib/prettify.min.js}"></script>
 
 
-<script>
-
-    //初始化 文章内容
-    editormd.markdownToHTML("content", {});
-
+<script th:inline="none">
 
     // 初始化目录
     tocbot.init({

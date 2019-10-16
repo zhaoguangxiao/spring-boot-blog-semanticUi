@@ -40,7 +40,7 @@
                         <div class="ui middle aligned mobile reversed stackable grid">
                             <div class="eleven wide column">
                                 <h3 class="ui header m-block" th:text="${each.title}"></h3>
-                                <a th:href="@{'/blog/'+${each.id}}">
+                                <a th:href="@{'/blog/'+${each.id}}" target="_blank">
                                     <p class="m-text" th:text="${each.description}"></p>
                                 </a>
                                 <div class="ui grid">

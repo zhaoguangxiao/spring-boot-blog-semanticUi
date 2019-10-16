@@ -6,7 +6,9 @@ import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogService;
+import com.zhao.guang.xiao.top.util.MarkdownUtil;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -21,6 +23,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -118,4 +121,18 @@ public class BlogServiceImpl implements BlogService {
     public Page<BlogBean> listBlogBeanBySearch(String search, Pageable pageable) {
         return blogBeanRepository.findBlogBeanBySearch("%" + search + "%", pageable);
     }
+
+    @Override
+    public BlogBean getFrontEndBlogDetail(Long id) {
+        Optional<BlogBean> blogBean = blogBeanRepository.findById(id);
+        if (!blogBean.isPresent()) {
+            throw new NotFountException("文章没有被找到,请与管理员联系");
+        }
+        BlogBean blogBean1 = blogBean.get();
+        BlogBean bean = new BlogBean();
+        BeanUtils.copyProperties(blogBean1,bean);
+        bean.setContent(MarkdownUtil.markdownToHtmlExtensions(blogBean1.getContent()));
+        return bean;
+    }
 }
+

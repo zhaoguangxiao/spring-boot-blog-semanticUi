@@ -26,9 +26,9 @@ public interface BlogService {
 
     Page<BlogBean> findPage(Pageable pageable);
 
-
     List<BlogBean> recommendBlogs(Integer size);
 
-
     Page<BlogBean> listBlogBeanBySearch(String search, Pageable pageable);
+
+    BlogBean getFrontEndBlogDetail(Long id);
 }

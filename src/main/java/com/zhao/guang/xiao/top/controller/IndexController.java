@@ -100,7 +100,7 @@ public class IndexController {
     @GetMapping("blog/{id}")
     public String details(@PathVariable Long id,
                           Model model) {
-        BlogBean blogBean = blogService.getBlogBean(id);
+        BlogBean blogBean = blogService.getFrontEndBlogDetail(id);
         model.addAttribute("blogBean", blogBean);
         return "details";
     }
