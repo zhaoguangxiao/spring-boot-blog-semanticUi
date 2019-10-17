@@ -14,6 +14,8 @@ import java.util.List;
 public interface CommentRepository extends JpaRepository<CommentBean, Long> {
 
 
-
     List<CommentBean> findByBlogBeanId(Long blogId, Sort sort);
+
+
+    List<CommentBean> findByBlogBeanIdAndParentCommentNull(Long blogId, Sort sort);
 }

@@ -17,5 +17,8 @@ public interface CommentService {
     CommentBean saveCommentBean(CommentBean commentBean);
 
 
+    List<CommentBean> ListCommentBeanByBlogIdAndParentisNull(Long blogId);
+
+
 
 }

@@ -129,7 +129,28 @@
                             </div>
                             <div class="text" th:text="${each.content}"></div>
                             <div class="actions">
-                                <a class="reply" onclick="reply(this)" th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
+                                <a class="reply" onclick="reply(this)"
+                                   th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
+                            </div>
+                        </div>
+                        <div class="comments" th:if="${#arrays.length(each.replyComments)}>0">
+                            <div class="comment" th:each="each : ${each.replyComments}">
+                                <a class="avatar">
+                                    <img  th:src="@{${each.avatar}}">
+                                </a>
+                                <div class="content">
+                                    <a class="author">
+                                        [[${each.nickName}]]&nbsp;<span style="color: #00b5ad;!important;" th:text="|@ ${each.parentComment.nickName}|"></span>
+                                    </a>
+                                    <div class="metadata">
+                                        <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
+                                    </div>
+                                    <div class="text" th:text="${each.content}"></div>
+                                    <div class="actions">
+                                        <a class="reply" onclick="reply(this)"
+                                           th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -32,7 +32,7 @@ public class CommentController {
     @GetMapping("comments/{blogId}")
     public String commentList(@PathVariable Long blogId,
                               Model model) {
-        List<CommentBean> commentBeans = commentService.listCommentBeanByBlogId(blogId);
+        List<CommentBean> commentBeans = commentService.ListCommentBeanByBlogIdAndParentisNull(blogId);
         model.addAttribute("commentBeans", commentBeans);
         return "details :: comment-list";
     }

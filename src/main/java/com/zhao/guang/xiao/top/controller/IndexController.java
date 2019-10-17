@@ -109,7 +109,7 @@ public class IndexController {
         BlogBean blogBean = blogService.getFrontEndBlogDetail(id);
         model.addAttribute("blogBean", blogBean);
         //查出当前文章的评论
-        List<CommentBean> commentBeans = commentService.listCommentBeanByBlogId(id);
+        List<CommentBean> commentBeans = commentService.ListCommentBeanByBlogIdAndParentisNull(id);
         model.addAttribute("commentBeans",commentBeans);
         return "details";
     }
