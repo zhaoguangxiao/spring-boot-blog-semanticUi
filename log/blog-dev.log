@@ -2770,3 +2770,1716 @@ Caused by: javax.persistence.TransactionRequiredException: Executing an update/d
 2019-10-17 15:40:47.076  INFO 8692 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/6, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[6, {}])
 2019-10-17 15:40:47.086  INFO 8692 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
 2019-10-17 15:40:47.086  INFO 8692 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:41:49.641  INFO 8692 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:41:49.643  INFO 8692 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 15:41:49.648  INFO 8692 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 15:41:49.653  INFO 8692 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 15:41:56.488  INFO 17384 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 17384 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 15:41:56.491 DEBUG 17384 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 15:41:56.491  INFO 17384 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 15:41:56.563  INFO 17384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 15:41:56.563  INFO 17384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 15:41:57.435  INFO 17384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 15:41:57.549  INFO 17384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 5 repository interfaces.
+2019-10-17 15:41:58.041  INFO 17384 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee48f2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 15:41:58.660  INFO 17384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 15:41:58.683  INFO 17384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 15:41:58.684  INFO 17384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 15:41:58.863  INFO 17384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 15:41:58.863  INFO 17384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2300 ms
+2019-10-17 15:41:59.118  INFO 17384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 15:41:59.119  WARN 17384 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 15:41:59.289  INFO 17384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 15:41:59.368  INFO 17384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 15:41:59.509  INFO 17384 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 15:41:59.511  INFO 17384 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 15:41:59.659  INFO 17384 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 15:41:59.887  INFO 17384 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 15:42:00.827  INFO 17384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 15:42:00.914  INFO 17384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 15:42:01.489  INFO 17384 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 15:42:02.273  INFO 17384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:42:02.350  WARN 17384 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 15:42:02.429  INFO 17384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 15:42:02.954  INFO 17384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 15:42:02.957  INFO 17384 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.08 seconds (JVM running for 9.889)
+2019-10-17 15:42:21.174  INFO 17384 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=6] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 15:42:21.184  INFO 17384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 15:42:21.184  INFO 17384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 15:42:21.208  INFO 17384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2019-10-17 15:42:21.274  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:42:21.469  WARN 17384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 15:42:21.501  WARN 17384 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 15:42:21.519  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:21.519  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:42:27.984  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:28.174  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:28.175  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:29.110  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[8])
+2019-10-17 15:42:29.155  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:29.155  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ3
+2019-10-17 15:42:29.901  INFO 17384 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:29.931  INFO 17384 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:29.932  INFO 17384 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:30.746  INFO 17384 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:30.772  INFO 17384 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:30.772  INFO 17384 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:31.545  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:31.567  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:31.568  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:31.641  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:31.663  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:31.664  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:31.901  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:31.930  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:31.930  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:32.286  INFO 17384 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:32.366  INFO 17384 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:42:32.369  INFO 17384 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:32.369  INFO 17384 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:32.399  INFO 17384 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:32.400  INFO 17384 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:34.813  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/80, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[80, {}])
+2019-10-17 15:42:34.821  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:34.841 ERROR 17384 --- [http-nio-8080-exec-8] c.z.g.x.t.h.ControllerExceptionHandler   : Request URL :/blog/80 , Exception :{}
+
+com.zhao.guang.xiao.top.exception.NotFountException: æ–‡ç« æ²¡æœ‰è¢«æ‰¾åˆ°,è¯·ä¸ç®¡ç†å‘˜è”ç³»
+	at com.zhao.guang.xiao.top.service.Impl.BlogServiceImpl.getFrontEndBlogDetail(BlogServiceImpl.java:129) ~[classes/:na]
+	at com.zhao.guang.xiao.top.service.Impl.BlogServiceImpl$$FastClassBySpringCGLIB$$a24c75df.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at com.zhao.guang.xiao.top.service.Impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$5fd71316.getFrontEndBlogDetail(<generated>) ~[classes/:na]
+	at com.zhao.guang.xiao.top.controller.IndexController.details(IndexController.java:109) ~[classes/:na]
+	at com.zhao.guang.xiao.top.controller.IndexController$$FastClassBySpringCGLIB$$a887067d.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at com.zhao.guang.xiao.top.controller.IndexController$$EnhancerBySpringCGLIB$$324232b.details(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+
+2019-10-17 15:42:34.845  WARN 17384 --- [http-nio-8080-exec-8] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.zhao.guang.xiao.top.exception.NotFountException: æ–‡ç« æ²¡æœ‰è¢«æ‰¾åˆ°,è¯·ä¸ç®¡ç†å‘˜è”ç³»]
+2019-10-17 15:42:40.220  INFO 17384 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/7, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[7, {}])
+2019-10-17 15:42:40.280  INFO 17384 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:40.281  INFO 17384 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:42:40.992  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[7])
+2019-10-17 15:42:41.001  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:41.002  INFO 17384 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ2
+2019-10-17 15:42:59.068  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 1, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:42:59.108  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:42:59.108  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:43:02.366  INFO 17384 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/3, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[3, {}])
+2019-10-17 15:43:02.374  INFO 17384 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:02.374  INFO 17384 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:43:03.049  INFO 17384 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[3])
+2019-10-17 15:43:03.059  INFO 17384 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:03.059  INFO 17384 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ1
+2019-10-17 15:43:06.468  INFO 17384 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/3, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[3, {}])
+2019-10-17 15:43:06.478  INFO 17384 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:06.478  INFO 17384 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:43:12.684  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 1, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:43:12.710  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:12.710  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:43:38.229  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/3, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[3, {}])
+2019-10-17 15:43:38.263  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:38.263  INFO 17384 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:43:57.821  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:43:57.855  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:57.855  INFO 17384 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:43:59.236  INFO 17384 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:43:59.252  INFO 17384 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:43:59.252  INFO 17384 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:44:00.040  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[8])
+2019-10-17 15:44:00.047  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:44:00.047  INFO 17384 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ4
+2019-10-17 15:47:33.191  INFO 17384 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:47:33.192  INFO 17384 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 15:47:33.197  INFO 17384 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 15:47:33.203  INFO 17384 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 15:47:39.351  INFO 16652 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 16652 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 15:47:39.354 DEBUG 16652 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 15:47:39.354  INFO 16652 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 15:47:39.429  INFO 16652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 15:47:39.430  INFO 16652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 15:47:40.315  INFO 16652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 15:47:40.438  INFO 16652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 5 repository interfaces.
+2019-10-17 15:47:40.943  INFO 16652 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8027e4e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 15:47:41.608  INFO 16652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 15:47:41.635  INFO 16652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 15:47:41.636  INFO 16652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 15:47:41.826  INFO 16652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 15:47:41.826  INFO 16652 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2396 ms
+2019-10-17 15:47:42.060  INFO 16652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 15:47:42.061  WARN 16652 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 15:47:42.217  INFO 16652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 15:47:42.290  INFO 16652 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 15:47:42.398  INFO 16652 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 15:47:42.400  INFO 16652 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 15:47:42.674  INFO 16652 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 15:47:42.960  INFO 16652 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 15:47:44.035  INFO 16652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 15:47:44.122  INFO 16652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 15:47:44.705  INFO 16652 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 15:47:45.479  INFO 16652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:47:45.555  WARN 16652 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 15:47:45.638  INFO 16652 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 15:47:46.162  INFO 16652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 15:47:46.166  INFO 16652 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.517 seconds (JVM running for 9.512)
+2019-10-17 15:48:35.420  INFO 16652 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 15:48:35.431  INFO 16652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 15:48:35.431  INFO 16652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 15:48:35.445  INFO 16652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-17 15:48:35.513  INFO 16652 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:48:35.684  WARN 16652 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 15:48:35.702  WARN 16652 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 15:48:35.713  INFO 16652 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:48:35.713  INFO 16652 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:48:46.475  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:48:46.499  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:48:46.499  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:48:49.576  INFO 16652 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 15:48:49.737  INFO 16652 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:48:49.737  INFO 16652 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 15:51:40.934  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/tag, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.toTags, args=[])
+2019-10-17 15:51:40.935  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:51:40.935  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœtags
+2019-10-17 15:51:44.177  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:51:44.217  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:51:44.217  INFO 16652 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 15:59:29.974  INFO 16652 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:59:29.976  INFO 16652 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 15:59:29.981  INFO 16652 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 15:59:29.987  INFO 16652 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 15:59:41.267  INFO 11376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 11376 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 15:59:41.272 DEBUG 11376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 15:59:41.273  INFO 11376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 15:59:41.372  INFO 11376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 15:59:41.373  INFO 11376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 15:59:42.316  INFO 11376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 15:59:42.470  INFO 11376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142ms. Found 5 repository interfaces.
+2019-10-17 15:59:43.083  INFO 11376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb256c28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 15:59:43.855  INFO 11376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 15:59:43.882  INFO 11376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 15:59:43.882  INFO 11376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 15:59:44.085  INFO 11376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 15:59:44.085  INFO 11376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2712 ms
+2019-10-17 15:59:44.354  INFO 11376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 15:59:44.355  WARN 11376 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 15:59:44.515  INFO 11376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 15:59:44.639  INFO 11376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 15:59:44.742  INFO 11376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 15:59:44.744  INFO 11376 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 15:59:44.955  INFO 11376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 15:59:45.214  INFO 11376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 15:59:46.327  INFO 11376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 15:59:46.429  INFO 11376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 15:59:47.019  INFO 11376 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 15:59:47.937  INFO 11376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 15:59:48.024  WARN 11376 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 15:59:48.113  INFO 11376 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 15:59:48.679  INFO 11376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 15:59:48.682  INFO 11376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 8.181 seconds (JVM running for 9.593)
+2019-10-17 15:59:55.165  INFO 11376 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 15:59:55.185  INFO 11376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 15:59:55.185  INFO 11376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 15:59:55.214  INFO 11376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2019-10-17 15:59:55.285  INFO 11376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 15:59:55.416  WARN 11376 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 15:59:55.431  WARN 11376 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 15:59:55.439  INFO 11376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 15:59:55.439  INFO 11376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:00:48.970  INFO 11376 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:00:48.995  INFO 11376 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:00:48.996  INFO 11376 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:01:32.093  INFO 11376 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:01:32.094  INFO 11376 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:01:32.098  INFO 11376 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:01:32.108  INFO 11376 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:01:40.499  INFO 16976 --- [main] .z.g.x.t.s.s.BlogCategoryServiceTestCase : Starting BlogCategoryServiceTestCase on ¶¡ÉÜÑï with PID 16976 (started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:01:40.500 DEBUG 16976 --- [main] .z.g.x.t.s.s.BlogCategoryServiceTestCase : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:01:40.500  INFO 16976 --- [main] .z.g.x.t.s.s.BlogCategoryServiceTestCase : The following profiles are active: dev
+2019-10-17 16:01:41.369  INFO 16976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:01:41.470  INFO 16976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93ms. Found 5 repository interfaces.
+2019-10-17 16:01:41.948  INFO 16976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3f23abeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:01:42.507  INFO 16976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:01:42.512  WARN 16976 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:01:42.784  INFO 16976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:01:42.938  INFO 16976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:01:43.065  INFO 16976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:01:43.067  INFO 16976 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:01:43.282  INFO 16976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:01:43.912  INFO 16976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:01:45.322  INFO 16976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:01:46.010  INFO 16976 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:01:47.306  INFO 16976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:01:47.388  WARN 16976 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:01:47.478  INFO 16976 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:01:48.196  INFO 16976 --- [main] .z.g.x.t.s.s.BlogCategoryServiceTestCase : Started BlogCategoryServiceTestCase in 8.133 seconds (JVM running for 9.126)
+2019-10-17 16:01:48.358 ERROR 16976 --- [main] o.h.proxy.AbstractLazyInitializer        : Initialization failure [com.zhao.guang.xiao.top.po.TypeBean#21]
+
+javax.persistence.EntityNotFoundException: Unable to find com.zhao.guang.xiao.top.po.TypeBean with id 21
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:162) ~[hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:285) [hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.permissiveInitialization(AbstractLazyInitializer.java:215) [hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:166) [hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:309) [hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45) [hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95) [hibernate-core-5.3.11.Final.jar:5.3.11.Final]
+	at com.zhao.guang.xiao.top.po.TypeBean$HibernateProxy$bhGbeD69.toString(Unknown Source) [classes/:na]
+	at org.slf4j.helpers.MessageFormatter.safeObjectAppend(MessageFormatter.java:299) [slf4j-api-1.7.28.jar:1.7.28]
+	at org.slf4j.helpers.MessageFormatter.deeplyAppendParameter(MessageFormatter.java:271) [slf4j-api-1.7.28.jar:1.7.28]
+	at org.slf4j.helpers.MessageFormatter.arrayFormat(MessageFormatter.java:233) [slf4j-api-1.7.28.jar:1.7.28]
+	at org.slf4j.helpers.MessageFormatter.arrayFormat(MessageFormatter.java:173) [slf4j-api-1.7.28.jar:1.7.28]
+	at ch.qos.logback.classic.spi.LoggingEvent.getFormattedMessage(LoggingEvent.java:293) [logback-classic-1.2.3.jar:na]
+	at ch.qos.logback.classic.spi.LoggingEvent.prepareForDeferredProcessing(LoggingEvent.java:206) [logback-classic-1.2.3.jar:na]
+	at ch.qos.logback.core.OutputStreamAppender.subAppend(OutputStreamAppender.java:223) [logback-core-1.2.3.jar:na]
+	at ch.qos.logback.core.OutputStreamAppender.append(OutputStreamAppender.java:102) [logback-core-1.2.3.jar:na]
+	at ch.qos.logback.core.UnsynchronizedAppenderBase.doAppend(UnsynchronizedAppenderBase.java:84) [logback-core-1.2.3.jar:na]
+	at ch.qos.logback.core.spi.AppenderAttachableImpl.appendLoopOnAppenders(AppenderAttachableImpl.java:51) [logback-core-1.2.3.jar:na]
+	at ch.qos.logback.classic.Logger.appendLoopOnAppenders(Logger.java:270) [logback-classic-1.2.3.jar:na]
+	at ch.qos.logback.classic.Logger.callAppenders(Logger.java:257) [logback-classic-1.2.3.jar:na]
+	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:421) [logback-classic-1.2.3.jar:na]
+	at ch.qos.logback.classic.Logger.filterAndLog_1(Logger.java:398) [logback-classic-1.2.3.jar:na]
+	at ch.qos.logback.classic.Logger.debug(Logger.java:486) [logback-classic-1.2.3.jar:na]
+	at com.zhao.guang.xiao.top.springbootblog.service.BlogCategoryServiceTestCase.getOne(BlogCategoryServiceTestCase.java:33) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) [surefire-junit4-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) [surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) [surefire-booter-2.22.2.jar:2.22.2]
+
+2019-10-17 16:01:48.322 DEBUG 16976 --- [main] .z.g.x.t.s.s.BlogCategoryServiceTestCase : [FAILED toString()]
+2019-10-17 16:01:48.377  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase], using SpringBootContextLoader
+2019-10-17 16:01:48.377  INFO 16976 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-10-17 16:01:48.378  INFO 16976 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase]: BlogServiceTestCase does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-10-17 16:01:48.380  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.zhao.guang.xiao.top.SpringBootBlogApplication for test class com.zhao.guang.xiao.top.springbootblog.service.BlogServiceTestCase
+2019-10-17 16:01:48.382  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-17 16:01:48.382  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1841e7d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@81f330, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b695e8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ebb316, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1273d40, org.springframework.test.context.transaction.TransactionalTestExecutionListener@504ea7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f397d0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1a3e5db, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19213d2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@19f59f1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@15e1fc5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1ffa248]
+2019-10-17 16:01:48.505  INFO 16976 --- [main] c.z.g.x.t.s.service.BlogServiceTestCase  : [BlogBean(id=1, title=SLF4J: Failed toString() invocation on an object of type [com.zhao.guang.xiao.top.po.BlogBean$Hibern, content=```java
+SLF4J: Failed toString() invocation on an object of type [com.zhao.guang.xiao.top.po.BlogBean$HibernateProxy$GOvMqmkl]
+Reported exception:
+java.lang.StackOverflowError
+	at com.zhao.guang.xiao.top.po.BlogBean.toString(BlogBean.java:21)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at java.util.AbstractCollection.toString(AbstractCollection.java:462)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:601)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at com.zhao.guang.xiao.top.po.TypeBean.toString(TypeBean.java:17)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at com.zhao.guang.xiao.top.po.BlogBean.toString(BlogBean.java:21)
+        ....
+```
+
+³öÏÖÉÏÃæÕâ¸ö´íÎóÊÇÒòÎª
+
+ÊµÌåÀàÊ¹ÓÃ@Data×¢½âÀ´×Ô¶¯Éú³Égetset·½·¨ÓëtoString·½·¨
+ÊµÌåÀàÊ¹ÓÃJPA·½·¨À´ÊµÏÖÊµÌåÀàÖ®¼äµÄ¶ÔÓ¦¹ØÏµ Ò»¶ÔÒ»/Ò»¶Ô¶à/¶à¶Ô¶à
+ÒòÎªÊµÌåÀà¶ÔÓ¦¹ØÏµ,Ö®¼äÓĞÒ»¸öË«ÏòÒıÓÃ£¨ÎÒÃÇ¿´²»µ½ÄÄ¸ö×Ö¶Î£¬ÒòÎªÄúÊ¡ÂÔÁË¸Ã×Ö¶Î£¬»òÕßÕ³ÌùµÄ´úÂë´íÎó£©¡£ÕâÁ½¸öÀàÖĞÉú³ÉµÄtoString£¨£©·½·¨¶¼ÎŞĞİÖ¹µØÏà»¥µ÷ÓÃ¡£
+½â¾ö°ì·¨Ê¹ÓÃLombokµÄ @ToString.Exclude À´Ê¡ÂÔÕâ¸ö×Ö¶ÎµÃtoString()·½·¨,ÈçÏÂ
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸±±µº»ÄØ¼ÄÏ³ÇNULL¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­ CC 4.0 BY-SA °æÈ¨Ğ­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
+Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/qq_40646143/article/details/102541749
+
+php
+, firstPicture=https://picsum.photos/id/168/500/300, views=0, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=ÔÚdepartment£¨ÄúÔÚÎÊÌâµÄ´úÂëÖĞÊ¡ÂÔÁË¸Ã×Ö¶Î£©ºÍemployee£¨Í¨¹ıdepartments£©Ö®¼äÓĞÒ»¸öË«ÏòÒıÓÃ¡£
+Ê¹ÓÃ@tostring.excludeÎªÉú³ÉµÄtostring£¨£©ÅÅ³ıÆäÖĞÒ»¸ö×Ö¶Î£¨×îºÃÊÇ·´ÏòÒıÓÃ£©¡£
+×¢Òâ£º¶ÔÓÚequalsºÍhashcode£¬Äú¿ÉÄÜ»áÓöµ½ÀàËÆµÄÎÊÌâ¡£Ò²¿ÉÒÔÊ¹ÓÃ@equalsandhashcode.excludeÅÅ³ıËü
+
+, createTime=1571024516499, updateTime=1571108527901), BlogBean(id=3, title= SpringBoot¶¨Ê±ÈÎÎñ, content=? ? ÏîÄ¿¿ª·¢ÖĞ¾­³£ĞèÒªÖ´ĞĞÒ»Ğ©¶¨Ê±ÈÎÎñ,±ÈÈçËµĞèÒªÔÚÃ¿ÌìÁè³¿Ê±ºò,·ÖÎöÒ»´ÎÇ°Ò»ÌìµÄÈÕÖ¾ĞÅÏ¢¡£SpringÎªÎÒÃÇÌá¹©ÁËÒì²½Ö´ĞĞÈÎÎñµ÷¶ÈµÄ·½Ê½,Ìá¹© TaskExecutor , TaskScheduler ½Ó¿Ú¡£
+
+? ? Á©¸ö×¢½â @EnableScheduling , @Scheduled?
+
+cron±í´ïÊ½:
+
+×Ö¶Î	ÔÊĞíÖµ	ÔÊĞíµÄÌØÊâ×Ö¶Î
+Ãë	0-59	, - * /
+·Ö	0-59	, - * /
+Ğ¡Ê±	0-23	, - * /
+ÈÕÆÚ	1-31	, - * ? L W C
+ÔÂ·İ	1-12	, - * /
+ĞÇÆÚ	0-7 »ò SUN-SAT? 0,7ÊÇSUM	, - * ? / L C #
+?
+
+?
+
+ÌØÊâ×Ö·û	´ú±íº¬Òå
+,	Ã¶¾Ù
+-	Çø¼ä
+*	ÈÎÒâ
+/	²½³¤
+?	ÈÕ/ĞÇÆÚ³åÍ»Æ¥Åä
+L	×îºó
+W	¹¤×÷ÈÕ
+C	ºÍCalender ÁªÏµºó¼ÆËã¹ıµÄÖµ
+#	ĞÇÆÚ,4#2 µÚ¶ş¸öĞÇÆÚËÄ
+?
+
+?
+
+springboot¿ªÆô¶¨Ê±ÈÎÎñ×¢½â
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸±±µº»ÄØ¼ÄÏ³ÇNULL¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­ CC 4.0 BY-SA °æÈ¨Ğ­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
+Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/qq_40646143/article/details/98033992
+
+
+```java
+@EnableScheduling//¿ªÆô¶¨Ê±ÈÎÎñ
+@SpringBootApplication
+public class SpringBootTaskApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootTaskApplication.class, args);
+    }
+}
+```
+php, firstPicture=https://picsum.photos/id/169/500/300, views=1, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=? ? ÏîÄ¿¿ª·¢ÖĞ¾­³£ĞèÒªÖ´ĞĞÒ»Ğ©¶¨Ê±ÈÎÎñ,±ÈÈçËµĞèÒªÔÚÃ¿ÌìÁè³¿Ê±ºò,·ÖÎöÒ»´ÎÇ°Ò»ÌìµÄÈÕÖ¾ĞÅÏ¢¡£SpringÎªÎÒÃÇÌá¹©ÁËÒì²½Ö´ĞĞÈÎÎñµ÷¶ÈµÄ·½Ê½,Ìá¹© TaskExecutor , TaskScheduler ½Ó¿Ú¡£
+
+? ? Á©¸ö×¢½â @EnableScheduling , @Scheduled?
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸±±µº»ÄØ¼ÄÏ³ÇNULL¡¹µÄÔ­´´ÎÄÕÂ£¬×ñ, createTime=1571025832990, updateTime=1571107765223), BlogBean(id=2, title=Swagger-UIÇ°ºó¶Ë·ÖÀëµÄapi¿ò¼Ü, content=1),±³¾°ÖªÊ¶
+? ? ? Ëæ×Å»¥ÁªÍø¼¼ÊõµÄ·¢Õ¹,ÏÖÔÚµÄÍøÕ¾¼Ü¹¹»ù±¾¶¼ÊÇÓÉÔ­À´µÄºó¶ËäÖÈ¾,±ä³ÉÁËÇ°¶ËäÖÈ¾,Ç°ºó¶Ë·ÖÀëµÄĞÎÌ¬,¶øÇÒÇ°¶Ë¼¼ÊõºÍºó¶Ë¼¼ÊõÔÚ¸÷×ÔµÄµÀÂ·ÉÏÔ½×ßÔ½Ô¶¡£
+
+? ? ?ÆäÇ°¶ËºÍºó¶ËµÄÎ¨Ò»ÁªÏµ,±ä³ÉÁËAPI½Ó¿Ú,APIÎÄµµ±ä³ÉÁËÇ°ºó¶Ë¿ª·¢ÈËÔ±ÁªÏµµÄÅ¦´ø,±äµÃÔ½À´Ô½ÖØÒª,swagger¾ÍÊÇÒ»¿îÈÃÄã¸üºÃÊéĞ´APIÎÄµµµÄ¿ò¼Ü¡£
+
+?
+
+2),ÈÏÊ¶swagger
+? ? swaggerÊÇÒ»¸ö¹æ·¶ºÍÍêÕûµÄ¿ò¼Ü,ÓÃÓÚ Éú²ú , ÃèÊö , µ÷ÓÃ ºÍ ¿ÉÊÓ»¯ RESful ·ç¸ñµÄWeb·şÎñ,×ÜÌåÄ¿±êÊÇÊ¹¿Í»§¶ËºÍÎÄ¼şÏµÍ³×÷Îª·şÎñÆ÷ÒÔÍ¬ÑùµÄËÙ¶ÈÀ´¸üĞÂ¡£ÎÄ¼şµÄ·½·¨,²ÎÊıºÍÄ£ĞÍ½ôÃÜ¼¯³Éµ½·şÎñÆ÷¶ËµÄ´úÂë,ÔÊĞíAPIÀ´Ê¼ÖÕ±£³ÖÍ¬²½¡£
+
+×÷ÓÃ:
+
+½Ó¿ÚµÄÎÄµµÔÚÏß×Ô¶¯Éú³É
+¹¦ÄÜ²âÊÔ
+Ä¿±ê:
+
+? ? ? swagger µÄÄ¿±êÊÇÎªÁËREST APIs ¶¨ÒåÒ»¸ö±ê×¼µÄ,ÓëÓïÑÔÎâ¸£°²µÄ½Ó¿Ú,Ê¹ÈËºÍ¼ÆËã»úÔÚ¿´²»µ½Ô´Âë»òÕß¿´²»µ½ÎÄµµ»òÕß²»ÄÜÍ¨¹ıÍøÂçÁ÷Á¿¼à²âµÄÇé¿öÏÂÄÜ·¢ÏÖºÍÀí½â¸÷¸ö·şÎñ¹¦ÄÜ¡£
+
+?
+3),swaggerÊÇÒ»×é¿ªÔ´ÏîÄ¿,ÆäÖĞÖ÷ÒªÏîÄ¿ÈçÏÂ:
+swagger-tools:Ìá¹©¸÷ÖÖÓëswagger½øĞĞ¼¯³ÉºÍ½»»¥µÄ¹¤¾ß,ÀıÈçÄ£Ê½¼ìÑé,swagger1.2ÎÄµµ×ª»»²ãswagger2.0ÎÄµµµÈ¹¦ÄÜ¡£
+swagger-core:ÓÃÓÚjava/ScalaÊµÏÖ¡£ÓëJAX-RS(jersey,resteasy,cxf...),servlets ºÍplay ¿ò¼Ü½øĞĞ¼¯³É¡£
+swagger-js:ÓÃÓÚjavaScriptµÄswaggerÊµÏÖ¡£
+swagger-node-express:swaggerÄ£¿é,ÓÃÓÚnode.jsµÄExpress webÓ¦ÓÃ¿ò¼Ü
+swagger-ui : Ò»¸öÎŞÒÀÀµµÄHTML,JSºÍCSS¼¯ºÏ,¿ÉÒÔÎªSwagger¼æÈİAPI¶¯Ì¬Éú³ÉÓÅÑÅÎÄµµ¡£
+swagger-codegen:Ò»¸öÄ£°åÒıÇæ,Í¨¹ı·ÖÎöÓÃ»§swagger×ÊÔ´ÉùÃ÷ÒÔ¸÷ÖÖÓïÑÔÉú³É¿Í»§¶Ë´úÂë¡£\
+?
+
+4),ÏÂÃæÎÒÓÃspringbootÊ¹ÓÃswagger¾ßÌåÊ¹ÓÃ½Ì³ÌÈçÏÂ
+?
+
+1),ÔÚpom.xmlÌí¼ÓÒÀÀµ
+```java
+    <properties>
+        <java.version>1.8</java.version>
+        <thymeleaf-spring5.version>3.0.9.RELEASE</thymeleaf-spring5.version>
+        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+    </properties>
+ 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+ 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+ 
+        <!--thymeleaf ±ØĞëµÄ-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <!--     end   -->
+ 
+        <!--   swagger start     -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+ 
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+ 
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.8</version>
+        </dependency>
+        <!--   swagger end     -->
+ 
+ 
+        <!--    lombok    start    -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+        </dependency>
+        <!--    lombok    end    -->
+    </dependencies>
+```
+
+php, firstPicture=https://picsum.photos/id/170/500/300, views=0, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=Ëæ×Å»¥ÁªÍø¼¼ÊõµÄ·¢Õ¹,ÏÖÔÚµÄÍøÕ¾¼Ü¹¹»ù±¾¶¼ÊÇÓÉÔ­À´µÄºó¶ËäÖÈ¾,±ä³ÉÁËÇ°¶ËäÖÈ¾,Ç°ºó¶Ë·ÖÀëµÄĞÎÌ¬,¶øÇÒÇ°¶Ë¼¼ÊõºÍºó¶Ë¼¼ÊõÔÚ¸÷×ÔµÄµÀÂ·ÉÏÔ½×ßÔ½Ô¶¡£
+ÆäÇ°¶ËºÍºó¶ËµÄÎ¨Ò»ÁªÏµ,±ä³ÉÁËAPI½Ó¿Ú,APIÎÄµµ±ä³ÉÁËÇ°ºó¶Ë¿ª·¢ÈËÔ±ÁªÏµµÄÅ¦´ø,±äµÃÔ½À´Ô½ÖØÒª,swagger¾ÍÊÇÒ»¿îÈÃÄã¸üºÃÊéĞ´APIÎÄµµµÄ¿ò¼Ü¡£
+, createTime=1571025037469, updateTime=1571107870199), BlogBean(id=4, title=Spring Boot ´´½¨¼°´ò°ü, content=spring boot¼ò½é
+¼ò»¯SpringÓ¦ÓÃ¿ª·¢µÄÒ»¸ö¿ò¼Ü
+Õû¸öSpring¼¼ÊõÕ»µÄÒ»¸ö´óÕûºÏ
+J2ee¿ª·¢µÄÒ»Õ¾Ê½½â¾ö·½°¸
+?
+spring bootÓÅµã
+¿ìËÙ´´½¨¶ÀÁ¢ÔËĞĞµÄSpringÏîÄ¿ÒÔ¼°Ö÷Á÷¿ò¼Ü¼¯³É
+Ê¹ÓÃÇ¶ÈëÊ½µÄServletÈİÆ÷,Ó¦ÓÃÎŞĞè´ò³Éwar°ü
+starters×Ô¶¯ÒÀÀµÓë°æ±¾¿ØÖÆ
+´óÁ¿µÄ×Ô¶¯ÅäÖÃ,¼ò»¯¿ª·¢,Ò²¿ÉĞŞ¸ÄÄ¬ÈÏÖµ
+ÎŞĞèÅäÖÃxml,ÎŞ´úÂëÉú³É,¿ªÏä¼´ÓÃ
+×¼Éú²ú»·¾³µÄÔËĞĞÊ±Ó¦ÓÃ¼à¿Ø
+ÓëÔÆ¼ÆËãµÄÌìÈ»¼¯³É
+spring boot È±µã
+°æ±¾µü´úËÙ¶ÈºÜ¿ì£¬Ò»Ğ©Ä£¿é¸Ä¶¯ºÜ´ó
+ÓÉÓÚ²»ÓÃ×Ô¼º×öÅäÖÃ£¬±¨´íÊ±ºÜÄÑ¶¨Î»
+ÍøÉÏÏÖ³ÉµÄ½â¾ö·½°¸±È½ÏÉÙ
+?
+
+Ê²Ã´ÊÇÎ¢·şÎñ?
+martin fowler·¢±íµÄÎÄÕÂ¿ÉÒÔÁË½â,Á´½ÓÈçÏÂ?https://martinfowler.com/microservices/
+Î¢·şÎñ ¼ò¶øÑÔÖ®¾ÍÊÇ: ¼Ü¹¹·ç¸ñ(·şÎñÎ¢»¯) Ò»¸öÓ¦ÓÃÓ¦¸ÃÊÇÒ»×éĞ¡ĞÍ·şÎñ,¿ÉÒÔÍ¨¹ıHTTPµÄ·½Ê½»¥Í¨;Ã¿Ò»¸ö¹¦ÄÜÔªËØ×îÖÕ¶¼ÊÇÒ»¸ö¿É¶ÀÁ¢Ìæ»»ºÍ¶ÀÁ¢Éı¼¶µÄÈí¼şµ¥Ôª.
+?
+
+ÔËĞĞ»·¾³ÈçÏÂ
+1,jdkÊÇ1.8? , maven²Ö¿âÊÇ3.6.1
+
+mavenÏîÄ¿ĞŞ¸Äjava±àÒë°æ±¾µÄ·½Ê½
+
+ÔÚ±¾µØmaven²Ö¿âµÄsettingÎÄ¼şÌí¼ÓÕâ¸ö
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸±±µº»ÄØ¼ÄÏ³ÇNULL¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­ CC 4.0 BY-SA °æÈ¨Ğ­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
+Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/qq_40646143/article/details/90376607
+
+
+```java
+<profiles>
+    <profile>   
+        <id>jdk1.8</id>
+        <activation>   
+            <activeByDefault>true</activeByDefault>
+            <jdk>1.8</jdk>   
+        </activation>
+        <properties>   
+            <maven.compiler.source>1.8</maven.compiler.source>
+            <maven.compiler.target>1.8</maven.compiler.target>
+            <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+            <encoding>UTF-8</encoding>
+        </properties>   
+    </profile>
+</profiles> 
+```
+```js
+var i='hello word';
+```, firstPicture=https://picsum.photos/id/171/500/300, views=0, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=Î¢·şÎñ ¼ò¶øÑÔÖ®¾ÍÊÇ: ¼Ü¹¹·ç¸ñ(·şÎñÎ¢»¯) Ò»¸öÓ¦ÓÃÓ¦¸ÃÊÇÒ»×éĞ¡ĞÍ·şÎñ,¿ÉÒÔÍ¨¹ıHTTPµÄ·½Ê½»¥Í¨;Ã¿Ò»¸ö¹¦ÄÜÔªËØ×îÖÕ¶¼ÊÇÒ»¸ö¿É¶ÀÁ¢Ìæ»»ºÍ¶ÀÁ¢Éı¼¶µÄÈí¼şµ¥Ôª., createTime=1571026185387, updateTime=1571190364843), BlogBean(id=5, title=javaÇëÇóURL·µ»ØJSON, content=ĞèÇó:
+testCase ·ÃÎÊ±¾µØµÄ url,»ñµÃ·µ»Ø url µÄ json Êı¾İ
+1,url Â·¾¶ ±ÈÈç·ÃÎÊ http://localhost:8080/spb/result
+
+ControllerÈçÏÂ
+```java
+@RestController
+@RequestMapping("/spb")
+public class JsonController extends MainController {
+ 
+    private static final Logger logger = LoggerFactory.getLogger(JsonController.class);
+ 
+    @RequestMapping("/result")
+    public String resultJson() {
+        return "{\"name\": \"Ğ¡Ã÷\",\"age\": 14,\"gender\": true,\"height\": 1.65,\"grade\": null,\"middle-school\": \"\\\"W3C\\\" Middle School\",\"skills\": [\"JavaScript\",\"Java\",\"Python\",\"Lisp\"]}";
+    }
+```
+
+
+```java
+    @Test
+    public void testJsonResult() throws IOException {
+        URL connect = isConnect("http://localhost:8080/spb/result");
+        if (null != connect){
+            String json = loadJson(connect.toString());
+            System.out.println(json);
+        }
+    }
+ 
+ 
+    public synchronized URL isConnect(String urlStr) {
+        URL url = null;
+        HttpURLConnection connection = null;
+        int counts = 0;
+        if (urlStr == null || urlStr.length() <= 0) {
+            return null;
+        }
+        while (counts < 5) {
+            try {
+                url = new URL(urlStr);
+                connection = (HttpURLConnection) url.openConnection();
+                int code = connection.getResponseCode();
+                System.out.println(counts +" = "+code);
+                if (code == 200) {
+                    System.out.println("URL¿ÉÓÃ£¡");
+                }
+                break;
+            } catch (Exception ex) {
+                counts++;
+                System.out.println("URL²»¿ÉÓÃ£¬Á¬½ÓµÚ " + counts +"´Î");
+                urlStr = null;
+                continue;
+            }
+        }
+        return url;
+    }
+ 
+ 
+    public static String loadJson(String url) {
+        StringBuilder json = new StringBuilder();
+        try {
+            URL urlObject = new URL(url);
+            URLConnection uc = urlObject.openConnection();
+            // ÉèÖÃÎªutf-8µÄ±àÂë ²Å²»»áÖĞÎÄÂÒÂë
+            BufferedReader in = new BufferedReader(new InputStreamReader(uc
+                .getInputStream(), "utf-8"));
+            String inputLine = null;
+            while ((inputLine = in.readLine()) != null) {
+                json.append(inputLine);
+            }
+            in.close();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return json.toString();
+    }
+```
+php, firstPicture=https://picsum.photos/id/167/500/300, views=0, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=ÔÚÔËĞĞtestCaseÖ®Ç°ĞèÒªÈ·ÈÏ·şÎñÆ÷ÊÇ·ñÆô¶¯(tomcatÊÇ·ñÆô¶¯),Èç¹ûÃ»ÓĞÆô¶¯»ñÈ¡²»µ½jsonÊı¾İ
+Èç¹ûÁ¬½Ó²»ÉÏurl,ÇëÈ·ÈÏ·ÃÎÊµÄ¶Ë¿ÚÊÇ·ñÓëÄãtomcatµÄ¶Ë¿ÚÏàÍ¬, createTime=1571043199435, updateTime=1571123277232), BlogBean(id=6, title=JAVA_IO_StringReaderÓëStringWriter(Æß), content=×Ö·û´® StringReader StringWriter  :¶Ô×Ö·û´®½øĞĞ´¦ÀíµÄ½ÚµãÁ÷
+ 
+
+ÓĞÕâÑùÒ»¸öĞèÇó:Ğ´Ò»º¯Êı°ÑStringReaderÖĞÊäÈëÁ÷ÖĞµÄ×Ö·û´®È«²¿×ª»»³É´óĞ´£¬È»ºó½«½á¹ûĞ´µ½Ò»¸öStringWriterÖĞ£¬È»ºóÊ¹ÓÃÕâÒ»º¯Êı½«ÒÔ×Ö·û´®È«²¿×ª³É´óĞ´¡£
+
+```java
+   public static void main(String [] args) throws IOException {
+ 
+        String str="abcdefg";
+        read(str);
+ 
+    }
+    public static void read(String str) throws IOException {
+        StringReader reader = new StringReader(str);
+        StringWriter writer = new StringWriter();
+        char[] chars=new char[1024];
+        int len=0;
+        while ((len = reader.read(chars)) != -1){
+            String toUpperCase = new String(chars, 0, len).toUpperCase();
+            System.out.println(toUpperCase);
+            writer.write(toUpperCase);
+            writer.flush();
+        }
+        //ÊÍ·Å×ÊÔ´
+        reader.close();
+        writer.close();
+ 
+ 
+    }
+```
+
+php, firstPicture=https://picsum.photos/id/237/500/300, views=1, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=×Ö·û´® StringReader StringWriter  :¶Ô×Ö·û´®½øĞĞ´¦ÀíµÄ½ÚµãÁ÷ÓĞÕâÑùÒ»¸öĞèÇó:Ğ´Ò»º¯Êı°ÑStringReaderÖĞÊäÈëÁ÷ÖĞµÄ×Ö·û´®È«²¿×ª»»³É´óĞ´£¬È»ºó½«½á¹ûĞ´µ½Ò»¸öStringWriterÖĞ£¬È»ºóÊ¹ÓÃÕâÒ»º¯Êı½«ÒÔ×Ö·û´®È«²¿×ª³É´óĞ´¡£, createTime=1571043289099, updateTime=1571123221316), BlogBean(id=7, title=ÖĞÎÄÍøÒ³ÖØÉèÓëÅÅ°æ, content=<h2 id="section1">Ò»¡¢¹ØÓÚ <i class="serif">Typo.css</i></h2>
+
+<p><i class="serif">Typo.css</i> µÄÄ¿µÄÊÇ£¬ÔÚÒ»ÖÂ»¯ä¯ÀÀÆ÷ÅÅ°æĞ§¹ûµÄÍ¬Ê±£¬¹¹½¨×îÊÊºÏÖĞÎÄÔÄ¶ÁµÄÍøÒ³ÅÅ°æ¡£</p>
+<h4>ÏÖ×´ºÍÈçºÎÈ¥×ö£º</h4>
+
+<p class="typo-first">ÅÅ°æÊÇÒ»¸öÂé·³µÄÎÊÌâ <sup><a href="#appendix1"># ¸½Â¼Ò»</a></sup>£¬ĞèÒª¾«ĞÄÉè¼Æ£¬¶øÕâ¸öÉè¼ÆÈ´ÊÇ³£±»ÊÓ¾õÉè¼ÆÊ¦ËùºöÂÔµÄ¡£Ç°¶Ë¹¤³ÌÊ¦¸ü³£¿´µ½ÕâÑùµÄÎÊÌâ£¬µ«²»±ã±ä¸ü¡£ÒòÎªÔÚ¶à¸ö OS ÖĞµÄ²»Í¬ä¯ÀÀÆ÷äÖÈ¾²»Í¬£¬¸Ä¶¯ĞèÒª¶àµÄÊ±¼ä×ö»Ø¹é²âÊÔ£¬ËùÒÔ¸Ä±ä±äµÃ¸üÀ§ÄÑ¡£¶øÏñÎÒÃÇÒ»°ãÊ¹ÓÃµÄ
+  Yahoo¡¢Eric Meyer ºÍ Alice base.css ÖĞ²ÉÓÃµÄ Reset ¶¼Ã»ÓĞºÜºÃµØ¿¼ÂÇÖĞÎÄÅÅ°æ¡£<i class="serif">Typo.css</i> Òª×öµÄ¾ÍÊÇ½â¾öÖĞÎÄÅÅ°æµÄÎÊÌâ¡£</p>
+
+<p><strong><i class="serif">Typo.css</i> ²âÊÔÓÚÈçÏÂÆ½Ì¨£º</strong></p>
+<table summary="Typo.css µÄ²âÊÔÆ½Ì¨ÁĞ±í">
+  <thead>
+  <tr>
+    <th>OS/ä¯ÀÀÆ÷</th>
+    <th>Firefox</th>
+    <th>Chrome</th>
+    <th>Safari</th>
+    <th>Opera</th>
+    <th>IE9</th>
+    <th>IE8</th>
+    <th>IE7</th>
+    <th>IE6</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>OS X</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Win 7</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Win XP</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+    <td>-</td>
+    <td>?</td>
+    <td>?</td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>Ubuntu</td>
+    <td>?</td>
+    <td>?</td>
+    <td>-</td>
+    <td>?</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  </tbody>
+</table>
+
+<h4>ÖĞÎÄÅÅ°æµÄÖØµãºÍÄÑµã</h4>
+
+<p>ÔÚÖĞÎÄÅÅ°æÖĞ£¬HTML4 µÄºÜ¶à±ê×¼ÔÚÓïÒåÔÚ¶¼ÓĞÕÕ¹Ëµ½¡£µ«´ÓÊÓ¾õĞ§¹ûÉÏ£¬È´ºÜÄÑÀûÓÃµ¥¶ÀµÄ CSS À´ÊµÏÖ£¬Ïñ<abbr title="ÔÚÎÄ×ÖÏÂ¶à¼ÓÒ»¸öµã">×ÅÖØºÅ</abbr>£¨Àı£ºÕâÀï<em class="typo-em">Ç¿µ÷Ò»ÏÂ</em>£©¡£ÔÚ HTML4 ÖĞ£¬×¨ÃûºÅ±êÇ©£¨<code>&lt;u&gt;</code>£©ÒÑ¾­±»·ÅÆú£¬¶ø
+  HTML5 ±»<a href="http://html5doctor.com/u-element/">ÖØĞÂÌáÆğ</a>¡£<i class="serif">Typo.css</i> Ò²¸ù¾İÊµ¼ÊÇé¿öÌá¹©ÏàÓ¦µÄ·½°¸¡£ÎÒÃÇÖØÒªÒª×¢ÒâµÄÁ½µãÊÇ£º</p>
+<ol>
+  <li>ÓïÒå£ºÓïÒå¶ÔÓ¦µÄÓÃ·¨ºÍÑùÊ½ÊÇ·ñÓëÖĞÎÄÅÅ°æÒ»ÖÂ</li>
+  <li>±íÏÖ£ºÔÚ¸÷ä¯ÀÀÆ÷ÖĞµÄ×ÖÌå¡¢´óĞ¡ºÍËõ·ÅÊÇ·ñÈçÅÅ°æÔ¤ÆÚ</li>
+</ol>
+<p>¶ÔÓÚÕâĞ©£¬<i class="serif">Typo.css</i> ÅÅ°æÏîÄ¿µÄÖĞÎÄÆ«ÖØ×¢Òâµã£¬¶¼Ìí¼ÓÔÚ¸½Â¼ÖĞ£¬Ïê¼û£º</p>
+<blockquote>
+  <b>¸½Â¼Ò»</b>£º<a href="#appendix1"><i class="serif">Typo.css</i> ÅÅ°æÆ«ÖØµã</a>
+</blockquote>
+
+<p>Ä¿Ç°ÒÑÓĞÏñ°ÙĞÕÍøµÈÈ«ÃæÊ¹ÓÃ <i class="serif">Typo.css</i> µÄÏîÄ¿£¬²âÊÔÆ½Ì¨µÄ¸²¸Ç£¬ÌØ±ğÊÇÔÚ<abbr title="ÊÖ»ú¡¢Æ½°åµçÄÔµÈÒÆ¶¯Æ½Ì¨">ÒÆ¶¯¶Ë</abbr>ÉÏ»¹Ã»ÓĞ¸²¸ÇÍêÖ÷Á÷Æ½Ì¨£¬Ï£ÍûÓĞÄÜÁ¦µÄÍ¬Ñ§ÄÜ¼ÓÈë²âÊÔĞĞÁĞ£¬»òÕß¼ÓÈëµ½ <i class="serif">Typo.css</i>
+  µÄ¿ª·¢¡£¼ÓÈë·½·¨£º<a href="https://github.com/sofish/Typo.css">²ÎÓë <i class="serif">Typo.css</i> ¿ª·¢</a>¡£ÈçÓĞÅúÆÀ¡¢½¨ÒéºÍÒâ¼û£¬Ò²ËæÊ±»¶Ó­¸øÔÚ Github Ö±½ÓÌá <a
+    href="https://github.com/sofish/Typo.css/issues">issues</a>£¬»ò¸ø<abbr title="Sofish Lin, author of Typo.css"
+                                                                        role="author">ÎÒ</abbr>·¢<a
+    href="mailto:sofish@icloud.com">ÓÊ¼ş</a>¡£</p>
+
+
+<h2 id="section2">¶ş¡¢ÅÅ°æÊµÀı£º</h2>
+
+<p>Ìá¹©2¸öÅÅ°æÊµÀı£¬µÚÒ»¸öÖĞÎÄÊµÀıÀ´×ÔÓÚÀ´×ÔÓÚ<cite class="typo-unique">ÕÅÑàÓ¤</cite>µÄ¡¶ÂÛÓï¡·£¬ÓÉÓÚ¹ÅÎÄÅÅ°æÉæ¼°µ½µÄÔªËØ±È½Ï¶à£¬ËùÒÔ²ÉÓÃ¡¶ÂÛÓï¡·ÖĞ¡¶Ñ§¶ø¡·µÄµÚÒ»Æª×÷ÎªÅÅ°æÊµÀı½éÉÜ£»µÚ2¸öÀ´×Ôµ½¾­µäµÄ
+  Lorem Ipsum£¬²¢¼ÓÈëÁËÒ»Ğ©´úÂëºÍÁĞ±íµÈ±È½Ï¾ßÓĞ´ú±íĞÔµÄÅÅ°æÔªËØ¡£</p>
+
+<h3 id="section2-1">Àı1£ºÂÛÓïÑ§¶øÆªµÚÒ»</h3>
+
+<p>
+  <small><b>×÷Õß£º</b><abbr title="ÃûÇğ£¬×ÖÖÙÄá">¿××Ó</abbr>£¨
+    <time>Ç°551Äê9ÔÂ28ÈÕ£­Ç°479Äê4ÔÂ11ÈÕ</time>
+    £©
+  </small>
+</p>
+
+<h4>±¾ÆªÒıÓï</h4>
+
+<p>
+  ¡¶Ñ§¶ø¡·ÊÇ¡¶ÂÛÓï¡·µÚÒ»ÆªµÄÆªÃû¡£¡¶ÂÛÓï¡·ÖĞ¸÷ÆªÒ»°ã¶¼ÊÇÒÔµÚÒ»ÕÂµÄÇ°¶şÈı¸ö×Ö×÷Îª¸ÃÆªµÄÆªÃû¡£¡¶Ñ§¶ø¡·Ò»Æª°üÀ¨16ÕÂ£¬ÄÚÈİÉæ¼°Öî¶à·½Ãæ¡£ÆäÖĞÖØµãÊÇ¡¸ÎáÈÕÈıÊ¡ÎáÉí¡¹£»¡¸½ÚÓÃ¶ø°®ÈË£¬Ê¹ÃñÒÔÊ±¡¹£»¡¸ÀñÖ®ÓÃ£¬ºÍÎª¹ó¡¹ÒÔ¼°ÈÊ¡¢Ğ¢¡¢ĞÅµÈµÀµÂ·¶³ë¡£ </p>
+
+<h4>Ô­ÎÄ</h4>
+
+<p>×ÓÔ»£º¡¸Ñ§¶øÊ±Ï°Ö®£¬²»ÒàËµºõ£¿ÓĞÅó×ÔÔ¶·½À´£¬²»ÒàÀÖºõ£¿ÈË²»Öª£¬¶ø²»ã³£¬²»Òà¾ı×Óºõ£¿¡¹ </p>
+
+<h4>ÒëÎÄ</h4>
+
+<p>¿××ÓËµ£º¡¸Ñ§ÁËÓÖÊ±³£ÎÂÏ°ºÍÁ·Ï°£¬²»ÊÇºÜÓä¿ìÂğ£¿ÓĞÖ¾Í¬µÀºÏµÄÈË´ÓÔ¶·½À´£¬²»ÊÇºÜÁîÈË¸ßĞËµÄÂğ£¿ÈË¼Ò²»ÁË½âÎÒ£¬ÎÒÒ²²»Ô¹ºŞ¡¢ÄÕÅ­£¬²»Ò²ÊÇÒ»¸öÓĞµÂµÄ¾ı×ÓÂğ£¿¡¹ </p>
+
+<h4>ÆÀÎö</h4>
+
+<p>ËÎ´úÖøÃûÑ§Õß<u class="typo-u">Öììä</u>¶Ô´ËÕÂÆÀ¼Û¼«¸ß£¬ËµËüÊÇ¡¸ÈëµÀÖ®ÃÅ£¬»ıµÂÖ®»ù¡¹¡£±¾ÕÂÕâÈı¾ä»°ÊÇÈËÃÇ·Ç³£ÊìÏ¤µÄ¡£ÀúÀ´µÄ½âÊÍ¶¼ÊÇ£ºÑ§ÁËÒÔºó£¬ÓÖÊ±³£ÎÂÏ°ºÍÁ·Ï°£¬²»Ò²¸ßĞËÂğµÈµÈ¡£Èı¾ä»°£¬Ò»¾äÒ»¸öÒâË¼£¬Ç°ºó¾ä×ÓÒ²Ã»ÓĞÊ²Ã´Á¬¹áĞÔ¡£µ«Ò²ÓĞÈËÈÏÎªÕâÑù½âÊÍ²»·ûºÏÔ­Òå£¬Ö¸³öÕâÀïµÄ¡¸Ñ§¡¹²»ÊÇÖ¸Ñ§Ï°£¬¶øÊÇÖ¸Ñ§Ëµ»òÖ÷ÕÅ£»¡¸Ê±¡¹²»ÄÜ½âÎªÊ±³££¬¶øÊÇÊ±´ú»òÉç»áµÄÒâË¼£¬¡¸Ï°¡¹²»ÊÇÎÂÏ°£¬¶øÊÇÊ¹ÓÃ£¬ÒıÉêÎª²ÉÓÃ¡£¶øÇÒ£¬ÕâÈı¾ä»°²»ÊÇ¹ÂÁ¢µÄ£¬¶øÊÇÇ°ºóÏà»¥Á¬¹áµÄ¡£ÕâÈı¾äµÄÒâË¼ÊÇ£º×Ô¼ºµÄÑ§Ëµ£¬ÒªÊÇ±»Éç»á²ÉÓÃÁË£¬ÄÇ¾ÍÌ«¸ßĞËÁË£»ÍËÒ»²½Ëµ£¬ÒªÊÇÃ»ÓĞ±»Éç»áËù²ÉÓÃ£¬¿ÉÊÇºÜ¶àÅóÓÑÔŞÍ¬<abbr
+  title="ÕÅÑàÓ¤">ÎÒ</abbr>µÄÑ§Ëµ£¬·×·×µ½ÎÒÕâÀïÀ´ÌÖÂÛÎÊÌâ£¬ÎÒÒ²¸Ğµ½¿ìÀÖ£»ÔÙÍËÒ»²½Ëµ£¬¼´Ê¹Éç»á²»²ÉÓÃ£¬ÈËÃÇÒ²²»Àí½âÎÒ£¬ÎÒÒ²²»Ô¹ºŞ£¬ÕâÑù×ö£¬²»Ò²¾ÍÊÇ¾ı×ÓÂğ£¿£¨¼û¡¶ÆëÂ³Ñ§¿¯¡·1986ÄêµÚ6ÆÚÎÄ£©ÕâÖÖ½âÊÍ¿ÉÒÔ×ÔÔ²ÆäËµ£¬¶øÇÒÒ²ÓĞÒ»¶¨µÄµÀÀí£¬¹©¶ÁÕßÔÚÀí½â±¾ÕÂÄÚÈİÊ±²Î¿¼¡£
+</p>
+
+<p>´ËÍâ£¬ÔÚ¶Ô¡¸ÈË²»Öª£¬¶ø²»ã³¡¹Ò»¾äµÄ½âÊÍÖĞ£¬Ò²ÓĞÈËÈÏÎª£¬¡¸ÈË²»Öª¡¹µÄºóÃæÃ»ÓĞ±öÓï£¬ÈË¼Ò²»ÖªµÀÊ²Ã´ÄØ£¿µ±Ê±ÒòÎª¿××ÓÓĞËµ»°µÄÌØ¶¨»·¾³£¬Ëû²»ĞèÒªËµ³öÖªµÀÊ²Ã´£¬±ğÈË¾Í¿ÉÒÔÀí½âÁË£¬È´¸øºóÈËÁôÏÂÒ»¸öÃÕ¡£ÓĞÈËËµ£¬ÕâÒ»¾äÊÇ½ÓÉÏÒ»¾äËµµÄ£¬´ÓÔ¶·½À´µÄÅóÓÑÏòÎÒÇó½Ì£¬ÎÒ¸æËßËû£¬Ëû»¹²»¶®£¬ÎÒÈ´²»Ô¹ºŞ¡£ÕâÑù£¬¡¸ÈË²»Öª¡¹¾ÍÊÇ¡¸ÈË¼Ò²»ÖªµÀÎÒËù½²ÊöµÄ¡¹ÁË¡£ÕâÑùµÄ½âÊÍËÆºõÓĞĞ©Ç£Ç¿¡£</p>
+
+<p>×ÜÖ®£¬±¾ÕÂÌá³öÒÔÑ§Ï°ÎªÀÖÊÂ£¬×öµ½ÈË²»Öª¶ø²»ã³£¬·´Ó³³ö¿××ÓÑ§¶ø²»Ñá¡¢»åÈË²»¾ë¡¢×¢ÖØĞŞÑø¡¢ÑÏ¸ñÒªÇó×Ô¼ºµÄÖ÷ÕÅ¡£ÕâĞ©Ë¼ÏëÖ÷ÕÅÔÚ¡¶ÂÛÓï¡·ÊéÖĞ¶à´¦¿É¼û£¬ÓĞÖúÓÚ¶ÔµÚÒ»ÕÂÄÚÈİµÄÉîÈëÁË½â¡£</p>
+
+<h3 id="section2-2">Àı2£ºÓ¢ÎÄÅÅ°æ</h3>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+  type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+  essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+  Ipsum.</p>
+<blockquote>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</blockquote>
+
+<h4>The standard Lorem Ipsum passage, used since the 1500s</h4>
+
+<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+<h4>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h4>
+
+<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+  voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+  velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+  ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+  consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+  vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+<h4>List style in action</h4>
+<ul>
+  <li>If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as
+    your brother and hope as your sentry.
+    <p>Èç¹ûÄãÏ£Íû³É¹¦£¬µ±ÒÔºãĞÄÎªÁ¼ÓÑ£¬ÒÔ¾­ÑéÎª²ÎÄ±£¬ÒÔ½÷É÷ÎªĞÖµÜ£¬ÒÔÏ£ÍûÎªÉÚ±ø¡£</p>
+  </li>
+  <li>Sometimes one pays most for the things one gets for nothing.
+    <p>ÓĞÊ±ºòÒ»¸öÈËÎª²»»¨Ç®µÃµ½µÄ¶«Î÷¸¶³öµÄ´ú¼Û×î¸ß¡£</p>
+  </li>
+  <li>Only those who have the patience to do simple things perfectly ever acquire the skill to do difficult things
+    easily.
+    <p>Ö»ÓĞÓĞÄÍĞÄÔ²ÂúÍê³É¼òµ¥¹¤×÷µÄÈË£¬²ÅÄÜ¹»Çá¶øÒ×¾ÙµÄÍê³ÉÀ§ÄÑµÄÊÂ¡£</p>
+  </li>
+</ul>
+
+<h4>You may want to create a perfect <code>&lt;hr /&gt;</code> line, despite the fact that there will never have one
+</h4>
+<hr/>
+<p><abbr title="·¨¹ú×÷¼ÒÂŞÇĞ¸£¿¼¶ûµÂ">La Racheforcauld</abbr> said:
+  <mark>"Few things are impossible in themselves; and it is often for want of will, rather than of means, that man fails
+    to succeed".
+  </mark>
+  You just need to follow the browser's behavior, and set a right <code>margin</code> to it¡£it will works nice as the
+  demo you're watching now. The following code is the best way to render typo in Chinese:
+</p>
+<pre>
+/* ±êÌâÓ¦¸Ã¸üÌù½ôÄÚÈİ£¬²¢ÓëÆäËû¿éÇø·Ö£¬margin ÖµÒªÏàÓ¦×öÓÅ»¯ */
+h1,h2,h3,h4,h5,h6 {
+    line-height:1;font-family:Arial,sans-serif;margin:1.4em 0 0.8em;
+}
+h1{font-size:1.8em;}
+h2{font-size:1.6em;}
+h3{font-size:1.4em;}
+h4{font-size:1.2em;}
+h5,h6{font-size:1em;}
+
+/* ÏÖ´úÅÅ°æ£º±£Ö¤¿é/¶ÎÂäÖ®¼äµÄ¿Õ°×¸ôĞĞ */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr {
+    margin:1em 0 0.6em;
+}
+</pre>
+
+<h3 id="section3">Èı¡¢¸½Â¼</h3>
+
+<h5 id="appendix1">1¡¢<i class="serif">Typo.css</i> ÅÅ°æÆ«ÖØµã</h5>
+<table summary="Typo.css ÅÅ°æÆ«ÖØµã">
+  <thead>
+  <tr>
+    <th>ÀàĞÍ</th>
+    <th>ÓïÒå</th>
+    <th>±êÇ©</th>
+    <th>×¢Òâµã</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th rowspan="15">»ù´¡±êÇ©</th>
+    <td>±êÌâ</td>
+    <td><code>h1</code> ¡« <code>h6</code></td>
+    <td>È«¾Ö²»Ç¿ÖÆ´óĞ¡£¬<code>.typo</code> ÖĞ±êÌâÓëÆä¶ÔÓ¦µÄÄÚÈİÓ¦½ôÌù£¬²¢ÇÒÓĞÏàÓ¦µÄ´óĞ¡ÉèÖÃ</td>
+  </tr>
+  <tr>
+    <td>ÉÏ¡¢ÏÂ±ê</td>
+    <td><code>sup</code>/<code>sub</code></td>
+    <td>±£³ÖÓë MicroSoft Office Word µÈ³ÌĞòµÄÈÕ³£ÅÅ°æÒ»ÖÂ</td>
+  </tr>
+  <tr>
+    <td>ÒıÓÃ</td>
+    <td><code>blockquote</code></td>
+    <td>ÏÔÊ¾/Ç¶Ì×ÑùÊ½</td>
+  </tr>
+  <tr>
+    <td>ËõĞ´</td>
+    <td><code>abbr</code></td>
+    <td>ÊÇ·ñ¶¼ÓĞÏÂ»®Ïß£¬Êó±ê <code>hover</code> ÊÇ·ñÎª°ïÖúÊÖÊÆ</td>
+  </tr>
+  <tr>
+    <td>·Ö¸îÏß</td>
+    <td><code>hr</code></td>
+    <td>ÏÔÊ¾µÄ <code>padding</code> ºÍ <code>margin</code>ÕıÈ·</td>
+  </tr>
+  <tr>
+    <td>ÁĞ±í</td>
+    <td><code>ul</code>/<code>ol</code>/<code>dl</code></td>
+    <td>ÔÚÈ«¾ÖÃ»ÓĞ <code>list-style</code>£¬ÔÚ .<code>typo</code> ÖĞ¶ÔÆëÕıÈ·</td>
+  </tr>
+  <tr>
+    <td>¶¨ÒåÁĞ±í</td>
+    <td><code>dl</code></td>
+    <td>È«¾Ö <code>padding</code> ºÍ <code>margin</code>Îª0£¬ .<code>typo</code> ÖĞ¶ÔÆëÕıÈ·</td>
+  </tr>
+  <tr>
+    <td>Ñ¡Ïî</td>
+    <td><code>input[type=radio[, checkbox]]</code></td>
+    <td>ÓëÆäËû <code>form</code> ÔªËØÅÅ°æÊ±ÊÇ·ñ¾ÓÖĞ</td>
+  </tr>
+  <tr>
+    <td>Ğ±Ìå</td>
+    <td><code>i</code></td>
+    <td>Ö»ÉèÖÃÒ»ÖÖĞ±Ìå£¬ÈÃ <code>em</code> ºÍ <code>cite</code> ÏÔÊ¾ÎªÕıÌå</td>
+  </tr>
+  <tr>
+    <td>Ç¿µ÷</td>
+    <td><code>em</code></td>
+    <td>ÔÚÈ«¾ÖÏÔÊ¾ÕıÌå£¬ÔÚ <code>.typo</code> ÖĞÏÔÊ¾Óë <code>b</code> ºÍ <code>strong</code> µÄÑùÊ½Ò»ÖÂ£¬Îª´ÖÌå</td>
+  </tr>
+  <tr>
+    <td>¼ÓÇ¿</td>
+    <td><code>strong/b</code></td>
+    <td>ÏÔÊ¾Îª´ÖÌå</td>
+  </tr>
+  <tr>
+    <td>±ê¼Ç</td>
+    <td><code>mark</code></td>
+    <td>ÀàËÆÓ«¹â±Ê</td>
+  </tr>
+  <tr>
+    <td>Ó¡Ë¢</td>
+    <td><code>small</code></td>
+    <td>±£³ÖÎªÕıÈ·×ÖÌåµÄ 80% ´óĞ¡£¬ÑÕÉ«ÉèÖÃÎªÇ³»ÒÉ«</td>
+  </tr>
+  <tr>
+    <td>±í¸ñ</td>
+    <td><code>table</code></td>
+    <td>È«¾Ö²»ÏÔÊ¾ÏßÌõ£¬ÔÚ <code>table</code> ÖĞÏÔÊ¾±í¸ñÍâ¿ò£¬²¢ÇÒ±íÍ·ÓĞÇ³»Ò±³¾°</td>
+  </tr>
+  <tr>
+    <td>´úÂë</td>
+    <td><code>pre</code>/<code>code</code></td>
+    <td>×ÖÌåÊ¹ÓÃ <code>courier</code> Ïµ×ÖÌå£¬±£³ÖÓë <code>serif</code> ÓĞ±È½ÏÒ»ÖÂµÄÏÔÊ¾Ğ§¹û</td>
+  </tr>
+  <tr>
+    <th rowspan="5">ÌØÊâ·ûºÅ</th>
+    <td>×ÅÖØºÅ</td>
+    <td><em class="typo-em">ÔÚÎÄ×ÖÏÂ¼Óµã</em></td>
+    <td>ÔÚÖ§³Ö <code>:after</code> ºÍ <code>:before</code> µÄä¯ÀÀÆ÷¿ÉÒÔ×ö½¥½øÔöÇ¿ÊµÏÖ</td>
+  </tr>
+  <tr>
+    <td>×¨ÃûºÅ</td>
+    <td><u>ÁÖ½¨·æ</u></td>
+    <td>×¨ÃûºÅ£¬ÓĞÏÂ»®Ïß£¬Ê¹ÓÃ <code>u</code> »ò¶¼ <code>.typo-u</code> Àà</td>
+  </tr>
+  <tr>
+    <td>ÆÆÕÛºÅ</td>
+    <td>¡ª¡ª</td>
+    <td>±£³ÖÒ»»®£¬¶ø·ÇÁ½»®</td>
+  </tr>
+  <tr>
+    <td>ÈËÃñ±Ò</td>
+    <td>&yen;</td>
+    <td>Ê¹ÓÃÁ½Æ½µÈÏßµÄ·ûºÅ£¬»òÕß HTML ÊµÌå·ûºÅ <code>&amp;yen;</code></td>
+  </tr>
+  <tr>
+    <td>É¾³ı·û</td>
+    <td>
+      <del>ÒÑÉ¾³ı£¨deleted£©</del>
+    </td>
+    <td>Ò»ÖÂ»¯¸÷ä¯ÀÀÆ÷ÏÔÊ¾£¬ÖĞÓ¢»ìÅÅÕıÈ·</td>
+  </tr>
+  <tr>
+    <th rowspan="3">¼ÓÇ¿Àà</th>
+    <td>×¨ÃûºÅ</td>
+    <td><code>.typo-u</code></td>
+    <td>ÓÉÓÚ <code>u</code> ±» HTML4 ·ÅÆú£¬ÔÚÏòºó¼æÈİÉÏÍÆ¼öÊ¹ÓÃ <code>.typo-u</code></td>
+  </tr>
+  <tr>
+    <td>×ÅÖØ·û</td>
+    <td><code>.typo-em</code></td>
+    <td>ÀûÓÃ <code>:after</code> ºÍ <code>:before</code> ÊµÏÖ×ÅÖØ·û</td>
+  </tr>
+  <tr>
+    <td>Çå³ı¸¡¶¯</td>
+    <td><code>.clearfix</code></td>
+    <td>ÓëÒ»°ã CSS Reset ±£³ÖÒ»¶ÔÖÂ API</td>
+  </tr>
+  <tr>
+    <th rowspan="5">×¢Òâµã</th>
+    <td colspan="3">£¨1£©ÖĞÓ¢ÎÄ»ìÅÅĞĞ¸ß/ĞĞ¾à</td>
+  </tr>
+  <tr>
+    <td colspan="3">£¨2£©ÉÏÏÂ±êÔÚ IE ÖĞÏÔÊ¾Ğ§¹û</td>
+  </tr>
+  <tr>
+    <td colspan="3">£¨3£©¿é/¶ÎÂä·Ö¸î¿Õ°×ÊÇ·ñ·ûºÏÉè¼ÆÔ­Ôò</td>
+  </tr>
+  <tr>
+    <td colspan="3">£¨4£©input ¶àÓà¿Õ¼äÎÊÌâ</td>
+  </tr>
+  <tr>
+    <td colspan="3">£¨5£©Ä¬ÈÏ×ÖÌåÉ«²Ê£¬Ä¿Ç°²ÉÓÃ <code>#333</code> ÔÚ¸÷ÖÖä¯ÀÀÏÔÊ¾±È½ÏºÃ</td>
+  </tr>
+  </tbody>
+</table>
+
+<h5 id="appendix2">2¡¢¿ªÔ´Ğí¿É</h5>
+, firstPicture=https://picsum.photos/id/267/500/300, views=2, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=ÅÅ°æÊÇÒ»¸öÂé·³µÄÎÊÌâ # ¸½Â¼Ò»£¬ĞèÒª¾«ĞÄÉè¼Æ£¬¶øÕâ¸öÉè¼ÆÈ´ÊÇ³£±»ÊÓ¾õÉè¼ÆÊ¦ËùºöÂÔµÄ¡£Ç°¶Ë¹¤³ÌÊ¦¸ü³£¿´µ½ÕâÑùµÄÎÊÌâ£¬µ«²»±ã±ä¸ü¡£ÒòÎªÔÚ¶à¸ö OS ÖĞµÄ²»Í¬ä¯ÀÀÆ÷äÖÈ¾²»Í¬£¬¸Ä¶¯ĞèÒª¶àµÄÊ±¼ä×ö»Ø¹é²âÊÔ£¬ËùÒÔ¸Ä±ä±äµÃ¸üÀ§ÄÑ¡£¶øÏñÎÒÃÇÒ»°ãÊ¹ÓÃµÄ Yahoo¡¢Eric Meyer ºÍ Alice base.css ÖĞ²ÉÓÃµÄ Reset ¶¼Ã»ÓĞºÜºÃµØ¿¼ÂÇÖĞÎÄÅÅ°æ¡£typo.css Òª×öµÄ¾ÍÊÇ½â¾öÖĞÎÄÅÅ°æµÄÎÊÌâ, createTime=1571130615505, updateTime=1571130615505), BlogBean(id=8, title=MyCat½Ì³Ì¡¾¼òµ¥½éÉÜ¡¿, content=# Ò»¡¢MyCat¼ò½é
+1. Ê²Ã´ÊÇMyCat
+??MyCat ÊÇÄ¿Ç°×îÁ÷ĞĞµÄ»ùÓÚ java ÓïÑÔ±àĞ´µÄÊı¾İ¿âÖĞ¼ä¼ş£¬ÊÇÒ»¸öÊµÏÖÁË MySQL Ğ­ÒéµÄ·şÎñÆ÷£¬Ç°¶ËÓÃ»§¿ÉÒÔ°ÑËü¿´×÷ÊÇÒ»¸öÊı¾İ¿â´úÀí£¬ÓÃ MySQL ¿Í»§¶Ë¹¤¾ßºÍÃüÁîĞĞ·ÃÎÊ£¬¶øÆäºó¶Ë¿ÉÒÔÓÃ MySQL Ô­ÉúĞ­ÒéÓë¶à¸ö MySQL ·şÎñÆ÷Í¨ĞÅ£¬Ò²¿ÉÒÔÓÃ JDBC Ğ­ÒéÓë´ó¶àÊıÖ÷Á÷Êı¾İ¿â·şÎñÆ÷Í¨ĞÅ£¬ÆäºËĞÄ¹¦ÄÜÊÇ·Ö¿â·Ö±í¡£ÅäºÏÊı¾İ¿âµÄÖ÷´ÓÄ£Ê½»¹¿ÉÊµÏÖ¶ÁĞ´·ÖÀë¡£
+??MyCat ÊÇ»ùÓÚ°¢Àï¿ªÔ´µÄ Cobar ²úÆ·¶øÑĞ·¢£¬Cobar µÄÎÈ¶¨ĞÔ¡¢¿É¿¿ĞÔ¡¢ÓÅĞãµÄ¼Ü¹¹ºÍĞÔÄÜÒÔ¼°ÖÚ¶à³ÉÊìµÄÊ¹ÓÃ°¸ÀıÊ¹µÃ MyCat ±äµÃ·Ç³£µÄÇ¿´ó¡£
+??MyCat ·¢Õ¹µ½Ä¿Ç°µÄ°æ±¾£¬ÒÑ¾­²»ÊÇÒ»¸öµ¥´¿µÄ MySQL ´úÀíÁË£¬ËüµÄºó¶Ë¿ÉÒÔÖ§³ÖMySQL¡¢SQL Server¡¢Oracle¡¢DB2¡¢PostgreSQL µÈÖ÷Á÷Êı¾İ¿â£¬Ò²Ö§³Ö MongoDB ÕâÖÖĞÂĞÍNoSQL ·½Ê½µÄ´æ´¢£¬Î´À´»¹»áÖ§³Ö¸ü¶àÀàĞÍµÄ´æ´¢¡£¶øÔÚ×îÖÕÓÃ»§¿´À´£¬ÎŞÂÛÊÇÄÇÖÖ´æ´¢·½Ê½£¬ÔÚ MyCat Àï£¬¶¼ÊÇÒ»¸ö´«Í³µÄÊı¾İ¿â±í£¬Ö§³Ö±ê×¼µÄ SQL Óï¾ä½øĞĞÊı¾İµÄ²Ù×÷£¬ÕâÑùÒ»À´£¬¶ÔÇ°¶ËÒµÎñÏµÍ³À´Ëµ£¬¿ÉÒÔ´ó·ù½µµÍ¿ª·¢ÄÑ¶È£¬ÌáÉı¿ª·¢ËÙ¶È¡£
+??MyCat ¹ÙÍø£º http://www.mycat.io/
+
+# 2. MyCatµÄ½á¹¹
+
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+°æÈ¨ÉùÃ÷£º±¾ÎÄÎªCSDN²©Ö÷¡¸²¨²¨¿¾Ñ¼¡¹µÄÔ­´´ÎÄÕÂ£¬×ñÑ­ CC 4.0 BY-SA °æÈ¨Ğ­Òé£¬×ªÔØÇë¸½ÉÏÔ­ÎÄ³ö´¦Á´½Ó¼°±¾ÉùÃ÷¡£
+Ô­ÎÄÁ´½Ó£ºhttps://blog.csdn.net/qq_38526573/article/details/102562219
+
+# 3. Ê¹ÓÃMyCatµÄºÃ´¦
+3.1 Êı¾İÁ¿¼¶
+??µ¥Ò»µÄ MySQL ÆäÊı¾İ´æ´¢Á¿¼¶ºÍ²Ù×÷Á¿¼¶ÓĞÏŞ.
+??Mycat ¿ÉÒÔ¹ÜÀíÈô¸É MySQL Êı¾İ¿â,Í¬Ê±ÊµÏÖÊı¾İµÄ´æ´¢ºÍ²Ù×÷.
+
+3.2 ¿ªÔ´ĞÔÖÊ
+Mycat ÊÇ java ±àĞ´µÄÖĞ¼ä¼ş. ¿ªÔ´,Ãâ·Ñ.
+ÓĞ·Ç³£¶àµÄÈËºÍ×éÖ¯¶Ô Mycat ÊµĞĞ¿ª·¢,Î¬»¤,¹ÜÀí,¸üĞÂ.
+Mycat °æ±¾ÌáÉı½Ï¿ì,¿ÉÒÔ¸úËæ»·¾³·¢Õ¹.Èç¹ûÓĞÎÊÌâ,¿ÉÒÔ¿ìËÙ½â¾ö.
+Mycat ÓĞ¿ªÔ´ÍøÕ¾ºÍ¿ªÔ´ÉçÇø.ÇÒÓĞ¹Ù·½·¢²¼µÄµç×ÓÊé¼®.
+Mycat ÊÇ°¢ÀïÔ­Ó¦ÓÃ corba ×ªĞÍ¶øÀ´µÄ.
+3.3 ÊĞ³¡Ó¦ÓÃ
+??MyCat ÔÚ»¥ÁªÍøÓ¦ÓÃÖĞÕ¼±È·Ç³£¸ß.
+
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   |   |
+
+```java
+p { color: red }
+```, firstPicture=https://picsum.photos/id/650/500/300, views=4, appreciation=true, shareStatement=true, commentOpen=true, published=0, recommend=true, description=?MyCat ÊÇÄ¿Ç°×îÁ÷ĞĞµÄ»ùÓÚ java ÓïÑÔ±àĞ´µÄÊı¾İ¿âÖĞ¼ä¼ş£¬ÊÇÒ»¸öÊµÏÖÁË MySQL Ğ­ÒéµÄ·şÎñÆ÷£¬Ç°¶ËÓÃ»§¿ÉÒÔ°ÑËü¿´×÷ÊÇÒ»¸öÊı¾İ¿â´úÀí£¬ÓÃ MySQL ¿Í»§¶Ë¹¤¾ßºÍÃüÁîĞĞ·ÃÎÊ£¬¶øÆäºó¶Ë¿ÉÒÔÓÃ MySQL Ô­ÉúĞ­ÒéÓë¶à¸ö MySQL ·şÎñÆ÷Í¨ĞÅ£¬, createTime=1571189122959, updateTime=1571189720474)]
+2019-10-17 16:01:48.513  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.zhao.guang.xiao.top.springbootblog.service.UserServiceTestCase], using SpringBootContextLoader
+2019-10-17 16:01:48.514  INFO 16976 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.zhao.guang.xiao.top.springbootblog.service.UserServiceTestCase]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-10-17 16:01:48.515  INFO 16976 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.zhao.guang.xiao.top.springbootblog.service.UserServiceTestCase]: UserServiceTestCase does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-10-17 16:01:48.517  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.zhao.guang.xiao.top.SpringBootBlogApplication for test class com.zhao.guang.xiao.top.springbootblog.service.UserServiceTestCase
+2019-10-17 16:01:48.519  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-17 16:01:48.520  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3d787, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@172fbd1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1785a27, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@43dae2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f09a02, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5454be, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d08ff1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1dec463, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1f26810, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1213a74, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@a791a6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@19bb60d]
+2019-10-17 16:01:48.563  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.zhao.guang.xiao.top.springbootblog.SpringBootBlogApplicationTests], using SpringBootContextLoader
+2019-10-17 16:01:48.565  INFO 16976 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.zhao.guang.xiao.top.springbootblog.SpringBootBlogApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-10-17 16:01:48.565  INFO 16976 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.zhao.guang.xiao.top.springbootblog.SpringBootBlogApplicationTests]: SpringBootBlogApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-10-17 16:01:48.570  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.zhao.guang.xiao.top.SpringBootBlogApplication for test class com.zhao.guang.xiao.top.springbootblog.SpringBootBlogApplicationTests
+2019-10-17 16:01:48.572  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-17 16:01:48.572  INFO 16976 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@429f56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1beaef8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1744195, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1f529a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@147b021, org.springframework.test.context.transaction.TransactionalTestExecutionListener@116181f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cb95c1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ad3c67, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b512b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1a87c11, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1d19538, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68cda1]
+2019-10-17 16:01:48.585  INFO 16976 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:01:48.589  INFO 16976 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:01:48.594  INFO 16976 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:01:48.604  INFO 16976 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:02:28.961  INFO 15632 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 15632 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:02:28.964 DEBUG 15632 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:02:28.964  INFO 15632 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:02:29.045  INFO 15632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:02:29.045  INFO 15632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:02:29.940  INFO 15632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:02:30.058  INFO 15632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 5 repository interfaces.
+2019-10-17 16:02:30.556  INFO 15632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c8aece4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:02:31.249  INFO 15632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:02:31.278  INFO 15632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:02:31.278  INFO 15632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:02:31.466  INFO 15632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:02:31.466  INFO 15632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2421 ms
+2019-10-17 16:02:31.711  INFO 15632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:02:31.712  WARN 15632 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:02:31.851  INFO 15632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:02:31.968  INFO 15632 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:02:32.046  INFO 15632 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:02:32.059  INFO 15632 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:02:32.209  INFO 15632 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:02:32.438  INFO 15632 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:02:33.350  INFO 15632 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:02:33.451  INFO 15632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:02:34.019  INFO 15632 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:02:34.790  INFO 15632 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:02:34.884  WARN 15632 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:02:34.946  INFO 15632 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:02:35.496  INFO 15632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:02:35.499  INFO 15632 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.21 seconds (JVM running for 8.529)
+2019-10-17 16:02:41.610  INFO 15632 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:02:41.621  INFO 15632 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:02:41.621  INFO 15632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:02:41.635  INFO 15632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-10-17 16:02:41.680  INFO 15632 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:02:41.829  WARN 15632 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:02:41.846  WARN 15632 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:02:41.856  INFO 15632 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:02:41.856  INFO 15632 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:02:48.063  INFO 15632 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:02:48.092  INFO 15632 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:02:48.093  INFO 15632 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:02:49.857  INFO 15632 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 16:02:50.007  INFO 15632 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:02:50.008  INFO 15632 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 16:03:42.597  INFO 15632 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:03:42.599  INFO 15632 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:03:42.603  INFO 15632 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:03:42.608  INFO 15632 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:03:49.091  INFO 16360 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 16360 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:03:49.093 DEBUG 16360 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:03:49.093  INFO 16360 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:03:49.187  INFO 16360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:03:49.187  INFO 16360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:03:50.090  INFO 16360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:03:50.213  INFO 16360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114ms. Found 5 repository interfaces.
+2019-10-17 16:03:50.696  INFO 16360 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95a418c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:03:51.339  INFO 16360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:03:51.363  INFO 16360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:03:51.363  INFO 16360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:03:51.543  INFO 16360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:03:51.543  INFO 16360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2354 ms
+2019-10-17 16:03:51.788  INFO 16360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:03:51.789  WARN 16360 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:03:51.924  INFO 16360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:03:52.044  INFO 16360 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:03:52.149  INFO 16360 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:03:52.152  INFO 16360 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:03:52.327  INFO 16360 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:03:52.722  INFO 16360 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:03:54.125  INFO 16360 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:03:54.250  INFO 16360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:03:55.412  INFO 16360 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:03:56.392  INFO 16360 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:03:56.497  WARN 16360 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:03:56.634  INFO 16360 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:03:57.737  INFO 16360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:03:57.741  INFO 16360 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 9.362 seconds (JVM running for 10.925)
+2019-10-17 16:04:12.552  INFO 16360 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:04:12.560  INFO 16360 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:04:12.560  INFO 16360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:04:12.573  INFO 16360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-10-17 16:04:12.612  INFO 16360 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:04:12.739  WARN 16360 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:04:12.757  WARN 16360 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:04:12.771  INFO 16360 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:04:12.772  INFO 16360 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:04:15.070  INFO 16360 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 16:04:15.210  INFO 16360 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:04:15.211  INFO 16360 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 16:05:57.093  INFO 16360 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:05:57.097  INFO 16360 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:05:57.101  INFO 16360 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:05:57.106  INFO 16360 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:06:53.110 DEBUG 15056 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-17 16:07:19.817  INFO 17376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 17376 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:07:19.820 DEBUG 17376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:07:19.820  INFO 17376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:07:19.902  INFO 17376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:07:19.903  INFO 17376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:07:20.771  INFO 17376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:07:20.891  INFO 17376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111ms. Found 5 repository interfaces.
+2019-10-17 16:07:21.445  INFO 17376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7090540b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:07:22.079  INFO 17376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:07:22.104  INFO 17376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:07:22.104  INFO 17376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:07:22.286  INFO 17376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:07:22.287  INFO 17376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2384 ms
+2019-10-17 16:07:22.562  INFO 17376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:07:22.563  WARN 17376 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:07:22.768  INFO 17376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:07:22.831  INFO 17376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:07:22.984  INFO 17376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:07:22.987  INFO 17376 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:07:23.152  INFO 17376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:07:23.394  INFO 17376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:07:24.393  INFO 17376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:07:24.496  INFO 17376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:07:25.086  INFO 17376 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:07:25.975  INFO 17376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:07:26.052  WARN 17376 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:07:26.147  INFO 17376 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:07:26.720  INFO 17376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:07:26.723  INFO 17376 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.461 seconds (JVM running for 10.343)
+2019-10-17 16:07:31.003  INFO 17376 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:07:31.033  INFO 17376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:07:31.034  INFO 17376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:07:31.055  INFO 17376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-10-17 16:07:31.110  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:07:31.414  WARN 17376 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:07:31.435  WARN 17376 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:07:31.444  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:07:31.444  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:08:38.937  INFO 17376 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:08:38.968  INFO 17376 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:08:38.969  INFO 17376 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:09:38.282  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:09:38.326  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:09:38.326  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:09:41.189  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:09:41.212  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:09:41.213  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:09:58.647  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:09:58.669  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:09:58.669  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:10:00.489  INFO 17376 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:10:00.544  INFO 17376 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:10:00.544  INFO 17376 --- [http-nio-8080-exec-8] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:10:01.664  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:10:01.688  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:10:01.689  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:10:10.430  INFO 17376 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:10:10.485  INFO 17376 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:10:10.486  INFO 17376 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:10:30.196  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:10:30.222  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:10:30.223  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:10:36.582  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:10:36.602  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:10:36.603  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:11:50.609  INFO 17376 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:11:50.628  INFO 17376 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:11:50.629  INFO 17376 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:12:11.770  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:12:11.791  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:12:11.791  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:12:24.624  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/4, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[4, {}])
+2019-10-17 16:12:24.773  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:12:24.773  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 16:12:25.507  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[4])
+2019-10-17 16:12:25.557  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:12:25.557  INFO 17376 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ1
+2019-10-17 16:13:35.956  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:13:35.995  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:13:35.995  INFO 17376 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:14:15.385  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:14:15.403  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:14:15.404  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:14:38.525  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:14:38.545  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:14:38.545  INFO 17376 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:15:48.175  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:15:48.189  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:15:48.190  INFO 17376 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:15:52.215  INFO 17376 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:15:52.216  INFO 17376 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:15:52.221  INFO 17376 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:15:52.227  INFO 17376 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:16:14.478  INFO 16444 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 16444 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:16:14.481 DEBUG 16444 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:16:14.482  INFO 16444 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:16:14.572  INFO 16444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:16:14.572  INFO 16444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:16:15.556  INFO 16444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:16:15.686  INFO 16444 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 5 repository interfaces.
+2019-10-17 16:16:16.184  INFO 16444 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2bb256c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:16:16.914  INFO 16444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:16:16.951  INFO 16444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:16:16.951  INFO 16444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:16:17.147  INFO 16444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:16:17.148  INFO 16444 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2576 ms
+2019-10-17 16:16:17.392  INFO 16444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:16:17.394  WARN 16444 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:16:17.555  INFO 16444 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:16:17.680  INFO 16444 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:16:17.786  INFO 16444 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:16:17.788  INFO 16444 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:16:17.988  INFO 16444 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:16:18.251  INFO 16444 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:16:19.448  INFO 16444 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:16:19.564  INFO 16444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:16:20.206  INFO 16444 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:16:21.035  INFO 16444 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:16:21.120  WARN 16444 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:16:21.202  INFO 16444 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:16:21.855  INFO 16444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:16:21.858  INFO 16444 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 8.188 seconds (JVM running for 9.434)
+2019-10-17 16:16:25.542  INFO 16444 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=4] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:16:25.560  INFO 16444 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:16:25.560  INFO 16444 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:16:25.603  INFO 16444 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 43 ms
+2019-10-17 16:16:25.644  INFO 16444 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:16:25.765  WARN 16444 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:16:25.807  WARN 16444 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:16:25.817  INFO 16444 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:16:25.818  INFO 16444 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:17:54.555  INFO 16444 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:17:54.594  INFO 16444 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:17:54.595  INFO 16444 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:18:33.123  INFO 16444 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:18:33.164  INFO 16444 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:18:33.164  INFO 16444 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:20:56.054  INFO 16444 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/6, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[6, {}])
+2019-10-17 16:20:56.199  INFO 16444 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:20:56.199  INFO 16444 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 16:20:56.988  INFO 16444 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[6])
+2019-10-17 16:20:57.033  INFO 16444 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:20:57.034  INFO 16444 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ2
+2019-10-17 16:22:03.765  INFO 16444 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:22:03.805  INFO 16444 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:22:03.805  INFO 16444 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:22:43.546  INFO 16444 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:22:43.594  INFO 16444 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:22:43.594  INFO 16444 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:23:48.899  INFO 15776 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 15776 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:23:48.902 DEBUG 15776 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:23:48.902  INFO 15776 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:23:48.973  INFO 15776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:23:48.974  INFO 15776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:23:49.997  INFO 15776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:23:50.113  INFO 15776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 5 repository interfaces.
+2019-10-17 16:23:50.606  INFO 15776 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12880eff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:23:51.242  INFO 15776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:23:51.273  INFO 15776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:23:51.273  INFO 15776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:23:51.453  INFO 15776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:23:51.454  INFO 15776 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2480 ms
+2019-10-17 16:23:51.701  INFO 15776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:23:51.702  WARN 15776 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:23:51.838  INFO 15776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:23:51.953  INFO 15776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:23:52.028  INFO 15776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:23:52.029  INFO 15776 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:23:52.203  INFO 15776 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:23:52.467  INFO 15776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:23:53.384  INFO 15776 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:23:53.483  INFO 15776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:23:54.049  INFO 15776 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:23:54.849  INFO 15776 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:23:54.929  WARN 15776 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:23:55.036  INFO 15776 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:23:55.728  INFO 15776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:23:55.750  INFO 15776 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.533 seconds (JVM running for 8.643)
+2019-10-17 16:23:57.160  INFO 15776 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=6] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:23:57.167  INFO 15776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:23:57.167  INFO 15776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:23:57.181  INFO 15776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-10-17 16:23:57.354  INFO 15776 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:23:57.472  WARN 15776 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:23:57.516  WARN 15776 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:23:57.526  INFO 15776 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:23:57.527  INFO 15776 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:26:22.516  INFO 15776 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:26:22.552  INFO 15776 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:26:22.553  INFO 15776 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:28:44.196  INFO 15776 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:28:44.198  INFO 15776 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:28:44.201  INFO 15776 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:28:44.206  INFO 15776 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:28:55.755  INFO 11024 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 11024 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:28:55.759 DEBUG 11024 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:28:55.759  INFO 11024 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:28:55.833  INFO 11024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:28:55.834  INFO 11024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:28:56.729  INFO 11024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:28:56.846  INFO 11024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 5 repository interfaces.
+2019-10-17 16:28:57.359  INFO 11024 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e0b258e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:28:57.981  INFO 11024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:28:58.004  INFO 11024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:28:58.004  INFO 11024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:28:58.187  INFO 11024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:28:58.188  INFO 11024 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2354 ms
+2019-10-17 16:28:58.415  INFO 11024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:28:58.416  WARN 11024 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:28:58.551  INFO 11024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:28:58.637  INFO 11024 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:28:58.822  INFO 11024 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:28:58.825  INFO 11024 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:28:58.986  INFO 11024 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:28:59.211  INFO 11024 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:29:00.172  INFO 11024 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:29:00.261  INFO 11024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:29:00.835  INFO 11024 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:29:01.620  INFO 11024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:29:01.707  WARN 11024 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:29:01.792  INFO 11024 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:29:02.328  INFO 11024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:29:02.331  INFO 11024 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.273 seconds (JVM running for 8.444)
+2019-10-17 16:29:08.281  INFO 11024 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=6] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:29:08.315  INFO 11024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:29:08.315  INFO 11024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:29:08.334  INFO 11024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-10-17 16:29:08.386  INFO 11024 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:29:08.517  WARN 11024 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:29:08.532  WARN 11024 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:29:08.541  INFO 11024 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:29:08.541  INFO 11024 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:29:57.199  INFO 11024 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:29:57.238  INFO 11024 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:29:57.238  INFO 11024 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:31:11.079  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:31:11.101  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:31:11.101  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:31:34.306  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:31:34.342  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:31:34.343  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:33:28.574  INFO 11024 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:33:28.601  INFO 11024 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:33:28.601  INFO 11024 --- [http-nio-8080-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:33:34.489  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:33:34.535  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:33:34.536  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:34:10.292  INFO 11024 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:34:10.312  INFO 11024 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:34:10.312  INFO 11024 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:34:33.732  INFO 11024 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:34:33.769  INFO 11024 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:34:33.769  INFO 11024 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:34:35.901  INFO 11024 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:34:35.922  INFO 11024 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:34:35.922  INFO 11024 --- [http-nio-8080-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:34:37.482  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:34:37.500  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:34:37.500  INFO 11024 --- [http-nio-8080-exec-3] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:34:40.931  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:34:40.944  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:34:40.944  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:37:17.055  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:37:17.076  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:37:17.077  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:37:41.192  INFO 11024 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 16:37:41.368  INFO 11024 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:37:41.368  INFO 11024 --- [http-nio-8080-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 16:37:42.340  INFO 11024 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/addView, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndBlogBeanController.increaseViewCount, args=[8])
+2019-10-17 16:37:42.393  INFO 11024 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:37:42.394  INFO 11024 --- [http-nio-8080-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœ5
+2019-10-17 16:37:52.866  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/search, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.search, args=[Page request [number: 0, size 5, sort: createTime: DESC], php, {}])
+2019-10-17 16:37:52.880  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:37:52.880  INFO 11024 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœsearch
+2019-10-17 16:39:46.884  INFO 11024 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:39:46.888  INFO 11024 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:39:46.893  INFO 11024 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:39:46.902  INFO 11024 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:39:51.800  INFO 15100 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 15100 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:39:51.823 DEBUG 15100 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:39:51.823  INFO 15100 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:39:51.886  INFO 15100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:39:51.886  INFO 15100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:39:52.836  INFO 15100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:39:52.951  INFO 15100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 5 repository interfaces.
+2019-10-17 16:39:53.468  INFO 15100 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$50f47b54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:39:54.112  INFO 15100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:39:54.135  INFO 15100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:39:54.135  INFO 15100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:39:54.306  INFO 15100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:39:54.306  INFO 15100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2420 ms
+2019-10-17 16:39:54.543  INFO 15100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:39:54.544  WARN 15100 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:39:54.679  INFO 15100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:39:54.790  INFO 15100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:39:54.873  INFO 15100 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:39:54.874  INFO 15100 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:39:55.024  INFO 15100 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:39:55.261  INFO 15100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:39:56.243  INFO 15100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:39:56.334  INFO 15100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:39:56.940  INFO 15100 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:39:57.713  INFO 15100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:39:57.788  WARN 15100 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:39:57.855  INFO 15100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:39:58.400  INFO 15100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:39:58.403  INFO 15100 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.348 seconds (JVM running for 8.732)
+2019-10-17 16:40:22.226  INFO 15100 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:40:22.238  INFO 15100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:40:22.239  INFO 15100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:40:22.262  INFO 15100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-10-17 16:40:22.321  INFO 15100 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:40:22.482  WARN 15100 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:40:22.498  WARN 15100 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:40:22.506  INFO 15100 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:40:22.507  INFO 15100 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:40:36.125  INFO 15100 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:40:36.175  INFO 15100 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:40:36.176  INFO 15100 --- [http-nio-8080-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:44:37.973  INFO 15100 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:44:37.975  INFO 15100 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:44:37.979  INFO 15100 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 16:44:37.984  INFO 15100 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 16:44:42.345  INFO 2884 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on ä¸ç»æ‰¬ with PID 2884 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-10-17 16:44:42.351 DEBUG 2884 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-17 16:44:42.352  INFO 2884 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-10-17 16:44:42.440  INFO 2884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 16:44:42.440  INFO 2884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 16:44:43.375  INFO 2884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 16:44:43.496  INFO 2884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112ms. Found 5 repository interfaces.
+2019-10-17 16:44:44.017  INFO 2884 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2abf0bcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 16:44:44.682  INFO 2884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 16:44:44.705  INFO 2884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 16:44:44.706  INFO 2884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-17 16:44:44.884  INFO 2884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 16:44:44.884  INFO 2884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2444 ms
+2019-10-17 16:44:45.125  INFO 2884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 16:44:45.126  WARN 2884 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-17 16:44:45.265  INFO 2884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 16:44:45.338  INFO 2884 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 16:44:45.448  INFO 2884 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-17 16:44:45.450  INFO 2884 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 16:44:45.673  INFO 2884 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 16:44:45.913  INFO 2884 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 16:44:47.210  INFO 2884 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 16:44:47.320  INFO 2884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 16:44:47.884  INFO 2884 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-10-17 16:44:48.656  INFO 2884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 16:44:48.731  WARN 2884 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 16:44:48.813  INFO 2884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 16:44:49.343  INFO 2884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 16:44:49.346  INFO 2884 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 7.724 seconds (JVM running for 8.905)
+2019-10-17 16:44:55.232  INFO 2884 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1564456652,1566442410; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; LiveWSPYT62454332sessionid=5b80809ed2e74723aa4546db7f6e8f7a; NPYT62454332visitecounts=32; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1569571000,1570699220,1570699691,1571285651; NPYT62454332LR_lastchat=1; NPYT62454332lastvisitetime=1571286218095; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; NPYT62454332lastinvite=1571286219370; JSESSIONID=256C82A346F8530F3B90E42CEF9BCAC0; viewId=8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-10-17 16:44:55.242  INFO 2884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 16:44:55.242  INFO 2884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 16:44:55.257  INFO 2884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-10-17 16:44:55.297  INFO 2884 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: createTime: DESC], {}])
+2019-10-17 16:44:55.432  WARN 2884 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-10-17 16:44:55.450  WARN 2884 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-10-17 16:44:55.458  INFO 2884 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:44:55.458  INFO 2884 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœindex
+2019-10-17 16:45:35.782  INFO 2884 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/search, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.search, args=[Page request [number: 0, size 5, sort: createTime: DESC], php, {}])
+2019-10-17 16:45:35.824  INFO 2884 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:45:35.825  INFO 2884 --- [http-nio-8080-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœsearch
+2019-10-17 16:46:07.138  INFO 2884 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 16:46:07.344  INFO 2884 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:46:07.345  INFO 2884 --- [http-nio-8080-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails
+2019-10-17 16:46:21.329  INFO 2884 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/blog/8, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.details, args=[8, {}])
+2019-10-17 16:46:21.376  INFO 2884 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-10-17 16:46:21.376  INFO 2884 --- [http-nio-8080-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- è¿”å›ç»“æœdetails

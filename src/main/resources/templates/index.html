@@ -14,7 +14,7 @@
 
 <!--中间内容   ctrl+enter先输入内容然后注释-->
 <!--div +tab 快速补全代码-->
-<div class="m-container m-padded-tb-large">
+<div id="middle-content" class="m-container m-padded-tb-large">
     <div class="ui container">
         <div class="ui stackable grid">
             <!--左边内容-->
@@ -173,6 +173,8 @@
         </div>
     </div>
 </div>
+
+<div th:replace="main/_fragments :: toTop"></div>
 
 <!--尾部-->
 <footer th:replace="main/_fragments :: footer"></footer>

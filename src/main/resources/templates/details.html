@@ -68,9 +68,10 @@
                     <div th:utext="${blogBean.content}"></div>
                 </div>
                 <!--标签-->
-                <div class="m-padded-left" th:each="each : ${blogBean.tagBeans}">
-                    <div class="ui basic teal left pointing label" th:text="${each.name}"></div>
+                <div class="m-padded-left">
+                    <div class="ui basic teal left pointing label" th:each="each : ${blogBean.tagBeans}" th:text="${each.name}"></div>
                 </div>
+
                 <!--赞赏功能-->
                 <div class="ui center aligned basic segment">
                     <div id="payBtn" class="ui button circular orange basic">
@@ -235,10 +236,6 @@
 <script src="../static/js/tocbot.min.js" th:src="@{/static/js/tocbot.min.js}"></script>
 <!--引入生成二维码js-->
 <script src="../static/js/qrcode.min.js" th:src="@{/static/js/qrcode.min.js}"></script>
-<!--平滑滚动js-->
-<script src="../static/js/jquery.scrollTo.min.js" th:src="@{/static/js/jquery.scrollTo.min.js}"></script>
-<!--滚动监听 js-->
-<script src="../static/js/jquery.waypoints.min.js" th:src="@{/static/js/jquery.waypoints.min.js}"></script>
 <!--cookiejs-->
 <script type="text/javascript" th:src="@{/static/js/jquery.cookie.js}"></script>
 

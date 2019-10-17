@@ -91,11 +91,24 @@
 </footer>
 
 
+<div id="toolbar-list" th:fragment="toTop" style="display: none;" class="m-padded-tb-max m-fixed m-right-button">
+    <div class="ui vertical icon buttons">
+        <div id="toTop-div" class="ui">
+            <img th:src="@{/static/images/top.svg}" style="height: 50px;cursor: pointer;" alt="返回顶部" title="返回顶部">
+        </div>
+    </div>
+</div>
+
+
 <!--js公用部分-->
 <th:block th:fragment="script">
     <!--引入js-->
     <script src="../static/js/jquery.min.js" th:src="@{/static/js/jquery.min.js}"></script>
     <script src="../static/js/semantic.min.js" th:src="@{/static/js/semantic.min.js}"></script>
+    <!--平滑滚动js-->
+    <script src="../static/js/jquery.scrollTo.min.js" th:src="@{/static/js/jquery.scrollTo.min.js}"></script>
+    <!--滚动监听 js-->
+    <script src="../static/js/jquery.waypoints.min.js" th:src="@{/static/js/jquery.waypoints.min.js}"></script>
     <script th:src="@{/static/js/myIndex.js}"></script>
 </th:block>
 </body>
