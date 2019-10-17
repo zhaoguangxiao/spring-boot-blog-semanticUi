@@ -40,6 +40,10 @@ body{
     padding:0.2em!important;
 }
 
+.m-padded-min-max{
+    padding:0.25em!important;
+}
+
 .m-padded-tb-tiny{
     padding-top: 0.3em !important;
     padding-bottom: 0.3em !important;
@@ -189,8 +193,21 @@ body{
 }
 
 
-
+/*文章列表标题鼠标移动*/
 .index-title{
     color: #000;
+    font-weight:bold;
 }
+.index-title:hover{
+    color: red;
+}
+
+/*最新文章鼠标移动*/
+.content-item{
+    color: #000;
+}
+.content-item:hover{
+    color: red;
+}
+
 

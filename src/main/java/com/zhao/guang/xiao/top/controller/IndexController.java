@@ -61,9 +61,11 @@ public class IndexController {
         //文章标签
         List<TagBean> tagBeanList = blogLabelService.listTagBean(10);
         model.addAttribute("tagBeanList", tagBeanList);
-        //最新推荐      recommend
+        //热门文章 选取浏览量最高的几篇文章
         List<BlogBean> blogBeans = blogService.recommendBlogs(5);
         model.addAttribute("blogBeans", blogBeans);
+        //最新评论 倒序排列评论
+        //todo
         return "index";
     }
 

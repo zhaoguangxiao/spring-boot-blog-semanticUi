@@ -112,7 +112,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public List<BlogBean> recommendBlogs(Integer size) {
-        Sort sort = new Sort(Sort.Direction.DESC, "createTime");
+        Sort sort = new Sort(Sort.Direction.DESC, "views");
         Pageable pageable = PageRequest.of(0, size, sort);
         return blogBeanRepository.recommendBlogs(pageable);
     }

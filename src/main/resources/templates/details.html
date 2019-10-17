@@ -131,7 +131,7 @@
                                 <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
                             </div>
                             <div class="text" th:text="${each.content}"></div>
-                            <div class="actions">
+                            <div class="actions" th:if="${session.userEntity != null}">
                                 <a class="reply" onclick="reply(this)"
                                    th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
                             </div>
@@ -150,7 +150,7 @@
                                         <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
                                     </div>
                                     <div class="text" th:text="${each.content}"></div>
-                                    <div class="actions">
+                                    <div class="actions" th:if="${session.userEntity != null}">
                                         <a class="reply" onclick="reply(this)"
                                            th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
                                     </div>
@@ -161,7 +161,7 @@
                 </div>
 
                 <!--留言表单-->
-                <div id="comment-form" class="ui reply form">
+                <div id="comment-form" class="ui reply form" th:if="${session.userEntity != null}">
                     <input type="hidden" name="blogBean.id" th:value="${blogBean.id}">
 
                     <input type="hidden" name="parentComment.id" value="-1">
@@ -193,6 +193,10 @@
                     <div class="field">
                         <div class="ui error message"></div>
                     </div>
+                </div>
+
+                <div th:if="${session.userEntity == null}">
+                    注册用户登录后才能发表评论，请 登录 或 注册， 访问 网站首页。
                 </div>
             </div>
         </div>
