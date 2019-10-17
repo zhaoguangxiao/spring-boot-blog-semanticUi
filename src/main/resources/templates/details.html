@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--STATUS OK-->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="main/_fragments :: header(~{::title},~{::link},~{::meta})">
     <!--  关键字  -->
@@ -42,7 +43,8 @@
                                 HH:mm:ss')}]]
                             </div>
                             <div class="item">
-                                <i class="eye icon"></i>[[${blogBean.views}]]
+                                <i class="eye icon"></i>
+                                <span class="views">[[${blogBean.views}]]</span>
                             </div>
                         </div>
                     </div>
@@ -136,11 +138,12 @@
                         <div class="comments" th:if="${#arrays.length(each.replyComments)}>0">
                             <div class="comment" th:each="each : ${each.replyComments}">
                                 <a class="avatar">
-                                    <img  th:src="@{${each.avatar}}">
+                                    <img th:src="@{${each.avatar}}">
                                 </a>
                                 <div class="content">
                                     <a class="author">
-                                        [[${each.nickName}]]&nbsp;<span style="color: #00b5ad;!important;" th:text="|@ ${each.parentComment.nickName}|"></span>
+                                        [[${each.nickName}]]&nbsp;<span style="color: #00b5ad;!important;"
+                                                                        th:text="|@ ${each.parentComment.nickName}|"></span>
                                     </a>
                                     <div class="metadata">
                                         <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
@@ -236,9 +239,10 @@
 <script src="../static/js/jquery.scrollTo.min.js" th:src="@{/static/js/jquery.scrollTo.min.js}"></script>
 <!--滚动监听 js-->
 <script src="../static/js/jquery.waypoints.min.js" th:src="@{/static/js/jquery.waypoints.min.js}"></script>
+<!--cookiejs-->
+<script type="text/javascript" th:src="@{/static/js/jquery.cookie.js}"></script>
 
-
-<script th:inline="none">
+<script language='javascript' th:inline="javascript">
 
     // 初始化目录
     tocbot.init({
@@ -357,7 +361,6 @@
             "nickName": $("[name='nickName']").val(),
             "email": $("[name='email']").val()
         }, function (responseTxt, statusTxt, xhr) {
-            $(window).scrollTo($('command-container'), 500);
             clearMessage();
         });
     }
@@ -381,6 +384,35 @@
         $("[name='parentComment.id']").val(commentId);
         $(window).scrollTo($("#comment-form"), 500);
     }
+
+    increaseViewCount();
+
+    //浏览量ajax+cookie
+    function increaseViewCount() {
+        if ($.cookie("viewId") != [[${blogBean.id}]]) {
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: "/addView",
+                data: {id: [[${blogBean.id}]]},
+                dataType: "json",
+                success: function (response) {
+                    $(".views").html(response);
+                    $.cookie(
+                        "viewId",
+                        [[${blogBean.id}]],//需要cookie写入的业务
+                        {
+                            "path": "/", //cookie的默认属性
+                        }
+                    );
+                },
+                error: function () {
+                    alert("获取数据出错!");
+                },
+            });
+        }
+    }
+
 
 </script>
 </body>

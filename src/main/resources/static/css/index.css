@@ -184,9 +184,13 @@ body{
     right: 0 !important;
 }
 
-
-
-
 .m-padded-tb-max{
     padding: 1em !important;
 }
+
+
+
+.index-title{
+    color: #000;
+}
+

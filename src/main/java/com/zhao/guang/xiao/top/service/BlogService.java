@@ -31,4 +31,6 @@ public interface BlogService {
     Page<BlogBean> listBlogBeanBySearch(String search, Pageable pageable);
 
     BlogBean getFrontEndBlogDetail(Long id);
+
+    void updateByViewCount(Long id);
 }

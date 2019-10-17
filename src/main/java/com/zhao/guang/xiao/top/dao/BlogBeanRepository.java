@@ -5,7 +5,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -26,4 +29,8 @@ public interface BlogBeanRepository extends JpaRepository<BlogBean, Long>, JpaSp
     @Query("select blog from BlogBean blog where blog.title like ?1 or blog.content like ?1")
     Page<BlogBean> findBlogBeanBySearch(String search,Pageable pageable);
 
+    @Modifying
+    @Transactional
+    @Query("update BlogBean blog set blog.views= blog.views + 1 where blog.id = :#{#id}")
+    void updateByViewCount(@Param("id") Long id);
 }

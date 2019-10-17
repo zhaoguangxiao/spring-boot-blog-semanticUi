@@ -134,5 +134,10 @@ public class BlogServiceImpl implements BlogService {
         bean.setContent(MarkdownUtil.markdownToHtmlExtensions(blogBean1.getContent()));
         return bean;
     }
+
+    @Override
+    public void updateByViewCount(Long id) {
+        blogBeanRepository.updateByViewCount(id);
+    }
 }
 
