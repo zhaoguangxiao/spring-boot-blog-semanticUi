@@ -5,6 +5,8 @@ import com.zhao.guang.xiao.top.po.CommentBean;
 import com.zhao.guang.xiao.top.service.CommentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -107,4 +109,9 @@ public class CommentServiceImpl implements CommentService {
     }
 
 
+    @Override
+    public List<CommentBean> listCommentBeanByGroupBlogIdAndParentId(Integer size) {
+        Pageable pageable = PageRequest.of(0,size);
+        return commentRepository.findAllCommentBeanByGroupBlogIdAndParentId(pageable);
+    }
 }

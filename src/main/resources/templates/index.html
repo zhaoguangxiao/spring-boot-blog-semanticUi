@@ -40,7 +40,7 @@
                         <div class="ui middle aligned mobile reversed stackable grid">
                             <div class="eleven wide column">
                                 <h3 class="ui header m-block">
-                                    <a th:href="@{'/blog/'+${each.id}}" class="index-title" target="_blank">
+                                    <a th:href="@{'/blog/'+${each.id}}" class="index-title text-over" target="_blank">
                                         [[${each.title}]]
                                     </a>
                                 </h3>
@@ -85,22 +85,24 @@
                 </div>
 
                 <!--上一页 下一页 底部-->
-                <div class="ui button attached segment" th:if="${pages.totalPages>1}">
-                    <div class="ui middle aligned two column grid">
-                        <div class="column" th:unless="${pages.first}">
-                            <a th:href="@{/(page=${pages.number}-1)}" class="ui mini teal basic button">
-                                <i class="left chevron icon"></i>
-                            </a>
-                        </div>
-                        <div class="right column">
-                            <a th:unless="${pages.last}" th:href="@{/(page=${pages.number}+1)}"
-                               class="ui mini teal basic button">
-                                <i class="right chevron icon"></i>
-                            </a>
-                        </div>
+                <div class="ui floated right pagination menu"  th:if="${pages.totalPages>1}">
+                    <div class="item">
+                        当前
+                        <span class="basic" th:text="${pages.getNumber()} + 1"></span>页
+                        ,总<span class="ui positive" th:text="${pages.totalPages}"></span>
+                        ,共<span class="ui positive" th:text="${pages.totalElements}"></span>页
                     </div>
+                    <a class="active item" th:href="@{/}">首页</a>
+                    <a class="item" th:class="${pages.first}?'item disabled' :'item'" th:href="${pages.first}?'javascript:return false;': @{/(page = ${pages.number}-1)}">
+                        上一页
+                    </a>
+                    <a class="item" th:class="${pages.last}?'item disabled' :'item'" th:href="${pages.last}?'javascript:return false;': @{/(page = ${pages.number}+1)}">
+                        下一页
+                    </a>
+                    <a class="item" th:href="@{/(page = ${pages.totalPages}-1)}">
+                        尾页
+                    </a>
                 </div>
-
             </div>
 
             <!--右边内容-->
@@ -153,13 +155,16 @@
                 <!--热门文章-->
                 <div class="ui segments">
                     <div class="ui secondary segment m-block">
-                        <i class="bookmark icon"></i>热门文章
+                        <i class="align justify icon"></i>热门文章
                     </div>
                     <div class="ui divided list segment">
                         <div class="item m-padded-tb-tiny" th:each="each : ${blogBeans}">
-                            <i class="map marker icon"></i>
-                            <div class="content">
-                                <a th:href="@{'/blog/'+${each.id}}" class="item content-item" target="_blank" th:text="${each.title}"></a>
+                            <div class="content item">
+
+                                <a th:href="@{'/blog/'+${each.id}}" class="item content-item text-over" target="_blank">
+                                    <i class="map marker icon"></i>
+                                    [[${each.title}]]
+                                </a>
                                 <div class="description m-padded-mini">阅读数&nbsp;
                                     <a><b>[[${each.views}]]</b></a>
                                 </div>
@@ -172,15 +177,14 @@
                 <!--最新评论-->
                 <div class="ui segments">
                     <div class="ui secondary segment m-block">
-                        <i class="bookmark icon"></i>最新评论
+                        <i class="comments icon"></i>最新评论
                     </div>
                     <div class="ui divided list segment">
-                        <div class="item m-padded-tb-tiny" th:each="each : ${blogBeans}">
-                            <i class="map marker icon"></i>
+                        <div class="item m-padded-tb-tiny" th:each="each : ${commentBeanList}">
                             <div class="content">
-                                <a th:href="@{'/blog/'+${each.id}}" class="item content-item" target="_blank" th:text="${each.title}"></a>
-                                <div class="description m-padded-mini">阅读数&nbsp;
-                                    <a><b>[[${each.views}]]</b></a>
+                                <a th:href="@{'/blog/'+${each.blogBean.id}}" class="item content-item text-over" target="_blank" th:text="${each.blogBean.title}"></a>
+                                <div class="description m-padded-mini">[[${each.nickName}]]
+                                    <a><b th:text="|:${each.content}|"></b></a>
                                 </div>
                             </div>
                         </div>

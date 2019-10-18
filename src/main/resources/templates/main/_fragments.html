@@ -20,7 +20,7 @@
     <div class="ui container">
         <!--stackable 表明可以堆列 移动端适配-->
         <div class="ui inverted stackable secondary menu m-min">
-            <a th:href="@{/}"><h2 class="ui teal item header">Blog</h2></a>
+            <a th:href="@{/}"><h2 class="ui teal item header">ZGX博客园</h2></a>
             <a th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1}?'active'"><i
                     class=" home icon"></i>首页</a>
             <a th:href="@{/categary}" class="m-item item m-mobile-hide" th:classappend="${n==2}?'active'"><i
@@ -63,30 +63,40 @@
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">友情链接</h4>
                 <div class="ui inverted horizontal link list">
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
-                    <a class="item">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
+                    <a class="item" target="_blank">&nbsp;友情链接</a>
 
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我们</h4>
+                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
                 <div class="ui inverted link middle aligned animated list">
                     <div class="item">
                         <i class="mail icon"></i>
                         <div class="content">
-                            <a href="#" class="item">1764773283@qq.com</a>
+                            <a href="#" target="_blank" class="item">1764773283@qq.com</a>
                         </div>
                     </div>
                     <div class="item">
                         <i class="qq icon"></i>
                         <div class="content">
-                            <a href="#" class="item">1764773283</a>
+                            <a href="#" target="_blank" class="item">1764773283</a>
+                        </div>
+                    </div>
+                    <div class="item vertical centered">
+                        <div class="content">
+                            <svg t="1571381272220" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" p-id="1958" width="18" height="16">
+                                <path d="M512 0c282.784 0 512 229.216 512 512s-229.216 512-512 512S0 794.784 0 512 229.216 0 512 0z m189.952 752l11.2-108.224c-31.904 9.536-100.928 16.128-147.712 16.128-134.464 0-205.728-47.296-195.328-146.304 11.584-110.688 113.152-145.696 232.64-145.696 54.784 0 122.432 8.8 151.296 18.336L768 272.704C724.544 262.24 678.272 256 599.584 256c-203.2 0-388.704 94.88-406.4 263.488C178.336 660.96 303.584 768 535.616 768c80.672 0 138.464-6.432 166.336-16z"
+                                      fill="#CE000D" p-id="1959"></path>
+                            </svg>
+                            <a href="https://blog.csdn.net/qq_40646143" target="_blank" class="item">NULL</a>
                         </div>
                     </div>
                 </div>

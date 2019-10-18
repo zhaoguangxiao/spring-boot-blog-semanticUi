@@ -19,6 +19,9 @@ public interface CommentService {
 
     List<CommentBean> ListCommentBeanByBlogIdAndParentisNull(Long blogId);
 
+    List<CommentBean> listCommentBeanByGroupBlogIdAndParentId(Integer size);
+
+
 
 
 }

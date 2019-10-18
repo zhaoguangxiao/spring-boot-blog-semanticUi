@@ -211,3 +211,17 @@ body{
 }
 
 
+
+.text-over{
+    display: block;
+    width: 100%;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.text-over-content{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}

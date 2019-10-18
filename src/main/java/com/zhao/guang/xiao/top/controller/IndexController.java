@@ -65,7 +65,8 @@ public class IndexController {
         List<BlogBean> blogBeans = blogService.recommendBlogs(5);
         model.addAttribute("blogBeans", blogBeans);
         //最新评论 倒序排列评论
-        //todo
+        List<CommentBean> commentBeanList = commentService.listCommentBeanByGroupBlogIdAndParentId(5);
+        model.addAttribute("commentBeanList", commentBeanList);
         return "index";
     }
 
@@ -112,17 +113,15 @@ public class IndexController {
         model.addAttribute("blogBean", blogBean);
         //查出当前文章的评论
         List<CommentBean> commentBeans = commentService.ListCommentBeanByBlogIdAndParentisNull(id);
-        model.addAttribute("commentBeans",commentBeans);
+        model.addAttribute("commentBeans", commentBeans);
         return "details";
     }
-
 
 
     @GetMapping("manager-category")
     public String managerCategory() {
         return "admin/publish";
     }
-
 
 
 }

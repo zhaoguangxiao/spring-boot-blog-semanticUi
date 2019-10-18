@@ -34,10 +34,10 @@
                 <!--mobile reversed 移动端图片显示上面-->
                 <div class="ui middle aligned mobile reversed stackable grid">
                     <div class="eleven wide column">
-                        <h3 class="ui header m-block" th:text="${each.title}"></h3>
-                        <a th:href="@{/details}">
-                            <p class="m-text" th:text="${each.description}"></p>
-                        </a>
+                        <h3 class="ui header m-block text-over">
+                            <a th:href="@{'/blog/'+${each.id}}" class="index-title text-over" target="_blank">[[${each.title}]]</a>
+                        </h3>
+                            <p class="m-text " th:text="${each.description}"></p>
                         <div class="ui grid">
                             <div class="eleven wide column">
                                 <div class="ui mini horizontal link list">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="five wide column">
-                        <a href="#" target="_blank">
+                        <a th:href="@{'/blog/'+${each.id}}" target="_blank">
                             <img th:src="${each.firstPicture}" alt=""
                                  class="ui rounded image">
                         </a>
@@ -80,21 +80,27 @@
         </div>
 
         <!--上一页 下一页 底部-->
-        <div class="ui button attached segment" th:if="${searchs.totalPages>1}">
-            <div class="ui middle aligned two column grid">
-                <div class="column" th:unless="${searchs.first}">
-                    <a th:href="@{/search(page=${searchs.number}-1,search=${search})}" class="ui mini teal basic button">
-                        <i class="left chevron icon"></i>
-                    </a>
-                </div>
-                <div class="right column">
-                    <a th:unless="${searchs.last}" th:href="@{/search(page=${searchs.number}+1,search=${search})}"
-                       class="ui mini teal basic button">
-                        <i class="right chevron icon"></i>
-                    </a>
-                </div>
+        <div class="ui floated right pagination menu"  th:if="${searchs.totalPages>1}">
+            <div class="item">
+                当前
+                <span class="basic" th:text="${searchs.getNumber()} + 1"></span>页
+                ,总<span class="ui positive" th:text="${searchs.totalPages}"></span>
+                ,共<span class="ui positive" th:text="${searchs.totalElements}"></span>页
             </div>
+            <a class="active item" th:href="@{/}">首页</a>
+            <a class="item" th:class="${searchs.first}?'item disabled' :'item'" th:href="${searchs.first}?'javascript:return false;': @{/(page = ${searchs.number}-1)}">
+                上一页
+            </a>
+            <a class="item" th:class="${searchs.last}?'item disabled' :'item'" th:href="${searchs.last}?'javascript:return false;': @{/(page = ${searchs.number}+1)}">
+                下一页
+            </a>
+            <a class="item" th:href="@{/(page = ${searchs.totalPages}-1)}">
+                尾页
+            </a>
         </div>
+
+
+
     </div>
 </div>
 <div th:replace="main/_fragments :: toTop"></div>
