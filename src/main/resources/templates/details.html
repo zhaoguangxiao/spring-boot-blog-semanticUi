@@ -69,7 +69,8 @@
                 </div>
                 <!--标签-->
                 <div class="m-padded-left">
-                    <div class="ui basic teal left pointing label" th:each="each : ${blogBean.tagBeans}" th:text="${each.name}"></div>
+                    <div class="ui basic teal left pointing label" th:each="each : ${blogBean.tagBeans}"
+                         th:text="${each.name}"></div>
                 </div>
 
                 <!--赞赏功能-->
@@ -121,7 +122,7 @@
                 <!--留言列表-->
                 <div id="command-container" th:fragment="comment-list" class="ui teal comments">
                     <h3 class="ui dividing header">Comments</h3>
-                    <div class="comment" th:each="each : ${commentBeans}">
+                    <div class="comment" th:each="each,iterStat : ${commentBeans}">
                         <a class="avatar">
                             <img src="../static/images/box.png" th:src="@{${each.avatar}}">
                         </a>
@@ -129,6 +130,7 @@
                             <a class="author" th:text="${each.nickName}"></a>
                             <div class="metadata">
                                 <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
+                                <span th:text="|#${iterStat.count}楼|"></span>
                             </div>
                             <div class="text" th:text="${each.content}"></div>
                             <div class="actions" th:if="${session.userEntity != null}">
@@ -160,44 +162,59 @@
                     </div>
                 </div>
 
-                <!--留言表单-->
-                <div id="comment-form" class="ui reply form" th:if="${session.userEntity != null}">
-                    <input type="hidden" name="blogBean.id" th:value="${blogBean.id}">
 
-                    <input type="hidden" name="parentComment.id" value="-1">
+                <div>
+                    <!--留言表单-->
+                    <div id="comment-form" class="ui reply form" th:if="${session.userEntity != null}">
+                        <input type="hidden" name="blogBean.id" th:value="${blogBean.id}">
+                        <input type="hidden" name="parentComment.id" value="-1">
+                        <input type="hidden" name="avatar" th:value="${session.userEntity.avatar}">
+                        <div>
+                            <div class="field">
+                                <textarea name="content" placeholder="请输入回复内容..."></textarea>
+                            </div>
+                            <div class="fields m-mobile-width m-margin-top-small">
+                                <div class="item">
+                                <div class="content">
+                                    <div class="header"><img style="margin-top: 11px;" class="ui avatar image" th:src="${session.userEntity.avatar}"></div>
+                                </div>
+                            </div>
 
-                    <div class="field">
-                        <textarea name="content" placeholder="请输入回复内容..."></textarea>
-                    </div>
-                    <div class="fields">
-                        <div class="field m-mobile-width m-margin-top-small">
-                            <div class="ui left icon input">
-                                <i class="user icon"></i>
-                                <input type="text" placeholder="姓名" name="nickName">
+                                <div class="field m-mobile-width m-margin-top-small">
+                                    <div class="ui left icon input">
+                                        <i class="user icon"></i>
+                                        <input type="text" placeholder="姓名" name="nickName" readonly="" th:value="${session.userEntity.nickName}">
+                                    </div>
+                                </div>
+                                <div class="field m-mobile-width m-margin-top-small">
+                                    <div class="ui left icon input">
+                                        <i class="mail icon"></i>
+                                        <input type="text" placeholder="邮箱" name="email" readonly="" th:value="${session.userEntity.email}">
+                                    </div>
+                                </div>
+                                <div class="field m-mobile-width m-margin-top-small">
+                                    <button type="button" id="comment-btn-sub" class="ui teal m-mobile-width button">
+                                        <i class="edit icon"></i>
+                                        立即提交
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="field m-mobile-width m-margin-top-small">
-                            <div class="ui left icon input">
-                                <i class="mail icon"></i>
-                                <input type="text" placeholder="邮箱" name="email">
-                            </div>
-                        </div>
-                        <div class="field m-mobile-width m-margin-top-small">
-                            <button type="button" id="comment-btn-sub" class="ui teal m-mobile-width button">
-                                <i class="edit icon"></i>
-                                立即提交
-                            </button>
+                        <!--显示错误内容-->
+                        <div class="field">
+                            <div class="ui error message"></div>
                         </div>
                     </div>
-                    <!--显示错误内容-->
-                    <div class="field">
-                        <div class="ui error message"></div>
+                    <div class="ui bottom attached warning message" th:if="${session.userEntity == null}">
+                        <i class="icon help"></i>
+                        想要评论？ <a href="javascript:void(0)">
+                        <i class="qq icon"></i></a>
+                        <a href="javascript:void(0)" onclick="githubLogin()">
+                            <i class="github icon"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div th:if="${session.userEntity == null}">
-                    注册用户登录后才能发表评论，请 登录 或 注册， 访问 网站首页。
-                </div>
             </div>
         </div>
     </div>
@@ -322,15 +339,6 @@
                         }
                     ]
                 },
-                email: {
-                    identifier: 'email',
-                    rules: [
-                        {
-                            type: 'empty',
-                            prompt: '邮箱不能为空'
-                        }
-                    ]
-                },
                 content: {
                     identifier: 'content',
                     rules: [
@@ -360,7 +368,8 @@
             "blogBean.id": $("[name='blogBean.id']").val(),
             "content": $("[name='content']").val(),
             "nickName": $("[name='nickName']").val(),
-            "email": $("[name='email']").val()
+            "email": $("[name='email']").val(),
+            "avatar": $("[name='avatar']").val(),
         }, function (responseTxt, statusTxt, xhr) {
             clearMessage();
         });
@@ -412,6 +421,30 @@
                 },
             });
         }
+    }
+
+
+    /**
+     * 封装一个居中打开新窗口的方法
+     */
+    function openWindow(url, width, height) {
+        width = width || 600;
+        height = height || 400;
+        var left = (window.screen.width - width) / 2;
+        var top = (window.screen.height - height) / 2;
+        window.open(url, "_blank", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, left=" + left + ", top=" + top + ", width=" + width + ", height=" + height);
+    }
+
+    function githubLogin() {
+        $.ajax({
+            type: "GET",
+            url: "/github/oauth",
+            dataType: "json",
+            success: function (response) {
+                openWindow('https://github.com/login/oauth/authorize?client_id=' + response.clientId + '&redirect_uri=' + response.redirectUrl + '&scope=user&state=' + response.status);
+            }
+        });
+
     }
 
 

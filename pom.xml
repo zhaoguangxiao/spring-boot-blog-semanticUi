@@ -104,6 +104,34 @@
         <!--     markdown end扩展    -->
 
 
+        <!--    okhttp start    -->
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.14.2</version>
+        </dependency>
+        <!--    okhttp end-->
+
+        <!--        SpringBoot整合HttpClient start-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.9</version>
+        </dependency>
+        <!--        SpringBoot整合HttpClient  end-->
+
+
+
+        <!--    json转换 start    -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.58</version>
+        </dependency>
+        <!--    json转换 end    -->
+
     </dependencies>
 
     <build>

@@ -42,7 +42,6 @@ public class CommentController {
     public String saveCommentBean(CommentBean commentBean) {
         Long blogId = commentBean.getBlogBean().getId();
         commentBean.setBlogBean(blogService.getBlogBean(blogId));
-        commentBean.setAvatar("/static/images/box.png");
         commentService.saveCommentBean(commentBean);
         return "redirect:/comments/" + blogId;
     }

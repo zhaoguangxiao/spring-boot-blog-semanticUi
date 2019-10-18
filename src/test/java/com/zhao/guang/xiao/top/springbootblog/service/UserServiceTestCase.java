@@ -29,15 +29,15 @@ public class UserServiceTestCase extends SpringBootBlogApplicationTests {
 
     @Test
     public void createAdmin(){
-        UserBean bean = new UserBean();
-        //头像
-        bean.setAvatar("https://picsum.photos/id/450/700/400");
-        bean.setEmail("1764773283@qq.com");
-        bean.setPassword(Md5Pwd("admin"));
-        bean.setNickName("青春似水流年");
-       // bean.setType();
-        bean.setUserName("赵广晓");
-        userService.save(bean);
+//        UserBean bean = new UserBean();
+//        //头像
+//        bean.setAvatar("https://picsum.photos/id/450/700/400");
+//        bean.setEmail("1764773283@qq.com");
+//        bean.setPassword(Md5Pwd("admin"));
+//        bean.setNickName("青春似水流年");
+//       // bean.setType();
+//        bean.setUserName("赵广晓");
+//        userService.save(bean);
     }
 
 
