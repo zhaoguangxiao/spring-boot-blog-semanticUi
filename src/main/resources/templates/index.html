@@ -114,7 +114,7 @@
                                 <i class="idea icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a th:href="@{/categary/0}" href="#">more
+                                <a th:href="@{/categary/0}" href="#" target="_blank">more
                                     <i class="angle double right icon"></i></a>
                             </div>
                         </div>
@@ -136,12 +136,12 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a th:href="@{/label/0}" href="#">more
+                                <a th:href="@{/label/0}" href="#" target="_blank">more
                                     <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                         <div class="ui teal basic segment">
-                            <a th:href="@{/label/{id}(id=${each.id})}" href="#" class="ui teal basic left pointing label m-padded-min-max"
+                            <a th:href="@{/label/{id}(id=${each.id})}" href="#" class="ui teal basic left pointing label m-padded-min-max" target="_blank"
                                th:each="each : ${tagBeanList}">
                                 [[${each.name}]]
                                 <div class="detail" th:text="${#arrays.length(each.blogBeans)}"></div>

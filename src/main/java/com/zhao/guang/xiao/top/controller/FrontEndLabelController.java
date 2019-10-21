@@ -2,7 +2,6 @@ package com.zhao.guang.xiao.top.controller;
 
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TagBean;
-import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +36,7 @@ public class FrontEndLabelController {
     @GetMapping("label/{labelId}")
     public String toLabelPage(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                               @PathVariable Long labelId,
-                              Model model){
+                              Model model) {
 
         //查询全部标签数据
         List<TagBean> tagBeans = blogLabelService.listTagBeans();
@@ -54,7 +53,6 @@ public class FrontEndLabelController {
         model.addAttribute("selectionId", labelId);
         return "tags";
     }
-
 
 
 }

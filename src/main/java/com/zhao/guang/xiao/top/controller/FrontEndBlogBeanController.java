@@ -20,8 +20,6 @@ public class FrontEndBlogBeanController {
     private BlogService blogService;
 
 
-
-
     @ResponseBody
     @PostMapping("addView")
     public Integer increaseViewCount(Long id) {
@@ -32,7 +30,6 @@ public class FrontEndBlogBeanController {
         //返回当前添加后浏览量
         return blogBean.getViews();
     }
-
 
 
 }

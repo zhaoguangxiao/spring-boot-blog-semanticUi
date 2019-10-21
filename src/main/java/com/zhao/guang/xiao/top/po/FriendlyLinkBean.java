@@ -3,6 +3,7 @@ package com.zhao.guang.xiao.top.po;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 /**
  * @author Administrator
@@ -17,7 +18,12 @@ public class FriendlyLinkBean {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank(message = "友情链接名称不能为空")
     private String friendName;
+
+
+    @NotBlank(message = "友情链接url不能为空")
     private String url;
 
 }

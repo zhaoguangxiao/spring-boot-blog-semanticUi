@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{::link},~{::meta})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客友情链接页面</title>
+    <!--引入markdown css-->
+    <link rel="stylesheet" href="../../static/markdown/css/editormd.css"
+          th:href="@{/static/markdown/css/editormd.css}"/>
+</head>
+<body>
+
+<!--头部导航-->
+<div th:replace="main/_backEnd :: header_backEnd(4)"></div>
+
+<!--二级导航-->
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <a th:href="@{/admin/link}" target="_blank" class="active teal item">发布</a>
+        <a th:href="@{/admin/links}" target="_blank" class="item">列表</a>
+    </div>
+</div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="container">
+
+        <br>
+        <br>
+        <h1 th:unless="${friendlyLinkBean.id ==null}">修改友情链接</h1>
+        <h1 th:if="${friendlyLinkBean.id ==null}">新增友情链接</h1>
+        <br>
+        <br>
+        <br>
+        <form class="ui form" th:action="@{/admin/link}" method="post" th:object="${friendlyLinkBean}">
+
+            <input type="hidden" th:value="*{id}" name="id">
+
+            <div class="field">
+                <label>友情链接名称</label>
+                <input type="text" name="friendName" placeholder="友情链接名称" th:value="*{friendName}">
+            </div>
+            <div class="field">
+                <label>友情链接url</label>
+                <input type="text" name="url" placeholder="友情链接url" th:value="*{url}">
+            </div>
+
+            <!--显示错误内容-->
+            <div class="field">
+                <div class="ui error message"></div>
+            </div>
+
+            <!-- 显示后台验证失败错误信息-->
+            <!--/*/
+              <div class="ui negative message" th:if="${#fields.hasErrors('friendName')}">
+                  <p th:errors="*{friendName}"></p>
+              </div>
+              <div class="ui negative message" th:if="${#fields.hasErrors('url')}">
+               <p th:errors="*{url}"></p>
+             </div>
+          /*/-->
+            <button class="ui button" type="submit">提交</button>
+        </form>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+    $('.ui.dropdown').dropdown();
+
+    // 表单验证
+    $('.ui.form')
+        .form({
+            fields: {
+                friendName: {
+                    identifier: 'friendName',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '友情链接名称不能为空'
+                        }
+                    ]
+                }, url: {
+                    identifier: 'url',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '友情链接url不能为空'
+                        }
+                    ]
+                },
+            }
+        });
+
+    //消息提示框关闭
+    $('.message .close').on("click", function () {
+        $(this).closest('.message').transition('fade');
+    });
+</script>
+</body>
+</html>
