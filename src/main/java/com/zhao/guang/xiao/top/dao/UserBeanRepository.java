@@ -13,4 +13,7 @@ public interface UserBeanRepository extends JpaRepository<UserBean,Long> {
 
     UserBean findByUserNameAndPassword(String userName,String password);
 
+
+    UserBean findByPasswordAndType(String password,Integer type);
+
 }

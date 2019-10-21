@@ -115,10 +115,10 @@ public class GithubController {
         UserBean userBean = new UserBean();
         userBean.setNickName(nickName);
         userBean.setAvatar(avatar_url);
-        userBean.setType(1);
+        userBean.setType(UserBean.USER_GITHUB);
         userBean.setPassword(userid);
 
-        userService.save(userBean);
+        userService.saveGithub(userBean);
         request.getSession().setAttribute("userEntity", userBean);
 
 
@@ -126,7 +126,7 @@ public class GithubController {
         String html = "<!DOCTYPE html>" +
                 "<html lang=\"zh-cn\">" +
                 "<head>" +
-                "   <title>QQ登录重定向页</title>" +
+                "   <title>GitHub重定向页面</title>" +
                 "   <meta charset=\"utf-8\"/>" +
                 "</head>" +
                 "<body>" +

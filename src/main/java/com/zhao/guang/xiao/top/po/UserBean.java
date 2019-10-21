@@ -18,6 +18,11 @@ import java.util.List;
 @Table(name = "t_user")
 public class UserBean implements Serializable {
 
+
+    public static final int USER_GITHUB = 1;
+    public static final int USER_QQ = 2;
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -14,4 +14,6 @@ public interface UserService {
 
     UserBean save(UserBean userBean);
 
+    UserBean saveGithub(UserBean userBean);
+
 }

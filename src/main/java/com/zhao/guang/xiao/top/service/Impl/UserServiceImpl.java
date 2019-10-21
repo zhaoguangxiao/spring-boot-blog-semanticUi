@@ -42,4 +42,21 @@ public class UserServiceImpl implements UserService {
         }
         return userBeanRepository.save(userBean);
     }
+
+
+    @Override
+    public UserBean saveGithub(UserBean userBean) {
+        //判断当前用户是否存在 根据密码 和 type
+        UserBean userBeanRepositoryByPasswordAndType = userBeanRepository.findByPasswordAndType(userBean.getPassword(), UserBean.USER_GITHUB);
+        if (null == userBeanRepositoryByPasswordAndType){
+            userBean.setCreateTime(System.currentTimeMillis());
+            userBean.setUpdateTime(System.currentTimeMillis());
+            userBeanRepository.save(userBean);
+        }else {
+            userBean.setId(userBeanRepositoryByPasswordAndType.getId());
+            userBean.setUpdateTime(System.currentTimeMillis());
+            userBeanRepository.save(userBean);
+        }
+        return userBean;
+    }
 }
