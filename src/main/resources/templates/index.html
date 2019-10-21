@@ -68,13 +68,13 @@
                                         </div>
                                     </div>
                                     <div class="right aligned five wide column">
-                                        <a th:href="@{'/blog/'+${each.id}}" target="_blank"
+                                        <a th:href="@{/blog/{id}(id=${each.id})}" target="_blank"
                                            class="ui teal basic m-padded-mini label m-padded-tb-tiny">阅读全文</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="five wide column">
-                                <a th:href="@{'/blog/'+${each.id}}" target="_blank">
+                                <a th:href="@{/blog/{id}(id=${each.id})}" target="_blank">
                                     <img th:src="${each.firstPicture}" alt=""
                                          class="ui rounded image">
                                 </a>
@@ -121,7 +121,7 @@
                         <div class="ui two column teal grid">
                             <div class="ui fluid vertical menu">
                                 <a th:href="@{/categary/{id}(id=${each.id})}" href="#" target="_blank" class="item" th:each="each : ${typeBeans}">[[${each.name}]]
-                                    <div class="ui teal ba label" th:text="${each.blogBeanList.size()}"></div>
+                                    <div class="ui teal ba label" th:text="${#arrays.length(each.blogBeanList)}"></div>
                                 </a>
                             </div>
                         </div>
@@ -136,15 +136,15 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a href="#">more
+                                <a th:href="@{/label/0}" href="#">more
                                     <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                         <div class="ui teal basic segment">
-                            <a href="#" class="ui teal basic left pointing label m-padded-min-max"
+                            <a th:href="@{/label/{id}(id=${each.id})}" href="#" class="ui teal basic left pointing label m-padded-min-max"
                                th:each="each : ${tagBeanList}">
                                 [[${each.name}]]
-                                <div class="detail" th:text="${each.blogBeans.size()}"></div>
+                                <div class="detail" th:text="${#arrays.length(each.blogBeans)}"></div>
                             </a>
                         </div>
                     </div>

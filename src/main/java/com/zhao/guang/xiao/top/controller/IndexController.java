@@ -82,15 +82,6 @@ public class IndexController {
     }
 
 
-
-
-
-    @GetMapping("tag")
-    public String toTags() {
-        return "tags";
-    }
-
-
     @GetMapping("archives")
     public String toArchives() {
         return "archives";

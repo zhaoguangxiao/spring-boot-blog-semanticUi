@@ -3,6 +3,7 @@ package com.zhao.guang.xiao.top.service.Impl;
 import com.zhao.guang.xiao.top.dao.BlogBeanRepository;
 import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
+import com.zhao.guang.xiao.top.po.TagBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogService;
@@ -18,10 +19,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
@@ -130,7 +128,7 @@ public class BlogServiceImpl implements BlogService {
         }
         BlogBean blogBean1 = blogBean.get();
         BlogBean bean = new BlogBean();
-        BeanUtils.copyProperties(blogBean1,bean);
+        BeanUtils.copyProperties(blogBean1, bean);
         bean.setContent(MarkdownUtil.markdownToHtmlExtensions(blogBean1.getContent()));
         return bean;
     }
@@ -138,6 +136,18 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public void updateByViewCount(Long id) {
         blogBeanRepository.updateByViewCount(id);
+    }
+
+
+    @Override
+    public Page<BlogBean> listTagBean(Pageable pageable, Long labelId) {
+        return blogBeanRepository.findAll(new Specification<BlogBean>() {
+            @Override
+            public Predicate toPredicate(Root<BlogBean> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join = root.join("tagBeans");
+                return cb.equal(join.get("id"),labelId);
+            }
+        }, pageable);
     }
 }
 
