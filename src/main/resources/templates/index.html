@@ -81,7 +81,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <!--上一页 下一页 底部-->
@@ -89,8 +88,8 @@
                     <div class="item">
                         当前
                         <span class="basic" th:text="${pages.getNumber()} + 1"></span>页
-                        ,总<span class="ui positive" th:text="${pages.totalPages}"></span>
-                        ,共<span class="ui positive" th:text="${pages.totalElements}"></span>页
+                        ,总<span class="ui positive" th:text="${pages.totalPages}"></span>页
+                        ,共<span class="ui positive" th:text="${pages.totalElements}"></span>条数据
                     </div>
                     <a class="active item" th:href="@{/}">首页</a>
                     <a class="item" th:class="${pages.first}?'item disabled' :'item'" th:href="${pages.first}?'javascript:return false;': @{/(page = ${pages.number}-1)}">
@@ -115,13 +114,13 @@
                                 <i class="idea icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a href="#">more
+                                <a th:href="@{/categary/0}" href="#">more
                                     <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                         <div class="ui two column teal grid">
                             <div class="ui fluid vertical menu">
-                                <a href="#" class="item" th:each="each : ${typeBeans}">[[${each.name}]]
+                                <a th:href="@{/categary/{id}(id=${each.id})}" href="#" target="_blank" class="item" th:each="each : ${typeBeans}">[[${each.name}]]
                                     <div class="ui teal ba label" th:text="${each.blogBeanList.size()}"></div>
                                 </a>
                             </div>

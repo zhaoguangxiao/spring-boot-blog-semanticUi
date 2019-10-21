@@ -82,10 +82,7 @@ public class IndexController {
     }
 
 
-    @GetMapping("categary")
-    public String toCategary() {
-        return "category";
-    }
+
 
 
     @GetMapping("tag")

@@ -1,6 +1,5 @@
 package com.zhao.guang.xiao.top.service;
 
-import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
