@@ -19,6 +19,8 @@ spring:
         enable_lazy_load_no_trans: true
   mvc:
     static-path-pattern: /static/**
+  messages:
+    basename: i18n/messages
 logging:
   level:
     rooot: info

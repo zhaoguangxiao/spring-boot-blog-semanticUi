@@ -21,28 +21,28 @@
         <!--stackable 表明可以堆列 移动端适配-->
         <div class="ui inverted stackable secondary menu m-min">
             <a th:href="@{/}">
-                <h2 class="ui teal item header">
-                    ZGX博客
-                </h2>
+                <h2 class="ui teal item header" th:text="#{fragment.header.blog.title}"></h2>
             </a>
             <a th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1}?'active'"><i
-                    class=" home icon"></i>首页</a>
+                    class=" home icon"></i><span th:text="#{fragment.header.blog.home}"></span></a>
             <a th:href="@{/categary/0}" class="m-item item m-mobile-hide" th:classappend="${n==2}?'active'"><i
-                    class=" idea icon"></i>分类</a>
+                    class=" idea icon"></i><span th:text="#{fragment.header.blog.category}"></span></a>
             <a th:href="@{/label/0}" class="m-item item m-mobile-hide" th:classappend="${n==3}?'active'"><i
-                    class=" tags icon"></i>标签</a>
+                    class=" tags icon"></i><span th:text="#{fragment.header.blog.label}"></span></a>
             <a th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4}?'active'"><i
-                    class=" clone icon"></i>归档</a>
+                    class=" clone icon"></i><span th:text="#{fragment.header.blog.file}"></span></a>
             <a th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5}?'active'"><i
-                    class=" info icon"></i>关于我</a>
+                    class=" info icon"></i><span th:text="#{fragment.header.blog.about}"></span></a>
             <div class="m-item right item m-mobile-hide">
                 <form th:action="@{/search}" name="form" target="_blank" method="get">
                     <div class="ui icon transition input">
-                        <input type="text" name="search" th:value="${search}" placeholder="search...">
+                        <input type="text" name="search" th:value="${search}" th:placeholder="#{fragment.header.blog.search.placeholder}">
                         <i onclick="document.forms['form'].submit()" class="search link icon"></i>
                     </div>
                 </form>
             </div>
+            <a href="?l=zh_CN" class="m-item item m-mobile-hide" th:text="#{fragment.header.blog.zh}"></a>
+            <a href="?l=en_US" class="m-item item m-mobile-hide" th:text="#{fragment.header.blog.en}"></a>
         </div>
     </div>
     <a href="#" class="ui menu toggle black icon button m-mobile-top-right m-mobile-show">
@@ -65,12 +65,12 @@
                 </div>
             </div>
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">友情链接</h4>
+                <h4 class="ui inverted header m-text-thin m-text-spaced" th:text="#{fragment.footer.link}"></h4>
                 <div class="ui inverted link list" id="link-a-div"></div>
             </div>
 
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                <h4 class="ui inverted header m-text-thin m-text-spaced" th:text="#{fragment.footer.contact.me}"></h4>
                 <div class="ui inverted link middle aligned animated list">
                     <div class="item vertical centered">
                         <div class="content">
@@ -79,7 +79,8 @@
                                 <path d="M891 428.8H465.8c-20.4 0-37 16.5-37 37v92.4c0 20.4 16.5 37 37 37h258.9c20.4 0 37 16.6 37 37v18.4c0 61.3-49.7 110.9-110.9 110.9H299.4c-20.4 0-37-16.6-37-37V373.2c0-61.3 49.7-110.9 110.9-110.9h517.6c20.4 0 37-16.5 37-37l0.1-92.3c0-20.4-16.5-37-37-37H373.3C220.2 96 96 220.2 96 373.3V891c0 20.4 16.6 37 37 37h545.4C816.2 928 928 816.3 928 678.4V465.8c0-20.4-16.6-37-37-37z"
                                       fill="#d81e06" p-id="4725"></path>
                             </svg>
-                            <a href="https://gitee.com/zhaoguangxiao" target="_blank" class="item">码云主页</a>
+                            <a th:href="#{fragment.footer.mayun.url}" target="_blank" class="item"
+                               th:text="#{fragment.footer.mayun.name}"></a>
                         </div>
                     </div>
                     <div class="item vertical centered">
@@ -89,7 +90,8 @@
                                 <path d="M511.957333 12.650667C229.248 12.650667 0 241.877333 0 524.672c0 226.197333 146.688 418.090667 350.165333 485.802667 25.6 4.693333 34.944-11.093333 34.944-24.682667 0-12.16-0.426667-44.352-0.682666-87.082667-142.421333 30.933333-172.48-68.629333-172.48-68.629333C188.672 770.944 155.093333 755.2 155.093333 755.2c-46.485333-31.786667 3.52-31.146667 3.52-31.146667 51.392 3.626667 78.421333 52.778667 78.421334 52.778667 45.674667 78.229333 119.829333 55.637333 149.013333 42.538667 4.650667-33.066667 17.877333-55.658667 32.512-68.437334-113.706667-12.928-233.216-56.853333-233.216-253.056 0-55.893333 19.946667-101.589333 52.693333-137.386666-5.269333-12.949333-22.826667-65.002667 5.013334-135.509334 0 0 42.986667-13.76 140.8 52.48 40.832-11.349333 84.629333-17.024 128.170666-17.216 43.477333 0.213333 87.296 5.866667 128.192 17.237334 97.749333-66.261333 140.650667-52.48 140.650667-52.48 27.946667 70.485333 10.368 122.538667 5.098667 135.466666 32.810667 35.818667 52.629333 81.514667 52.629333 137.408 0 196.693333-119.701333 239.978667-233.770667 252.650667 18.389333 15.786667 34.773333 47.061333 34.773334 94.805333 0 68.458667-0.64 123.669333-0.64 140.458667 0 13.696 9.216 29.632 35.2 24.618667C877.44 942.570667 1024 750.784 1024 524.672 1024 241.877333 794.730667 12.650667 511.957333 12.650667z"
                                       fill="#d81e06" p-id="4047"></path>
                             </svg>
-                            <a href="https://github.com/zhaoguangxiao" target="_blank" class="item">GitHub主页</a>
+                            <a th:href="#{fragment.footer.github.url}" target="_blank" class="item"
+                               th:text="#{fragment.footer.github.name}"></a>
                         </div>
                     </div>
                     <div class="item vertical centered">
@@ -99,13 +101,15 @@
                                 <path d="M512 0c282.784 0 512 229.216 512 512s-229.216 512-512 512S0 794.784 0 512 229.216 0 512 0z m189.952 752l11.2-108.224c-31.904 9.536-100.928 16.128-147.712 16.128-134.464 0-205.728-47.296-195.328-146.304 11.584-110.688 113.152-145.696 232.64-145.696 54.784 0 122.432 8.8 151.296 18.336L768 272.704C724.544 262.24 678.272 256 599.584 256c-203.2 0-388.704 94.88-406.4 263.488C178.336 660.96 303.584 768 535.616 768c80.672 0 138.464-6.432 166.336-16z"
                                       fill="#CE000D" p-id="1959"></path>
                             </svg>
-                            <a href="https://blog.csdn.net/qq_40646143" target="_blank" class="item">CSDN博客主页</a>
+                            <a th:href="#{fragment.footer.csdn.url}" target="_blank" class="item"
+                               th:text="#{fragment.footer.csdn.name}"></a>
                         </div>
                     </div>
                     <div class="item">
                         <i class="qq icon"></i>
                         <div class="content">
-                            <a href="#" class="item">1764773283</a>
+                            <a th:href="#{fragment.footer.qq.url}" class="item"
+                               th:text="#{fragment.footer.qq.name}"></a>
                         </div>
                     </div>
                     <div class="item">
@@ -117,11 +121,8 @@
                 </div>
             </div>
             <div class="seven wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">
-                    这是我的个人博客,会分享关于编程,写作,思考相关的任何内容,希望可以
-                    给来到这里的人有所帮助...
-                </p>
+                <h4 class="ui inverted header m-text-thin m-text-spaced" th:text="#{fragment.footer.context.name}"></h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini" th:text="#{fragment.footer.context}"></p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>
@@ -129,7 +130,7 @@
             <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
             document.write(unescape("%3Cspan id='cnzz_stat_icon_1278129143'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278129143%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
             <br>
-            浙ICP备19020311号-1 网站名称 青春似水流年
+            <span th:text="#{fragment.footer.Keep.name}"></span>
         </p>
     </div>
 </footer>

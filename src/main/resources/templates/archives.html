@@ -20,10 +20,10 @@
             <!--middle aligned 代表垂直居中-->
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <h3 class="ui teal header">归档</h3>
+                    <h3 class="ui teal header" th:text="#{fragment.header.blog.file}"></h3>
                 </div>
                 <div class="right aligned column">
-                    共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny" th:text="${size}"></h2>个
+                    [[#{index.blog.Middle.title.common}]]<h2 class="ui orange m-inline-blok header m-padded-tb-tiny" th:text="${size}"></h2>[[#{category.label.individual.test}]]
                 </div>
             </div>
         </div>
@@ -31,12 +31,12 @@
         <th:block th:each="each :${archives}">
             <h2 class="ui center aligned header" th:text="${each.key}"></h2>
             <div class="ui fluid vertical menu">
-                <a href="#" target="_blank" class="item" th:each="blogBean : ${each.value}">
+                <a th:href="@{/blog/{id}(id=${blogBean.id})}" href="#" target="_blank" class="item" th:each="blogBean : ${each.value}">
             <span>
                 <i class="mini teal circle icon"></i>[[${blogBean.title}]]
                 <div class="ui teal basic left pointing label mini" th:text="${#dates.format(blogBean.createTime,'MM-dd')}"></div>
             </span>
-                    <div class="ui orange basic left pointing label mini">原创</div>
+                    <div class="ui orange basic left pointing label mini" th:text="#{archives.blog.label}"></div>
                 </a>
             </div>
         </th:block>

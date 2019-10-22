@@ -24,11 +24,13 @@
                     <!--middle aligned 代表垂直居中-->
                     <div class="ui middle aligned two column grid">
                         <div class="column">
-                            <h3 class="ui teal header">博客</h3>
+                            <h3 class="ui teal header" th:text="#{index.blog.Middle.title}"></h3>
                         </div>
                         <div class="right aligned column">
-                            共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny"
-                                 th:text="${pages.getTotalElements()}"></h2>篇
+                            [[#{index.blog.Middle.title.common}]]
+                            <h2 class="ui orange m-inline-blok header m-padded-tb-tiny"
+                                th:text="${pages.getTotalElements()}"></h2>
+                            [[#{index.blog.Middle.title.piece}]]
                         </div>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
                                     </div>
                                     <div class="right aligned five wide column">
                                         <a th:href="@{/blog/{id}(id=${each.id})}" target="_blank"
-                                           class="ui teal basic m-padded-mini label m-padded-tb-tiny">阅读全文</a>
+                                           class="ui teal basic m-padded-mini label m-padded-tb-tiny" th:text="#{index.blog.Middle.full.text}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -84,22 +86,24 @@
                 </div>
 
                 <!--上一页 下一页 底部-->
-                <div class="ui floated right pagination menu"  th:if="${pages.totalPages>1}">
+                <div class="ui floated right pagination menu" th:if="${pages.totalPages>1}">
                     <div class="item">
-                        当前
-                        <span class="basic" th:text="${pages.getNumber()} + 1"></span>页
-                        ,总<span class="ui positive" th:text="${pages.totalPages}"></span>页
-                        ,共<span class="ui positive" th:text="${pages.totalElements}"></span>条数据
+                        <span th:text="#{index.blog.page.current}"></span>
+                        <span class="basic" th:text="${pages.getNumber()} + 1"></span><span th:text="#{index.blog.page}"></span>
+                        <span th:text="#{index.blog.total}"></span><span class="ui positive" th:text="${pages.totalPages}"></span><span th:text="#{index.blog.page}"></span>
+                        <span th:text="#{index.blog.common}"></span><span class="ui positive" th:text="${pages.totalElements}"></span><span th:text="#{index.blog.bar.data}"></span>
                     </div>
-                    <a class="active item" th:href="@{/}">首页</a>
-                    <a class="item" th:class="${pages.first}?'item disabled' :'item'" th:href="${pages.first}?'javascript:return false;': @{/(page = ${pages.number}-1)}">
-                        上一页
+                    <a class="active item" th:href="@{/}" th:text="#{fragment.header.blog.home}"></a>
+                    <a class="item" th:class="${pages.first}?'item disabled' :'item'"
+                       th:href="${pages.first}?'javascript:return false;': @{/(page = ${pages.number}-1)}">
+                        <span th:text="#{index.blog.previous.page}"></span>
                     </a>
-                    <a class="item" th:class="${pages.last}?'item disabled' :'item'" th:href="${pages.last}?'javascript:return false;': @{/(page = ${pages.number}+1)}">
-                        下一页
+                    <a class="item" th:class="${pages.last}?'item disabled' :'item'"
+                       th:href="${pages.last}?'javascript:return false;': @{/(page = ${pages.number}+1)}">
+                        <span th:text="#{index.blog.next.page}"></span>
                     </a>
                     <a class="item" th:href="@{/(page = ${pages.totalPages}-1)}">
-                        尾页
+                        <span th:text="#{index.blog.tail.page}"></span>
                     </a>
                 </div>
             </div>
@@ -111,7 +115,7 @@
                     <div class="ui secondary segment">
                         <div class="ui two column grid">
                             <div class="column">
-                                <i class="idea icon"></i>分类
+                                <i class="idea icon"></i>[[#{fragment.header.blog.category}]]
                             </div>
                             <div class="right aligned column">
                                 <a th:href="@{/categary/0}" href="#" target="_blank">more
@@ -120,7 +124,8 @@
                         </div>
                         <div class="ui two column teal grid">
                             <div class="ui fluid vertical menu">
-                                <a th:href="@{/categary/{id}(id=${each.id})}" href="#" target="_blank" class="item" th:each="each : ${typeBeans}">[[${each.name}]]
+                                <a th:href="@{/categary/{id}(id=${each.id})}" href="#" target="_blank" class="item"
+                                   th:each="each : ${typeBeans}">[[${each.name}]]
                                     <div class="ui teal ba label" th:text="${#arrays.length(each.blogBeanList)}"></div>
                                 </a>
                             </div>
@@ -133,7 +138,7 @@
                     <div class="ui segment">
                         <div class="ui two column grid">
                             <div class="column">
-                                <i class="tags icon"></i>标签
+                                <i class="tags icon"></i>[[#{fragment.header.blog.label}]]
                             </div>
                             <div class="right aligned column">
                                 <a th:href="@{/label/0}" href="#" target="_blank">more
@@ -141,7 +146,8 @@
                             </div>
                         </div>
                         <div class="ui teal basic segment">
-                            <a th:href="@{/label/{id}(id=${each.id})}" href="#" class="ui teal basic left pointing label m-padded-min-max" target="_blank"
+                            <a th:href="@{/label/{id}(id=${each.id})}" href="#"
+                               class="ui teal basic left pointing label m-padded-min-max" target="_blank"
                                th:each="each : ${tagBeanList}">
                                 [[${each.name}]]
                                 <div class="detail" th:text="${#arrays.length(each.blogBeans)}"></div>
@@ -154,7 +160,7 @@
                 <!--热门文章-->
                 <div class="ui segments">
                     <div class="ui secondary segment m-block">
-                        <i class="align justify icon"></i>热门文章
+                        <i class="align justify icon"></i>[[#{index.right.title.hot.articles}]]
                     </div>
                     <div class="ui divided list segment">
                         <div class="item m-padded-tb-tiny" th:each="each : ${blogBeans}">
@@ -164,7 +170,7 @@
                                     <i class="map marker icon"></i>
                                     [[${each.title}]]
                                 </a>
-                                <div class="description m-padded-mini">阅读数&nbsp;
+                                <div class="description m-padded-mini">[[#{index.right.title.reading.number}]]&nbsp;
                                     <a><b>[[${each.views}]]</b></a>
                                 </div>
                             </div>
@@ -176,14 +182,16 @@
                 <!--最新评论-->
                 <div class="ui segments">
                     <div class="ui secondary segment m-block">
-                        <i class="comments icon"></i>最新评论
+                        <i class="comments icon"></i>[[#{index.right.title.latest.comments}]]
                     </div>
                     <div class="ui divided list segment">
                         <div class="item m-padded-tb-tiny" th:each="each : ${commentBeanList}">
                             <div class="content">
-                                <a th:href="@{'/blog/'+${each.blogBean.id}}" class="item content-item text-over" target="_blank" th:text="${each.blogBean.title}"></a>
+                                <a th:href="@{'/blog/'+${each.blogBean.id}}" class="item content-item text-over"
+                                   target="_blank" th:text="${each.blogBean.title}"></a>
                                 <div class="description m-padded-mini">[[${each.nickName}]]
-                                    <a th:href="@{'/blog/'+${each.blogBean.id}}" target="_blank" class="item mini"><b th:text="|:${each.content}|"></b></a>
+                                    <a th:href="@{'/blog/'+${each.blogBean.id}}" target="_blank" class="item mini"><b
+                                            th:text="|:${each.content}|"></b></a>
                                 </div>
                             </div>
                         </div>
@@ -191,12 +199,9 @@
                 </div>
 
 
-
-
-
                 <!--二维码-->
                 <h4 class="ui horizontal divider header">
-                    支付宝扫码赞赏
+                    [[#{index.right.alipay.scan.code.appreciation}]]
                 </h4>
                 <div class="ui centered card" style="width: 11em">
                     <img th:src="@{/static/images/zanshang.jpg}"

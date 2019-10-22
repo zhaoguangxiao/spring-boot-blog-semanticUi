@@ -20,10 +20,10 @@
                 <!--middle aligned 代表垂直居中-->
                 <div class="ui middle aligned two column grid">
                     <div class="column">
-                        <h3 class="ui teal header">分类</h3>
+                        <h3 class="ui teal header" th:text="#{fragment.header.blog.category}"></h3>
                     </div>
                     <div class="right aligned column">
-                        共<h2 class="ui orange m-inline-blok header m-padded-tb-tiny" th:text="${#arrays.length(typeBeans)}"></h2>个
+                        [[#{index.blog.Middle.title.common}]]<h2 class="ui orange m-inline-blok header m-padded-tb-tiny" th:text="${#arrays.length(typeBeans)}"></h2>[[#{category.label.individual.test}]]
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             </div>
                             <div class="right aligned five wide column">
                                 <a th:href="@{'/blog/'+${each.id}}" target="_blank"
-                                   class="ui teal basic m-padded-mini label m-padded-tb-tiny">阅读全文</a>
+                                   class="ui teal basic m-padded-mini label m-padded-tb-tiny" th:text="#{index.blog.Middle.full.text}"></a>
                             </div>
                         </div>
                     </div>
@@ -83,12 +83,10 @@
                 </div>
             </div>
             <div th:if="${#arrays.isEmpty(pages.content)}" class="ui warning message">
-                <div class="header">
-                    当前分类暂时还没有文章,请暂且等待
-                </div>
+                <div class="header" th:text="#{category.label.warning.test}"></div>
                 <ul class="list">
-                    <li>可能博主正在创作中...</li>
-                    <li>logding...</li>
+                    <li th:text="#{category.label.warning.category.test}"></li>
+                    <li th:text="#{category.label.warning.category}"></li>
                 </ul>
             </div>
         </div>
@@ -96,20 +94,20 @@
         <!--上一页 下一页 底部-->
         <div class="ui floated right pagination menu"  th:if="${pages.totalPages>1}">
             <div class="item">
-                当前
-                <span class="basic" th:text="${pages.getNumber()} + 1"></span>页
-                ,总<span class="ui positive" th:text="${pages.totalPages}"></span>页
-                ,共<span class="ui positive" th:text="${pages.totalElements}"></span>条数据
+                [[#{index.blog.page.current}]]
+                <span class="basic" th:text="${pages.getNumber()} + 1"></span>[[#{index.blog.page}]]
+                [[#{index.blog.total}]]<span class="ui positive" th:text="${pages.totalPages}"></span>[[#{index.blog.page}]]
+                [[#{index.blog.common}]]<span class="ui positive" th:text="${pages.totalElements}"></span>[[#{index.blog.bar.data}]]
             </div>
-            <a class="active item" th:href="@{/categary/{id}(id=${selectionId})}">首页</a>
+            <a class="active item" th:href="@{/categary/{id}(id=${selectionId})}" th:text="#{fragment.header.blog.home}"></a>
             <a class="item" th:class="${pages.first}?'item disabled' :'item'" th:href="${pages.first}?'javascript:return false;': @{'/categary/'+${selectionId}(page = ${pages.number}-1)}">
-                上一页
+                [[#{index.blog.previous.page}]]
             </a>
             <a class="item" th:class="${pages.last}?'item disabled' :'item'" th:href="${pages.last}?'javascript:return false;': @{'/categary/'+${selectionId}(page = ${pages.number}+1)}">
-                下一页
+                [[#{index.blog.next.page}]]
             </a>
             <a class="item" th:href="@{'/categary/'+${selectionId}(page = ${pages.totalPages}-1)}">
-                尾页
+                [[#{index.blog.tail.page}]]
             </a>
         </div>
 
