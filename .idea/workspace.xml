@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7425a2e-e488-4c85-833a-3cbb2519a351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/link/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/link/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndFriendlyLinkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndBlogBeanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndBlogBeanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndLabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndLabelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/GithubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/GithubController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/QQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/QQController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/FriendlyLinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/FriendlyLinkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FriendlyLinkBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FriendlyLinkBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FriendlyLinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FriendlyLinkService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FriendlyLinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FriendlyLinkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,20 +56,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/link/form.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="378">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="47" column="18" selection-start-line="33" selection-start-column="10" selection-end-line="47" selection-end-column="18" />
+            <state relative-caret-position="513">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -88,17 +80,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nickName</find>
-      <find>toTop-div</find>
-      <find>toolbar-list</find>
-      <find>left</find>
       <find>qq</find>
       <find>attached</find>
       <find>item</find>
@@ -122,9 +110,13 @@
       <find>EnableSwagger2</find>
       <find>id</find>
       <find>BindingResult</find>
-      <find>BindingResult</find>
       <find>linkBean.id</find>
       <find>friendName</find>
+      <find>margin-left: 0!important</find>
+      <find>item:first-child</find>
+      <find>color: #4183c4;</find>
+      <find>&lt;a</find>
+      <find>ajax</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -136,10 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/HttpsUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/GithubService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/GithubServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/github.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/UserServiceTestCase.java" />
@@ -164,8 +152,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogLabelServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/tags.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/config/WebMvcConfig.java" />
@@ -180,13 +166,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/SpringBootBlogApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FriendlyLinkServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FriendlyLinkService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/link/list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/label/form.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FriendlyLinkBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/FriendlyLinkController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/link/form.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/link/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FriendlyLinkService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FriendlyLinkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndFriendlyLinkController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" />
       </list>
     </option>
   </component>
@@ -320,33 +312,6 @@
               <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,26 +340,6 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="label" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="link" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -590,7 +535,7 @@
       <workItem from="1571370068178" duration="20715000" />
       <workItem from="1571627172177" duration="13133000" />
       <workItem from="1571649080065" duration="14503000" />
-      <workItem from="1571664889709" duration="327000" />
+      <workItem from="1571664889709" duration="5829000" />
     </task>
     <task id="LOCAL-00001" summary="使用semanticUi创建自己的博客网站 项目结构搭建">
       <created>1569745900227</created>
@@ -837,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571652011756</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="网站后台增加 友情链接">
+      <created>1571665484212</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1571665484212</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -873,7 +825,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327227000" />
+    <option name="totallyTimeSpent" value="332729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,7 +840,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.29935622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.3111588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -899,7 +851,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17869034" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49839056" weight="0.2264151" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49839056" weight="0.381798" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
@@ -910,7 +862,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.20310766" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.1553829" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1004,7 +956,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="博客标签curd 完成" />
     <MESSAGE value="博客分类 标签 删除 bug修复 博客列表页面实现" />
     <MESSAGE value="登录bug优化" />
     <MESSAGE value="添加博客  获取session中的用户 bug解决" />
@@ -1029,19 +980,8 @@
     <MESSAGE value="网站主页优化  增加统计/github登录bug修复" />
     <MESSAGE value="网站分类页面完善" />
     <MESSAGE value="网站标签页面完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="网站标签页面完善" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/FriendlyLinkController.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="网站后台增加 友情链接" />
+    <option name="LAST_COMMIT_MESSAGE" value="网站后台增加 友情链接" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_boot_blog$SpringBootBlogApplication.ic" NAME="SpringBootBlogApplication Coverage Results" MODIFIED="1571123369286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -1096,33 +1036,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/FriendlyLinkRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/UserBeanRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/blog-dev.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1190,32 +1103,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1804">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1354,11 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/SpringBootBlogApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1394,41 +1276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" column="130" selection-start-line="17" selection-start-column="130" selection-end-line="17" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FriendlyLinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FriendlyLinkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/link/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogLabelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1450,13 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FriendlyLinkBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/TypeBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1468,16 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2592">
           <caret line="96" column="34" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/FriendlyLinkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1500,8 +1330,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/link/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="567">
+          <caret line="91" selection-start-line="90" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/FriendlyLinkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/link/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FriendlyLinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FriendlyLinkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+          <folding>
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/markdown/lib/codemirror/mode/tiki/tiki.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndFriendlyLinkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FriendlyLinkBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="17" column="130" selection-start-line="17" selection-start-column="130" selection-end-line="17" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/myIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="209" selection-start-line="209" selection-end-line="209" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+          <folding>
+            <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>

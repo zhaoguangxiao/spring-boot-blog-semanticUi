@@ -23,7 +23,7 @@
 
 <!--中间内容   ctrl+enter先输入内容然后注释-->
 <!--div +tab 快速补全代码-->
-<div class="m-container-small m-padded-tb-big">
+<div id="middle-content" class="m-container-small m-padded-tb-big">
     <div class="container">
         <form action="#" th:action="@{/admin/blog}" th:object="${blogBean}" method="post" class="ui form">
             <!--显示错误内容 前端校验 start-->
@@ -157,7 +157,7 @@
     </div>
 </div>
 
-
+<div th:replace="main/_fragments :: toTop"></div>
 <!--尾部-->
 <footer th:replace="main/_fragments :: footer"></footer>
 

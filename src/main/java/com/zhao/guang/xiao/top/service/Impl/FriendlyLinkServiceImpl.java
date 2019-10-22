@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author Administrator
  * @version 1.0
@@ -42,6 +44,11 @@ public class FriendlyLinkServiceImpl implements FriendlyLinkService {
         return friendlyLinkRepository.getOne(id);
     }
 
+
+    @Override
+    public List<FriendlyLinkBean> listFriendlyLink() {
+        return friendlyLinkRepository.findAll();
+    }
 
     @Override
     public void deleteById(Long id) {

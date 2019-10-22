@@ -20,7 +20,7 @@
 
 <!--中间内容   ctrl+enter先输入内容然后注释-->
 <!--div +tab 快速补全代码-->
-<div class="m-container-small m-padded-tb-big">
+<div id="middle-content" class="m-container-small m-padded-tb-big">
     <div class="container">
         <!--表格列表-->
         <table class="ui single line table">
@@ -68,6 +68,7 @@
     </div>
 </div>
 
+<div th:replace="main/_fragments :: toTop"></div>
 
 <!--尾部-->
 <footer th:replace="main/_fragments :: footer"></footer>

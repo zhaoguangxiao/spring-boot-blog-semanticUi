@@ -21,3 +21,25 @@ var waypoint = new Waypoint({
         }
     }
 });
+
+
+$.ajax({
+    type: "GET",
+    url: "/links",
+    dataType: "json",
+    success: function (response) {
+        var html;
+        var linkId = document.getElementById("link-a-div");
+        for (var i = 0; i < response.length; i++) {
+            html = document.createElement('a');
+            html.setAttribute('href', response[i].url);
+            html.target = '_blank';
+            html.innerText = response[i].friendName;
+            linkId.appendChild(html)
+            //添加item
+            $("#link-a-div a").addClass("item");
+        }
+    }
+});
+
+
