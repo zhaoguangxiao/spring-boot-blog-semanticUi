@@ -12,6 +12,8 @@ import java.util.Locale;
  * @date 2019/10/22 19:47
  */
 public class MyLocaleResolver implements LocaleResolver {
+
+
     @Override
     public Locale resolveLocale(HttpServletRequest request) {
         String l = request.getParameter("l");

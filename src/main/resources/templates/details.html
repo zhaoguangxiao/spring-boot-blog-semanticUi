@@ -58,8 +58,7 @@
             <!--内容-->
             <div class="ui attached padded segment">
                 <div class="ui right aligned basic segment">
-                    <div class="ui label basic orange">
-                        原创
+                    <div class="ui label basic orange" th:text="#{archives.blog.label}">
                     </div>
                 </div>
                 <h2 class="ui center aligned header animated heartBeat" th:text="${blogBean.title}"></h2>
@@ -75,9 +74,7 @@
 
                 <!--赞赏功能-->
                 <div class="ui center aligned basic segment">
-                    <div id="payBtn" class="ui button circular orange basic">
-                        赞赏
-                    </div>
+                    <div id="payBtn" class="ui button circular orange basic" th:text="#{archives.blog.label.appreciate}"></div>
                     <br>
                     <div class="ui payButton flowing popup transition hidden">
                         <div class="ui orange basic label">
@@ -103,10 +100,10 @@
                 <div class="ui middle aligned grid">
                     <div class="eleven wide column">
                         <ui class="list">
-                            <li>作者:[[${blogBean.userBean.nickName}]]</li>
-                            <li>发表时间:[[${#dates.format(blogBean.createTime,'yyyy-MM-dd HH:mm:ss')}]]</li>
-                            <li>版权声明:自由转载-非商用-非衍生-保持署名</li>
-                            <li>公众号转载:请在文章末尾添加作者公众号二维码</li>
+                            <li>[[#{detail.context.message}]]:[[${blogBean.userBean.nickName}]]</li>
+                            <li>[[#{detail.context.message.create.time}]]:[[${#dates.format(blogBean.createTime,'yyyy-MM-dd HH:mm:ss')}]]</li>
+                            <li th:text="#{detail.context.message.test}"></li>
+                            <li th:text="#{detail.context.message.label}"></li>
                         </ui>
                     </div>
                     <div class="five wide column">
@@ -135,7 +132,7 @@
                             <div class="text" th:text="${each.content}"></div>
                             <div class="actions" th:if="${session.userEntity != null}">
                                 <a class="reply" onclick="reply(this)"
-                                   th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
+                                   th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">[[#{detail.context.comment.message.test}]]</a>
                             </div>
                         </div>
                         <div class="comments" th:if="${#arrays.length(each.replyComments)}>0">
@@ -154,7 +151,7 @@
                                     <div class="text" th:text="${each.content}"></div>
                                     <div class="actions" th:if="${session.userEntity != null}">
                                         <a class="reply" onclick="reply(this)"
-                                           th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">回复</a>
+                                           th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">[[#{detail.context.comment.message.test}]]</a>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +204,7 @@
                     </div>
                     <div class="ui bottom attached warning message" th:if="${session.userEntity == null}">
                         <i class="icon help"></i>
-                        想要评论？ <a href="javascript:void(0)">
+                        [[#{detail.context.comment}]] <a href="javascript:void(0)">
                         <i class="qq icon"></i></a>
                         <a href="javascript:void(0)" onclick="githubLogin()">
                             <i class="github icon"></i>
@@ -223,8 +220,8 @@
 
 <div id="toolbar-list" class="m-padded-tb-max m-fixed m-right-button" style="display: none;">
     <div class="ui vertical icon buttons">
-        <button id="catalog" class="ui teal button" type="button">目录</button>
-        <a href="#command-container" class="ui teal button">留言</a>
+        <button id="catalog" class="ui teal button" type="button" th:text="#{detail.context.comment.Catalog}"></button>
+        <a href="#command-container" class="ui teal button" th:text="#{detail.context.comment.Leaving}"></a>
         <button class="ui button click-wechat"><i class="weixin icon"></i></button>
         <div id="toTop-div" class="ui button">
             <i class="chevron up icon"></i>

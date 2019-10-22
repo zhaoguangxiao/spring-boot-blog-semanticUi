@@ -34,15 +34,18 @@
             <a th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5}?'active'"><i
                     class=" info icon"></i><span th:text="#{fragment.header.blog.about}"></span></a>
             <div class="m-item right item m-mobile-hide">
-                <form th:action="@{/search}" name="form" target="_blank" method="get">
+                <form th:action="@{/search}" name="form" target="_blank" method="post">
                     <div class="ui icon transition input">
-                        <input type="text" name="search" th:value="${search}" th:placeholder="#{fragment.header.blog.search.placeholder}">
+                        <input type="text" name="search" th:value="${search}"
+                               th:placeholder="#{fragment.header.blog.search.placeholder}">
                         <i onclick="document.forms['form'].submit()" class="search link icon"></i>
                     </div>
                 </form>
             </div>
-            <a href="?l=zh_CN" class="m-item item m-mobile-hide" th:text="#{fragment.header.blog.zh}"></a>
-            <a href="?l=en_US" class="m-item item m-mobile-hide" th:text="#{fragment.header.blog.en}"></a>
+            <a th:href="@{${#httpServletRequest.getRequestURL()}(l='zh_CN')}" class="m-item item m-mobile-hide"
+               th:text="#{fragment.header.blog.zh}"></a>
+            <a th:href="@{${#httpServletRequest.getRequestURL()}(l='en_US')}"
+               class="m-item item m-mobile-hide" th:text="#{fragment.header.blog.en}"></a>
         </div>
     </div>
     <a href="#" class="ui menu toggle black icon button m-mobile-top-right m-mobile-show">
