@@ -3,12 +3,9 @@ package com.zhao.guang.xiao.top.service.Impl;
 import com.zhao.guang.xiao.top.dao.BlogBeanRepository;
 import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.BlogBean;
-import com.zhao.guang.xiao.top.po.TagBean;
 import com.zhao.guang.xiao.top.po.TypeBean;
-import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.BlogService;
 import com.zhao.guang.xiao.top.util.MarkdownUtil;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,12 +16,10 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.criteria.*;
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.constraints.NotBlank;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static org.apache.commons.lang.StringUtils.isNotBlank;
 
@@ -35,6 +30,10 @@ import static org.apache.commons.lang.StringUtils.isNotBlank;
  */
 @Service
 public class BlogServiceImpl implements BlogService {
+
+
+    @Autowired
+    private EntityManager em;
 
 
     @Autowired
@@ -140,14 +139,57 @@ public class BlogServiceImpl implements BlogService {
 
 
     @Override
+    public Long countBlogBean() {
+        return blogBeanRepository.count();
+    }
+
+    @Override
     public Page<BlogBean> listTagBean(Pageable pageable, Long labelId) {
         return blogBeanRepository.findAll(new Specification<BlogBean>() {
             @Override
             public Predicate toPredicate(Root<BlogBean> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
                 Join join = root.join("tagBeans");
-                return cb.equal(join.get("id"),labelId);
+                return cb.equal(join.get("id"), labelId);
             }
         }, pageable);
     }
+
+
+    @Override
+    public Map<String, List<BlogBean>> archiverBlogBean() {
+        Map<String, List<BlogBean>> maps = new HashMap<>();
+        List<String> yearAndMonths = getGroupByYearAndMonths();
+        yearAndMonths.forEach(each -> {
+            maps.put(each, getBlogBean(each));
+        });
+        return maps;
+    }
+
+    /**
+     * 获取文章根据年月分组
+     *
+     * @return
+     */
+    private List<String> getGroupByYearAndMonths() {
+        String sql = "select FROM_UNIXTIME(blogbean.create_time/1000,'%Y-%m') AS months from t_blog blogbean group by FROM_UNIXTIME(blogbean.create_time/1000,'%Y-%m')  ORDER BY months DESC";
+        Query query = em.createNativeQuery(sql);
+        return query.getResultList();
+    }
+
+
+    /**
+     * 根据年份查出当前所有文章
+     *
+     * @param years
+     * @return
+     */
+    private List<BlogBean> getBlogBean(String years) {
+        String sql = "select * from  t_blog  blogBean where FROM_UNIXTIME(blogbean.create_time/1000,'%Y-%m') = ?";
+        Query query = em.createNativeQuery(sql, BlogBean.class);
+        query.setParameter(1, years);
+        return query.getResultList();
+    }
+
+
 }
 

@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,13 +25,13 @@ public interface BlogBeanRepository extends JpaRepository<BlogBean, Long>, JpaSp
     List<BlogBean> recommendBlogs(Pageable pageable);
 
 
-
-
     @Query("select blog from BlogBean blog where blog.title like ?1 or blog.content like ?1")
-    Page<BlogBean> findBlogBeanBySearch(String search,Pageable pageable);
+    Page<BlogBean> findBlogBeanBySearch(String search, Pageable pageable);
 
     @Modifying
     @Transactional
     @Query("update BlogBean blog set blog.views= blog.views + 1 where blog.id = :#{#id}")
     void updateByViewCount(@Param("id") Long id);
+
+
 }

@@ -80,11 +80,6 @@ public class IndexController {
     }
 
 
-    @GetMapping("archives")
-    public String toArchives() {
-        return "archives";
-    }
-
 
     @GetMapping("about")
     public String toAbout() {

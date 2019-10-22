@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Administrator
@@ -36,4 +37,10 @@ public interface BlogService {
     BlogBean getFrontEndBlogDetail(Long id);
 
     void updateByViewCount(Long id);
+
+
+    Long countBlogBean();
+
+
+    Map<String,List<BlogBean>> archiverBlogBean();
 }
