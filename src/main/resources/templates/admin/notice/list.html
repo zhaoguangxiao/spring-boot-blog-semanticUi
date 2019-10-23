@@ -32,7 +32,7 @@
                 <td th:text="${list.id}"></td>
                 <td th:text="${list.notifier.nickName}"></td>
                 <td th:text="${list.messageType == 1}?'评论':'点赞'"></td>
-                <td><a th:href="@{/blog/{id}(id=${list.blogBean.id}+'#command-container')}" target="_blank"
+                <td><a th:href="@{/blog/{id}#command-container(id=${list.blogBean.id})}" target="_blank"
                        th:text="${list.blogBean.title}"></a></td>
                 <td>
                     <button class="ui primary button" th:unless="${list.status == 0}">
