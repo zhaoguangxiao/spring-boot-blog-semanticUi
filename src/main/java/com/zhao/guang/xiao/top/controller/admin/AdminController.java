@@ -1,6 +1,9 @@
 package com.zhao.guang.xiao.top.controller.admin;
 
+import com.zhao.guang.xiao.top.service.NoticeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -13,8 +16,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AdminController {
 
 
+    @Autowired
+    private NoticeService noticeService;
+
+
     @RequestMapping("index")
-    public String index(){
+    public String index(Model model) {
+        //查出全部未读的通知
+        int unread = noticeService.findNoticeBeanByUnread();
+        model.addAttribute("unread", unread);
         return "admin/index";
     }
 

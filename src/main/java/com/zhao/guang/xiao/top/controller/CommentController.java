@@ -28,8 +28,6 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
-    @Autowired
-    private NoticeService noticeService;
 
     @Autowired
     private BlogService blogService;
@@ -56,7 +54,6 @@ public class CommentController {
         commentBean.setBlogBean(blogService.getBlogBean(blogId));
         //添加一个留言
         commentService.saveCommentBean(commentBean);
-        //添加一个未读通知
 
         return "redirect:/comments/" + blogId;
     }

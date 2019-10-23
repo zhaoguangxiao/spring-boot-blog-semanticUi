@@ -2,7 +2,9 @@ package com.zhao.guang.xiao.top.service.Impl;
 
 import com.zhao.guang.xiao.top.dao.CommentRepository;
 import com.zhao.guang.xiao.top.po.CommentBean;
+import com.zhao.guang.xiao.top.po.NoticeBean;
 import com.zhao.guang.xiao.top.service.CommentService;
+import com.zhao.guang.xiao.top.service.NoticeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -30,6 +32,10 @@ public class CommentServiceImpl implements CommentService {
     private CommentRepository commentRepository;
 
 
+    @Autowired
+    private NoticeService noticeService;
+
+
     @Override
     public List<CommentBean> listCommentBeanByBlogId(Long blogId) {
         Sort sort = new Sort(Sort.Direction.DESC, "createTime");
@@ -40,10 +46,23 @@ public class CommentServiceImpl implements CommentService {
     @Transactional
     public CommentBean saveCommentBean(CommentBean commentBean) {
         Long commentParentId = commentBean.getParentComment().getId();
-        if (commentParentId != -1) commentBean.setParentComment(commentRepository.getOne(commentParentId));
-        else commentBean.setParentComment(null);
+        if (commentParentId != -1) {
+            commentBean.setParentComment(commentRepository.getOne(commentParentId));
+        } else {
+            commentBean.setParentComment(null);
+        }
         commentBean.setCreateTime(System.currentTimeMillis());
-        return commentRepository.save(commentBean);
+        //新增一条评论
+        CommentBean bean = commentRepository.save(commentBean);
+        //新增一个未读通知
+        NoticeBean noticeBean = new NoticeBean();
+        //消息创建人
+        noticeBean.setNotifier(bean.getCommentator());
+        //消息类型评论
+        noticeBean.setMessageType(NoticeBean.BLOG_TYPE_COMMENT);
+        noticeBean.setBlogBean(bean.getBlogBean());
+        noticeService.saveNoticeBean(noticeBean);
+        return bean;
     }
 
 
@@ -111,7 +130,7 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public List<CommentBean> listCommentBeanByGroupBlogIdAndParentId(Integer size) {
-        Pageable pageable = PageRequest.of(0,size);
+        Pageable pageable = PageRequest.of(0, size);
         return commentRepository.findAllCommentBeanByGroupBlogIdAndParentId(pageable);
     }
 }

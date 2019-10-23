@@ -22,10 +22,7 @@ public class CommentBean implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    // private String nickName;
-    // private String email;
     private String content;
-    //  private String avatar;
     private Long createTime;
 
     /**
