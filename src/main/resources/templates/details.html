@@ -127,10 +127,10 @@
                     <h3 class="ui dividing header">Comments</h3>
                     <div class="comment" th:each="each,iterStat : ${commentBeans}">
                         <a class="avatar">
-                            <img src="../static/images/box.png" th:src="@{${each.avatar}}">
+                            <img src="../static/images/box.png" th:src="@{${each.commentator.avatar}}">
                         </a>
                         <div class="content">
-                            <a class="author" th:text="${each.nickName}"></a>
+                            <a class="author" th:text="${each.commentator.nickName}"></a>
                             <div class="metadata">
                                 <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
                                 <span th:text="|#${iterStat.count}楼|"></span>
@@ -138,18 +138,18 @@
                             <div class="text" th:text="${each.content}"></div>
                             <div class="actions" th:if="${session.userEntity != null}">
                                 <a class="reply" onclick="reply(this)"
-                                   th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">[[#{detail.context.comment.message.test}]]</a>
+                                   th:attr="data-comment-id=${each.id},data-comment-nickname=${each.commentator.nickName}">[[#{detail.context.comment.message.test}]]</a>
                             </div>
                         </div>
                         <div class="comments" th:if="${#arrays.length(each.replyComments)}>0">
                             <div class="comment" th:each="each : ${each.replyComments}">
                                 <a class="avatar">
-                                    <img th:src="@{${each.avatar}}">
+                                    <img th:src="@{${each.commentator.avatar}}">
                                 </a>
                                 <div class="content">
                                     <a class="author">
-                                        [[${each.nickName}]]&nbsp;<span style="color: #00b5ad;!important;"
-                                                                        th:text="|@ ${each.parentComment.nickName}|"></span>
+                                        [[${each.commentator.nickName}]]&nbsp;<span style="color: #00b5ad;!important;"
+                                                                        th:text="|@ ${each.parentComment.commentator.nickName}|"></span>
                                     </a>
                                     <div class="metadata">
                                         <span class="date">[[${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}]]</span>
@@ -157,7 +157,7 @@
                                     <div class="text" th:text="${each.content}"></div>
                                     <div class="actions" th:if="${session.userEntity != null}">
                                         <a class="reply" onclick="reply(this)"
-                                           th:attr="data-comment-id=${each.id},data-comment-nickname=${each.nickName}">[[#{detail.context.comment.message.test}]]</a>
+                                           th:attr="data-comment-id=${each.id},data-comment-nickname=${each.commentator.nickName}">[[#{detail.context.comment.message.test}]]</a>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +171,6 @@
                     <div id="comment-form" class="ui reply form" th:if="${session.userEntity != null}">
                         <input type="hidden" name="blogBean.id" th:value="${blogBean.id}">
                         <input type="hidden" name="parentComment.id" value="-1">
-                        <input type="hidden" name="avatar" th:value="${session.userEntity.avatar}">
                         <div>
                             <div class="field">
                                 <textarea name="content" placeholder="请输入回复内容..."></textarea>
@@ -376,10 +375,7 @@
         $("#command-container").load("/comments", {
             "parentComment.id": $("[name='parentComment.id']").val(),
             "blogBean.id": $("[name='blogBean.id']").val(),
-            "content": $("[name='content']").val(),
-            "nickName": $("[name='nickName']").val(),
-            "email": $("[name='email']").val(),
-            "avatar": $("[name='avatar']").val(),
+            "content": $("[name='content']").val()
         }, function (responseTxt, statusTxt, xhr) {
             clearMessage();
         });

@@ -22,11 +22,18 @@ public class CommentBean implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nickName;
-    private String email;
+    // private String nickName;
+    // private String email;
     private String content;
-    private String avatar;
+    //  private String avatar;
     private Long createTime;
+
+    /**
+     * 评论人
+     */
+    @ManyToOne
+    @ToString.Exclude
+    private UserBean commentator;
 
     @ManyToOne
     @ToString.Exclude
@@ -40,7 +47,6 @@ public class CommentBean implements Serializable {
     @ToString.Exclude
     private CommentBean parentComment;
 
-    public CommentBean() {
-    }
+    public CommentBean() {}
 
 }

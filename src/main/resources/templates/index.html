@@ -189,7 +189,7 @@
                             <div class="content">
                                 <a th:href="@{'/blog/'+${each.blogBean.id}}" class="item content-item text-over"
                                    target="_blank" th:text="${each.blogBean.title}"></a>
-                                <div class="description m-padded-mini">[[${each.nickName}]]
+                                <div class="description m-padded-mini">[[${each.commentator.nickName}]]
                                     <a th:href="@{'/blog/'+${each.blogBean.id}}" target="_blank" class="item mini"><b
                                             th:text="|:${each.content}|"></b></a>
                                 </div>
