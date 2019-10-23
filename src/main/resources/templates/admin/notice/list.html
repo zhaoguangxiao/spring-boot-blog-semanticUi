@@ -32,7 +32,8 @@
                 <td th:text="${list.id}"></td>
                 <td th:text="${list.notifier.nickName}"></td>
                 <td th:text="${list.messageType == 1}?'评论':'点赞'"></td>
-                <td><a th:href="@{/blog/{id}(id=${list.blogBean.id})}" target="_blank" th:text="${list.blogBean.title}"></a></td>
+                <td><a th:href="@{/blog/{id}(id=${list.blogBean.id}+'#command-container')}" target="_blank"
+                       th:text="${list.blogBean.title}"></a></td>
                 <td>
                     <button class="ui primary button" th:unless="${list.status == 0}">
                         已读
@@ -43,7 +44,8 @@
                 </td>
                 <td th:text="${#dates.format(list.createTime,'yyyy-MM-dd HH:mm')}"></td>
                 <td>
-                    <a th:unless="${list.status == 1}" href="#" th:href="@{/admin/notice/}+${list.id}" class="ui mini teal basic button">已读</a>
+                    <a th:unless="${list.status == 1}" href="#" th:href="@{/admin/notice/}+${list.id}"
+                       class="ui mini teal basic button">已读</a>
                     <a href="#" th:id="'btnDel'+${list.id}" th:attr="data-url=@{/admin/notice/}+${list.id}"
                        onclick="deleteBtn(this)" class="ui mini red basic button">删除</a>
                     <form id="deleteFormId" method="post">
