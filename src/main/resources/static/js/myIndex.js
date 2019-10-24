@@ -63,3 +63,15 @@ function getRootPath() {
     var roorUrl = window.location.host;
     return document.location.protocol + '//' + roorUrl;
 }
+
+//获取精选文章内容
+$.ajax({
+    type: "GET",
+    url: "/scheduled",
+    dataType: "json",
+    success: function (response) {
+        document.getElementById("selected_author").innerText = response.author;
+        document.getElementById("selected_source").innerText = response.source;
+        document.getElementById("selected_content").innerText = response.content;
+    }
+});
