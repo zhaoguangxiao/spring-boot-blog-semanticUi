@@ -8,6 +8,7 @@
           th:href="@{/static/css/semantic.min.css}">
     <link rel="stylesheet" type="text/css" href="../static/css/index.css"
           th:href="@{/static/css/index.css}">
+    <link rel="stylesheet" th:href="@{/static/css/personal.css}" media="screen" type="text/css">
     <!--    添加link-->
     <th:block th:replace="${links}"/>
     <!--  添加meta  -->
@@ -159,7 +160,6 @@
     <script src="../static/js/jquery.scrollTo.min.js" th:src="@{/static/js/jquery.scrollTo.min.js}"></script>
     <!--滚动监听 js-->
     <script src="../static/js/jquery.waypoints.min.js" th:src="@{/static/js/jquery.waypoints.min.js}"></script>
-
     <script th:src="@{/static/js/myIndex.js}"></script>
 </th:block>
 </body>

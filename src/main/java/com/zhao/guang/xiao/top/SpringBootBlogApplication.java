@@ -19,7 +19,6 @@ public class SpringBootBlogApplication {
 
     /**
      * 引入国际化配置
-     *
      * @return
      */
     @Bean

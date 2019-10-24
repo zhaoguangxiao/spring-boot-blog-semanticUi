@@ -43,3 +43,23 @@ $.ajax({
 });
 
 
+
+$(".contactusdiyou").hover(function () {
+    //鼠标移动到个人信息
+    $(".hoverimg").attr("src", getRootPath() + "/static/images/right_icon.png");
+    $('.diyoumask').fadeIn();
+    $('.contactusdiyou').animate({right: '0'}, 300);
+}, function () {
+    //鼠标移出个人信息
+    $(".hoverimg").attr("src", getRootPath() + "/static/images/left_icon.png");
+    $('.contactusdiyou').animate({right: '-230px'}, 300, function () {
+    });
+    $('.diyoumask').fadeOut();
+});
+
+
+//获取项目根路径
+function getRootPath() {
+    var roorUrl = window.location.host;
+    return document.location.protocol + '//' + roorUrl;
+}
