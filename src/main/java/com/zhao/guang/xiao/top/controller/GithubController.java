@@ -67,14 +67,6 @@ public class GithubController {
     }
 
 
-    @GetMapping("github/login")
-    public String githubLogin() {
-        String url = "https://github.com/login/oauth/authorize?client_id=CLIENT_ID&redirect_uri=REDIRECT_URI&scope=user&state=STATE";
-        String replace = url.replace("CLIENT_ID", clientId).replace("REDIRECT_URI", redirectUrl).replace("STATE",githubService.genState());
-        return "redirect:" + replace;
-    }
-
-
     @GetMapping("callback")
     public void githubCallBack(@RequestParam("code") String code,
                                @RequestParam("state") String state,

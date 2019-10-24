@@ -432,28 +432,6 @@
     }
 
 
-    /**
-     * 封装一个居中打开新窗口的方法
-     */
-    function openWindow(url, width, height) {
-        width = width || 600;
-        height = height || 400;
-        var left = (window.screen.width - width) / 2;
-        var top = (window.screen.height - height) / 2;
-        window.open(url, "_blank", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, left=" + left + ", top=" + top + ", width=" + width + ", height=" + height);
-    }
-
-    function githubLogin() {
-        $.ajax({
-            type: "GET",
-            url: "/github/oauth",
-            dataType: "json",
-            success: function (response) {
-                openWindow('https://github.com/login/oauth/authorize?client_id=' + response.clientId + '&redirect_uri=' + response.redirectUrl + '&scope=user&state=' + response.status);
-            }
-        });
-
-    }
 
 
 </script>
