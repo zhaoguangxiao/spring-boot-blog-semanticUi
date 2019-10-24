@@ -225,3 +225,8 @@ body{
     overflow:hidden;
     white-space:nowrap;
 }
+
+.logout-css{
+    text-align: center;
+    margin-left: -46px;
+}

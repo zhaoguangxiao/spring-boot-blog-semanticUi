@@ -41,20 +41,25 @@ $.ajax({
         }
     }
 });
-
-
-
-$(".contactusdiyou").hover(function () {
-    //鼠标移动到个人信息
-    $(".hoverimg").attr("src", getRootPath() + "/static/images/right_icon.png");
-    $('.diyoumask').fadeIn();
-    $('.contactusdiyou').animate({right: '0'}, 300);
-}, function () {
-    //鼠标移出个人信息
-    $(".hoverimg").attr("src", getRootPath() + "/static/images/left_icon.png");
-    $('.contactusdiyou').animate({right: '-230px'}, 300, function () {
-    });
-    $('.diyoumask').fadeOut();
+var flag = true;
+/**
+ * 个人信息点击事件
+ */
+$(".contactusdiyou").on("click", function () {
+    if (flag) {
+        //鼠标移动到个人信息
+        $(".hoverimg").attr("src", getRootPath() + "/static/images/right_icon.png");
+        $('.diyoumask').fadeIn();
+        $('.contactusdiyou').animate({right: '0'}, 300);
+        flag = false;
+    } else {
+        //鼠标移出个人信息
+        $(".hoverimg").attr("src", getRootPath() + "/static/images/left_icon.png");
+        $('.contactusdiyou').animate({right: '-230px'}, 300, function () {
+        });
+        $('.diyoumask').fadeOut();
+        flag = true;
+    }
 });
 
 
@@ -75,7 +80,6 @@ $.ajax({
         document.getElementById("selected_content").innerText = response.content;
     }
 });
-
 
 
 /**
