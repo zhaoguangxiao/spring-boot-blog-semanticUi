@@ -10,7 +10,11 @@
     <div class="ui container">
         <!--stackable 表明可以堆列 移动端适配-->
         <div class="ui inverted stackable secondary menu m-min">
-            <h2 class="ui teal item header">后台管理系统</h2>
+            <a th:href="@{/admin/index}">
+                <h2 class="ui teal item header">
+                    后台管理系统
+                </h2>
+            </a>
             <a th:href="@{/admin/index}" class="m-item item m-mobile-hide" th:classappend="${n == 0}?'active'"><i
                     class=" home icon"></i>主页</a>
             <a th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n == 1}?'active'"><i
@@ -30,7 +34,8 @@
                     <i class="dropdown icon"></i>
                     <div class="menu">
                         <a th:href="@{/admin/notice}" class="item"> <i
-                                class="bell outline icon"></i>通知 <span style="color: red" th:text="${unread}"></span></a>
+                                class="bell outline icon"></i>通知 <span style="color: red"
+                                                                       th:text="${unread}"></span></a>
                         <a th:href="@{/admin/logout}" class="item" target="_blank"> <i
                                 class="sign out alternate icon"></i>注销</a>
                     </div>
