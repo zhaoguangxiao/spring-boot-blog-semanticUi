@@ -58,15 +58,15 @@
                                     <div class="eleven wide column">
                                         <div class="ui mini horizontal link list">
                                             <div class="item">
-                                                <img th:src="${each.firstPicture}" src="../static/images/box.png"
+                                                <img th:src="${each.userBean.avatar}" src="../static/images/box.png"
                                                      alt="" class="ui avatar image">
                                                 <div class="content">
                                                     <a href="#" class="header" th:text="${each.userBean.nickName}"></a>
                                                 </div>
                                             </div>
                                             <div class="item">
-                                                <i class="calendar icon"></i>[[${#dates.format(each.createTime,'yyyy-MM-dd
-                                                HH:mm:ss')}]]
+                                                <i class="clock outline icon"></i>[[${#dates.format(each.createTime,'yyyy-MM-dd
+                                                HH:mm')}]]
                                             </div>
                                             <div class="item">
                                                 <i class="eye icon"></i>[[${each.views}]]
