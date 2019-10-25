@@ -17,7 +17,7 @@
 <div class="ui attached pointing menu">
     <div class="ui container">
         <a th:href="@{/admin/blog}" target="_blank" class="item">发布</a>
-        <a  th:href="@{/admin/blogs}" target="_blank" class="active teal item">列表</a>
+        <a th:href="@{/admin/blogs}" target="_blank" class="active teal item">列表</a>
     </div>
 </div>
 
@@ -101,55 +101,38 @@
                 </div>
             </div>
 
-            <div class="field">
-                <div class="ui left labeled action input">
-                    <label class="ui compact teal basic label">首图</label>
-                    <input type="text" placeholder="首图地址" name="firstPicture" th:value="*{firstPicture}">
-                </div>
-            </div>
-
 
             <div class="inline fields">
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" th:checked="*{recommend}" tabindex="0" name="recommend" id="recommend"
+                        <input type="checkbox" th:checked="*{top}" tabindex="0" name="top" id="top"
                                class="hidden">
-                        <label for="recommend">推荐</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" th:checked="*{shareStatement}" name="shareStatement" tabindex="0"
-                               id="reprint" class="hidden">
-                        <label for="reprint">转载声明</label>
-
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" th:checked="*{appreciation}" tabindex="0" name="appreciation"
-                               id="appreciate" class="hidden">
-                        <label for="appreciate">赞赏</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" th:checked="*{commentOpen}" tabindex="0" name="commentOpen" id="command"
-                               class="hidden">
-                        <label for="command">评论</label>
+                        <label for="top">是否置顶</label>
                     </div>
                 </div>
             </div>
 
 
-            <div class="required field">
-                <textarea name="description" th:value="*{description}" th:text="${blogBean.description}" placeholder="博客描述..." maxlength="200"></textarea>
+            <div class="field">
+                <div class="ui left labeled action input">
+                    <textarea name="description" th:value="*{description}" th:text="${blogBean.description}"
+                              placeholder="博客描述..." maxlength="200"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <input id="cert" type="file"/>
+                <input type="button" value="上传" onclick="file_btn();"/>
+            </div>
+
+            <div class="field">
+                <input type="hidden" name="firstPicture" id="firstPicture" th:value="*{firstPicture}">
+                <img id="imageId" class="disabled medium ui image" style="height: 130px;width: 130px;" th:src="*{firstPicture != null}?*{firstPicture}:@{/static/images/image.png}">
             </div>
 
 
             <div class="ui right aligned container">
                 <button class="ui button" type="button" onclick="window.history.go(-1)">返回</button>
-                <button class="ui button secondary button">保存</button>
                 <button class="ui teal button" type="submit">发布</button>
             </div>
         </form>
@@ -178,7 +161,10 @@
         height: 640,
         syncScrolling: "single",
         path: "/static/markdown/lib/",
-        // saveHTMLToTextarea : true, // 保存HTML到Textarea
+        //开启图片上传
+        imageUpload: true,
+        imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],//支持接收的图片上传的格式
+        imageUploadURL: "http://localhost:8887/admin/upload_context",//后端图片上传的服务地址
     });
 
 
@@ -246,6 +232,34 @@
             }
         });
 
+    /**
+     * 异步文件上传
+     */
+    function file_btn() {
+        if(document.getElementById("cert").value == null || document.getElementById("cert").value == ""){
+            alert("请选择上传文件");
+        }else {
+            var type = "file";          //后台接收时需要的参数名称，自定义即可
+            var id = "cert";            //即input的id，用来寻找值
+            var formData = new FormData();
+            formData.append(type, $("#" + id)[0].files[0]);    //生成一对表单属性
+            $.ajax({
+                type: "POST",           //因为是传输文件，所以必须是post
+                url: '/admin/upload',         //对应的后台处理类的地址
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    if (null != response) {
+                        $("#firstPicture").val(response);
+                        $("#imageId").attr("src", response);
+                    } else {
+                        alert("文件上传失败")
+                    }
+                }
+            });
+        }
+    }
 
 </script>
 </body>

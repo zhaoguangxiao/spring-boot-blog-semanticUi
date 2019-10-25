@@ -61,7 +61,7 @@
                 <tr>
                     <th>标题</th>
                     <th>分类</th>
-                    <th>推荐</th>
+                    <th>置顶</th>
                     <th>昵称</th>
                     <th>创建时间</th>
                     <th>操作</th>
@@ -71,7 +71,7 @@
                 <tr  class="center aligned" th:each="each : ${blogBeans}" >
                     <td th:text="${each.title}"></td>
                     <td th:text="${each.typeBean.name}"></td>
-                    <td th:text="${each.recommend} ? '是' : '否'"></td>
+                    <td th:text="${each.top == 0} ? '否' : '是'"></td>
                     <td th:text="${each.userBean.nickName}"></td>
                     <td th:text="${#dates.format(each.createTime,'yyyy-MM-dd HH:mm:ss')}"></td>
                     <td>

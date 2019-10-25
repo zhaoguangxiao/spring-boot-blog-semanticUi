@@ -2,13 +2,11 @@ package com.zhao.guang.xiao.top.controller.admin;
 
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.zhao.guang.xiao.top.exception.NotFountException;
-import com.zhao.guang.xiao.top.po.BlogBean;
-import com.zhao.guang.xiao.top.po.TagBean;
-import com.zhao.guang.xiao.top.po.TypeBean;
-import com.zhao.guang.xiao.top.po.UserBean;
+import com.zhao.guang.xiao.top.po.*;
 import com.zhao.guang.xiao.top.service.BlogCategoryService;
 import com.zhao.guang.xiao.top.service.BlogLabelService;
 import com.zhao.guang.xiao.top.service.BlogService;
+import com.zhao.guang.xiao.top.service.UploadFileService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,10 +17,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.logging.Handler;
 
 /**
  * @author Administrator
@@ -34,6 +39,9 @@ import java.util.List;
 @RequestMapping("/admin")
 public class BlogController {
 
+
+    @Autowired
+    private UploadFileService uploadFileService;
 
     @Autowired
     private BlogService blogService;
@@ -67,7 +75,7 @@ public class BlogController {
         BlogBean blogBean = new BlogBean();
         blogBean.setTypeBean(typeBean);
         blogBean.setTitle(title);
-        blogBean.setRecommend(recommend);
+        // blogBean.setRecommend(recommend);
         log.info("{}", blogBean);
         Page<BlogBean> blogBeans = blogService.ListBlogBean(pageable, blogBean);
         model.addAttribute("blogBeans", blogBeans);
@@ -133,6 +141,49 @@ public class BlogController {
     public String deleteBlogBean(@PathVariable("id") Long id) {
         blogService.removeBlogBean(id);
         return "redirect:/admin/blogs";
+    }
+
+
+    /**
+     * 首图上传
+     *
+     * @param file
+     * @return
+     */
+    @RequestMapping("/upload")
+    @ResponseBody
+    public String upload(@RequestParam("file") MultipartFile file) {
+        try {
+            //原始名称
+            String originalFilename = file.getOriginalFilename();
+            InputStream inputStream = new ByteArrayInputStream(file.getBytes());
+            return uploadFileService.uploadImage(originalFilename, inputStream, file.getSize());
+        } catch (Exception e) {
+            log.error("文件上传,错误信息是{}", e.getMessage());
+            return null;
+        }
+    }
+
+
+    /**
+     * 富文本内容上传图片
+     *
+     * @param file
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("upload_context")
+    public FileResultBean uploadImages(@RequestParam("editormd-image-file") MultipartFile file) {
+        try {
+            //原始名称
+            String originalFilename = file.getOriginalFilename();
+            InputStream inputStream = new ByteArrayInputStream(file.getBytes());
+            String url = uploadFileService.uploadImage(originalFilename, inputStream, file.getSize());
+            return new FileResultBean(1, url);
+        } catch (Exception e) {
+            log.error("富文本上传图片失败{}" + e.getMessage());
+            return new FileResultBean(0, e.getMessage(), null);
+        }
     }
 
 

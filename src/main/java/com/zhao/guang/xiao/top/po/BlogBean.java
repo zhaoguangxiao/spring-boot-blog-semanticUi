@@ -21,16 +21,16 @@ import java.util.List;
 @Entity
 @Table(name = "t_blog")
 public class BlogBean implements Serializable {
-    /**
-     * 草稿
-     */
-    public static final String BLOG_ENABLE = "1";
 
     /**
-     * 发布
+     * 置顶
      */
-    public static final String BLOG_DISABLE = "0";
+    public static final int ROOF_PLACEMENT = 1;
 
+    /**
+     * 不置顶
+     */
+    public static final int NOT_ROOF_PLACEMENT = 0;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,39 +43,33 @@ public class BlogBean implements Serializable {
     @Basic(fetch = FetchType.LAZY)
     @NotBlank(message = "文章内容不能为空")
     private String content;
-
     /**
      * 首图
      */
     @NotBlank(message = "文章首图不能为空")
     private String firstPicture;
-
-
+    /**
+     * 浏览量
+     */
     private int views;
-    //赞赏开启
-    private boolean appreciation;
-    //版权是否开启
-    private boolean shareStatement;
-    //是否开启评论
-    private boolean commentOpen;
-    //发布 草稿
-    private int published;
-    //是否推荐
-    private boolean recommend;
 
+    /**
+     * 点赞数
+     */
+    private int likeCount;
 
     @NotBlank(message = "文章描述不能为空")
     private String description;
 
+    private int top;
 
     private Long createTime;
     private Long updateTime;
 
 
-
     @ManyToOne
     @ToString.Exclude
-    @NotFound(action=NotFoundAction.IGNORE)
+    @NotFound(action = NotFoundAction.IGNORE)
     private TypeBean typeBean;
 
     @ToString.Exclude
@@ -90,7 +84,8 @@ public class BlogBean implements Serializable {
     @OneToMany(mappedBy = "blogBean")
     private List<CommentBean> commentBeans = new ArrayList<>();
 
-    public BlogBean() {}
+    public BlogBean() {
+    }
 
 
     public String formatTags() {

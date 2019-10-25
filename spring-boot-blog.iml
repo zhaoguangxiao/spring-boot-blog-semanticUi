@@ -132,5 +132,21 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.12" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.58" level="project" />
+    <orderEntry type="library" name="Maven: com.aliyun.oss:aliyun-sdk-oss:3.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom:1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-json:1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jettison:jettison:1.1" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.8.3" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-core:1.9" level="project" />
+    <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-core:3.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20170516" level="project" />
+    <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-ram:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-sts:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-ecs:4.2.0" level="project" />
   </component>
 </module>

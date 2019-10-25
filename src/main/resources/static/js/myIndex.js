@@ -75,9 +75,12 @@ $.ajax({
     url: "/scheduled",
     dataType: "json",
     success: function (response) {
-        document.getElementById("selected_author").innerText = response.author;
-        document.getElementById("selected_source").innerText = response.source;
-        document.getElementById("selected_content").innerText = response.content;
+        var selected_author = document.getElementById("selected_author");
+        if (selected_author != null) {
+            document.getElementById("selected_author").innerText = response.author;
+            document.getElementById("selected_source").innerText = response.source;
+            document.getElementById("selected_content").innerText = response.content;
+        }
     }
 });
 

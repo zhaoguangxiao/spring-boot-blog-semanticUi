@@ -63,9 +63,9 @@ public class BlogServiceImpl implements BlogService {
                     //根据下拉框选择的id 进行精准查询
                     lists.add(cd.equal(root.<TypeBean>get("typeBean").get("id"), blogBean.getTypeBean().getId()));
                 }
-                if (blogBean.isRecommend()) {
-                    lists.add(cd.equal(root.<Boolean>get("recommend"), blogBean.isRecommend()));
-                }
+//                if (blogBean.isRecommend()) {
+//                    lists.add(cd.equal(root.<Boolean>get("recommend"), blogBean.isRecommend()));
+//                }
 
                 cq.where(lists.toArray(new Predicate[lists.size()]));
 

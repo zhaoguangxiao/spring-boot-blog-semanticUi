@@ -2,12 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7425a2e-e488-4c85-833a-3cbb2519a351" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/blog_details_min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jsencrypt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ecs_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ram_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_sts_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20170516.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FileResultBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UploadFileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UploadFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/OSSUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/aliyunoss.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogBeanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogBeanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/personal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/personal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,7 +84,50 @@
     <favorites_list name="spring-boot-blog" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="166" column="67" selection-start-line="166" selection-start-column="53" selection-end-line="166" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#7;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="181" selection-start-line="181" selection-end-line="181" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FileResultBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/io/Serializable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,9 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>上一页</find>
-      <find>下一页</find>
-      <find>尾页</find>
       <find>归档</find>
       <find>共</find>
       <find>个</find>
@@ -98,6 +167,9 @@
       <find>注销</find>
       <find>Official website</find>
       <find>[[${blogBean.id}]]</find>
+      <find>hoverbtn</find>
+      <find>firstPicture</find>
+      <find>recommend</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -109,19 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndArchivesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogBeanRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/message.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/config/MyLocaleResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/CommentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/CommentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/NoticeBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/NoticeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/NoticeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/NoticeRepository.java" />
@@ -151,15 +210,28 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/notice/list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/jsencrypt.min.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/personal.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/details.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/blog_details_min.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/personal.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogBeanRepository.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/myIndex.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UploadFileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UploadFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/aliyunoss.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/OSSUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FileResultBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" />
       </list>
     </option>
   </component>
@@ -187,8 +259,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-36" />
+    <option name="y" value="84" />
     <option name="width" value="1400" />
     <option name="height" value="871" />
   </component>
@@ -278,6 +350,19 @@
               <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zhao" type="462c0819:PsiDirectoryNode" />
+              <item name="guang" type="462c0819:PsiDirectoryNode" />
+              <item name="xiao" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="po" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,15 +372,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -304,6 +380,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -332,19 +427,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\spring-boot-blog\src\main\resources" />
-      <recent name="E:\workspace\spring-boot-blog\src\main\resources\i18n" />
-      <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\images" />
-      <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\js" />
-      <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\css" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zhao.guang.xiao.top" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zhao.guang.xiao.top.util" />
-      <recent name="com.zhao.guang.xiao.top.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\images" />
@@ -352,6 +436,17 @@
       <recent name="E:\workspace\spring-boot-blog\src\main\resources\templates\admin\notice" />
       <recent name="E:\workspace\spring-boot-blog\src\main\resources" />
       <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zhao.guang.xiao.top.util" />
+      <recent name="com.zhao.guang.xiao.top.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\spring-boot-blog\src\main\resources" />
+      <recent name="E:\workspace\spring-boot-blog\src\main\resources\i18n" />
+      <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\images" />
+      <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\js" />
+      <recent name="E:\workspace\spring-boot-blog\src\main\resources\static\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -502,14 +597,8 @@
       <workItem from="1571736291935" duration="31622000" />
       <workItem from="1571814057000" duration="9244000" />
       <workItem from="1571882757951" duration="604000" />
-      <workItem from="1571883400104" duration="30622000" />
-    </task>
-    <task id="LOCAL-00002" summary="全局异常处理">
-      <created>1570257744869</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1570257744869</updated>
+      <workItem from="1571883400104" duration="36750000" />
+      <workItem from="1571989588251" duration="3746000" />
     </task>
     <task id="LOCAL-00003" summary="实现 aop 切面实现日志监控">
       <created>1570261555689</created>
@@ -847,7 +936,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571971166382</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="前端页面详情页面js代码改为js文件引入">
+      <created>1571976459624</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1571976459624</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -883,7 +979,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419872000" />
+    <option name="totallyTimeSpent" value="429746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -897,7 +993,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49638206" visible="true" weight="0.2864807" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49638206" visible="true" weight="0.30954936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -907,19 +1003,19 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25416204" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49839056" weight="0.2563818" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2164262" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49839056" weight="0.39289677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50160944" side_tool="true" weight="0.15205327" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.40510544" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.19311875" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.2164262" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.53052163" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1013,7 +1109,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="博客评论博客" />
     <MESSAGE value="二级评论完成列表显示" />
     <MESSAGE value="增加文章浏览量" />
     <MESSAGE value="列表增加回到顶部" />
@@ -1038,13 +1133,46 @@
     <MESSAGE value="前端页面github登录bug的修复" />
     <MESSAGE value="前端页面个人信息模块的修改 添加注销登录的功能" />
     <MESSAGE value="前端页面个人信息模块增加国际化信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="前端页面个人信息模块增加国际化信息" />
+    <MESSAGE value="前端页面详情页面js代码改为js文件引入" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端页面详情页面js代码改为js文件引入" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_boot_blog$SpringBootBlogApplication.ic" NAME="SpringBootBlogApplication Coverage Results" MODIFIED="1571899607465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>blogBean</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>endpoint</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>OSSUtil.uploadFile(originalFilename, inputStream, size);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fileName</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>maps</expression-string>
         <language-id>JAVA</language-id>
@@ -1070,216 +1198,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>string</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getRequestURL()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getRequestURI()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getUserPrincipal()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="108" column="65" selection-start-line="108" selection-start-column="65" selection-end-line="108" selection-end-column="65" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="120" column="65" selection-start-line="120" selection-start-column="65" selection-end-line="120" selection-end-column="65" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2#28#0" expanded="true" />
-            <element signature="e#2#29#0" expanded="true" />
-            <element signature="e#2#19#0" expanded="true" />
-            <element signature="e#2#22#0" expanded="true" />
-            <element signature="e#2#33#0" expanded="true" />
-            <element signature="e#2#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/hoverbtnbg.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/left_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/right_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#2#25#0" expanded="true" />
-            <element signature="e#2#29#0" expanded="true" />
-            <element signature="e#2#25#0" expanded="true" />
-            <element signature="e#2#17#0" expanded="true" />
-            <element signature="e#2#18#0" expanded="true" />
-            <element signature="e#2#17#0" expanded="true" />
-            <element signature="e#2#19#0" expanded="true" />
-            <element signature="e#2#21#0" expanded="true" />
-            <element signature="e#2#27#0" expanded="true" />
-            <element signature="e#2#26#0" expanded="true" />
-            <element signature="e#2#22#0" expanded="true" />
-            <element signature="e#2#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/left_icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2511">
-          <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/HttpsUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/MarkdownUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndArchivesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndBlogBeanController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndFriendlyLinkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndLabelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/QQController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FrontEndCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/github.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/UserServiceTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar!/com/alibaba/fastjson/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar!/com/alibaba/fastjson/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/blog-dev.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/task/SelectedPoemsScheduling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/SpringBootBlogApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1298,18 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="10" column="96" lean-forward="true" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
-          <folding>
-            <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,13 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="26" column="34" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1416,13 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/myIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -1447,31 +1342,6 @@
       </provider>
       <provider editor-type-id="ResourceBundle" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/personal.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2#27#0" expanded="true" />
-            <element signature="e#2#28#0" expanded="true" />
-            <element signature="e#2#28#0" expanded="true" />
-            <element signature="e#2#32#0" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#span#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2#28#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#span#0;n#th:block#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
@@ -1487,17 +1357,271 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog_details_min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3077">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="10" column="96" lean-forward="true" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
+          <folding>
+            <element signature="n#div#4;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#32#0" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#1;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#span#0;n#th:block#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="56" column="205" selection-start-line="56" selection-start-column="205" selection-end-line="56" selection-end-column="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/prism.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/qrcode.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/semantic.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/tocbot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jsencrypt.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
+        <state relative-caret-position="815">
           <caret line="5450" column="5" selection-start-line="5450" selection-start-column="5" selection-end-line="5450" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog_details_min.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.waypoints.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1128">
-          <caret line="89" column="41" lean-forward="true" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/prism.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/personal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="123" selection-start-line="2" selection-start-column="123" selection-end-line="2" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/BlogBeanRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#79#1" expanded="true" />
+            <element signature="e#0#73#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="142" column="34" selection-start-line="142" selection-start-column="34" selection-end-line="142" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/myIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="215" selection-start-line="215" selection-end-line="216" selection-end-column="65" />
+          <folding>
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#2#18#0" expanded="true" />
+            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#2#19#0" expanded="true" />
+            <element signature="e#2#21#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#26#0" expanded="true" />
+            <element signature="e#2#22#0" expanded="true" />
+            <element signature="e#2#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UploadFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/aliyunoss.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UploadFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/util/OSSUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/2.1.10.RELEASE/spring-data-commons-2.1.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/BlogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-413">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FileResultBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="34" column="68" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="166" column="67" selection-start-line="166" selection-start-column="53" selection-end-line="166" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#7;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
         </state>
       </provider>
     </entry>

@@ -133,6 +133,15 @@
         </dependency>
         <!--    json转换 end    -->
 
+
+        <!--  阿里云存储oss start     -->
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+        <!--  阿里云存储oss  end    -->
+
     </dependencies>
 
     <build>
