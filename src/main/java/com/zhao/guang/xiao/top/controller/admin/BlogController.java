@@ -69,13 +69,13 @@ public class BlogController {
     @PostMapping("search")
     public String search(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          String title,
-                         Boolean recommend,
+                         boolean top,
                          TypeBean typeBean,
                          Model model) {
         BlogBean blogBean = new BlogBean();
         blogBean.setTypeBean(typeBean);
         blogBean.setTitle(title);
-        // blogBean.setRecommend(recommend);
+        blogBean.setTop(top ? 1 : 0);
         log.info("{}", blogBean);
         Page<BlogBean> blogBeans = blogService.ListBlogBean(pageable, blogBean);
         model.addAttribute("blogBeans", blogBeans);

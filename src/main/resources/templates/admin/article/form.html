@@ -102,15 +102,21 @@
             </div>
 
 
-            <div class="inline fields">
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" th:checked="*{top}" tabindex="0" name="top" id="top"
-                               class="hidden">
-                        <label for="top">是否置顶</label>
+                <div class="inline fields">
+                    <label>是否置顶：</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="top" th:checked="*{top == 0}?true:false" value="0">
+                            <label>否</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="top" th:checked="*{top == 1}?true:false" value="1">
+                            <label>是</label>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
             <div class="field">
@@ -127,7 +133,8 @@
 
             <div class="field">
                 <input type="hidden" name="firstPicture" id="firstPicture" th:value="*{firstPicture}">
-                <img id="imageId" class="disabled medium ui image" style="height: 130px;width: 130px;" th:src="*{firstPicture != null}?*{firstPicture}:@{/static/images/image.png}">
+                <img id="imageId" class="disabled medium ui image" style="height: 130px;width: 130px;"
+                     th:src="*{firstPicture != null}?*{firstPicture}:@{/static/images/image.png}">
             </div>
 
 
@@ -236,9 +243,9 @@
      * 异步文件上传
      */
     function file_btn() {
-        if(document.getElementById("cert").value == null || document.getElementById("cert").value == ""){
+        if (document.getElementById("cert").value == null || document.getElementById("cert").value == "") {
             alert("请选择上传文件");
-        }else {
+        } else {
             var type = "file";          //后台接收时需要的参数名称，自定义即可
             var id = "cert";            //即input的id，用来寻找值
             var formData = new FormData();

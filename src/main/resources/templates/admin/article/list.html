@@ -42,8 +42,8 @@
                 </div>
                 <div class="field">
                     <div class="ui checkbox">
-                        <input type="checkbox" name="recommend" id="recommend">
-                        <label for="recommend">推荐</label>
+                        <input type="checkbox" name="top" id="top">
+                        <label for="top">是否置顶</label>
                     </div>
                 </div>
                 <div class="right floated field">
@@ -153,7 +153,7 @@
             page : $("[name='page']").val(),
             title : $("[name='title']").val(),
             typeBean : $("[name='typeBean']").val(),
-            recommend :$('#recommend').prop('checked'),
+            top :$('#top').prop('checked'),
         });
     }
 </script>
