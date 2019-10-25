@@ -25,7 +25,7 @@ public interface BlogBeanRepository extends JpaRepository<BlogBean, Long>, JpaSp
     List<BlogBean> recommendBlogs(Pageable pageable);
 
 
-    @Query("select blog from BlogBean blog where blog.title like ?1 or blog.content like ?1")
+    @Query("select blog from BlogBean blog where blog.title like ?1 or blog.content like ?1ORDER BY blog.top DESC,blog.createTime DESC")
     Page<BlogBean> findBlogBeanBySearch(String search, Pageable pageable);
 
     @Modifying
@@ -34,4 +34,6 @@ public interface BlogBeanRepository extends JpaRepository<BlogBean, Long>, JpaSp
     void updateByViewCount(@Param("id") Long id);
 
 
+    @Query("select blog from BlogBean blog  ORDER BY blog.top DESC,blog.createTime DESC")
+    Page<BlogBean> findAllByGroupByTop(Pageable pageable);
 }

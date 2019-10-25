@@ -56,7 +56,7 @@ public class IndexController {
 
 
     @GetMapping("/")
-    public String index(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String index(@PageableDefault(size = 5) Pageable pageable,
                         Model model) {
         //保存文章列表
         Page<BlogBean> page = blogService.findPage(pageable);
@@ -78,7 +78,7 @@ public class IndexController {
 
 
     @GetMapping("search")
-    public String search(@PageableDefault(size = 5, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 5) Pageable pageable,
                          @RequestParam String search,
                          Model model) {
         Page<BlogBean> searchs = blogService.listBlogBeanBySearch(search, pageable);

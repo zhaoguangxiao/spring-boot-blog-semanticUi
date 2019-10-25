@@ -104,7 +104,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public Page<BlogBean> findPage(Pageable pageable) {
-        return blogBeanRepository.findAll(pageable);
+        return blogBeanRepository.findAllByGroupByTop(pageable);
     }
 
     @Override
