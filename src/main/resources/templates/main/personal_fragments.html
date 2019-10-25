@@ -16,11 +16,11 @@
         <th:block th:if="${session.userEntity != null}">
             <div class="con1">
                 <dl class="fn_cle">
-                    <dd class="m-padded-tb-huge">
+                    <dd>
                     <span class="ph_num" th:text="#{index.person.message.test}"></span>
                     </dd>
                     <dt><img th:src="${session.userEntity.avatar}" height="31" width="31"></dt>
-                    <dd class="f1" th:text="${session.userEntity.nickName}"></dd>
+                    <dd class="nick_name" th:text="${session.userEntity.nickName}"></dd>
                     <dd class="f2">
                         <span class="ph_num" th:text="${session.userEntity.email}"></span>
                         <span class="ph_num" th:if="${session.userEntity.email == null}" th:text="#{index.person.message.email}"></span>
