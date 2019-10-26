@@ -88,15 +88,18 @@
                     <br>
                     <div class="m-padded-tb-large">
                         <div class="ui labeled button" tabindex="0">
-                            <div class="ui red button">
-                                <i class="hand point left outline icon"></i> 推荐
+                            <div id="tui_jian" class="ui red button" data-position="bottom center"
+                                 data-content="你已经推荐过了">
+                                <i class="hand point left outline icon"></i>
+                                推荐
                             </div>
                             <a class="ui basic red left pointing label">
                                 1,048
                             </a>
                         </div>
                         <div class="ui labeled button" tabindex="0">
-                            <div class="ui basic blue button">
+                            <div id="fan_dui" class="ui basic blue button" data-position="bottom center"
+                                 data-content="你已经反对过了">
                                 <i class="thumbs down outline icon"></i> 反对
                             </div>
                             <a class="ui basic left pointing blue label">
@@ -213,14 +216,16 @@
                                 <div class="field m-mobile-width m-margin-top-small">
                                     <div class="ui left icon input">
                                         <i class="user icon"></i>
-                                        <input type="text" th:placeholder="#{detail.context.comment.username}" name="nickName" readonly=""
+                                        <input type="text" th:placeholder="#{detail.context.comment.username}"
+                                               name="nickName" readonly=""
                                                th:value="${session.userEntity.nickName}">
                                     </div>
                                 </div>
                                 <div class="field m-mobile-width m-margin-top-small">
                                     <div class="ui left icon input">
                                         <i class="mail icon"></i>
-                                        <input type="text" th:placeholder="#{detail.context.comment.email}" name="email" readonly=""
+                                        <input type="text" th:placeholder="#{detail.context.comment.email}" name="email"
+                                               readonly=""
                                                th:value="${session.userEntity.email}">
                                     </div>
                                 </div>
@@ -304,6 +309,5 @@
 </script>
 <!--引入详情页面js-->
 <script th:src="@{/static/js/blog_details_min.js}"></script>
-
 </body>
 </html>

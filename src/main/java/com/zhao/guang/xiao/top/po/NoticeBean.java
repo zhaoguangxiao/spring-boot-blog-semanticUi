@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * 通知实体类
@@ -15,7 +16,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "t_notice")
-public class NoticeBean {
+public class NoticeBean implements Serializable {
 
     //已读
     public final static int READ_QUESTION = 1;

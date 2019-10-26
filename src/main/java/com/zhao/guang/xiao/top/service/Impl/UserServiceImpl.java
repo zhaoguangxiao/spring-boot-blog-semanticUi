@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
+    @Transactional(rollbackFor=Exception.class)
     public UserBean save(UserBean userBean) {
         if (null == userBean.getId()){
             //创建时间
@@ -45,6 +46,7 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
+    @Transactional(rollbackFor=Exception.class)
     public UserBean saveGithub(UserBean userBean) {
         //判断当前用户是否存在 根据密码 和 type
         UserBean userBeanRepositoryByPasswordAndType = userBeanRepository.findByPasswordAndType(userBean.getPassword(), UserBean.USER_GITHUB);

@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 /**
  * @author Administrator
@@ -13,7 +14,7 @@ import javax.validation.constraints.NotBlank;
 @Data
 @Entity
 @Table(name = "t_friend_link")
-public class FriendlyLinkBean {
+public class FriendlyLinkBean implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

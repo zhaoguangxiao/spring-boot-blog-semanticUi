@@ -43,7 +43,7 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public CommentBean saveCommentBean(CommentBean commentBean) {
         Long commentParentId = commentBean.getParentComment().getId();
         if (commentParentId != -1) {

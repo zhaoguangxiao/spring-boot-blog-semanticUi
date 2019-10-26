@@ -34,7 +34,7 @@ $('.click-wechat').popup({
 
 //生成二维码
 var qrcode = new QRCode("qrcode", {
-    text:qrcodeurl,
+    text: qrcodeurl,
     width: 128,
     height: 128,
     colorDark: "#000000",
@@ -154,3 +154,19 @@ function increaseViewCount() {
         });
     }
 }
+
+//点击推荐点击事件
+$('#tui_jian').click(function () {
+    console.log("点击了")
+    //显示无法继续添加事件
+    $('#tui_jian').popup();
+});
+
+
+
+//点击反对点击事件
+$('#fan_dui').click(function () {
+    console.log("点击了fan_dui")
+    //显示无法继续添加事件
+    $('#fan_dui').popup();
+});

@@ -38,9 +38,22 @@ public interface BlogService {
 
     void updateByViewCount(Long id);
 
-
     Long countBlogBean();
 
+    Map<String, List<BlogBean>> archiverBlogBean();
 
-    Map<String,List<BlogBean>> archiverBlogBean();
+
+    /**
+     * 根据id 给文章点赞增加1
+     *
+     * @param id
+     */
+    void updateByLikeCount(Long id);
+
+    /**
+     * 根据id 给文章反对+1
+     *
+     * @param id
+     */
+    void updateByoppositionCount(Long id);
 }

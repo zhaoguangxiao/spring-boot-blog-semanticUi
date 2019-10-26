@@ -33,9 +33,10 @@
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
+                        <div class="floating ui red label" th:text="${unread}"></div>
                         <a th:href="@{/admin/notice}" class="item"> <i
-                                class="bell outline icon"></i>通知 <span style="color: red"
-                                                                       th:text="${unread}"></span></a>
+                                class="bell outline icon"></i>通知
+                        </a>
                         <a th:href="@{/admin/logout}" class="item" target="_blank"> <i
                                 class="sign out alternate icon"></i>注销</a>
                     </div>

@@ -33,7 +33,7 @@ public class FriendlyLinkServiceImpl implements FriendlyLinkService {
 
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public FriendlyLinkBean saveFriendlyLinkBean(FriendlyLinkBean friendlyLinkBean) {
         return friendlyLinkRepository.save(friendlyLinkBean);
     }
@@ -51,6 +51,7 @@ public class FriendlyLinkServiceImpl implements FriendlyLinkService {
     }
 
     @Override
+    @Transactional(rollbackFor=Exception.class)
     public void deleteById(Long id) {
          friendlyLinkRepository.deleteById(id);
     }

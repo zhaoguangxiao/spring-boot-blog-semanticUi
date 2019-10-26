@@ -58,6 +58,12 @@ public class BlogBean implements Serializable {
      */
     private int likeCount;
 
+
+    /**
+     * 反对数
+     */
+    private int oppositionCount;
+
     @NotBlank(message = "文章描述不能为空")
     private String description;
 

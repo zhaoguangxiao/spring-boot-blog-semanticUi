@@ -29,7 +29,7 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
 
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void saveTypeBean(TypeBean type) {
          blogCategoryRepository.save(type);
     }
@@ -45,13 +45,13 @@ public class BlogCategoryServiceImpl implements BlogCategoryService {
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public TypeBean updateTypeBean(TypeBean typeBean) {
         return blogCategoryRepository.save(typeBean);
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void removeTypeBean(Long id) {
         blogCategoryRepository.deleteById(id);
     }

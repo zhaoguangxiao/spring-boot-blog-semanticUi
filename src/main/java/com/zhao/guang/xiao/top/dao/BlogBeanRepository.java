@@ -36,4 +36,15 @@ public interface BlogBeanRepository extends JpaRepository<BlogBean, Long>, JpaSp
 
     @Query("select blog from BlogBean blog  ORDER BY blog.top DESC,blog.createTime DESC")
     Page<BlogBean> findAllByGroupByTop(Pageable pageable);
+
+    @Modifying
+    @Transactional
+    @Query("update BlogBean blog set blog.likeCount = blog.likeCount + 1 where blog.id = :#{#id}")
+    void updateByLikeCount(@Param("id") Long id);
+
+
+    @Modifying
+    @Transactional
+    @Query("update BlogBean blog set blog.oppositionCount = blog.oppositionCount + 1 where blog.id = :#{#id}")
+    void updateByoppositionCount(@Param("id") Long id);
 }

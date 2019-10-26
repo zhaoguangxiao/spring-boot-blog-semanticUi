@@ -27,7 +27,7 @@ public class BlogLabelServiceImpl implements BlogLabelService {
 
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void saveTagBean(TagBean tagBean) {
         blogLabelRepository.save(tagBean);
     }
@@ -43,13 +43,13 @@ public class BlogLabelServiceImpl implements BlogLabelService {
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void updateTagBean(TagBean tagBean) {
         blogLabelRepository.save(tagBean);
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void removeTagBeanById(Long id) {
         blogLabelRepository.deleteById(id);
     }

@@ -26,7 +26,7 @@ public class NoticeServiceImpl implements NoticeService {
 
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public NoticeBean saveNoticeBean(NoticeBean noticeBean) {
         //设置创建时间
         noticeBean.setCreateTime(System.currentTimeMillis());
@@ -47,13 +47,13 @@ public class NoticeServiceImpl implements NoticeService {
 
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void updateNoticeBeanById(Long id, int status) {
         noticeRepository.updateStatusById(id, status);
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void deleteNoticeBean(Long id) {
         noticeRepository.deleteById(id);
     }

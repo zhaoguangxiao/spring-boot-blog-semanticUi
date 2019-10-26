@@ -75,7 +75,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public BlogBean saveBlogBean(BlogBean blogBean) {
         if (null == blogBean.getId()) {
             //设置创建时间
@@ -90,7 +90,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor=Exception.class)
     public void removeBlogBean(Long id) {
         blogBeanRepository.deleteById(id);
     }
@@ -191,5 +191,17 @@ public class BlogServiceImpl implements BlogService {
     }
 
 
+    @Override
+    @Transactional(rollbackFor=Exception.class)
+    public void updateByLikeCount(Long id) {
+        blogBeanRepository.updateByLikeCount(id);
+    }
+
+
+    @Override
+    @Transactional(rollbackFor=Exception.class)
+    public void updateByoppositionCount(Long id) {
+        blogBeanRepository.updateByoppositionCount(id);
+    }
 }
 
