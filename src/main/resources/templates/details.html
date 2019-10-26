@@ -91,16 +91,16 @@
                             <div id="like_add" class="ui red button" data-position="bottom center"
                                  data-content="你已经投过票了">
                                 <i class="hand point left outline icon"></i>
-                                推荐
+                                [[#{detail.context.comment.recommend}]]
                             </div>
                             <a class="ui basic red left pointing label">
-                                <span id="countLike" th:text="${blogBean.likeCount}">1,048</span>
+                                <span id="countLike" th:text="${blogBean.likeCount}"></span>
                             </a>
                         </div>
                         <div class="ui labeled button" tabindex="0">
                             <div id="opposition_add" class="ui basic blue button" data-position="bottom center"
                                  data-content="你已经投过票了">
-                                <i class="thumbs down outline icon"></i> 反对
+                                <i class="thumbs down outline icon"></i>  [[#{detail.context.comment.opposition}]]
                             </div>
                             <a class="ui basic left pointing blue label">
                                 <span id="countOpposition" th:text="${blogBean.oppositionCount}">1,048</span>
@@ -154,7 +154,7 @@
             <div class="ui attached segment">
                 <!--留言列表-->
                 <div id="command-container" th:fragment="comment-list" class="ui teal comments">
-                    <h3 class="ui dividing header">Comments</h3>
+                    <h3 class="ui dividing header" th:text="#{detail.context.comment.comments}"></h3>
                     <div class="comment" th:each="each,iterStat : ${commentBeans}">
                         <a class="avatar">
                             <img src="../static/images/box.png" th:src="@{${each.commentator.avatar}}">
