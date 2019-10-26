@@ -27,11 +27,11 @@
                 <th>操作</th>
             </tr>
             </thead>
-            <tbody th:each="list : ${noticeBeans}">
+            <tbody th:each="list,itstr : ${noticeBeans}">
             <tr class="center aligned">
-                <td th:text="${list.id}"></td>
+                <td th:text="${itstr.count}"></td>
                 <td th:text="${list.notifier.nickName}"></td>
-                <td th:text="${list.messageType == 1}?'评论':'点赞'"></td>
+                <td th:text="${list.messageType == 1}?'评论':(${list.messageType == 2}?'点赞':'反对')"></td>
                 <td><a th:href="@{/blog/{id}#command-container(id=${list.blogBean.id})}" target="_blank"
                        th:text="${list.blogBean.title}"></a></td>
                 <td>

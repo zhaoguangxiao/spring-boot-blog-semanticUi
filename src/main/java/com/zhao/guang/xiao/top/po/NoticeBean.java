@@ -27,7 +27,8 @@ public class NoticeBean implements Serializable {
     public final static int BLOG_TYPE_COMMENT = 1;
     //点赞
     public final static int BLOG_TYPE_LIKE = 2;
-
+    //反对
+    public final static int BLOG_TYPE_FANDUI = 3;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
