@@ -61,4 +61,9 @@ public class UserServiceImpl implements UserService {
         }
         return userBean;
     }
+
+    @Override
+    public UserBean userManger() {
+        return userBeanRepository.findManagerUserBean();
+    }
 }

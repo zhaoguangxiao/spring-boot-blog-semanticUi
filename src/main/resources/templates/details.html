@@ -3,9 +3,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="main/_fragments :: header(~{::title},~{::link},~{::meta})">
     <!--  关键字  -->
-    <meta type="keywords" content="博客详情页面"/>
+    <meta type="keywords" th:content="${blogBean.getFormatTagName()}"/>
     <!--  描述　-->
-    <meta type="description" content="博客详情页面描述"/>
+    <meta type="description" th:content="${blogBean.description}"/>
     <title th:text="${blogBean.title}"></title>
     <!--排版css-->
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/static/css/typo.css}"/>

@@ -107,4 +107,18 @@ public class BlogBean implements Serializable {
         return null;
     }
 
+
+    public String getFormatTagName(){
+        if (CollectionUtils.isNotEmpty(tagBeans)) {
+            StringBuilder sb = new StringBuilder(tagBeans.size());
+            tagBeans.forEach(each -> {
+                sb.append(each.getName());
+                sb.append(",");
+            });
+            //截取最后一个逗号
+            return sb.toString().substring(0, sb.length() - 1);
+        }
+        return null;
+    }
+
 }

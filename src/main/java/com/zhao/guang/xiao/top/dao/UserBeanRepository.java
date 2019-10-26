@@ -2,6 +2,7 @@ package com.zhao.guang.xiao.top.dao;
 
 import com.zhao.guang.xiao.top.po.UserBean;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 /**
  * @author Administrator
@@ -15,5 +16,9 @@ public interface UserBeanRepository extends JpaRepository<UserBean,Long> {
 
 
     UserBean findByPasswordAndType(String password,Integer type);
+
+
+    @Query("select bean from UserBean bean where bean.userName is not null")
+    UserBean findManagerUserBean();
 
 }

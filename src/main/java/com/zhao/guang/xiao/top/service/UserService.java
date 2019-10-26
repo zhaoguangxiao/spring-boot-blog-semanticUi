@@ -1,6 +1,7 @@
 package com.zhao.guang.xiao.top.service;
 
 import com.zhao.guang.xiao.top.po.UserBean;
+import org.apache.catalina.User;
 
 /**
  * @author Administrator
@@ -14,5 +15,7 @@ public interface UserService {
     UserBean save(UserBean userBean);
 
     UserBean saveGithub(UserBean userBean);
+
+    UserBean userManger();
 
 }
