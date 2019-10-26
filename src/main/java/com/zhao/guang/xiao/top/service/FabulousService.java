@@ -15,6 +15,8 @@ public interface FabulousService {
      *
      * @param fabulousBean
      */
-    void saveFabulousBean(FabulousBean fabulousBean);
+    boolean saveFabulousBean(FabulousBean fabulousBean);
+
+    FabulousBean findOneByUserIdAndBlogId(Long userId,Long blogId);
 
 }

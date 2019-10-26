@@ -156,17 +156,70 @@ function increaseViewCount() {
 }
 
 //点击推荐点击事件
-$('#tui_jian').click(function () {
-    console.log("点击了")
-    //显示无法继续添加事件
-    $('#tui_jian').popup();
-});
+$('#like_add').click(function () {
+//改变鼠标移入事件赋值
+    var like = document.getElementById('like_add');
 
+    var countLike = document.getElementById('countLike');
+    if ($.cookie("likeId") != blogId) {
+        if (!hasUser) {
+            //当前用户不为空
+            postBlogAjax(1, like, countLike);
+        } else {
+            //当前用户为空
+            like.setAttribute('data-content', '你当前还没登录,无法点赞');
+        }
+    }
+    //显示无法继续添加事件
+    $('#like_add').popup();
+});
 
 
 //点击反对点击事件
-$('#fan_dui').click(function () {
-    console.log("点击了fan_dui")
+$('#opposition_add').click(function () {
+    var opposition = document.getElementById('opposition_add');
+    var countOpposition = document.getElementById('countOpposition');
+    if ($.cookie("likeId") != blogId) {
+        if (!hasUser) {
+            //当前用户不为空
+            postBlogAjax(2, opposition, countOpposition);
+        } else {
+            //当前用户为空
+            opposition.setAttribute('data-content', '你当前还没登录,无法反对');
+        }
+    }
+
     //显示无法继续添加事件
-    $('#fan_dui').popup();
+    $('#opposition_add').popup();
 });
+
+
+function postBlogAjax(typeId, control, variable) {
+    $.ajax({
+        async: false,
+        type: "POST",
+        url: "/addlike",
+        data: {
+            id: blogId,
+            typeId: typeId
+        },
+        dataType: "json",
+        success: function (response) {
+            if (response.code == '200') {
+                //实现+1
+                variable.innerText = Number(variable.innerText) + 1;
+            }
+            //改变data-context内容
+            control.setAttribute('data-content', response.message);
+
+            //保存cookie
+            $.cookie(
+                "likeId",
+                blogId,//需要cookie写入的业务
+                {
+                    "path": "/", //cookie的默认属性
+                }
+            );
+        }
+    });
+}

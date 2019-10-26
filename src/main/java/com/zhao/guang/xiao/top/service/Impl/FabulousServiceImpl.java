@@ -26,13 +26,24 @@ public class FabulousServiceImpl implements FabulousService {
 
 
     @Override
-    @Transactional(rollbackFor=Exception.class)
-    public void saveFabulousBean(FabulousBean fabulousBean) {
-         fabulousRepository.save(fabulousBean);
-        if (ObjectUtils.equals(FabulousBean.GIVE_LIKE, fabulousBean.getType())) {
-            blogService.updateByLikeCount(fabulousBean.getBlogBean().getId());
-        } else {
-            blogService.updateByoppositionCount(fabulousBean.getBlogBean().getId());
+    @Transactional(rollbackFor = Exception.class)
+    public boolean saveFabulousBean(FabulousBean fabulousBean) {
+        FabulousBean bean = findOneByUserIdAndBlogId(fabulousBean.getUserBean().getId(), fabulousBean.getBlogBean().getId());
+        if (null == bean) {
+            fabulousRepository.save(fabulousBean);
+            if (ObjectUtils.equals(FabulousBean.GIVE_LIKE, fabulousBean.getType())) {
+                blogService.updateByLikeCount(fabulousBean.getBlogBean().getId());
+            } else {
+                blogService.updateByoppositionCount(fabulousBean.getBlogBean().getId());
+            }
+            return true;
         }
+        return false;
+    }
+
+
+    @Override
+    public FabulousBean findOneByUserIdAndBlogId(Long userId, Long blogId) {
+        return fabulousRepository.findByUserIdAndBlogId(userId, blogId);
     }
 }
