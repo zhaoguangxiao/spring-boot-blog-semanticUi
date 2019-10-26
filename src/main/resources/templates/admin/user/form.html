@@ -1,10 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客管理员编辑页面</title>
 </head>
 <body>
 
+<!--头部导航-->
+<div th:replace="main/_backEnd :: header_backEnd(5)"></div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div id="middle-content" class="m-container-small m-padded-tb-big">
+    <div class="container">
+        <form class="ui form" th:action="@{/admin/manager}" th:object="${userBean}" method="post">
+            <input type="hidden" name="id" th:value="*{id}">
+            <input type="hidden" name="createTime" th:value="*{createTime}">
+            <input type="hidden" name="password" th:value="*{password}">
+            <div class="field">
+                <label>前端显示的用户昵称</label>
+                <input type="text" name="nickName" th:value="*{nickName}" placeholder="前端显示的用户昵称">
+            </div>
+            <div class="field">
+                <label>邮箱</label>
+                <input type="text" name="email" th:value="*{email}" placeholder="邮箱">
+            </div>
+            <div class="field">
+                <label>登录用户名</label>
+                <input type="text" name="userName" th:value="*{userName}" placeholder="登录用户名">
+            </div>
+            <div class="field">
+                <label>用户描述</label>
+                <textarea name="descript" th:text="*{descript}"
+                          placeholder="描述..." maxlength="200"></textarea>
+            </div>
+            <div class="field">
+                <label>用户头像</label>
+                <input id="avatar" type="hidden" name="avatar" th:value="*{avatar}" placeholder="登录用户名">
+                <img id="imageId" class="ui top aligned tiny image" src=""
+                     th:src="*{avatar == null}?@{/static/images/image.png}:*{avatar}">
+                <input id="cert" type="file"/>
+                <input type="button" value="上传" onclick="file_btn();"/>
+            </div>
+
+            <!--显示错误内容-->
+            <div class="field"><div class="ui error message"></div></div>
+
+            <button class="ui button" type="submit">提交</button>
+        </form>
+    </div>
+</div>
+</div>
+
+<div th:replace="main/_fragments :: toTop"></div>
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+    $('.ui.dropdown').dropdown();
+
+    // 表单验证
+    $('.ui.form')
+        .form({
+            fields: {
+                nickName: {
+                    identifier: 'nickName',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '前端显示的用户昵称不能为空'
+                        }
+                    ]
+                },
+                email: {
+                    identifier: 'email',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '邮箱不能为空'
+                        }
+                    ]
+                },
+                userName: {
+                    identifier: 'userName',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '登录用户名不能为空'
+                        }
+                    ]
+                },
+                descript: {
+                    identifier: 'descript',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '描述不能为空'
+                        }
+                    ]
+                },
+                avatar: {
+                    identifier: 'avatar',
+                    rules: [
+                        {
+                            type: 'empty',
+                            prompt: '用户头像不能为空'
+                        }
+                    ]
+                }
+            }
+        });
+
+
+    /**
+     * 异步文件上传
+     */
+    function file_btn() {
+        if (document.getElementById("cert").value == null || document.getElementById("cert").value == "") {
+            alert("请选择上传文件");
+        } else {
+            var type = "file";          //后台接收时需要的参数名称，自定义即可
+            var id = "cert";            //即input的id，用来寻找值
+            var formData = new FormData();
+            formData.append(type, $("#" + id)[0].files[0]);    //生成一对表单属性
+            $.ajax({
+                type: "POST",           //因为是传输文件，所以必须是post
+                url: '/admin/upload',         //对应的后台处理类的地址
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    if (null != response) {
+                        $("#avatar").val(response);
+                        $("#imageId").attr("src", response);
+                    } else {
+                        alert("文件上传失败")
+                    }
+                }
+            });
+        }
+    }
+
+</script>
 </body>
 </html>

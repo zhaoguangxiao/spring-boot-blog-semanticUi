@@ -34,6 +34,7 @@ public class UserBean implements Serializable {
     private Integer type;
     private Long createTime;
     private Long updateTime;
+    private String descript;
 
 
     @ToString.Exclude

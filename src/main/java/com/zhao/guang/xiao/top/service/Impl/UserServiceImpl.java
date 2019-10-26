@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
+import java.util.List;
+
 /**
  * @author Administrator
  * @version 1.0
@@ -30,14 +32,14 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    @Transactional(rollbackFor=Exception.class)
+    @Transactional(rollbackFor = Exception.class)
     public UserBean save(UserBean userBean) {
-        if (null == userBean.getId()){
+        if (null == userBean.getId()) {
             //创建时间
             userBean.setCreateTime(System.currentTimeMillis());
             //更新时间
             userBean.setUpdateTime(System.currentTimeMillis());
-        }else {
+        } else {
             //更新时间
             userBean.setUpdateTime(System.currentTimeMillis());
         }
@@ -46,15 +48,15 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    @Transactional(rollbackFor=Exception.class)
+    @Transactional(rollbackFor = Exception.class)
     public UserBean saveGithub(UserBean userBean) {
         //判断当前用户是否存在 根据密码 和 type
         UserBean userBeanRepositoryByPasswordAndType = userBeanRepository.findByPasswordAndType(userBean.getPassword(), UserBean.USER_GITHUB);
-        if (null == userBeanRepositoryByPasswordAndType){
+        if (null == userBeanRepositoryByPasswordAndType) {
             userBean.setCreateTime(System.currentTimeMillis());
             userBean.setUpdateTime(System.currentTimeMillis());
             userBeanRepository.save(userBean);
-        }else {
+        } else {
             userBean.setId(userBeanRepositoryByPasswordAndType.getId());
             userBean.setUpdateTime(System.currentTimeMillis());
             userBeanRepository.save(userBean);
@@ -65,5 +67,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserBean userManger() {
         return userBeanRepository.findManagerUserBean();
+    }
+
+    @Override
+    public List<UserBean> findUserBeanByTypeId(int typeId) {
+        return userBeanRepository.findUserBeanByTypeId(typeId);
+    }
+
+    @Override
+    public UserBean getOne(Long id) {
+        return userBeanRepository.getOne(id);
     }
 }

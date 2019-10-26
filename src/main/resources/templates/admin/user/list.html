@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客管理员页面</title>
 </head>
 <body>
 
+<!--头部导航-->
+<div th:replace="main/_backEnd :: header_backEnd(5)"></div>
+
+<!--中间内容   ctrl+enter先输入内容然后注释-->
+<!--div +tab 快速补全代码-->
+<div id="middle-content" class="m-container-small m-padded-tb-big">
+    <div class="container">
+        <div class="ui icon message">
+            <i class="qq icon"></i>
+            <div class="content">
+                <div class="header">
+                    当前qq登录人数？
+                </div>
+                <p>[[${qqcount}]]人。</p>
+            </div>
+        </div>
+        <div class="ui icon message">
+            <i class="github icon"></i>
+            <div class="content">
+                <div class="header">
+                    当前github登录人数？
+                </div>
+                <p>[[${githubcount}]]人。</p>
+            </div>
+        </div>
+        <div class="ui segment">
+            <img class="ui centered medium image" th:src="${userBean.avatar}">
+            <p th:text="${userBean.descript}"></p>
+            <div class="ui list">
+                <div class="item">
+                    <i class="users icon"></i>
+                    <div class="content">
+                        前端显示用户昵称 : <span th:text="${userBean.nickName}"></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="mail icon"></i>
+                    <div class="content">
+                        邮箱 : <span th:text="${userBean.email}"></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="user icon"></i>
+                    <div class="content">
+                        登录名称 : <span th:text="${userBean.userName}"></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="clock outline icon"></i>
+                    <div class="content">
+                        用户创建时间 : <span th:text="${#dates.format(userBean.createTime,'yyyy-MM-dd HH:mm')}"></span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <i class="edit icon"></i>
+                    <div class="content">
+                        <a href="#" target="_blank" th:href="@{/admin/manager/{id}(id=${userBean.id})}">点击修改</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="main/_fragments :: toTop"></div>
+<!--尾部-->
+<footer th:replace="main/_fragments :: footer"></footer>
+
+
+<!--引入js-->
+<th:block th:replace="main/_fragments :: script"></th:block>
+
+<script>
+
+    $('.ui.dropdown').dropdown();
+
+
+    function deleteBtn(obj) {
+        $("#deleteFormId").attr("action", $(obj).data("url")).submit();
+    }
+
+
+</script>
 </body>
 </html>

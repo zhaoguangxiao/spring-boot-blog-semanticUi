@@ -1,7 +1,8 @@
 package com.zhao.guang.xiao.top.service;
 
 import com.zhao.guang.xiao.top.po.UserBean;
-import org.apache.catalina.User;
+
+import java.util.List;
 
 /**
  * @author Administrator
@@ -10,12 +11,16 @@ import org.apache.catalina.User;
  */
 public interface UserService {
 
-    UserBean checkUser(String uname,String pwd);
+    UserBean checkUser(String uname, String pwd);
 
     UserBean save(UserBean userBean);
 
     UserBean saveGithub(UserBean userBean);
 
     UserBean userManger();
+
+    List<UserBean> findUserBeanByTypeId(int typeId);
+
+    UserBean getOne(Long id);
 
 }
