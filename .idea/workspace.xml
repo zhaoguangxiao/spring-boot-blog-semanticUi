@@ -4,14 +4,17 @@
     <list default="true" id="e7425a2e-e488-4c85-833a-3cbb2519a351" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/UserBeanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/UserBeanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/user/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/user/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/archives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,7 +62,30 @@
     <favorites_list name="spring-boot-blog" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/archives.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+              <folding>
+                <element signature="e#2#27#0" expanded="true" />
+                <element signature="e#2#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>email</find>
       <find>nickName</find>
       <find>parentComment</find>
       <find>http://wpa.qq.com/msgrd?v=3&amp;uin=1764773283&amp;site=qq&amp;menu=yes</find>
@@ -102,6 +127,7 @@
       <find>textarea</find>
       <find>firstPicture</find>
       <find>imageId</find>
+      <find>推荐</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -113,9 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/personal.css" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UploadFileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UploadFileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/aliyunoss.properties" />
@@ -125,16 +148,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article/form.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main/personal_fragments.html" />
         <option value="$PROJECT_DIR$/log/blog-dev.log" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/tags.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/search.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/category.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FabulousBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FriendlyLinkBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/BlogService.java" />
@@ -154,16 +169,27 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/js/blog_details_min.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/NoticeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/BlogBean.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/details.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main/_backEnd.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/dao/UserBeanRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/user/list.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/user/form.html" />
         <option value="$PROJECT_DIR$/src/test/java/com/zhao/guang/xiao/top/springbootblog/service/UserServiceTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/details.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/about.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/category.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/tags.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/search.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/archives.html" />
       </list>
     </option>
   </component>
@@ -191,8 +217,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-401" />
-    <option name="y" value="33" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="871" />
   </component>
@@ -202,6 +228,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,21 +316,7 @@
               <item name="guang" type="462c0819:PsiDirectoryNode" />
               <item name="xiao" type="462c0819:PsiDirectoryNode" />
               <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="po" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -317,7 +331,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -325,8 +339,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'messages'" type="a6c14932:ResourceBundleNode" />
             </path>
             <path>
               <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -335,141 +349,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhao" type="462c0819:PsiDirectoryNode" />
-              <item name="guang" type="462c0819:PsiDirectoryNode" />
-              <item name="xiao" type="462c0819:PsiDirectoryNode" />
-              <item name="top" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootblog" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,7 +365,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-forum-001" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -663,21 +547,9 @@
       <workItem from="1571882757951" duration="604000" />
       <workItem from="1571883400104" duration="36750000" />
       <workItem from="1571989588251" duration="16820000" />
-      <workItem from="1572051894443" duration="22935000" />
-    </task>
-    <task id="LOCAL-00012" summary="博客分类 标签 删除 bug修复 博客列表页面实现">
-      <created>1570595268765</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1570595268765</updated>
-    </task>
-    <task id="LOCAL-00013" summary="登录bug优化">
-      <created>1570614591872</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1570614591872</updated>
+      <workItem from="1572051894443" duration="24211000" />
+      <workItem from="1572081182696" duration="2770000" />
+      <workItem from="1572403882302" duration="6524000" />
     </task>
     <task id="LOCAL-00014" summary="添加博客  获取session中的用户 bug解决">
       <created>1570693316947</created>
@@ -1008,13 +880,24 @@
       <option name="project" value="LOCAL" />
       <updated>1572073040632</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="后端管理员动态修改">
+      <created>1572078115191</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1572078115191</updated>
+    </task>
+    <task id="LOCAL-00062" summary="前端详情页面国际化信息 修改中英文">
+      <created>1572078627247</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1572078627247</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlogServiceTestCase_findBlogBeanByKey - 2019.10.15 at 14h 15m 02s.xml">
-      <configuration name="BlogServiceTestCase.findBlogBeanByKey" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BlogServiceTestCase_findBlogBeanByKey - 2019.10.15 at 14h 15m 30s.xml">
       <configuration name="BlogServiceTestCase.findBlogBeanByKey" configurationId="JUnit" />
     </history-entry>
@@ -1042,9 +925,12 @@
     <history-entry file="BlogServiceTestCase_findBlogBeanByKey - 2019.10.15 at 14h 22m 15s.xml">
       <configuration name="BlogServiceTestCase.findBlogBeanByKey" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserServiceTestCase_createAdmin - 2019.10.26 at 16h 18m 40s.xml">
+      <configuration name="UserServiceTestCase.createAdmin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465755000" />
+    <option name="totallyTimeSpent" value="476325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1057,19 +943,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49560118" visible="true" weight="0.33100858" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.494302" visible="true" weight="0.17489271" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5043988" side_tool="true" weight="0.27628756" />
+      <window_info id="Favorites" order="6" sideWeight="0.505698" side_tool="true" weight="0.33100858" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.19644839" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" visible="true" weight="0.26970032" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" weight="0.35516092" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
@@ -1080,7 +967,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.1764706" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.2608213" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1094,18 +981,18 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49560118" visible="true" weight="0.34924892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.494302" visible="true" weight="0.33283132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5043988" side_tool="true" weight="0.27628756" />
+      <window_info id="Favorites" order="6" sideWeight="0.505698" side_tool="true" weight="0.33100858" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.19644839" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" weight="0.26859045" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49785408" weight="0.29855716" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
@@ -1116,7 +1003,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.1764706" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.2608213" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1174,8 +1061,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="网站后台增加 友情链接" />
-    <MESSAGE value="网站友情链接完善前端后端代码优化" />
     <MESSAGE value="网站归档页面 完善" />
     <MESSAGE value="前端页面添加中文英文切换" />
     <MESSAGE value="前端页面国际化bug的修复" />
@@ -1199,7 +1084,9 @@
     <MESSAGE value="增加用户点赞" />
     <MESSAGE value="后端通知类已读未读修改" />
     <MESSAGE value="详情页面代码 优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="详情页面代码 优化" />
+    <MESSAGE value="后端管理员动态修改" />
+    <MESSAGE value="前端详情页面国际化信息 修改中英文" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端详情页面国际化信息 修改中英文" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_boot_blog$SpringBootBlogApplication.ic" NAME="SpringBootBlogApplication Coverage Results" MODIFIED="1571899607465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -1254,105 +1141,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/FabulousController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/FabulousService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/CommentBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/FabulousBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/Impl/FabulousServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/NoticeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.waypoints.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/myIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5595">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog_details_min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6642">
-          <caret line="246" column="1" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/tocbot.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1394,30 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="100" column="27" lean-forward="true" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding>
-            <element signature="e#2#21#0" expanded="true" />
-            <element signature="e#2#32#0" expanded="true" />
-            <element signature="e#2#29#0" expanded="true" />
-            <element signature="e#2#30#0" expanded="true" />
-            <element signature="e#2#33#0" expanded="true" />
-            <element signature="e#2#30#0" expanded="true" />
-            <element signature="e#2#32#0" expanded="true" />
-            <element signature="e#2#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1493,27 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="67" column="71" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="71" />
-          <folding>
-            <element signature="e#2#25#0" expanded="true" />
-            <element signature="e#2#29#0" expanded="true" />
-            <element signature="e#2#25#0" expanded="true" />
-            <element signature="e#2#17#0" expanded="true" />
-            <element signature="e#2#18#0" expanded="true" />
-            <element signature="e#2#17#0" expanded="true" />
-            <element signature="e#2#19#0" expanded="true" />
-            <element signature="e#2#21#0" expanded="true" />
-            <element signature="e#2#27#0" expanded="true" />
-            <element signature="e#2#26#0" expanded="true" />
-            <element signature="e#2#22#0" expanded="true" />
-            <element signature="e#2#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/admin/NoticeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1569,23 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/type/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -1625,6 +1351,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="156" column="101" lean-forward="true" selection-start-line="156" selection-start-column="101" selection-end-line="156" selection-end-column="101" />
+          <folding>
+            <element signature="e#2#21#0" expanded="true" />
+            <element signature="e#2#32#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#30#0" expanded="true" />
+            <element signature="e#2#33#0" expanded="true" />
+            <element signature="e#2#33#0" expanded="true" />
+            <element signature="e#2#30#0" expanded="true" />
+            <element signature="e#2#32#0" expanded="true" />
+            <element signature="e#2#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/SpringBootBlogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="88" column="52" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zhao/guang/xiao/top/po/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
+          <folding>
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/myIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3063">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="231" column="1" selection-start-line="231" selection-start-column="1" selection-end-line="231" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main/_fragments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#31#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#41#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#22#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#26#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#24#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#30#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="98" selection-start-line="98" selection-end-line="101" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_zh_CN.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="101" column="27" lean-forward="true" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="108" selection-start-line="107" selection-end-line="108" />
+          <folding>
+            <element signature="e#2#18#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#26#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="95" column="38" lean-forward="true" selection-start-line="87" selection-start-column="31" selection-end-line="95" selection-end-column="38" />
+          <folding>
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#25#0" expanded="true" />
+            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#2#18#0" expanded="true" />
+            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#2#19#0" expanded="true" />
+            <element signature="e#2#21#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#26#0" expanded="true" />
+            <element signature="e#2#22#0" expanded="true" />
+            <element signature="e#2#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <folding>
+            <element signature="e#2#31#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#38#0" expanded="true" />
+            <element signature="e#2#33#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+          <folding>
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#2#29#0" expanded="true" />
+            <element signature="e#2#19#0" expanded="true" />
+            <element signature="e#2#22#0" expanded="true" />
+            <element signature="e#2#33#0" expanded="true" />
+            <element signature="e#2#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/archives.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+          <folding>
+            <element signature="e#2#27#0" expanded="true" />
+            <element signature="e#2#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

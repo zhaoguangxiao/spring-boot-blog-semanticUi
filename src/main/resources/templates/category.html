@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="main/_fragments :: header(~{::title},~{},~{::meta})">
     <!--  关键字  -->
     <meta type="keywords" content="博客分类"/>
@@ -16,21 +16,25 @@
 <!--div +tab 快速补全代码-->
 <div id="middle-content" class="m-container-small m-padded-tb-big">
     <div class="ui container">
-            <div class="ui top attached segment">
-                <!--middle aligned 代表垂直居中-->
-                <div class="ui middle aligned two column grid">
-                    <div class="column">
-                        <h3 class="ui teal header" th:text="#{fragment.header.blog.category}"></h3>
-                    </div>
-                    <div class="right aligned column">
-                        [[#{index.blog.Middle.title.common}]]<h2 class="ui orange m-inline-blok header m-padded-tb-tiny" th:text="${#arrays.length(typeBeans)}"></h2>[[#{category.label.individual.test}]]
-                    </div>
+        <div class="ui top attached segment">
+            <!--middle aligned 代表垂直居中-->
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui teal header" th:text="#{fragment.header.blog.category}"></h3>
+                </div>
+                <div class="right aligned column">
+                    [[#{index.blog.Middle.title.common}]]<h2 class="ui orange m-inline-blok header m-padded-tb-tiny"
+                                                             th:text="${#arrays.length(typeBeans)}"></h2>
+                    [[#{category.label.individual.test}]]
                 </div>
             </div>
+        </div>
         <div class="ui attached segment m-padded-tb-large">
             <div class="ui labeled button m-margin-tb-tiny" th:each="each : ${typeBeans}">
-                <a th:href="@{/categary/{id}(id=${each.id})}" href="#" class="ui basic button" th:classappend="${each.id == selectionId}? 'red'" th:text="${each.name}"></a>
-                <div class="ui basic left pointing label" th:classappend="${each.id == selectionId}? 'red'" th:text="${#arrays.length(each.blogBeanList)}"></div>
+                <a th:href="@{/categary/{id}(id=${each.id})}" href="#" class="ui basic button"
+                   th:classappend="${each.id == selectionId}? 'red'" th:text="${each.name}"></a>
+                <div class="ui basic left pointing label" th:classappend="${each.id == selectionId}? 'red'"
+                     th:text="${#arrays.length(each.blogBeanList)}"></div>
             </div>
         </div>
 
@@ -71,21 +75,28 @@
                                         <i class="eye icon"></i>[[${each.views}]]
                                     </div>
                                     <div class="item">
-                                        <i class="comment alternate icon" th:text="${#arrays.length(each.commentBeans)}"></i>
+                                        <i class="comment alternate icon"
+                                           th:text="${#arrays.length(each.commentBeans)}"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="right aligned five wide column">
                                 <a th:href="@{'/blog/'+${each.id}}" target="_blank"
-                                   class="ui teal basic m-padded-mini label m-padded-tb-tiny" th:text="#{index.blog.Middle.full.text}"></a>
+                                   class="ui teal basic m-padded-mini label m-padded-tb-tiny"
+                                   th:text="#{index.blog.Middle.full.text}"></a>
                             </div>
                         </div>
                     </div>
                     <div class="five wide column">
-                        <a th:href="@{'/blog/'+${each.id}}" target="_blank">
-                            <img th:src="${each.firstPicture}" alt=""
-                                 class="ui rounded image">
-                        </a>
+                        <div class="ui fluid image">
+                            <th:block th:if="${each.top == 1}">
+                                <a class="ui red right corner label" th:href="@{/blog/{id}(id=${each.id})}"
+                                   target="_blank">
+                                    <i class="vaadin icon"></i>
+                                </a>
+                            </th:block>
+                            <img th:src="${each.firstPicture}">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,43 +109,46 @@
             </div>
         </div>
 
-        <!--上一页 下一页 底部-->
-        <div class="ui floated right pagination menu"  th:if="${pages.totalPages>1}">
-            <div class="item">
-                [[#{index.blog.page.current}]]
-                <span class="basic" th:text="${pages.getNumber()} + 1"></span>[[#{index.blog.page}]]
-                [[#{index.blog.total}]]<span class="ui positive" th:text="${pages.totalPages}"></span>[[#{index.blog.page}]]
-                [[#{index.blog.common}]]<span class="ui positive" th:text="${pages.totalElements}"></span>[[#{index.blog.bar.data}]]
+            <!--上一页 下一页 底部-->
+            <div class="ui floated right pagination menu" th:if="${pages.totalPages>1}">
+                <div class="item">
+                    [[#{index.blog.page.current}]]
+                    <span class="basic" th:text="${pages.getNumber()} + 1"></span>[[#{index.blog.page}]]
+                    [[#{index.blog.total}]]<span class="ui positive" th:text="${pages.totalPages}"></span>[[#{index.blog.page}]]
+                    [[#{index.blog.common}]]<span class="ui positive" th:text="${pages.totalElements}"></span>[[#{index.blog.bar.data}]]
+                </div>
+                <a class="active item" th:href="@{/categary/{id}(id=${selectionId})}"
+                   th:text="#{fragment.header.blog.home}"></a>
+                <a class="item" th:class="${pages.first}?'item disabled' :'item'"
+                   th:href="${pages.first}?'javascript:return false;': @{'/categary/'+${selectionId}(page = ${pages.number}-1)}">
+                    [[#{index.blog.previous.page}]]
+                </a>
+                <a class="item" th:class="${pages.last}?'item disabled' :'item'"
+                   th:href="${pages.last}?'javascript:return false;': @{'/categary/'+${selectionId}(page = ${pages.number}+1)}">
+                    [[#{index.blog.next.page}]]
+                </a>
+                <a class="item" th:href="@{'/categary/'+${selectionId}(page = ${pages.totalPages}-1)}">
+                    [[#{index.blog.tail.page}]]
+                </a>
             </div>
-            <a class="active item" th:href="@{/categary/{id}(id=${selectionId})}" th:text="#{fragment.header.blog.home}"></a>
-            <a class="item" th:class="${pages.first}?'item disabled' :'item'" th:href="${pages.first}?'javascript:return false;': @{'/categary/'+${selectionId}(page = ${pages.number}-1)}">
-                [[#{index.blog.previous.page}]]
-            </a>
-            <a class="item" th:class="${pages.last}?'item disabled' :'item'" th:href="${pages.last}?'javascript:return false;': @{'/categary/'+${selectionId}(page = ${pages.number}+1)}">
-                [[#{index.blog.next.page}]]
-            </a>
-            <a class="item" th:href="@{'/categary/'+${selectionId}(page = ${pages.totalPages}-1)}">
-                [[#{index.blog.tail.page}]]
-            </a>
+
         </div>
-
     </div>
-</div>
 
-<!--用户个人信息部分-->
-<div th:replace="main/personal_fragments :: user_personal"></div>
-<br>
-<br>
-<br>
-<!--尾部-->
-<div th:replace="main/_fragments :: footer"></div>
-<div th:replace="main/_fragments :: toTop"></div>
+    <!--用户个人信息部分-->
+    <div th:replace="main/personal_fragments :: user_personal"></div>
+    <br>
+    <br>
+    <br>
+    <!--尾部-->
+    <div th:replace="main/_fragments :: footer"></div>
+    <div th:replace="main/_fragments :: toTop"></div>
 
-<!--引入js-->
-<th:block th:replace="main/_fragments :: script"></th:block>
+    <!--引入js-->
+    <th:block th:replace="main/_fragments :: script"></th:block>
 
-<script>
+    <script>
 
-</script>
+    </script>
 </body>
 </html>

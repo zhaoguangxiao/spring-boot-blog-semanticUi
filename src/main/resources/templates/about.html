@@ -19,64 +19,74 @@
         <div class="ui stackable grid">
             <div class="eleven wide column">
                 <div class="ui segment">
-                    <img src="../static/images/6.png" alt="" class="ui round image">
+                    <img th:src="${user.avatar}" src="../static/images/6.png" alt="" class="ui round image">
                 </div>
             </div>
             <div class="five wide column">
                 <div class="ui top attached segment">
-                    <div class="ui header">
-                        关于我
-                    </div>
+                    <div class="ui header" th:text="#{about.index.name}"></div>
                 </div>
                 <div class="ui attached segment">
-                    <p class="m-text">
-                        赵广晓,一个独立开发者,折腾在0和1世界的人;一个终身学习者,誓将学习无线循环,希望结石可以共同成长的小伙伴
-                    </p>
-                    <p>
-                        热爱编程,喜欢折腾,正在搜索高效学习,编程技术的方法...
-                    </p>
+                    <div class="ui list">
+                        <div class="item">
+                            <i class="user outline icon"></i>
+                            <div class="content" th:text="${user.nickName}"></div>
+                        </div>
+                        <div class="item">
+                            <i class="mail icon"></i>
+                            <div class="content" th:text="${user.email}"></div>
+                        </div>
+                        <div class="item">
+                            <i class="qq icon"></i>
+                            <div class="content">
+                                <a th:href="#{fragment.footer.qq.name}" target="_blank"
+                                   th:text="#{fragment.footer.qq.name}"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="github icon"></i>
+                            <div class="content">
+                                <a th:href="#{fragment.footer.github.url}" target="_blank"
+                                   th:text="#{fragment.footer.github.name}"></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="blogger icon"></i>
+                            <div class="content">
+                                <a th:href="#{fragment.footer.csdn.url}" target="_blank"
+                                   th:text="#{fragment.footer.csdn.name}"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ui attached segment">
-                    <div class="orange ui left pointing basic label">
-                        编程
-                    </div>
-                    <div class="orange ui left pointing basic label">
-                        写作
-                    </div>
-                    <div class="orange ui left pointing basic label">
-                        分享
-                    </div>
+
+                <div class="ui tall stacked segment">
+                    <p th:text="${user.descript}"></p>
                 </div>
+
                 <div class="ui attached segment">
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        吃饭
-                    </div>
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        睡觉
-                    </div>
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        打豆豆
-                    </div>
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        Java
-                    </div>
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        C#
-                    </div>
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        C++
-                    </div>
-                    <div class="teal ui left pointing basic label m-margin-tb-tiny">
-                        PHP
+
+                    <div class="ui statistic">
+                        <div class="label" th:text="#{about.index.runtime.name}">
+                        </div>
+                        <div class="value">
+                            [[${user.getRunningTime()}]][[#{about.index.runtime.day}]]
+                        </div>
                     </div>
                 </div>
                 <div class="ui bottom attached segment">
-                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
-                    <a href="#" class="ui qq circular icon button" data-position="bottom center" data-content="Elliot has been a member since July 2012"><i class="qq icon"></i></a>
-                    <a href="#" class="ui weixin circular icon button"><i class="wechat icon"></i></a>
-                    <div class="ui wechat-weiixn flowing popup transition hidden">
-                        <img src="../static/images/2017-07-10_59631d2325129.jpg" alt="" style="width: 100px" class="ui rounded image">
-                    </div>
+                    <button class="ui circular facebook icon button" data-position="bottom center" data-content="敬请期待">
+                        <i class="facebook icon"></i>
+                    </button>
+                    <button class="ui circular twitter icon button" data-position="bottom center" data-content="敬请期待">
+                        <i class="twitter icon"></i>
+                    </button>
+                    <button class="ui circular linkedin icon button" data-position="bottom center" data-content="敬请期待">
+                        <i class="linkedin icon"></i>
+                    </button>
+                    <button class="ui circular google plus icon button" data-position="bottom center" data-content="敬请期待">
+                        <i class="google plus icon"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -84,8 +94,6 @@
 
 
 </div>
-
-
 
 
 <!--用户个人信息部分-->
@@ -101,18 +109,10 @@
 
 
 <script>
-
-    $('.qq').popup();
-
-
-    $('.weixin').popup({
-        popup: $('.wechat-weiixn'),
-        on: 'hover',
-        position: 'bottom center'
-    });
-
-
-
+    $('.facebook').popup();
+    $('.twitter').popup();
+    $('.linkedin').popup();
+    $('.google').popup();
 
 
 

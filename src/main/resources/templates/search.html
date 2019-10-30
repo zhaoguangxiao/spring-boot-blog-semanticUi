@@ -78,10 +78,15 @@
                         </div>
                     </div>
                     <div class="five wide column">
-                        <a th:href="@{'/blog/'+${each.id}}" target="_blank">
-                            <img th:src="${each.firstPicture}" alt=""
-                                 class="ui rounded image">
-                        </a>
+                        <div class="ui fluid image">
+                            <th:block th:if="${each.top == 1}">
+                                <a class="ui red right corner label" th:href="@{/blog/{id}(id=${each.id})}"
+                                   target="_blank">
+                                    <i class="vaadin icon"></i>
+                                </a>
+                            </th:block>
+                            <img th:src="${each.firstPicture}">
+                        </div>
                     </div>
                 </div>
             </div>

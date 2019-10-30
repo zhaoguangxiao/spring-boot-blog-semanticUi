@@ -45,4 +45,9 @@ public class UserBean implements Serializable {
     }
 
 
+    public Long getRunningTime() {
+        return (System.currentTimeMillis() - this.getCreateTime())/(1000*3600*24);
+    }
+
+
 }
