@@ -1,5 +1,7 @@
 package com.zhao.guang.xiao.top.service;
 
+import com.zhao.guang.xiao.top.po.UserBean;
+
 /**
  * @author Administrator
  * @version 1.0
@@ -10,5 +12,8 @@ public interface GithubService {
     String genState();
 
     boolean checkState(String status);
+
+
+    UserBean saveGithubUser(String result);
 
 }

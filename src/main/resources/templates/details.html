@@ -100,7 +100,7 @@
                         <div class="ui labeled button" tabindex="0">
                             <div id="opposition_add" class="ui basic blue button" data-position="bottom center"
                                  data-content="你已经投过票了">
-                                <i class="thumbs down outline icon"></i>  [[#{detail.context.comment.opposition}]]
+                                <i class="thumbs down outline icon"></i> [[#{detail.context.comment.opposition}]]
                             </div>
                             <a class="ui basic left pointing blue label">
                                 <span id="countOpposition" th:text="${blogBean.oppositionCount}">1,048</span>
@@ -244,8 +244,9 @@
                     </div>
                     <div class="ui bottom attached warning message" th:if="${session.userEntity == null}">
                         <i class="icon help"></i>
-                        [[#{detail.context.comment}]] <a href="javascript:void(0)">
-                        <i class="qq icon"></i></a>
+                        [[#{detail.context.comment}]]
+                        <a href="javascript:void(0)" onclick="qqLogin()">
+                            <i class="qq icon"></i></a>
                         <a href="javascript:void(0)" onclick="githubLogin()">
                             <i class="github icon"></i>
                         </a>

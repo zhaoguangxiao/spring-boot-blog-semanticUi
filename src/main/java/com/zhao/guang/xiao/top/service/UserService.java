@@ -23,4 +23,7 @@ public interface UserService {
 
     UserBean getOne(Long id);
 
+
+    UserBean saveQQ(UserBean userBean);
+
 }

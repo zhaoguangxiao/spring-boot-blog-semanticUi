@@ -51,16 +51,15 @@ public class UserServiceImpl implements UserService {
     @Transactional(rollbackFor = Exception.class)
     public UserBean saveGithub(UserBean userBean) {
         //判断当前用户是否存在 根据密码 和 type
-        UserBean userBeanRepositoryByPasswordAndType = userBeanRepository.findByPasswordAndType(userBean.getPassword(), UserBean.USER_GITHUB);
-        if (null == userBeanRepositoryByPasswordAndType) {
+        UserBean bean = hasUserByTypeAndPwd(userBean.getPassword(), UserBean.USER_GITHUB);
+        if (null == bean) {
             userBean.setCreateTime(System.currentTimeMillis());
             userBean.setUpdateTime(System.currentTimeMillis());
-            userBeanRepository.save(userBean);
         } else {
-            userBean.setId(userBeanRepositoryByPasswordAndType.getId());
+            userBean.setId(bean.getId());
             userBean.setUpdateTime(System.currentTimeMillis());
-            userBeanRepository.save(userBean);
         }
+        userBeanRepository.save(userBean);
         return userBean;
     }
 
@@ -77,5 +76,26 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserBean getOne(Long id) {
         return userBeanRepository.getOne(id);
+    }
+
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public UserBean saveQQ(UserBean userBean) {
+        //判断当前qq用户是否存在
+        UserBean bean = hasUserByTypeAndPwd(userBean.getPassword(), UserBean.USER_QQ);
+        if (null == bean) {
+            bean.setCreateTime(System.currentTimeMillis());
+            bean.setUpdateTime(System.currentTimeMillis());
+        } else {
+            userBean.setId(bean.getId());
+            bean.setUpdateTime(System.currentTimeMillis());
+        }
+        return userBeanRepository.save(bean);
+    }
+
+
+    private UserBean hasUserByTypeAndPwd(String pwd, int type) {
+        return userBeanRepository.findByPasswordAndType(pwd, type);
     }
 }

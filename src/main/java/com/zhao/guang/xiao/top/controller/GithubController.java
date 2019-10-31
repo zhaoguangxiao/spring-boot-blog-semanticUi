@@ -37,10 +37,6 @@ public class GithubController {
     private GithubService githubService;
 
 
-    @Autowired
-    private UserService userService;
-
-
     @Value("${github.client.id}")
     private String clientId;
     @Value("${github.client.secret}")
@@ -103,20 +99,11 @@ public class GithubController {
         String meResult = HttpClientUtils.sendGetRequest(request_user_http, meParams);
         // 成功返回如下：callback( {"client_id":"YOUR_APPID","openid":"YOUR_OPENID"} );
         log.info(meResult);
-        JSONObject fromObject = JSON.parseObject(meResult);
 
-        //唯一标识id
-        String userid = fromObject.getString("id");
-        String nickName = fromObject.getString("name");
-        String avatar_url = fromObject.getString("avatar_url");
+        //根据返回的结果 保存/update 数据库用户
+        UserBean userBean = githubService.saveGithubUser(meResult);
 
-        UserBean userBean = new UserBean();
-        userBean.setNickName(nickName);
-        userBean.setAvatar(avatar_url);
-        userBean.setType(UserBean.USER_GITHUB);
-        userBean.setPassword(userid);
-
-        userService.saveGithub(userBean);
+        //session 保存这个用户
         request.getSession().setAttribute("userEntity", userBean);
 
 

@@ -235,3 +235,18 @@ function githubLogin() {
 }
 
 console['log']('你在电脑前看这段文字，\x0a说明你也是个程序猿(*^▽^*)。\x0a不合群者，\x0a独来独往的人。\x0a必有过人之处，\x0a整天混在朋友之间的人绝对不可能有多大的能力。\x0a\x0a'), console['log']('%c-->代码改变世界的同时先改变你自己<--', 'color:red');
+
+
+function qqLogin() {
+    $.ajax({
+        type: "GET",
+        url: "/qq/oauth",
+        dataType: "json",
+        success: function (response) {
+            var qqlogin='https://graph.qq.com/oauth2.0/authorize?response_type=code' + '&client_id=' + response.qqAppId + '&redirect_uri=' + response.backUrl + '&state=' + response.state;
+            openWindow(qqlogin);
+        }
+    });
+}
+
+
