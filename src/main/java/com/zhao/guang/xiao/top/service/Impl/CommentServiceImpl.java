@@ -43,7 +43,7 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    @Transactional(rollbackFor=Exception.class)
+    @Transactional(rollbackFor = Exception.class)
     public CommentBean saveCommentBean(CommentBean commentBean) {
         Long commentParentId = commentBean.getParentComment().getId();
         if (commentParentId != -1) {
@@ -130,7 +130,13 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public List<CommentBean> listCommentBeanByGroupBlogIdAndParentId(Integer size) {
-        Pageable pageable = PageRequest.of(0, size);
-        return commentRepository.findAllCommentBeanByGroupBlogIdAndParentId(pageable);
+        //判断评论是否为空
+        List<CommentBean> all = commentRepository.findAll();
+        if (all.isEmpty()) {
+            return null;
+        } else {
+            Pageable pageable = PageRequest.of(0, size);
+            return commentRepository.findAllCommentBeanByGroupBlogIdAndParentId(pageable);
+        }
     }
 }

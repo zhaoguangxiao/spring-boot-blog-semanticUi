@@ -184,7 +184,7 @@ public class BlogServiceImpl implements BlogService {
      * @return
      */
     private List<BlogBean> getBlogBean(String years) {
-        String sql = "select * from  t_blog  blogBean where FROM_UNIXTIME(blogbean.create_time/1000,'%Y-%m') = ?";
+        String sql = "select * from  t_blog  bean where FROM_UNIXTIME(bean.create_time/1000,'%Y-%m') = ?";
         Query query = em.createNativeQuery(sql, BlogBean.class);
         query.setParameter(1, years);
         return query.getResultList();

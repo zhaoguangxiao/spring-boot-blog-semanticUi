@@ -22,7 +22,7 @@ public interface CommentRepository extends JpaRepository<CommentBean, Long> {
     List<CommentBean> findByBlogBeanIdAndParentCommentNull(Long blogId, Sort sort);
 
 
-
-    @Query("select commentBean from CommentBean commentBean group by commentBean.blogBean.id order by commentBean.createTime desc ")
+    @Query("select bean from CommentBean bean group by bean.blogBean.id order by bean.createTime desc ")
     List<CommentBean> findAllCommentBeanByGroupBlogIdAndParentId(Pageable pageable);
+
 }
