@@ -27,4 +27,4 @@ logging:
     com.zhao.guang.xiao.top: debug
   file: log/blog-dev.log
 server:
-  port: 8887
+  port: 8080

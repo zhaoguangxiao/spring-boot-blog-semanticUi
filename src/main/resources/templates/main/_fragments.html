@@ -45,9 +45,9 @@
                 </form>
             </div>
             <th:block th:unless="${#strings.isEmpty(#httpServletRequest.queryString)?false :#strings.contains(#httpServletRequest.queryString,'search=')}">
-                <a th:href="@{${#httpServletRequest.getRequestURL()}(l='zh_CN')}" class="m-item item m-mobile-hide"
+                <a th:href="@{${#strings.replace(#httpServletRequest.getRequestURL(),'http://127.0.0.1:8787','https://zhaoguangxiao.top')}(i18n_language='zh_CN')}" class="m-item item m-mobile-hide"
                    th:text="#{fragment.header.blog.zh}"></a>
-                <a th:href="@{${#httpServletRequest.getRequestURL()}(l='en_US')}"
+                <a th:href="@{${#strings.replace(#httpServletRequest.getRequestURL(),'http://127.0.0.1:8787','https://zhaoguangxiao.top')}(i18n_language='en_US')}"
                    class="m-item item m-mobile-hide" th:text="#{fragment.header.blog.en}"></a>
             </th:block>
         </div>

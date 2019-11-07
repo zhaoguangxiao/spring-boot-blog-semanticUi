@@ -12,7 +12,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -76,7 +75,7 @@ public class QQController {
      * @return
      */
     @GetMapping("/qqcalback")
-    public void qqcallback(HttpServletRequest request,
+    public void qqCallBack(HttpServletRequest request,
                            HttpServletResponse response) throws Exception {
         HttpSession session = request.getSession();
         //qq返回的信息：http://graph.qq.com/demo/index.jsp?code=9A5F************************06AF&state=test
@@ -92,11 +91,21 @@ public class QQController {
         }
 
         //Step2：通过Authorization Code获取Access Token
-        String getTokenUrlParm = getTokenUrl.replace("CLIENT_ID", qqAppId).replace("CLIENT_SECRET", qqAppleKey).replace("CODE", code).replace("REDIRECT_URI", backUrl);
-        String access_token = qqService.getAccessToken(getTokenUrlParm);
+        String backUrl = "https://zhaoguangxiao.top/qqcalback";
+        String url = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code" +
+                "&client_id=" + qqAppId +
+                "&client_secret=" + qqAppleKey +
+                "&code=" + code +
+                "&redirect_uri=" + backUrl;
+
+        String access_token = qqService.getAccessToken(url);
+
+        log.info(access_token);
+
 
         //Step3: 获取回调后的 openid 值
         String openUrl = getOpenIdUrl.replace("ACCESS_TOKEN", access_token);
+
         String openid = qqService.getOpenID(openUrl);
 
         //Step4：获取QQ用户信息
@@ -104,7 +113,7 @@ public class QQController {
         JSONObject jsonObject = qqService.getUserInfo(userUrl);
 
         //也可以放到Redis和mysql中
-        UserBean userBean = qqService.saveQQUser(jsonObject,openid);
+        UserBean userBean = qqService.saveQQUser(jsonObject, openid);
         //登录成功,写cookie
         request.getSession().setAttribute("userEntity", userBean);
 

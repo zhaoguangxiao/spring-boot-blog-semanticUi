@@ -29,8 +29,8 @@ public class BlogCategoryServiceTestCase extends SpringBootBlogApplicationTests 
 
     @Test
     public void getOne() {
-        TypeBean typeBean = blogCategoryService.getTypeBean(21L);
-        log.debug("{}", typeBean);
+//        TypeBean typeBean = blogCategoryService.getTypeBean(21L);
+//        log.debug("{}", typeBean);
     }
 
     @Test
