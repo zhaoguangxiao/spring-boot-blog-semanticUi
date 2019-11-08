@@ -40,7 +40,6 @@ public class GithubServiceImpl implements GithubService {
     @Override
     public UserBean saveGithubUser(String result) {
         JSONObject fromObject = JSON.parseObject(result);
-
         //唯一标识id
         String userid = fromObject.getString("id");
         String nickName = fromObject.getString("name");
@@ -51,6 +50,8 @@ public class GithubServiceImpl implements GithubService {
         userBean.setAvatar(avatar_url);
         userBean.setType(UserBean.USER_GITHUB);
         userBean.setPassword(userid);
+        //设置创建时间
+        userBean.setCreateTime(System.currentTimeMillis());
         //返回登录github对象
         return userService.saveGithub(userBean);
     }

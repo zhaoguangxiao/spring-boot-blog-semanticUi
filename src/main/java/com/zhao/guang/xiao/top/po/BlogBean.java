@@ -90,8 +90,7 @@ public class BlogBean implements Serializable {
     @OneToMany(mappedBy = "blogBean")
     private List<CommentBean> commentBeans = new ArrayList<>();
 
-    public BlogBean() {
-    }
+    public BlogBean() {}
 
 
     public String formatTags() {
