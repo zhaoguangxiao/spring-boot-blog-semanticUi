@@ -249,3 +249,147 @@
 2019-11-09 10:02:49.288  INFO 48956 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-11-09 10:02:49.294  INFO 48956 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-11-09 10:02:49.297  INFO 48956 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-09 10:21:50.791  INFO 46696 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on 丁绍扬 with PID 46696 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-11-09 10:21:50.793 DEBUG 46696 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-09 10:21:50.793  INFO 46696 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-11-09 10:21:50.883  INFO 46696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-09 10:21:50.883  INFO 46696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-09 10:21:51.918  INFO 46696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 10:21:52.096  INFO 46696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169ms. Found 8 repository interfaces.
+2019-11-09 10:21:52.601  INFO 46696 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e87a82ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 10:21:53.261  INFO 46696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8787 (http)
+2019-11-09 10:21:53.284  INFO 46696 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 10:21:53.285  INFO 46696 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-09 10:21:53.472  INFO 46696 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 10:21:53.472  INFO 46696 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2589 ms
+2019-11-09 10:21:53.750  INFO 46696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-09 10:21:53.751  WARN 46696 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-09 10:21:53.978  INFO 46696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-09 10:21:54.049  INFO 46696 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-09 10:21:54.130  INFO 46696 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-11-09 10:21:54.132  INFO 46696 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 10:21:54.291  INFO 46696 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-09 10:21:54.560  INFO 46696 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-09 10:21:56.606  INFO 46696 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-09 10:21:56.709  INFO 46696 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-09 10:21:57.216  INFO 46696 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 10:21:58.581  INFO 46696 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:21:58.681  WARN 46696 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-09 10:21:58.780  INFO 46696 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-09 10:21:59.071  INFO 46696 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-11-09 10:21:59.344  INFO 46696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8787 (http) with context path ''
+2019-11-09 10:21:59.347  INFO 46696 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 9.204 seconds (JVM running for 10.54)
+2019-11-09 10:22:08.875  INFO 46696 --- [http-nio-8787-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1571369283; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1571285651,1571625603,1571626760,1571627309; NPYT62454332lastvisitetime=1572080162095; Hm_lvt_3f7072bbeb338e42b233a059453bb472=1572080163; CNZZDATA1278129143=452167376-1573199552-%7C1573263521; JSESSIONID=1E8A04F12E9648A0C69085C552BA56AD] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-09 10:22:08.895  INFO 46696 --- [http-nio-8787-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 10:22:08.896  INFO 46696 --- [http-nio-8787-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 10:22:08.928  INFO 46696 --- [http-nio-8787-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2019-11-09 10:22:09.003  INFO 46696 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: UNSORTED], {}])
+2019-11-09 10:22:09.270  WARN 46696 --- [http-nio-8787-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-11-09 10:22:09.294  WARN 46696 --- [http-nio-8787-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-11-09 10:22:09.450  INFO 46696 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:22:09.451  INFO 46696 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果index
+2019-11-09 10:22:11.189  INFO 46696 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/links, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndFriendlyLinkController.listsFriendlyLink, args=[])
+2019-11-09 10:22:11.190  INFO 46696 --- [http-nio-8787-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/scheduled, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.scheduledMethod, args=[])
+2019-11-09 10:22:11.279  INFO 46696 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:22:11.280  INFO 46696 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果[FriendlyLinkBean(id=1, friendName=没有名字的音乐网, url=http://music.wangyankai.top/#/), FriendlyLinkBean(id=2, friendName=I Tech You,我教你, url=http://itechyou.cn/), FriendlyLinkBean(id=3, friendName= ShiYiBlog, url=https://blog.shiy1.com/)]
+2019-11-09 10:22:11.635  INFO 46696 --- [http-nio-8787-exec-10] c.z.guang.xiao.top.util.HttpClientUtils  : now client pool [leased: 0; pending: 0; available: 0; max: 200]
+2019-11-09 10:22:12.263  INFO 46696 --- [http-nio-8787-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:22:12.263  INFO 46696 --- [http-nio-8787-exec-10] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果{content=相逢不语，一朵芙蓉著秋雨。, author=纳兰容若, source=纳兰词}
+2019-11-09 10:22:13.830  INFO 46696 --- [http-nio-8787-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/about, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.toAbout, args=[{}])
+2019-11-09 10:22:13.874  INFO 46696 --- [http-nio-8787-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:22:13.874  INFO 46696 --- [http-nio-8787-exec-5] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果about
+2019-11-09 10:22:15.006  INFO 46696 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/links, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndFriendlyLinkController.listsFriendlyLink, args=[])
+2019-11-09 10:22:15.008  INFO 46696 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/scheduled, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.scheduledMethod, args=[])
+2019-11-09 10:22:15.009  INFO 46696 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:22:15.009  INFO 46696 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果{content=相逢不语，一朵芙蓉著秋雨。, author=纳兰容若, source=纳兰词}
+2019-11-09 10:22:15.084  INFO 46696 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:22:15.084  INFO 46696 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果[FriendlyLinkBean(id=1, friendName=没有名字的音乐网, url=http://music.wangyankai.top/#/), FriendlyLinkBean(id=2, friendName=I Tech You,我教你, url=http://itechyou.cn/), FriendlyLinkBean(id=3, friendName= ShiYiBlog, url=https://blog.shiy1.com/)]
+2019-11-09 10:27:11.160  INFO 46696 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-11-09 10:27:11.161  INFO 46696 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:27:11.164  INFO 46696 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-09 10:27:11.169  INFO 46696 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-09 10:27:11.191  INFO 46696 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-09 10:27:17.094  INFO 50636 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Starting SpringBootBlogApplication on 丁绍扬 with PID 50636 (E:\workspace\spring-boot-blog\target\classes started by Administrator in E:\workspace\spring-boot-blog)
+2019-11-09 10:27:17.097 DEBUG 50636 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-09 10:27:17.097  INFO 50636 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : The following profiles are active: dev
+2019-11-09 10:27:17.182  INFO 50636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-09 10:27:17.182  INFO 50636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-09 10:27:18.301  INFO 50636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 10:27:18.465  INFO 50636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 156ms. Found 8 repository interfaces.
+2019-11-09 10:27:18.991  INFO 50636 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd83ef1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 10:27:19.640  INFO 50636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8787 (http)
+2019-11-09 10:27:19.670  INFO 50636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 10:27:19.670  INFO 50636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-09 10:27:19.861  INFO 50636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 10:27:19.861  INFO 50636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2679 ms
+2019-11-09 10:27:20.094  INFO 50636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-09 10:27:20.096  WARN 50636 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-09 10:27:20.403  INFO 50636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-09 10:27:20.490  INFO 50636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-09 10:27:20.553  INFO 50636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-11-09 10:27:20.554  INFO 50636 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 10:27:20.720  INFO 50636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-09 10:27:20.997  INFO 50636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-09 10:27:22.546  INFO 50636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-09 10:27:22.658  INFO 50636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-09 10:27:23.145  INFO 50636 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 10:27:24.296  INFO 50636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:27:24.467  WARN 50636 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-09 10:27:24.540  INFO 50636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-09 10:27:24.833  INFO 50636 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-11-09 10:27:25.101  INFO 50636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8787 (http) with context path ''
+2019-11-09 10:27:25.104  INFO 50636 --- [restartedMain] c.z.g.x.top.SpringBootBlogApplication    : Started SpringBootBlogApplication in 8.717 seconds (JVM running for 10.245)
+2019-11-09 10:27:38.628  INFO 50636 --- [http-nio-8787-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1560821357,1560923021,1560924338; NPYT62454332visitepages=NaN; NPYT62454332IP=%7C115.192.87.149%7C183.129.150.166%7C111.0.75.155%7C; Hm_lvt_04ce7b3739717020657dd71d501f3b11=1565855024,1565855111; Hm_lvt_b09980b2be7f6ff0ded4c73311c5c0f6=1565855122,1565855327,1565929257; Hm_lvt_b21a4834459cdc454fe28486a08f04c5=1563435451,1563435607,1563436610,1565945085; UM_distinctid=16d150d9569276-047067232425b3-79391a30-1fa400-16d150d956a5fe; Hm_lvt_6f68c58b5f79f169b3855768e4bbb87a=1568021402,1568023267; __utma=111872281.1062615895.1560064333.1560923459.1568699640.23; Hm_lvt_dd7197788833a01bfc971cc1aaa47f9b=1568103607,1568166196,1568795885; Webstorm-a327319a=1d82df14-3a1d-49fb-906f-cb6d2219282b; CNZZDATA1277952072=489736848-1568015514-%7C1570513637; Hm_lvt_2e12fadf67ed937d1297bc5bc0a9a78d=1568856915,1568944774,1569557103,1570513639; Hm_lvt_7e7587a50c0a0db550c227c5ee406365=1571286219; Hm_lvt_839d9ca4e1668f054a6a4e8844cd736f=1571369283; Hm_lvt_87ab38bef2ee63d1231218c869011be6=1571285651,1571625603,1571626760,1571627309; NPYT62454332lastvisitetime=1572080162095; Hm_lvt_3f7072bbeb338e42b233a059453bb472=1572080163; CNZZDATA1278129143=452167376-1573199552-%7C1573263521; JSESSIONID=C14C1A5B633D81C3A0B24162EEDEDA6B] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-09 10:27:38.639  INFO 50636 --- [http-nio-8787-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 10:27:38.639  INFO 50636 --- [http-nio-8787-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 10:27:38.661  INFO 50636 --- [http-nio-8787-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-11-09 10:27:38.709  INFO 50636 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/about, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.toAbout, args=[{}])
+2019-11-09 10:27:38.789  INFO 50636 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:27:38.789  INFO 50636 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果about
+2019-11-09 10:27:40.618  INFO 50636 --- [http-nio-8787-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/scheduled, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.scheduledMethod, args=[])
+2019-11-09 10:27:40.618  INFO 50636 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/links, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndFriendlyLinkController.listsFriendlyLink, args=[])
+2019-11-09 10:27:40.812  INFO 50636 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:27:40.813  INFO 50636 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果[FriendlyLinkBean(id=1, friendName=没有名字的音乐网, url=http://music.wangyankai.top/#/), FriendlyLinkBean(id=2, friendName=I Tech You,我教你, url=http://itechyou.cn/), FriendlyLinkBean(id=3, friendName= ShiYiBlog, url=https://blog.shiy1.com/)]
+2019-11-09 10:27:41.240  INFO 50636 --- [http-nio-8787-exec-2] c.z.guang.xiao.top.util.HttpClientUtils  : now client pool [leased: 0; pending: 0; available: 0; max: 200]
+2019-11-09 10:27:41.771  INFO 50636 --- [http-nio-8787-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:27:41.771  INFO 50636 --- [http-nio-8787-exec-2] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果{content=他生莫作有情痴，人间无地著相思。, author=况周颐, source=减字浣溪沙}
+2019-11-09 10:29:00.713  INFO 50636 --- [http-nio-8787-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.index, args=[Page request [number: 0, size 5, sort: UNSORTED], {}])
+2019-11-09 10:29:00.843  WARN 50636 --- [http-nio-8787-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeanList.size]; use collection function syntax instead [size(t.blogBeanList)].
+2019-11-09 10:29:00.864  WARN 50636 --- [http-nio-8787-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogBeans.size]; use collection function syntax instead [size(t.blogBeans)].
+2019-11-09 10:29:01.011  INFO 50636 --- [http-nio-8787-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:01.015  INFO 50636 --- [http-nio-8787-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果index
+2019-11-09 10:29:02.695  INFO 50636 --- [http-nio-8787-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/scheduled, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.scheduledMethod, args=[])
+2019-11-09 10:29:02.695  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/links, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndFriendlyLinkController.listsFriendlyLink, args=[])
+2019-11-09 10:29:02.696  INFO 50636 --- [http-nio-8787-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:02.696  INFO 50636 --- [http-nio-8787-exec-6] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果{content=他生莫作有情痴，人间无地著相思。, author=况周颐, source=减字浣溪沙}
+2019-11-09 10:29:02.781  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:02.781  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果[FriendlyLinkBean(id=1, friendName=没有名字的音乐网, url=http://music.wangyankai.top/#/), FriendlyLinkBean(id=2, friendName=I Tech You,我教你, url=http://itechyou.cn/), FriendlyLinkBean(id=3, friendName= ShiYiBlog, url=https://blog.shiy1.com/)]
+2019-11-09 10:29:03.568  INFO 50636 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/about, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.toAbout, args=[{}])
+2019-11-09 10:29:03.593  INFO 50636 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:03.593  INFO 50636 --- [http-nio-8787-exec-4] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果about
+2019-11-09 10:29:03.997  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/links, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndFriendlyLinkController.listsFriendlyLink, args=[])
+2019-11-09 10:29:03.997  INFO 50636 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/scheduled, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.scheduledMethod, args=[])
+2019-11-09 10:29:03.998  INFO 50636 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:03.998  INFO 50636 --- [http-nio-8787-exec-1] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果{content=他生莫作有情痴，人间无地著相思。, author=况周颐, source=减字浣溪沙}
+2019-11-09 10:29:04.070  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:04.070  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果[FriendlyLinkBean(id=1, friendName=没有名字的音乐网, url=http://music.wangyankai.top/#/), FriendlyLinkBean(id=2, friendName=I Tech You,我教你, url=http://itechyou.cn/), FriendlyLinkBean(id=3, friendName= ShiYiBlog, url=https://blog.shiy1.com/)]
+2019-11-09 10:29:06.158  INFO 50636 --- [http-nio-8787-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/about, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.toAbout, args=[{}])
+2019-11-09 10:29:06.198  INFO 50636 --- [http-nio-8787-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:06.198  INFO 50636 --- [http-nio-8787-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果about
+2019-11-09 10:29:06.776  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/scheduled, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.IndexController.scheduledMethod, args=[])
+2019-11-09 10:29:06.776  INFO 50636 --- [http-nio-8787-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : Request : LogAspect.RequestLog(url=/links, ip=0:0:0:0:0:0:0:1, classMethod=com.zhao.guang.xiao.top.controller.FrontEndFriendlyLinkController.listsFriendlyLink, args=[])
+2019-11-09 10:29:06.777  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:06.777  INFO 50636 --- [http-nio-8787-exec-7] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果{content=他生莫作有情痴，人间无地著相思。, author=况周颐, source=减字浣溪沙}
+2019-11-09 10:29:06.881  INFO 50636 --- [http-nio-8787-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : ------after------
+2019-11-09 10:29:06.881  INFO 50636 --- [http-nio-8787-exec-9] c.zhao.guang.xiao.top.aspect.LogAspect   : reslt----- 返回结果[FriendlyLinkBean(id=1, friendName=没有名字的音乐网, url=http://music.wangyankai.top/#/), FriendlyLinkBean(id=2, friendName=I Tech You,我教你, url=http://itechyou.cn/), FriendlyLinkBean(id=3, friendName= ShiYiBlog, url=https://blog.shiy1.com/)]
+2019-11-09 10:29:41.531  INFO 50636 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-11-09 10:29:41.532  INFO 50636 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:29:41.536  INFO 50636 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-09 10:29:41.541  INFO 50636 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-09 10:29:41.545  INFO 50636 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
