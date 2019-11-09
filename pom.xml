@@ -142,6 +142,15 @@
         </dependency>
         <!--  阿里云存储oss  end    -->
 
+        <!--QQ第三方登录所需-->
+        <dependency>
+            <groupId>net.gplatform</groupId>
+            <artifactId>Sdk4J</artifactId>
+            <version>2.0</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

@@ -85,13 +85,13 @@ public class UserServiceImpl implements UserService {
         //判断当前qq用户是否存在
         UserBean bean = hasUserByTypeAndPwd(userBean.getPassword(), UserBean.USER_QQ);
         if (null == bean) {
-            bean.setCreateTime(System.currentTimeMillis());
-            bean.setUpdateTime(System.currentTimeMillis());
+            userBean.setCreateTime(System.currentTimeMillis());
+            userBean.setUpdateTime(System.currentTimeMillis());
         } else {
             userBean.setId(bean.getId());
-            bean.setUpdateTime(System.currentTimeMillis());
+            userBean.setUpdateTime(System.currentTimeMillis());
         }
-        return userBeanRepository.save(bean);
+        return userBeanRepository.save(userBean);
     }
 
 

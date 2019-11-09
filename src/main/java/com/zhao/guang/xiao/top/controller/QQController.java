@@ -83,6 +83,7 @@ public class QQController {
         String state = request.getParameter("state");
         String uuid = (String) session.getAttribute("state");
 
+        //判断uuid 是否为空
         if (uuid != null) {
             if (!uuid.equals(state)) {
                 log.error("QQ,state错误");
@@ -91,7 +92,6 @@ public class QQController {
         }
 
         //Step2：通过Authorization Code获取Access Token
-        String backUrl = "https://zhaoguangxiao.top/qqcalback";
         String url = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code" +
                 "&client_id=" + qqAppId +
                 "&client_secret=" + qqAppleKey +
