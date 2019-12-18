@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
 <head th:fragment="header(title,links,metas)">
     <meta charset="UTF-8">
+    <meta name="author" content="赵广晓">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title th:replace="${title}">博客详情页面</title>
     <link rel="stylesheet" type="text/css" href="../static/css/semantic.min.css"
@@ -134,10 +135,13 @@
         </div>
         <div class="ui inverted section divider"></div>
         <p class="m-text-thin m-text-spaced m-opacity-mini">
+            <span th:text="#{fragment.footer.Keep.name}"></span>
+            <br>
+            <span th:text="#{fragment.footer.Keep.gongxin}"></span>
+            <a href="http://www.beian.miit.gov.cn" target="_blank" th:text="#{fragment.footer.Keep.gongxinname}"></a>
+            <br>
             <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
             document.write(unescape("%3Cspan id='cnzz_stat_icon_1278129143'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/z_stat.php%3Fid%3D1278129143%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
-            <br>
-            <span th:text="#{fragment.footer.Keep.name}"></span>
         </p>
     </div>
 </footer>
