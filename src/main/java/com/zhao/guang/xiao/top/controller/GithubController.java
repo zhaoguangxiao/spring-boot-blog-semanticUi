@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -123,8 +124,11 @@ public class GithubController {
                 "</body>" +
                 "</html>";
 
-
-        response.getWriter().print(html);
+        //java 输入出一个页面到前端
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter writer = response.getWriter();
+        writer.print(html);
+        writer.close();
     }
 
 }
