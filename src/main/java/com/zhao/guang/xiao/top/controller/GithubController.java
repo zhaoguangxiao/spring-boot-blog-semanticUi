@@ -2,6 +2,7 @@ package com.zhao.guang.xiao.top.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Maps;
 import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.GithubService;
@@ -56,7 +57,7 @@ public class GithubController {
     @ResponseBody
     @GetMapping("github/oauth")
     public Map<String, String> github() {
-        HashMap<String, String> hashMap = new HashMap<>(3);
+        HashMap<String, String> hashMap = Maps.newHashMap();
         hashMap.put("clientId", clientId);
         hashMap.put("redirectUrl", redirectUrl);
         hashMap.put("status", githubService.genState());

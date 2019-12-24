@@ -1,6 +1,7 @@
 package com.zhao.guang.xiao.top.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Maps;
 import com.zhao.guang.xiao.top.exception.NotFountException;
 import com.zhao.guang.xiao.top.po.UserBean;
 import com.zhao.guang.xiao.top.service.QQService;
@@ -58,7 +59,7 @@ public class QQController {
     @ResponseBody
     @GetMapping("/qq/oauth")
     public Map<String, String> qq(HttpSession session) {
-        Map<String, String> maps = new HashMap<>(3);
+        Map<String, String> maps = Maps.newHashMap();
         //用于第三方应用防止CSRF攻击
         String state = UUID.randomUUID().toString().replaceAll("-", "");
         session.setAttribute("state", state);

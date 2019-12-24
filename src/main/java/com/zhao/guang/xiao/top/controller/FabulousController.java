@@ -1,6 +1,6 @@
 package com.zhao.guang.xiao.top.controller;
 
-import com.zhao.guang.xiao.top.exception.NotFountException;
+import com.google.common.collect.Maps;
 import com.zhao.guang.xiao.top.po.BlogBean;
 import com.zhao.guang.xiao.top.po.FabulousBean;
 import com.zhao.guang.xiao.top.po.UserBean;
@@ -38,7 +38,7 @@ public class FabulousController {
     public Map<String, String> addBlogLike(HttpServletRequest request,
                                            @NotBlank(message = "博客id不能为空") Long id,
                                            Integer typeId) {
-        HashMap<String, String> hashMap = new HashMap<>();
+        HashMap<String, String> hashMap = Maps.newHashMap();
         UserBean entity = (UserBean) request.getSession().getAttribute("userEntity");
         if (null == entity) {
             hashMap.put("code", "100");
@@ -49,7 +49,7 @@ public class FabulousController {
             blogBean.setId(id);
             FabulousBean bean = new FabulousBean(entity, blogBean, typeId);
             boolean fabulousBean = fabulousService.saveFabulousBean(bean);
-            if (fabulousBean){
+            if (fabulousBean) {
                 //添加点赞/反对成功
                 hashMap.put("code", "200");
             }
